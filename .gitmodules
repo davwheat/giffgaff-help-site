@@ -1,0 +1,3 @@
+[submodule "number-checker"]
+	path = public/number-checker
+	url = https://github.com/davwheat/UK-Phone-Number-Identifier
