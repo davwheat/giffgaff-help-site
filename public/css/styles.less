@@ -1,0 +1,142 @@
+@import "style-guide.css";
+@import "app-styles.css";
+
+html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#unofficial {
+  background: #00528a;
+  color: #fff;
+
+  > div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+main#main-content {
+  min-height: calc(100vh - 56px - 120px);
+
+  > div {
+    min-height: calc(100vh - 56px - 120px);
+  }
+}
+
+.gg-o-tiles--columns {
+  @media (min-width: 768px) {
+    flex-direction: row;
+    > li.gg-o-tiles__item {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.gg-c-form__element--info .gg-c-form__element-message--info {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  max-height: 200px;
+  transition: all 0.25s ease-in-out 0.1s, opacity 0.125s ease-in-out 0.25s;
+}
+
+.warn-text {
+  color: var(--red);
+}
+
+.small-width {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .gg-o-page-section {
+    max-width: 680px;
+  }
+}
+
+.gg-o-page-section p:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+table {
+  outline: 2px solid #000;
+  margin: auto;
+  margin-bottom: 16px;
+
+  th {
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    padding: 4px 8px;
+  }
+
+  &#apn-settings {
+    td:first-child {
+      font-weight: bold;
+    }
+  }
+}
+
+.side-nav-container {
+  @media (min-width: 1140px) {
+    display: flex;
+  }
+
+  .side-nav {
+    display: none;
+
+    @media (min-width: 1140px) {
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 280px;
+      align-self: flex-start;
+      padding-right: 48px;
+      margin-bottom: 24px;
+    }
+  }
+
+  article {
+    padding: 16px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-animation: fade-in 0.4s ease-in 0.15s both;
+    animation: fade-in 0.4s ease-in 0.15s both;
+    overflow: hidden;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      padding: 48px;
+    }
+    @media (min-width: 480px) {
+      padding: 24px;
+    }
+  }
+}

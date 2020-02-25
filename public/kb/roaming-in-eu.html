@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EU roaming guide | giffgaff community help</title>
+    <link
+      rel="preload"
+      href="/css/fonts/giffgaff-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/css/fonts/giffgaff-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/css/fonts/giffgaff-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="/css/fonts/fonts.css" rel="stylesheet" />
+    <script src="/js/custom-components.js" async></script>
+    <script src="/js/modernizr-custom.js" async defer></script>
+  </head>
+  <body class="qa-section">
+    <gg-header></gg-header>
+    <main id="main-content">
+      <div class="gg-u-digital-noise-chunky">
+        <header class="gg-c-masthead-minor">
+          <div class="gg-c-masthead__content">
+            <h1
+              class="gg-u-text-megaphone gg-u-doodle-squiggle gg-u-doodle-squiggle--light-green"
+            >
+              Roaming in the EU
+            </h1>
+            <p class="gg-c-masthead__page-subtitle gg-u-mt-small">
+              Discover some tips and tricks about using your phone in the EU,
+              EEA, and selected countries.
+            </p>
+          </div>
+        </header>
+        <section class="gg-t-light-pink gg-u-digital-noise-parallel">
+          <div class="gg-o-page-section gg-u-pt-medium gg-u-pb-medium">
+            <p class="gg-u-text-speak-up gg-u-text-center">
+              <a href="eu.pdf" class="gg-u-link gg-u-link--arrow"
+                >Download this guide as a PDF for offline use</a
+              >
+            </p>
+          </div>
+        </section>
+        <div class="small-width">
+          <section>
+            <div class="gg-o-page-section">
+              <h2 class="gg-u-text-louder gg-u-mb-medium">
+                Some background
+              </h2>
+              <ul class="gg-c-list">
+                <li class="gg-c-list__item">
+                  The European Union implemented regulations to prevent networks
+                  charging for short-term use in the EU on 15 June 2017
+                </li>
+                <li class="gg-c-list__item">
+                  From 1 January 2021, the guarantee of free roaming in the EU,
+                  Iceland, Liechtenstein and Norway will end but there will be a
+                  new cap of £45 before your network must ask for permission to
+                  charge you more.
+                </li>
+                <li class="gg-c-list__item">
+                  giffgaff have not announced whether free EU roaming will
+                  continue, so it's still just a case of playing the waiting
+                  game.
+                </li>
+              </ul>
+              <h2 class="gg-u-text-louder gg-u-mb-medium gg-u-mt-small">
+                Before you go
+              </h2>
+              <p>
+                Before you head off on your trip, you should double-check a few
+                things on your phone and giffgaff account to make sure your
+                phone works without a hitch.
+              </p>
+              <ol class="gg-c-list-ordered">
+                <li class="gg-c-list-ordered__item">
+                  Make sure you've enabled data roaming on your phone in
+                  settings.
+                </li>
+                <li class="gg-c-list-ordered__item">
+                  Check your
+                  <a
+                    href="https://www.giffgaff.com/profile/details"
+                    class="gg-u-link"
+                    target="_blank"
+                  >
+                    giffgaff account to make sure you're eligible for EU
+                    roaming</a
+                  >. Make sure it says <b>On</b> underneath
+                  <b>Roaming status</b>. If it doesn't, see further down for
+                  fixes.
+                </li>
+                <li class="gg-c-list-ordered__item">
+                  Make sure your APN settings match the ones shown below.
+                </li>
+              </ol>
+              <h3 class="gg-u-text-loud gg-u-mb-small gg-u-mt-medium">
+                APN settings
+              </h3>
+              <p>
+                APN settings are the details your phone uses to connect to the
+                giffgaff network and use data. These are sometimes set
+                incorrectly by default which means that they happen to work in
+                the UK, but won't work when abroad.
+              </p>
+              <p>
+                To change these settings on an iPhone, open Settings, then tap
+                Mobile Data. Tap Mobile Data Options and fill in the settings
+                below.
+              </p>
+              <p>
+                To change these settings on an Android device, open Settings,
+                then tap Mobile Network. If prompted, choose your giffgaff SIM.
+                Tap Access Point Name (or APN) and fill in the settings below.
+              </p>
+              <p class="gg-u-text-speak-up">
+                Not all devices will have every setting shown below, so don't
+                worry if a setting isn't on your phone.
+              </p>
+              <table id="apn-settings" class="gg-c-striped-table">
+                <thead>
+                  <tr>
+                    <th>Field Name</th>
+                    <th>Field Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Connection Name</td>
+                    <td>giffgaff</td>
+                  </tr>
+                  <tr>
+                    <td>APN</td>
+                    <td><code>giffgaff.com</code></td>
+                  </tr>
+                  <tr>
+                    <td>Proxy</td>
+                    <td>[leave blank]</td>
+                  </tr>
+                  <tr>
+                    <td>Port</td>
+                    <td>[leave blank]</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td><code>giffgaff</code></td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>[leave blank]</td>
+                  </tr>
+                  <tr>
+                    <td>Server</td>
+                    <td>[leave blank]</td>
+                  </tr>
+                  <tr>
+                    <td>MMSC</td>
+                    <td><code>http://mmsc.mediamessaging.co.uk:8002</code></td>
+                  </tr>
+                  <tr>
+                    <td>MMS proxy</td>
+                    <td><code>82.132.254.1</code></td>
+                  </tr>
+                  <tr>
+                    <td>MMS port</td>
+                    <td><code>8080</code></td>
+                  </tr>
+                  <tr>
+                    <td>MCC</td>
+                    <td><code>234</code></td>
+                  </tr>
+                  <tr>
+                    <td>MNC</td>
+                    <td><code>10</code></td>
+                  </tr>
+                  <tr>
+                    <td>Authentication Type</td>
+                    <td><code>PAP or CHAP</code></td>
+                  </tr>
+                  <tr>
+                    <td>APN type</td>
+                    <td><code>default,mms,ia,xcap</code></td>
+                  </tr>
+                  <tr>
+                    <td>APN protocol</td>
+                    <td><code>IPv4</code></td>
+                  </tr>
+                  <tr>
+                    <td>APN roaming protocol</td>
+                    <td><code>IPv4</code></td>
+                  </tr>
+                  <tr>
+                    <td>Bearer</td>
+                    <td>[leave blank]</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Make sure not to confuse the fields proxy and MMS proxy. MMS
+                proxy should be 82.132.254.1 and proxy should be left blank.
+              </p>
+              <h2 class="gg-u-text-louder gg-u-mb-medium gg-u-mt-small">
+                While you're there
+              </h2>
+              <p>
+                Before you head off on your trip, you should double-check a few
+                things on your phone and giffgaff account to make sure your
+                phone works without a hitch.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <gg-footer></gg-footer>
+  </body>
+</html>
