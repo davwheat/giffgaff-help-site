@@ -7,6 +7,7 @@ html {
   padding: 0;
 
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 
   @media screen and (prefers-reduced-motion: reduce) {
     scroll-behavior: auto;
@@ -82,23 +83,29 @@ main#main-content {
   padding-bottom: 16px;
 }
 
-table {
-  outline: 2px solid #000;
-  margin: auto;
-  margin-bottom: 16px;
+.table_container {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 
-  th {
-    font-weight: bold;
-  }
+  table {
+    border: 2px solid #000;
+    margin: auto;
+    margin-bottom: 16px;
 
-  td,
-  th {
-    padding: 4px 8px;
-  }
-
-  &#apn-settings {
-    td:first-child {
+    th {
       font-weight: bold;
+    }
+
+    td,
+    th {
+      padding: 4px 8px;
+    }
+
+    &#apn-settings {
+      td:first-child {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -110,6 +117,8 @@ table {
 
   .side-nav {
     display: none;
+    overflow-y: auto;
+    max-height: calc(100vh - 72px - 32px);
 
     @media (min-width: 1140px) {
       display: block;
@@ -119,6 +128,19 @@ table {
       align-self: flex-start;
       padding-right: 48px;
       margin-bottom: 24px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 72px;
+    }
+  }
+
+  .gg-o-page-section {
+    max-width: 100%;
+  }
+
+  .gg-c-cards .gg-c-cards__item {
+    @media (max-width: 1140px) and (min-width: 992px) {
+      flex-basis: 50%;
     }
   }
 
@@ -139,4 +161,8 @@ table {
       padding: 24px;
     }
   }
+}
+
+.gg-u-digital-noise-chunky {
+  overflow: initial;
 }
