@@ -285,25 +285,25 @@ html {
   text-align: right;
   padding-bottom: 16px;
 }
-@media screen and (min-width: 360px) {
+@media (min-width: 360px) {
   .website-footer {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .website-footer {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .website-footer {
     margin-left: 48px;
     margin-right: 48px;
   }
 }
-@media screen and (min-width: 1236px) {
+@media (min-width: 1236px) {
   .website-footer {
     margin-left: auto;
     margin-right: auto;
@@ -699,25 +699,25 @@ html {
   display: flex;
   height: 56px;
 }
-@media screen and (min-width: 360px) {
+@media (min-width: 360px) {
   .gg-c-website-header__bar {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .gg-c-website-header__bar {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .gg-c-website-header__bar {
     margin-left: 48px;
     margin-right: 48px;
   }
 }
-@media screen and (min-width: 1236px) {
+@media (min-width: 1236px) {
   .gg-c-website-header__bar {
     margin-left: auto;
     margin-right: auto;
@@ -737,25 +737,25 @@ html {
   color: #fff;
   padding-bottom: 8px;
 }
-@media screen and (min-width: 360px) {
+@media (min-width: 360px) {
   .gg-c-website-header__sm-screen-nav {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .gg-c-website-header__sm-screen-nav {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .gg-c-website-header__sm-screen-nav {
     margin-left: 48px;
     margin-right: 48px;
   }
 }
-@media screen and (min-width: 1236px) {
+@media (min-width: 1236px) {
   .gg-c-website-header__sm-screen-nav {
     margin-left: auto;
     margin-right: auto;
@@ -933,25 +933,25 @@ html {
   padding-bottom: 24px;
   width: 100%;
 }
-@media screen and (min-width: 360px) {
+@media (min-width: 360px) {
   .gg-c-website-header__lrg-screen-menu-content {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .gg-c-website-header__lrg-screen-menu-content {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .gg-c-website-header__lrg-screen-menu-content {
     margin-left: 48px;
     margin-right: 48px;
   }
 }
-@media screen and (min-width: 1236px) {
+@media (min-width: 1236px) {
   .gg-c-website-header__lrg-screen-menu-content {
     margin-left: auto;
     margin-right: auto;

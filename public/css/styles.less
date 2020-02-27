@@ -1,5 +1,6 @@
-@import "style-guide.css";
-@import "app-styles.css";
+@import (inline) "app-styles.css";
+@import (inline) "style-guide.css";
+@import (inline) "fonts/fonts.css";
 
 html {
   min-height: 100vh;
@@ -165,4 +166,26 @@ main#main-content {
 
 .gg-u-digital-noise-chunky {
   overflow: initial;
+}
+
+@media print {
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 0;
+  margin-right: 0;
+
+  &:first {
+    margin-top: 0;
+  }
+}
+
+@page {
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@page :first {
+  margin-top: 0;
 }
