@@ -1,5 +1,5 @@
-@import (inline) "app-styles.css";
 @import (inline) "style-guide.css";
+@import (inline) "app-styles.css";
 @import (inline) "fonts/fonts.css";
 
 html {
@@ -33,6 +33,22 @@ body {
 
   a {
     color: #fff;
+  }
+}
+
+footer {
+  a {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
+    picture.gg-b128-n256-r512 {
+      img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -188,4 +204,14 @@ main#main-content {
 
 @page :first {
   margin-top: 0;
+}
+
+#copy-container .button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 8px;
+  }
 }
