@@ -300,9 +300,12 @@
           obj => obj.title.toLowerCase() === title.toLowerCase()
         )[0];
 
-        return `\n\n` + (obj.addFooter
-          ? (obj.content || "") + `\n\n` + footer
-          : obj.content || "");
+        return (
+          `\n\n` +
+          (obj.addFooter
+            ? (obj.content || "") + (obj.content ? `\n\n` : ``) + footer
+            : obj.content || "")
+        );
       }
     </script>
   </body>

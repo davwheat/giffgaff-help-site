@@ -302,7 +302,7 @@ Airtime credit top-ups can be purchased from the 'Add credit' button: https://gi
 
 If you have joined giffgaff recently and referred someone with an affiliate SIM within 42 days of joining us, you'll also get an **additional £5 credit** added to your account within 5 working days.
 
-These payback points are calculated every month between the 10th and 20th. Any points you accrue this month will show up next month.
+These payback points are calculated every month between the 5th and 15th. Any points you accrue this month will show up next month.
 
 An affiliate SIM means a SIM ordered by you through your ['share the love'](https://www.giffgaff.com/orders/mgm) page or a SIM ordered by someone else via your affiliate link.
 
