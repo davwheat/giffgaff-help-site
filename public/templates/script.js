@@ -1,9 +1,9 @@
-const footer = `If you still need help, make sure you click the **Reply** button next to my message so I get notified about your reply.
+const footer = `If you still need help, let us know by clicking the **Reply** button under my message.
 
-Thanks,
+Stay safe,
 David`;
 
-const templates = [
+let templates = [
   {
     title: "Footer",
     addFooter: true

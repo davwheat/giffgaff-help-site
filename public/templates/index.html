@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/custom-components.min.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-    <script src="/templates/script.js" async></script>
   </head>
   <body class="qa-section">
     <gg-header></gg-header>
@@ -48,6 +47,14 @@
           </div>
         </header>
         <div id="copy-container">
+          <div class="gg-t-light-pink">
+            <div class="gg-o-page-section">
+              <h2 class="gg-u-text-louder gg-u-mb-tiny">
+                Seasonal answers
+              </h2>
+              <div class="button-container" id="seasonal-buttons"></div>
+            </div>
+          </div>
           <div class="gg-o-page-section">
             <h2 class="gg-u-text-louder gg-u-mb-tiny">
               General
@@ -61,7 +68,7 @@
               </button>
             </div>
           </div>
-          <div class="gg-t-light-blue">
+          <div class="gg-t-white">
             <div class="gg-o-page-section">
               <h2 class="gg-u-text-louder gg-u-mb-tiny">
                 Common issues
@@ -139,7 +146,7 @@
               </button>
             </div>
           </div>
-          <div class="gg-t-light-blue">
+          <div class="gg-t-white">
             <div class="gg-o-page-section">
               <h2 class="gg-u-text-louder gg-u-mb-tiny">
                 Useful responses
@@ -217,7 +224,7 @@
               </button>
             </div>
           </div>
-          <div class="gg-t-light-blue">
+          <div class="gg-t-white">
             <div class="gg-o-page-section">
               <h2 class="gg-u-text-louder gg-u-mb-tiny">
                 giffgaff phones
@@ -272,7 +279,7 @@
               </button>
             </div>
           </div>
-          <div class="gg-t-light-pink">
+          <div class="gg-t-white">
             <div class="gg-o-page-section">
               <h2 class="gg-u-text-louder gg-u-mb-tiny">
                 Miscellaneous
@@ -290,6 +297,8 @@
         </div>
       </div>
     </main>
+    <script src="/templates/script.js"></script>
+    <script src="/templates/seasonal.js"></script>
     <gg-footer></gg-footer>
     <script>
       new ClipboardJS(
