@@ -133,15 +133,15 @@ After barring your phone, you'll have a replacement SIM sent to your address. Un
 SIM Swap can only be completed between 4:30 AM and 9:30 PM.
 
 You just need any unactivated giffgaff SIM. You can get one from:
-a) a member's affiliate link (click my name at the top of this post)
-b) this link: https://www.giffgaff.com/orders/mgm
-c) your local Tesco, Asda, Co-Op, etc. for a SIM for under £1
+- 1. a member's affiliate link (click my name at the top of this post)
+- 2. this link: https://www.giffgaff.com/orders/mgm
+- 3. your local Tesco, Asda, Co-Op, etc. for a SIM for under £1
 
-Options 'a' and 'b' involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
+Options 1 and 2 involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
 
 The SIM Swap process itself can take up to 24 hours to complete but usually only takes around 30 minutes.
 
-### You do not need to make a payment to perform a SIM Swap. If you get to a top-up step, [color=red]*STOP*[/color]. Make sure you are logged into your current giffgaff account which is linked to your current number.
+#### You do not need to make a payment to perform a SIM Swap. If you get to a top-up step, [color=red]*STOP*[/color]. Make sure you are logged into your current giffgaff account which is linked to your current number.
 
 See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`
   },
@@ -499,5 +499,31 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+  },
+  {
+    title: "sim problems",
+    addFooter: true,
+    content: `Remember that first time activations can take up to 24 hours. Try restarting your phone every 30 mins or so.
+
+The easiest thing to try first is checking the giffgaff service status page for any issues in your local area: https://www.giffgaff.com/coverage-and-service#network
+
+If you've still got issues, try performing a manual roam via these instructions: https://www.giffgaff.com/help/articles/how-to-perform-a-manual-roam
+
+If that doesn't help, the next best thing is attempting a SIM Swap. This is where you keep your number, credit and goodybag but just swap your SIM out for a new one!
+
+SIM Swap can only be completed between 4:30 AM and 9:30 PM.
+
+You just need any unactivated giffgaff SIM. You can get one from:
+- 1. a member's affiliate link (click my name at the top of this post)
+- 2. this link: https://www.giffgaff.com/orders/mgm
+- 3. your local Tesco, Asda, Co-Op, etc. for a SIM for under £1
+
+Options 1 and 2 involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
+
+The SIM Swap process itself can take up to 24 hours to complete but usually only takes around 30 minutes.
+
+#### You do not need to make a payment to perform a SIM Swap. If you get to a top-up step, [color=red]*STOP*[/color]. Make sure you are logged into your current giffgaff account which is linked to your current number.
+
+See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`
   }
 ];

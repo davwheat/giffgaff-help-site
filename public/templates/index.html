@@ -89,6 +89,12 @@
                 </button>
                 <button
                   class="gg-c-btn gg-c-btn--small"
+                  data-title="sim problems"
+                >
+                  <span class="gg-c-btn__switch">Service/SIM problems</span>
+                </button>
+                <button
+                  class="gg-c-btn gg-c-btn--small"
                   data-title="adult content block"
                 >
                   <span class="gg-c-btn__switch">Adult content block</span>
@@ -289,15 +295,15 @@
       new ClipboardJS(
         document.querySelectorAll("#copy-container button.gg-c-btn"),
         {
-          text: function(trigger) {
+          text: function (trigger) {
             return idToText(trigger.getAttribute("data-title"));
-          }
+          },
         }
       );
 
       function idToText(title) {
         obj = templates.filter(
-          obj => obj.title.toLowerCase() === title.toLowerCase()
+          (obj) => obj.title.toLowerCase() === title.toLowerCase()
         )[0];
 
         return (
