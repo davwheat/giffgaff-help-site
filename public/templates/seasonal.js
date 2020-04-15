@@ -15,7 +15,7 @@ When you get a response, you will receive a text and email alert telling you. Yo
     button: "COVID-19 NHS Worker",
     text: `Firstly, I'd like to thank you for all the work that you do.
 
-You'll need to contact a giffgaff agent. They'll put you onto an £8 goodybag for now (2 GB data). This situation could change in the future as giffgaff are working with the UK government to get a list of NHS workers to provide free usage to but, until then, they have to be careful to make sure that they aren't giving away free data to all their members.
+You'll need to contact a giffgaff agent. They'll see what they can do as it's evaluated on a case-by-case basis: what one person gets might not be what another gets. This situation could change in the future as giffgaff are working with the UK government to get a list of NHS workers to provide free usage to but, until then, they have to be careful to make sure that they aren't giving away free data to all their members.
 
 You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/International-and-Roaming/Using-a-goodybag-while-in-the-EU-%28Roam-Like-at-Home%29/form
 
