@@ -6,7 +6,7 @@ David`;
 let templates = [
   {
     title: "Footer",
-    addFooter: true
+    addFooter: true,
   },
   {
     title: "Contact an agent",
@@ -14,7 +14,7 @@ let templates = [
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "iMessage number reset",
@@ -44,7 +44,7 @@ When you get a response, you will receive a text and email alert telling you. Yo
 [color=red]This will also reset saved WiFi networks, mobile data options like usage limits and more.[/color]
 
 1. Go to **Settings**, followed by **General** and then **Reset**
-2. Tap **Reset Network Settings**`
+2. Tap **Reset Network Settings**`,
   },
   {
     title: "Problems after number reset",
@@ -71,7 +71,7 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "APN Settings",
@@ -102,7 +102,7 @@ Enter the APN values shown below. Please note that some fields may not be shown 
 | APN type | \`default,supl,mms,ia,xcap\` |
 | APN protocol | \`IPv4\` |
 | APN roaming protocol | \`IPv4\` |
-| Bearer |  [leave blank] |`
+| Bearer |  [leave blank] |`,
   },
   {
     title: "Lost SIM and Phone",
@@ -123,7 +123,7 @@ Afterwards, you'll want to report your SIM and Phone as lost or stolen. This pre
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
-After barring your phone, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your account and phone number.`
+After barring your phone, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your account and phone number.`,
   },
   {
     title: "SIM Swap",
@@ -143,7 +143,7 @@ The SIM Swap process itself can take up to 24 hours to complete but usually only
 
 #### You do not need to make a payment to perform a SIM Swap. If you get to a top-up step, [color=red]*STOP*[/color]. Make sure you are logged into your current giffgaff account which is linked to your current number.
 
-See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`
+See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
   },
   {
     title: "Return Phone",
@@ -153,7 +153,7 @@ See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-b
 To see how...
 
 See this link for faulty device: https://www.giffgaff.com/help/articles/return-or-repair-a-faulty-phone
-Or this link for changing your mind: https://www.giffgaff.com/help/articles/changing-your-mind-and-returning-your-phone`
+Or this link for changing your mind: https://www.giffgaff.com/help/articles/changing-your-mind-and-returning-your-phone`,
   },
   {
     title: "Phishing",
@@ -184,7 +184,7 @@ Learn more about giffgaff cyber security here: [https://community.giffgaff.com/t
 
 A giffgaff educator has been alerted to the scam and they will contact you shortly via a private message. You'll get an email notification when this happens.
 
-@report_phishing`
+@report_phishing`,
   },
   {
     title: "Leaving giffgaff",
@@ -209,7 +209,7 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "Close Account",
@@ -220,7 +220,7 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "Get a new GG number",
@@ -239,7 +239,7 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "Change phone order",
@@ -254,14 +254,14 @@ When you get a response (usually within 1-2 hours, but can be up to 24 hours), y
 
 If they can't cancel your order, you will have to return it when it arrives.
 
-To see how to return your phone, see this link: https://www.giffgaff.com/help/articles/return-or-repair-a-faulty-phone`
+To see how to return your phone, see this link: https://www.giffgaff.com/help/articles/return-or-repair-a-faulty-phone`,
   },
   {
     title: "Adult Content Block",
     addFooter: true,
     content: `To deactivate the adult content block, you will need either a valid UK (NI drivers licenses don't work) driver's license OR a valid machine-readable Passport.
 
-You can disable the block from your profile settings here: https://www.giffgaff.com/profile/details#adultcontent`
+You can disable the block from your profile settings here: https://www.giffgaff.com/profile/details#adultcontent`,
   },
   {
     title: "Always On £25 goodybag ban",
@@ -280,7 +280,7 @@ You can get your PAC online as well: https://www.giffgaff.com/profile/details/re
 
 Your PAC code will be valid for 30 days. giffgaff doesn't have any early termination fees like other networks.
 
-Please note that you will lose any active goodybag, remaining airtime credit and any payback points you've got.`
+Please note that you will lose any active goodybag, remaining airtime credit and any payback points you've got.`,
   },
   {
     title: "Credit not Goodybag",
@@ -293,7 +293,7 @@ Often, members accidentally buy credit top-ups instead of goodybags. This is qui
 
 Goodybags can be purchased from the 'Buy a goodybag' button on the giffgaff website: https://giffgaff.com/buy/goodybag
 
-Airtime credit top-ups can be purchased from the 'Add credit' button: https://giffgaff.com/top-up`
+Airtime credit top-ups can be purchased from the 'Add credit' button: https://giffgaff.com/top-up`,
   },
   {
     title: "Referral Payback",
@@ -308,7 +308,7 @@ An affiliate SIM means a SIM ordered by you through your ['share the love'](http
 
 The points can be seen here: https://giffgaff.com/profile/payback
 
-You can redeem these as credit, donate them to charity or get them paid to PayPal (if you have 1000 or more) every 6 months (June and December).`
+You can redeem these as credit, donate them to charity or get them paid to PayPal (if you have 1000 or more) every 6 months (June and December).`,
   },
   {
     title: "Family Account",
@@ -317,7 +317,7 @@ You can redeem these as credit, donate them to charity or get them paid to PayPa
 
 In the meantime, you will have to have a separate account for each SIM. You can still use the same payment method, email, address, etc. on each account but they will each have a different number and membername.
 
-Sorry about that!`
+Sorry about that!`,
   },
   {
     title: "Number recycling",
@@ -333,7 +333,7 @@ All of this is stated in the [giffgaff terms and conditions](https://www.giffgaf
 
 Sorry about that.
 
-You can [order another free SIM](https://www.giffgaff.com/orders/mgm) and activate it on your giffgaff account if you want to use giffgaff again.`
+You can [order another free SIM](https://www.giffgaff.com/orders/mgm) and activate it on your giffgaff account if you want to use giffgaff again.`,
   },
   {
     title: "Start goodybag early",
@@ -348,7 +348,7 @@ To start your goodybag early, click the 'Start my next goodybag now' button unde
 
 ![](https://community.giffgaff.com/mnt/efs/files/2019-10-28/1572255489-782876-1571515331-297283-203829ifc73e7ba92e4d30a.png)
 
-By starting your goodybag early, you will lose all remaining allowances.`
+By starting your goodybag early, you will lose all remaining allowances.`,
   },
   {
     title: "lol u bad no helpline",
@@ -359,7 +359,7 @@ You don't have to be part of the mobile network if you don't want to. If you'd r
 
 If you want a good deal and **90 second response time** (something that call centres can't offer) then stick with giffgaff - the mobile network run by you.
 
-After all, there's a reason [we've won uSwitch network of the year 2018 and 19](https://www.uswitch.com/mobiles/networks/giffgaff/)!`
+After all, there's a reason [we've won uSwitch network of the year 2018 and 19](https://www.uswitch.com/mobiles/networks/giffgaff/)!`,
   },
   {
     title: "Reset Password",
@@ -374,7 +374,7 @@ You can text the word \`FORGOTTEN\` to \`43430\` to get a password reset link fo
 
 Head to the [password reset page](https://www.giffgaff.com/support/lost-password) and choose either **email** or **text**.
 
-You can either enter your member name or phone number. If you're getting the link sent to your email, you can also enter your email instead.`
+You can either enter your member name or phone number. If you're getting the link sent to your email, you can also enter your email instead.`,
   },
   {
     title: "Network shortcodes/balance or goodybag info",
@@ -388,7 +388,7 @@ You can either enter your member name or phone number. If you're getting the lin
 | Goodybag: remaining texts (£6 only) | \`*100*5#\` |
 | Goodybag: remaining minutes | \`*100*7#\` |
 
-To check the data remaining on your goodybag, you have to use the app or website or dial \`43430\` and choose Option 2. Then you'll hear everything remaining on your goodybag.`
+To check the data remaining on your goodybag, you have to use the app or website or dial \`43430\` and choose Option 2. Then you'll hear everything remaining on your goodybag.`,
   },
   {
     title: "RCS",
@@ -416,7 +416,7 @@ If that doesn't work, you may have to use a workaround...
 4. After the list appears, scroll down to 'Messages' and tap it
 5. Tap 'Set RCS Flags'
 6. Tap 'Set ACS Url' and set it to 'http://rcs-acs-prod-us.sandbox.google.com/'
-7. Follow the above instructions again`
+7. Follow the above instructions again`,
   },
   {
     title: "Apple Watch eSIM",
@@ -427,7 +427,7 @@ So far, only three networks support the Apple Watch: O2, EE and Vodafone.
 
 This is because the Apple Watch relies on a new technology called eSIM. This is a virtual SIM stored on a small chip inside the device. At the moment, only some big networks support this (EE, O2 and Vodafone) and no MVNOs (mobile _virtual_ network operators) like giffgaff, Tesco, Plusnet, BT, ID Mobile, Smarty, etc can use the technology as Apple are refusing to license their proprietary and industry non-compliant technology to any of the 'small folk'.
 
-You'll have to switch to use the **cellular** functions of the Watch, but the **WiFi and Bluetooth connections will still work fine**!`
+You'll have to switch to use the **cellular** functions of the Watch, but the **WiFi and Bluetooth connections will still work fine**!`,
   },
   {
     title: "EU Roam Like At Home",
@@ -452,7 +452,7 @@ Please remember that the examples above aren’t an exhaustive list of how you c
 
 For more info, please read the [fair usage while roaming](https://www.giffgaff.com/fair-usage-while-roaming) page.
 
-**Countries included in RLAH:** Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, French Guiana, Germany, Gibraltar, Greece, Guadeloupe, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Martinique, Mayotte, Netherlands, Norway, Poland, Portugal, Reunion, Romania, San Marino, Slovakia, Slovenia, Spain, and Sweden.`
+**Countries included in RLAH:** Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, French Guiana, Germany, Gibraltar, Greece, Guadeloupe, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Martinique, Mayotte, Netherlands, Norway, Poland, Portugal, Reunion, Romania, San Marino, Slovakia, Slovenia, Spain, and Sweden.`,
   },
   {
     title: "Unlock phone",
@@ -463,7 +463,7 @@ To use giffgaff, you have to have a device either locked to O2, giffgaff or unlo
 
 As your device is locked, you'll need to contact your old network for an unlock code, or take it to a local phone shop.
 
-You can find out how to unlock your phone on the [giffgaff unlockapedia](https://www.giffgaff.com/unlock/unlocking-quick-start-guide-faq). Please note that unlocking your phone via a 3^rd party will [almost certainly void your device's warranty](https://www.giffgaff.com/unlock/mobile-phone-unlocking-affect-warranty-faq) so, if your device is still covered under warranty and that matters to you, you'll want to contact your previous network to unlock it.`
+You can find out how to unlock your phone on the [giffgaff unlockapedia](https://www.giffgaff.com/unlock/unlocking-quick-start-guide-faq). Please note that unlocking your phone via a 3^rd party will [almost certainly void your device's warranty](https://www.giffgaff.com/unlock/mobile-phone-unlocking-affect-warranty-faq) so, if your device is still covered under warranty and that matters to you, you'll want to contact your previous network to unlock it.`,
   },
   {
     title: "Always on not unlimited",
@@ -472,7 +472,7 @@ You can find out how to unlock your phone on the [giffgaff unlockapedia](https:/
     
 With the Always On goodybag, you get a whopping 80 GB of full-speed 4G data. However, after the 80 GB are gone, you're speed limited to 386 Kbps between 8 am and midnight.
 
-Sorry about that misunderstanding.`
+Sorry about that misunderstanding.`,
   },
   {
     title: "repair phone",
@@ -483,7 +483,7 @@ Please note that accidental damage is not covered by your warranty and any water
 
 Please see this guide for sending in your phone for repair: https://www.giffgaff.com/help/articles/return-or-repair-a-faulty-phone
 
-**Make sure not to send in any accessories (except the charger if it's a charging issue) or the original box as they may not send them back afterwards.`
+**Make sure not to send in any accessories (except the charger if it's a charging issue) or the original box as they may not send them back afterwards.`,
   },
   {
     title: "giffgaff locked phone",
@@ -498,7 +498,7 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     title: "sim problems",
@@ -524,6 +524,6 @@ The SIM Swap process itself can take up to 24 hours to complete but usually only
 
 #### You do not need to make a payment to perform a SIM Swap. If you get to a top-up step, [color=red]*STOP*[/color]. Make sure you are logged into your current giffgaff account which is linked to your current number.
 
-See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`
-  }
+See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
+  },
 ];
