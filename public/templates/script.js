@@ -158,13 +158,26 @@ Or this link for changing your mind: https://www.giffgaff.com/help/articles/chan
   {
     title: "Phishing",
     addFooter: true,
-    content: `Well done for being suspicious and posting this to the forums to double check.
+    content: `
+Well done for being suspicious and posting this to the forums to double check. I've left some advice down below.
 
-### This message **WAS NOT FROM GIFFGAFF**. It is a form of **phishing** called "**smishing**" (SMS phishing).
+## This message was not from giffgaff. It is a form of phishing called "smishing" (SMS phishing).
 
-This is another variation of a scam designed to get you to hand over personal and financial details. The scammers fake the Caller ID information to make the message look like they are from any number or name they care to use (usually 443 or GIFFGAFF). By doing so, they can fool many unsuspecting victims into responding, believing the message to be genuine.
+Please forward the message to \`7726\` free of charge to report the spam. You might get a message back asking for the number or name the text came from.
 
-For future reference, **all genuine giffgaff URLs will start with either "giffgaff.com" OR "giff.ly"**.
+All genuine giffgaff URLs will start with either \`giffgaff.com\` or \`giff.ly\`.
+
+### Information about smishing
+
+[spoiler]
+
+This is another variation of a scam designed to get you to hand over personal and financial details. The scammers fake the Caller ID information to make the message look like they are from any number or name they care to use (usually 443 or giffgaff). By doing so, they can fool many unsuspecting victims into responding, believing the message to be genuine.
+
+[/spoiler]
+
+### Advice if you've clicked the link
+
+[spoiler]
 
 Please do not enter any details and, if you have clicked on the link, follow these steps immediately!
 
@@ -174,15 +187,21 @@ Please do not enter any details and, if you have clicked on the link, follow the
 
 3. Let giffgaff know about the possible account compromise via the agents on this link so they can advise you on what to do next (and state if you received a text saying a SIM Swap is about to be performed) - https://support2.giffgaff.com/app/ask/Account-misuse-and-security-issues/Account-misuse-and-security-issues/form/
 
-4. Please forward the message you got to 7726 (spells out SPAM). This is completely free to do.
+4. If you suspect your bank details may have been compromised as a result, alert your bank as soon as possible.
 
-5. If you suspect your bank details may have been compromised as a result, alert your bank as soon as possible.
+5. Change passwords/emails on any other accounts outside of giffgaff that might have the same login information.
 
-6. Change passwords/emails on any other accounts outside of giffgaff that might have the same login information.
+[/spoiler]
+
+### About giffgaff cyber security
+
+[spoiler]
 
 Learn more about giffgaff cyber security here: [https://community.giffgaff.com/t5/Announcements/Security-Update-Phishing-smishing-and-SIM-swaps/td-p/22708021](https://community.giffgaff.com/t5/Announcements/Security-Update-Phishing-smishing-and-SIM-swaps/td-p/22708021)
 
-A giffgaff educator has been alerted to the scam and they will contact you shortly via a private message. You'll get an email notification when this happens.
+[/spoiler]
+
+A giffgaff educator has been alerted to the scam and they will contact you shortly. You'll get an email notification when this happens.
 
 @report_phishing`,
   },
