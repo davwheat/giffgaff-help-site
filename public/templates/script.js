@@ -545,4 +545,20 @@ The SIM Swap process itself can take up to 24 hours to complete but usually only
 
 See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
   },
+  {
+    title: "ratesetter-contact",
+    addFooter: true,
+    content: `You need to contact RateSetter, the company managing giffgaff phone loans.
+
+You can call them on 020 3142 6226 or email at borrow@ratesetter.com but they recommend email at the moment due to COVID-19.
+
+Their contact hours are shown below.
+
+|Days|Times|
+|---|---|
+| Monday - Friday|8 am - 6 pm |
+| Saturday|9:30 am - 5:30 pm |
+
+RateSetter contact page: https://www.ratesetter.com/help`
+  }
 ];
