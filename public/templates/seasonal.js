@@ -12,16 +12,16 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    button: "COVID-19 Free Goodybag",
+    button: "COVID-19 More Data",
     text: `giffgaff are trying to help people who need a hand to keep on top of their mobile usage. This could be people who can't afford their next goodybag, or those needing more data or calls to keep in touch with vulnerable family members.
 
-Some of the money to fund this is coming from the new giffgaff goodybank. If you have some spare change (as little as 50p!), feel free to contribute.
+Some of the money to fund this is coming from the new [giffgaff goodybank](https://www.giffgaff.com/goodybank). If you have some spare change (as little as 50p!), feel free to contribute.
 
 You'll need to contact a giffgaff agent. They will see what they can do. It's evaluated on a case-by-case basis: what one person gets might not be what another gets. 
 
 This situation could change in the future for key workers as giffgaff are work with the UK government to get a list of workers to provide extra usage to. Until then, giffgaff have to be careful to make sure that they aren't giving away free data to all their members.
 
-You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/International-and-Roaming/Using-a-goodybag-while-in-the-EU-%28Roam-Like-at-Home%29/form
+You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/Top-up-balances-and-goodybags/Buying-a-goodybag-or-credit/form
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
