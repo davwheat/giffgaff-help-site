@@ -511,7 +511,7 @@ You can find out how to unlock your phone on the [giffgaff unlockapedia](https:/
     title: "Always on not unlimited",
     addFooter: true,
     content: `The £25 goodybag comes with Always On data. This is **not the same as unlimited**.
-    
+
 With the Always On goodybag, you get a whopping 80 GB of full-speed 4G data. However, after the 80 GB are gone, you're speed limited to 386 Kbps between 8 am and midnight.
 
 Sorry about that misunderstanding.`,
@@ -586,5 +586,26 @@ Their contact hours are shown below.
 | Saturday|9:30 am - 5:30 pm |
 
 RateSetter contact page: https://www.ratesetter.com/help`,
+  },
+  {
+    title: "imessage advanced",
+    addFooter: true,
+    content: `Here's some advanced troubleshooting steps to take. Do these in order, making sure to wait any time period specified.
+
+**Make sure your Date & Time Zone are set to automatic**: Settings > General > Date & Time > Set Automatically.
+
+**Sign out of your Apple ID:** Settings > Messages > Send & Receive > Tap your Apple ID at the top > Sign Out.
+
+**Then turn OFF iMessage** (Settings > Messages) and restart your phone.
+
+**Turn iMessage ON** when your phone turns back on.
+
+**Sign into your Apple ID**: Settings > Messages > Send & Receive > Use your Apple ID for iMessage.
+
+**Make sure there isn't a carrier settings update available**: Settings > General > About. Just wait on this screen for about 30 seconds. If an update is available, you'll see a pop-up message.
+
+**Please wait 24 hours - no less.**
+
+If none of this works, you may need to [contact Apple Support](https://getsupport.apple.com/?locale=en_GB&SG=SG003) as they'll be able to escalate your case.`,
   },
 ];
