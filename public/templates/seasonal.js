@@ -45,6 +45,63 @@ mmWave technology uses frequencies between 24 GHz and 100 GHz. Scientists have r
 
 To all the 5G conspiracy theorists: if you're going to start burning down 5G towers, start by destroying your WiFi router first, then go for all the military communication networks, and then modern medicine used for treating diseases. After that you can start burning down the towers.`,
   },
+  {
+    button: `Balance Notifications`,
+    text:`A recent update to the way balance notifications are provided means that automated devices (like gates or alarms) may start forwarding these messages to your phone.
+
+These notifications used to be sent via an outdated system called USSD messaging, but now they're being sent by text instead. These devices are set up to automatically forward incoming texts to the owner's phone number. The forwarding of this text causes another balance notification to be sent, leading to an endless cycle of credit draining.
+
+You should turn off these balance notifications here: https://www.giffgaff.com/profile/details#notifications
+
+To get a refund, you should contact an agent which you can do so here: https://support2.giffgaff.com/app/ask/Top-up-balances-and-goodybags/Credit-debit-card-or-PayPal-overcharging/form/
+
+Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
+
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+  },
+  {
+    button: `MMS Issues`,
+text:`The MMS issue has been recognised by giffgaff and you can read more about it on the [Service Updates page](https://community.giffgaff.com/d/33109663-issues-using-mms-23-april-2020/). They don't quite know what's causing it but they suggest you contact an agent so they can learn more specifics about these cases.
+
+First just double check that all your APN settings are correct. The settings shown on the giffgaff help guides aren't complete. Press the button below to get the full list of settings
+
+[spoiler]
+
+If you use an iPhone, please follow this Apple Support guide to change your APN settings: https://support.apple.com/en-gb/HT201699
+
+If you use an Android device, head to Settings, Mobile Networks/Wireless & Networks, Mobile Network, APNs. After click the 'Add' or 'New' button (it may be hidden behind 3 dots).
+
+**Enter the APN values shown below.** Please note that some fields may not be shown on all devices, so you might not have to enter all of these.
+
+| Field Name | Field Value |
+|---|---|
+| Connection Name | giffgaff |
+| APN | \`giffgaff.com\` |
+| Proxy | [leave blank] |
+| Port | [leave blank] |
+| Username | \`giffgaff\` |
+| Password | [leave blank] |
+| Server | \`http://mmsc.mediamessaging.co.uk:8002\` |
+| MMSC | \`http://mmsc.mediamessaging.co.uk:8002\` |
+| MMS proxy | \`82.132.254.1\` |
+| MMS port | \`8080\` |
+| MCC | \`234\` |
+| MNC | \`10\` |
+| Authentication Type | \`PAP or CHAP\` |
+| APN type | \`default,supl,mms,ia,xcap\` |
+| APN protocol | \`IPv4\` |
+| APN roaming protocol | \`IPv4\` |
+| Bearer |  [leave blank] or \`Unspecified\` |
+| MVNO type |  \`SPN\` |
+| MVNO value |  \`giffgaff\` |
+[/spoiler]
+
+You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/Calls-texts-and-data/MMS-%28picture-messaging%29-not-working/form/
+
+Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
+
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+  }
 ];
 
 seasonalTemplates.forEach((template, i) => {
