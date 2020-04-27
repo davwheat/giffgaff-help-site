@@ -87,7 +87,7 @@ If you use an Android device, head to Settings, Mobile Networks/Wireless & Netwo
 Enter the APN values shown below. Please note that some fields may not be shown on all devices, so you might not have to enter all of these.
 
 | Field Name | Field Value |
-|----------------------|-----------------------------------------|
+|---|---|
 | Connection Name | giffgaff |
 | APN | \`giffgaff.com\` |
 | Proxy | [leave blank] |
@@ -104,7 +104,9 @@ Enter the APN values shown below. Please note that some fields may not be shown 
 | APN type | \`default,supl,mms,ia,xcap\` |
 | APN protocol | \`IPv4\` |
 | APN roaming protocol | \`IPv4\` |
-| Bearer |  [leave blank] |`,
+| Bearer |  [leave blank] or \`Unspecified\` |
+| MVNO type |  \`SPN\` |
+| MVNO value |  \`giffgaff\` |`,
   },
   {
     title: "Lost SIM and Phone",
