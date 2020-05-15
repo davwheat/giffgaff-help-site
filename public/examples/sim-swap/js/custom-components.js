@@ -1,22 +1,36 @@
-const menuItems = window.location.pathname.endsWith("view.html")
-  ? [
-      {
-        title: "Back",
-        link: "/examples/sim-swap/index.html",
-        // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
-      },
-      // {
-      //   title: "Bits and bobs",
-      //   link: "/bits-and-bobs",
-      //   items: [
-      //     {
-      //       link: "/bits-and-bobs/number-checker",
-      //       title: "Number pricing calculator"1
-      //     }
-      //   ]
-      // }
-    ]
-  : [];
+const menuItems =
+  window.location.pathname.endsWith("view") ||
+  window.location.pathname.endsWith("view.html") ||
+  window.location.pathname.endsWith("view/")
+    ? [
+        {
+          title: "Back",
+          link: "/examples/sim-swap/index.html",
+          // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
+        },
+        {
+          title: "Community Help Site",
+          link: "/",
+          // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
+        },
+        // {
+        //   title: "Bits and bobs",
+        //   link: "/bits-and-bobs",
+        //   items: [
+        //     {
+        //       link: "/bits-and-bobs/number-checker",
+        //       title: "Number pricing calculator"1
+        //     }
+        //   ]
+        // }
+      ]
+    : [
+        {
+          title: "Community Help Site",
+          link: "/",
+          // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
+        },
+      ];
 
 class ggHeader extends HTMLElement {
   connectedCallback() {
