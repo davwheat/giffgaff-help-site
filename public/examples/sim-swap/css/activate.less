@@ -1,0 +1,160 @@
+@import (inline) "style-guide.new.css";
+@import (inline) "fonts/fonts.css";
+
+//#region optional scrollbar code
+
+// replaces scrollbar to make iphone 5
+// viewport on desktop not overflow horizontally
+
+@import (inline) "OverlayScrollbars.min.css";
+
+.os-content {
+  border: none !important;
+}
+
+//#endregion
+
+html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+
+  overflow-y: auto;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  > div {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    > main {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      > .gg-u-digital-noise-chunky {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.gg-c-website-header {
+  background-color: #000;
+
+  &__bar {
+    max-width: 1140px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    height: 56px;
+
+    @media (min-width: 360px) {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    @media (min-width: 768px) {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    @media (min-width: 992px) {
+      margin-left: 48px;
+      margin-right: 48px;
+    }
+    @media (min-width: 1236px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1140px;
+    }
+  }
+
+  &__logo {
+    height: 56px;
+    margin-right: auto;
+  }
+}
+
+.gg-o-page-section {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not(.gg-c-modal__main-title) {
+      margin-bottom: 0.25em;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+}
+
+footer {
+  p {
+    padding: 0;
+  }
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.activation-form--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .activation-form {
+    padding: 24px;
+    max-width: 512px;
+
+    @media (min-width: 768px) {
+      max-width: 752px;
+    }
+
+    .gg-u-link {
+      margin-top: 16px;
+    }
+
+    .gg-c-modal {
+      img {
+        display: block;
+        width: 60%;
+        margin: auto;
+      }
+    }
+
+    .gg-c-input-with-button__btn {
+      svg {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+      }
+    }
+
+    .gg-u-grid > * {
+      padding: 24px;
+    }
+  }
+}
