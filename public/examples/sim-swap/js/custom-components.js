@@ -2,7 +2,7 @@ const menuItems = window.location.pathname.endsWith("view.html")
   ? [
       {
         title: "Back",
-        link: "./index.html",
+        link: "/examples/sim-swap/index.html",
         // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
       },
       // {

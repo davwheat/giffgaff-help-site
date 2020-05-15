@@ -1,6 +1,6 @@
 const pageData = {
   "#logged-out": {
-    htmlPath: "./logged-out.html",
+    htmlPath: "/examples/sim-swap/logged-out.html",
     title: "Logged out",
     subtitle: "Activation page when you're not logged into an account.",
   },
