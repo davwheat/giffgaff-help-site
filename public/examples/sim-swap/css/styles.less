@@ -243,7 +243,6 @@ main#main-content {
     flex: 1;
 
     > .gg-o-page-section {
-      min-height: 90vh;
       display: flex;
       flex-direction: column;
 
@@ -252,7 +251,7 @@ main#main-content {
       }
 
       #viewer-frame-container {
-        margin: auto;
+        margin: 0 auto;
         flex: 1;
         position: relative;
         width: 100%;
@@ -270,15 +269,15 @@ main#main-content {
             @px: 40px;
             @py: 114px;
 
-            @px-offset: 3px;
-            @py-offset: 4px;
+            @px-offset: -1px;
+            @py-offset: -3px;
 
             width: @w + 2 * @px;
             height: @h + 2 * @py;
             max-height: @h + 2 * @py;
             min-height: @h + 2 * @py;
             .viewer-frame-container2 {
-              background: url(./examples/sim-swap/img/iphone5.svg);
+              background: url(/examples/sim-swap/img/Apple_iPhone_5s_Space_Grey.svg);
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
@@ -287,8 +286,8 @@ main#main-content {
               padding: @py - @py-offset @px - @px-offset;
 
               #viewer-frame {
-                transform: translate(3px, 3px);
-                border-radius: 4px;
+                transform: translate(2px, 1px);
+                // border-radius: 4px;
               }
             }
           }
@@ -300,15 +299,15 @@ main#main-content {
             @px: 40px;
             @py: 114px;
 
-            @px-offset: 3px;
-            @py-offset: 8px;
+            @px-offset: -3px;
+            @py-offset: -5px;
 
             width: @w + 2 * @px;
             height: @h + 2 * @py;
             max-height: @h + 2 * @py;
             min-height: @h + 2 * @py;
             .viewer-frame-container2 {
-              background: url(./examples/sim-swap/img/iphone8.svg);
+              background: url(/examples/sim-swap/img/Apple_iPhone_8_Space_Grey.svg);
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
@@ -317,19 +316,19 @@ main#main-content {
               padding: @py - @py-offset @px - @px-offset;
 
               #viewer-frame {
-                transform: translate(0, 4px);
+                transform: translate(0, -12px);
               }
             }
           }
           &[data-size="375x812"] {
-            // iphone 6/7/8
+            // iphone xs
             @w: 375px;
             @h: 812px;
 
-            @px: 40px;
-            @py: 114px;
+            @px: 64px;
+            @py: 55px;
 
-            @px-offset: 10px;
+            @px-offset: 7px;
             @py-offset: -1px;
 
             width: @w + 2 * @px;
@@ -337,7 +336,7 @@ main#main-content {
             max-height: @h + 2 * @py;
             min-height: @h + 2 * @py;
             .viewer-frame-container2 {
-              background: url(./examples/sim-swap/img/iphonex.svg);
+              background: url("/examples/sim-swap/img/Apple_iPhone_XS_Space_Gray.svg");
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
@@ -346,17 +345,45 @@ main#main-content {
               padding: @py - @py-offset @px - @px-offset;
 
               #viewer-frame {
-                transform: translate(0, 24px);
+                transform: translate(0px, 12px);
                 border-bottom-left-radius: 42px;
                 border-bottom-right-radius: 42px;
               }
             }
           }
           &[data-size="360x800"] {
-            width: 360px;
-            height: 800px;
-            max-height: 800px;
-            min-height: 800px;
+            // pixel 4
+            @w: 411px;
+            @h: 869px;
+
+            @px: 64px;
+            @py: 55px;
+
+            @px-offset: 0px;
+            @py-offset: 1px;
+
+            width: @w + 2 * @px;
+            height: @h + 2 * @py;
+            max-height: @h + 2 * @py;
+            min-height: @h + 2 * @py;
+            .viewer-frame-container2 {
+              background: url("/examples/sim-swap/img/Google_Pixel_4_Clearly_White.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-clip: border-box;
+
+              padding: @py - @py-offset @px - @px-offset;
+
+              #viewer-frame {
+                transform: translate(-2px, 2px);
+                border-radius: 36px;
+              }
+            }
+          }
+
+          #viewer-frame {
+            background: black;
           }
         }
 
@@ -373,7 +400,6 @@ main#main-content {
           #viewer-frame {
             width: 100%;
             height: 100%;
-            background: #fff;
           }
         }
 
