@@ -112,6 +112,16 @@ footer {
   p {
     padding: 0;
   }
+
+  .gg-c-social-links {
+    // right align social links
+    margin-left: auto;
+
+    @media (max-width: 720px) {
+      // ...except when grid stops, then centre align
+      margin: auto;
+    }
+  }
 }
 
 .hidden,
@@ -128,8 +138,29 @@ footer {
     padding: 24px;
     max-width: 512px;
 
-    @media (min-width: 768px) {
-      max-width: 752px;
+    > .repeat-code-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -24px;
+      margin-right: -24px;
+      margin-top: -24px;
+      padding: 24px;
+
+      span {
+        color: var(--dark-green);
+      }
+
+      svg {
+        fill: var(--dark-green);
+        height: 1em;
+        vertical-align: middle;
+        padding-left: 4px;
+      }
+    }
+
+    @media (min-width: 720px) {
+      max-width: 960px;
     }
 
     .gg-u-link {
@@ -144,17 +175,34 @@ footer {
       }
     }
 
-    .gg-c-input-with-button__btn {
-      svg {
-        fill: #fff;
-        width: 24px;
-        height: 24px;
-        vertical-align: middle;
+    .gg-c-input-with-button {
+      flex-wrap: wrap;
+      
+      &__btn {
+        svg {
+          fill: #fff;
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+        }
       }
     }
 
     .gg-u-grid > * {
       padding: 24px;
     }
+  }
+}
+
+#email-confirmation-msg {
+  padding: 16px;
+  margin-bottom: 16px;
+
+  p:first-child {
+    margin-bottom: 0;
+  }
+
+  #email-confirm {
+    word-break: break-all;
   }
 }

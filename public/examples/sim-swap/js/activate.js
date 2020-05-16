@@ -1,3 +1,207 @@
+let code = "";
+let pwdShown = false;
+
+document
+  .getElementById("activationCodeInput")
+  .addEventListener("input", (e) => {
+    e.target.value = e.target.value.toUpperCase();
+  });
+
+document.getElementById("step1nextbtn").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const error = (msg) => {
+    const error = document.getElementById("activationCodeInputError");
+
+    error.innerText = msg;
+    error.parentElement.classList.add("gg-c-form__element--invalid");
+  };
+
+  const unerror = () => {
+    const error = document.getElementById("activationCodeInputError");
+    error.parentElement.classList.remove("gg-c-form__element--invalid");
+  };
+
+  const activationCodeInput = document.getElementById("activationCodeInput");
+
+  if (activationCodeInput.value.length === 0) {
+    error("Uh-oh, you need to enter you activation code");
+    return false;
+  } else {
+    unerror();
+  }
+
+  if (
+    activationCodeInput.value.length !== 6 &&
+    activationCodeInput.value.length !== 16 &&
+    activationCodeInput.value.length !== 19
+  ) {
+    error("Uh-oh, your activation code should be 6, 16, or 19 characters long");
+    return false;
+  } else {
+    unerror();
+  }
+
+  if (
+    activationCodeInput.value.length === 6 &&
+    !activationCodeInput.value.match(/^[A-Z0-9]{6}$/)
+  ) {
+    error("Uh-oh, your activation code should only be numbers and letters");
+    return false;
+  } else {
+    unerror();
+  }
+
+  if (
+    (activationCodeInput.value.length === 16 ||
+      activationCodeInput.value.length === 19) &&
+    !activationCodeInput.value.match(/^[0-9]*$/)
+  ) {
+    error("Uh-oh, your SIM's code should only have numbers in it");
+    return false;
+  } else {
+    unerror();
+  }
+
+  this.classList.add("gg-c-btn--loading");
+  activationCodeInput.setAttribute("disabled", "disabled");
+
+  code = activationCodeInput.value;
+
+  setTimeout(() => {
+    startStep2();
+  }, 2000);
+});
+
+function scroll() {
+  document
+    .getElementById("invisScroller")
+    .scrollIntoView({ behavior: "smooth" });
+}
+
+function startStep2() {
+  document.getElementById("step1").classList.add("hidden");
+  document.getElementById("step2").classList.remove("hidden");
+
+  scroll();
+
+  document.getElementById("activationCodeInput2").innerText = code;
+}
+
+document
+  .getElementById("toggle-pwd-visibility-1")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let a = document.getElementById("newPwd1");
+
+    a.setAttribute(
+      "type",
+      a.getAttribute("type") === "password" ? "text" : "password"
+    );
+
+    if (a.getAttribute("type") === "password") {
+      document.getElementById("show-pwd1").classList.add("hidden");
+      document.getElementById("hide-pwd1").classList.remove("hidden");
+    } else {
+      document.getElementById("show-pwd1").classList.remove("hidden");
+      document.getElementById("hide-pwd1").classList.add("hidden");
+    }
+  });
+
+document
+  .getElementById("toggle-pwd-visibility-2")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let a = document.getElementById("newPwd2");
+
+    a.setAttribute(
+      "type",
+      a.getAttribute("type") === "password" ? "text" : "password"
+    );
+
+    if (a.getAttribute("type") === "password") {
+      document.getElementById("show-pwd2").classList.add("hidden");
+      document.getElementById("hide-pwd2").classList.remove("hidden");
+    } else {
+      document.getElementById("show-pwd2").classList.remove("hidden");
+      document.getElementById("hide-pwd2").classList.add("hidden");
+    }
+  });
+
+const emailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).{8,}$/;
+
+document.getElementById("newEmail").addEventListener("blur", (e) => {
+  if (!e.target.value.match(emailRegex)) {
+    e.target.parentElement.classList.add("gg-c-form__element--invalid");
+  } else {
+    e.target.parentElement.classList.remove("gg-c-form__element--invalid");
+  }
+});
+
+document.getElementById("newEmail").addEventListener("input", (e) => {
+  document.getElementById("email-confirm").innerText = e.target.value;
+
+  if (e.target.value.match(emailRegex)) {
+    e.target.parentElement.classList.remove("gg-c-form__element--invalid");
+  }
+});
+
+document.getElementById("step2activatebtn").addEventListener("click", (e) => {
+  const email = document.getElementById("newEmail");
+  const pwd = document.getElementById("newPwd");
+
+  const commsYes = document.getElementById("communications-0");
+  const commsNo = document.getElementById("communications-1");
+
+  let errored = false;
+
+  if (!email.value.match(emailRegex)) {
+    email.parentElement.classList.add("gg-c-form__element--invalid");
+    errored = true;
+  } else {
+    email.parentElement.classList.remove("gg-c-form__element--invalid");
+  }
+
+  if (!pwd.value.match(pwdRegex)) {
+    pwd.parentElement.classList.add("gg-c-form__element--invalid");
+    errored = true;
+  } else {
+    pwd.parentElement.classList.remove("gg-c-form__element--invalid");
+  }
+
+  if (!commsYes.checked && !commsNo.checked) {
+    document
+      .getElementById("communications-container")
+      .classList.add("gg-c-form__element--invalid");
+    errored = true;
+  } else {
+    document
+      .getElementById("communications-container")
+      .classList.remove("gg-c-form__element--invalid");
+  }
+
+  if (errored) {
+    e.preventDefault();
+    return false;
+  }
+
+  setTimeout(() => {
+    startStep3();
+  }, 2750);
+});
+
+function startStep3() {
+  document.getElementById("step2").classList.add("hidden");
+  document.getElementById("step3").classList.remove("hidden");
+
+  scroll();
+
+  document.getElementById("activationCodeInput3").innerText = code;
+}
+
 // Modal polyfill
 
 (function (global, factory) {
@@ -869,14 +1073,26 @@ function makeModal(modal) {
   });
 }
 
-const buttonToShowModal = document.querySelector('#code-modal-btn');
-
 function showModal(modal) {
   makeModal(modal);
   document.body.style.overflow = "hidden";
   modal.showModal();
 }
 
-buttonToShowModal.addEventListener("click", function () {
-  showModal(document.querySelector("dialog"));
-});
+document
+  .querySelector("#terms-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("terms-modal"));
+  });
+
+document
+  .querySelector("#privacy-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("privacy-modal"));
+  });
+
+document
+  .querySelector("#code-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("find-code-dialog"));
+  });

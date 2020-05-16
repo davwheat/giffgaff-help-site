@@ -992,7 +992,7 @@ body {
   padding-left: 8px;
   padding-right: 48px;
   background-color: #fff;
-  background-image: url(./examples/sim-swap/img/svg/ggm--icon-chevron__down-black.svg);
+  background-image: url(/img/svg/ggm--icon-chevron__down-black.svg);
   background-repeat: no-repeat;
   background-position: right 8px top 50%;
   background-size: 24px 24px;
@@ -1200,7 +1200,7 @@ body {
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 24px;
-  background-image: url(./examples/sim-swap/img/svg/tick-white.svg);
+  background-image: url(/img/svg/tick-white.svg);
   width: 48px;
   height: 48px;
 }
@@ -1295,7 +1295,7 @@ body {
   margin-right: 8px;
 }
 .gg-c-checkbox__pseudo-checkbox:after {
-  background-image: url(./examples/sim-swap/img/svg/tick-black.svg);
+  background-image: url(/img/svg/tick-black.svg);
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1552,7 +1552,7 @@ body {
 }
 .gg-c-tick-list__item:before {
   content: "";
-  background-image: url(./examples/sim-swap/img/svg/tick.svg);
+  background-image: url(/img/svg/tick.svg);
   flex: none;
   width: 24px;
   height: 24px;
@@ -1829,12 +1829,12 @@ body {
 }
 @media (hover) {
   .gg-c-btn__switch:before {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_left-01.svg);
+    background-image: url(/img/svg/CTA_doodles_left-01.svg);
     left: -12px;
     top: -4px;
   }
   .gg-c-btn__switch:after {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_right-01.svg);
+    background-image: url(/img/svg/CTA_doodles_right-01.svg);
     right: -12px;
     bottom: -4px;
   }
@@ -2069,18 +2069,18 @@ body {
 }
 @media (hover) {
   .gg-t-black .gg-c-btn__switch:before {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_left-01-gray.svg);
+    background-image: url(/img/svg/CTA_doodles_left-01-gray.svg);
   }
   .gg-t-black .gg-c-btn__switch:after {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_right-01-gray.svg);
+    background-image: url(/img/svg/CTA_doodles_right-01-gray.svg);
   }
 }
 @media (hover) {
   .gg-t-black .gg-c-btn--primary .gg-c-btn__switch:before {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_left-01-yellow.svg);
+    background-image: url(/img/svg/CTA_doodles_left-01-yellow.svg);
   }
   .gg-t-black .gg-c-btn--primary .gg-c-btn__switch:after {
-    background-image: url(./examples/sim-swap/img/svg/CTA_doodles_right-01-yellow.svg);
+    background-image: url(/img/svg/CTA_doodles_right-01-yellow.svg);
   }
 }
 .gg-c-loading-icon {
@@ -3372,7 +3372,7 @@ body {
 }
 .gg-s-md-generated-html hr {
   border: 0;
-  background-image: url(./examples/sim-swap/img/png/marker-rule.optimised.png);
+  background-image: url(/img/png/marker-rule.optimised.png);
   background-repeat: repeat-x;
   -webkit-clip-path: polygon(
     2px 0,
@@ -3507,10 +3507,10 @@ body {
   border: 2px solid #000;
 }
 .gg-u-texture-softer {
-  background-image: url(./examples/sim-swap/img/textures/softer.png);
+  background-image: url(/img/textures/softer.png);
 }
 .gg-u-texture-gritty {
-  background-image: url(./examples/sim-swap/img/textures/gritty.png);
+  background-image: url(/img/textures/gritty.png);
   background-size: 96px;
 }
 .gg-u-box-shadow {
@@ -3537,7 +3537,7 @@ body {
 }
 .gg-u-hr {
   border: 0;
-  background-image: url(./examples/sim-swap/img/png/marker-rule.optimised.png);
+  background-image: url(/img/png/marker-rule.optimised.png);
   background-repeat: repeat-x;
   -webkit-clip-path: polygon(
     2px 0,
@@ -3750,14 +3750,14 @@ body {
   margin: auto;
 }
 .gg-u-digital-noise-side {
-  border-image-source: url(./examples/sim-swap/img/png/digital-noise-border.png);
+  border-image-source: url(/img/png/digital-noise-border.png);
   border-image-slice: 16;
   border-style: solid;
   border-image-repeat: repeat;
   border-right-width: 4px;
 }
 .gg-u-digital-noise-parallel {
-  border-image-source: url(./examples/sim-swap/img/png/digital-noise-border.png);
+  border-image-source: url(/img/png/digital-noise-border.png);
   border-image-slice: 16;
   border-style: solid;
   border-image-repeat: repeat;
@@ -3765,7 +3765,7 @@ body {
   border-bottom-width: 4px;
 }
 .gg-u-digital-noise-box {
-  border-image-source: url(./examples/sim-swap/img/png/digital-noise-border.png);
+  border-image-source: url(/img/png/digital-noise-border.png);
   border-image-slice: 16;
   border-style: solid;
   border-image-repeat: repeat;
@@ -4023,7 +4023,7 @@ body {
 }
 .gg-u-doodle-boing:before {
   content: "";
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing.svg);
+  background-image: url(/img/svg/doodles/doodle-boing.svg);
   background-size: 100%;
   width: 48px;
   height: 16px;
@@ -4034,19 +4034,19 @@ body {
   transform: translateX(-50%);
 }
 .gg-u-doodle-boing--light-pink:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing--light-pink.svg);
+  background-image: url(/img/svg/doodles/doodle-boing--light-pink.svg);
 }
 .gg-u-doodle-boing--light-green:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing--light-green.svg);
+  background-image: url(/img/svg/doodles/doodle-boing--light-green.svg);
 }
 .gg-u-doodle-boing--light-blue:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing--light-blue.svg);
+  background-image: url(/img/svg/doodles/doodle-boing--light-blue.svg);
 }
 .gg-u-doodle-boing--yellow:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing--yellow.svg);
+  background-image: url(/img/svg/doodles/doodle-boing--yellow.svg);
 }
 .gg-u-doodle-boing--white:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-boing--white.svg);
+  background-image: url(/img/svg/doodles/doodle-boing--white.svg);
 }
 @media (max-width: 767px) {
   .gg-u-text-louder .gg-u-doodle-boing {
@@ -4080,7 +4080,7 @@ body {
 }
 .gg-u-doodle-end-boing:after {
   content: "";
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 24px;
@@ -4091,19 +4091,19 @@ body {
   right: 0;
 }
 .gg-u-doodle-end-boing--light-pink:after {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing--light-pink.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing--light-pink.svg);
 }
 .gg-u-doodle-end-boing--light-green:after {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing--light-green.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing--light-green.svg);
 }
 .gg-u-doodle-end-boing--light-blue:after {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing--light-blue.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing--light-blue.svg);
 }
 .gg-u-doodle-end-boing--yellow:after {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing--yellow.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing--yellow.svg);
 }
 .gg-u-doodle-end-boing--white:after {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-end-boing--white.svg);
+  background-image: url(/img/svg/doodles/doodle-end-boing--white.svg);
 }
 @media (max-width: 767px) {
   .gg-u-text-louder .gg-u-doodle-end-boing {
@@ -4128,26 +4128,26 @@ body {
 }
 .gg-u-doodle-squiggle:before {
   content: "";
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle.svg);
   background-size: 100%;
   width: 48px;
   height: 16px;
   display: block;
 }
 .gg-u-doodle-squiggle--light-pink:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle--light-pink.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle--light-pink.svg);
 }
 .gg-u-doodle-squiggle--light-green:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle--light-green.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle--light-green.svg);
 }
 .gg-u-doodle-squiggle--light-blue:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle--light-blue.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle--light-blue.svg);
 }
 .gg-u-doodle-squiggle--yellow:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle--yellow.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle--yellow.svg);
 }
 .gg-u-doodle-squiggle--white:before {
-  background-image: url(./examples/sim-swap/img/svg/doodles/doodle-squiggle--white.svg);
+  background-image: url(/img/svg/doodles/doodle-squiggle--white.svg);
 }
 .gg-u-text-megaphone .gg-u-doodle-squiggle:before {
   width: 72px;
@@ -4323,6 +4323,14 @@ body > div > main > .gg-u-digital-noise-chunky {
 footer p {
   padding: 0;
 }
+footer .gg-c-social-links {
+  margin-left: auto;
+}
+@media (max-width: 720px) {
+  footer .gg-c-social-links {
+    margin: auto;
+  }
+}
 .hidden,
 [hidden] {
   display: none !important;
@@ -4336,9 +4344,27 @@ footer p {
   padding: 24px;
   max-width: 512px;
 }
-@media (min-width: 768px) {
+.activation-form--container .activation-form > .repeat-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -24px;
+  padding: 24px;
+}
+.activation-form--container .activation-form > .repeat-code-container span {
+  color: var(--dark-green);
+}
+.activation-form--container .activation-form > .repeat-code-container svg {
+  fill: var(--dark-green);
+  height: 1em;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+@media (min-width: 720px) {
   .activation-form--container .activation-form {
-    max-width: 752px;
+    max-width: 960px;
   }
 }
 .activation-form--container .activation-form .gg-u-link {
@@ -4349,6 +4375,9 @@ footer p {
   width: 60%;
   margin: auto;
 }
+.activation-form--container .activation-form .gg-c-input-with-button {
+  flex-wrap: wrap;
+}
 .activation-form--container .activation-form .gg-c-input-with-button__btn svg {
   fill: #fff;
   width: 24px;
@@ -4357,4 +4386,14 @@ footer p {
 }
 .activation-form--container .activation-form .gg-u-grid > * {
   padding: 24px;
+}
+#email-confirmation-msg {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+#email-confirmation-msg p:first-child {
+  margin-bottom: 0;
+}
+#email-confirmation-msg #email-confirm {
+  word-break: break-all;
 }

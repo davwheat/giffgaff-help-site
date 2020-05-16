@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="">
   <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="stylesheet" href="/examples/sim-swap/css/activate.css" />
 
     <link href="https://www.giffgaff.com/favicon-gg.ico?v=1" rel="icon" />
@@ -10,7 +14,10 @@
     />
 
     <!-- Plugin JS -->
-    <script type="text/javascript" src="/examples/sim-swap/js/OverlayScrollbars.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/examples/sim-swap/js/OverlayScrollbars.min.js"
+    ></script>
     <script src="/examples/sim-swap/js/activate.js" async defer></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -38,7 +45,7 @@
         <div class="gg-c-website-header__bar">
           <a
             class="gg-c-website-header__logo"
-            href="javascript:alert('This would link to the giffgaff home page, but that kinda breaks the example page.')"
+            onclick="window.alert('This would link to the giffgaff home page, but that kinda breaks the example page.')"
           >
             <svg
               height="56px"
@@ -63,7 +70,7 @@
       </header>
 
       <main id="main-content">
-        <div class="gg-u-digital-noise-chunky">
+        <div class="gg-u-digital-noise-chunky gg-t-white">
           <header class="gg-c-masthead gg-c-masthead--digital-noise">
             <div class="gg-c-masthead__content">
               <div class="gg-c-masthead__text">
@@ -74,8 +81,9 @@
                   activate your SIM
                 </h1>
                 <p class="gg-c-masthead__page-subtitle">
-                  Join a buzzing community of members and enjoy free calls and
-                  texts to all your mates on giffgaff
+                  We'll knock your socks off with our buzzing community of
+                  members, and free calls and texts to all your mates on
+                  giffgaff
                 </p>
               </div>
               <picture class="gg-c-masthead__picture">
@@ -101,17 +109,20 @@
               <p class="gg-u-text-speak">
                 Trying to replace your current giffgaff SIM?
                 <a
-                  href="javascript:alert('this would link to the new sim swap page i've designed')"
+                  onclick="window.alert('this would link to the new sim swap page i\'ve designed')"
                   class="gg-u-link gg-u-link--arrow"
                   >Perform a SIM swap</a
                 >
               </p>
             </section>
           </div>
+          <a id="invisScroller"></a>
           <div class="gg-t-light-pink">
             <section class="gg-o-page-section">
               <div id="step1" class="activation-form--container">
-                <form class="gg-c-form gg-t-white activation-form">
+                <form
+                  class="gg-c-form gg-t-white activation-form gg-u-digital-noise-side"
+                >
                   <label for="activationCodeInput" class="gg-c-form__label"
                     >SIM activation code</label
                   >
@@ -123,6 +134,7 @@
                       aria-describedby="textinput-message"
                       placeholder="XXXXXX"
                       autocomplete="off"
+                      maxlength="19"
                     />
                     <p
                       id="activationCodeInputError"
@@ -136,7 +148,7 @@
                     <span class="gg-c-btn__switch">Activate my SIM</span>
                   </button>
                   <div>
-                    <dialog class="gg-c-modal">
+                    <dialog class="gg-c-modal" id="find-code-dialog">
                       <div class="gg-c-modal__header">
                         <h2 class="gg-c-modal__main-title">
                           I can't find my activation code
@@ -157,12 +169,12 @@
                         <p>
                           You can find your activation code on the small plactic
                           card that came with your SIM. If you haven't got that,
-                          you can also use the 13 digit code on the back of your
-                          SIM.
+                          you can also use the 16 or 19 digit SIM serial number
+                          on the back of your SIM.
                         </p>
                         <img
                           src="/examples/sim-swap/img/sim-code.png"
-                          alt="Your 6 letter activation code on on the plastic card that came with your SIM. You can also use the long 13 digit number on the back of your new SIM."
+                          alt="Your 6 letter activation code on on the plastic card that came with your SIM. You can also use the long 16 or 19 digit SIM serial number on the back of your new SIM."
                         />
                       </div>
                     </dialog>
@@ -173,18 +185,27 @@
                 </form>
               </div>
               <div id="step2" class="activation-form--container hidden">
-                <div class="gg-t-white activation-form">
-                  <label for="activationCodeInput2" class="gg-c-form__label"
-                    >SIM activation code</label
+                <div class="gg-t-white activation-form gg-u-digital-noise-side">
+                  <div
+                    class="repeat-code-container gg-t-wild-sand gg-u-texture-softer"
                   >
-                  <div class="gg-c-form__element">
-                    <input
-                      type="text"
-                      id="activationCodeInput2"
-                      class="gg-c-form__input"
-                      aria-describedby="textinput-message"
-                      disabled
-                    />
+                    <div>
+                      <p class="gg-u-text-speak-up">
+                        SIM activation code:
+                        <span
+                          class="gg-u-text-speak"
+                          id="activationCodeInput2"
+                        ></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M22.41 5.66l-.14-.29-2.4-2.11h-.95c-.27 0-1.12 1.25-1.32 1.46-.51.51-1 1-1.51 1.54-1 1-1 1-2 2.07-1.93 1.94-4 3.76-6 5.69l-.09.17-2.81-2.9h-.77l-2.67 2.47v.84l.57.72.57.57 2 2.1v.16l2.82 2.68h.69l1.06-1.13A48.51 48.51 0 0014 15.2c1.27-1.32 1.64-1.44 2.84-2.81s2.6-2.57 3.79-3.82c.3-.33 1.76-1.7 1.76-2.15z"
+                          />
+                        </svg>
+                      </p>
+                    </div>
                   </div>
                   <section class="gg-u-grid gg-u-@m:grid--2-col">
                     <div>
@@ -203,8 +224,14 @@
                             autocomplete="email"
                             id="newEmail"
                             class="gg-c-form__input"
-                            aria-describedby="email-message"
+                            maxlength="320"
+                            placeholder="hello@example.com"
                           />
+                          <p
+                            class="gg-c-form__element-message gg-c-form__element-message--invalid"
+                          >
+                            Uh-oh, that's not a valid email address
+                          </p>
                         </div>
 
                         <label for="newPwd" class="gg-c-form__label"
@@ -216,14 +243,13 @@
                             autocomplete="new-password"
                             id="newPwd"
                             class="gg-c-form__input gg-c-input-with-button__input"
-                            aria-describedby="email-message"
                           />
                           <button
                             class="gg-c-input-with-button__btn"
                             type="submit"
-                            id="toggle-pwd-visibility"
+                            id="toggle-pwd-visibility-1"
                           >
-                            <span class="hidden" id="show-pwd">
+                            <span class="hidden" id="show-pwd1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -239,7 +265,394 @@
                                 />
                               </svg>
                             </span>
-                            <span id="hide-pwd">
+                            <span id="hide-pwd1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M4.7 15.4l.5.2a.8.8 0 01.2 0l.3-.2a.4.4 0 010-.1 1 1 0 000-.7A30.4 30.4 0 013 12c2.2-2.5 5.5-5.8 9-5.8a7 7 0 012.3.5 1.7 1.7 0 00.7-.4.8.8 0 00.2-.3 1.3 1.3 0 000-.4 8 8 0 00-3.3-.7c-4 0-7.8 3.7-10.2 6.5a.7.7 0 00-.2.6.7.7 0 00.2.6 32.6 32.6 0 002.8 2.9zm17.6-4a32.3 32.3 0 00-3-3 .9.9 0 00-.8.1 1.1 1.1 0 00-.3.6.5.5 0 01.1.2A32.8 32.8 0 0121 12c-2.2 2.5-5.6 5.7-9 5.6a7 7 0 01-2.1-.4h-.1a2.8 2.8 0 01-.4 0l-.4.4a.6.6 0 010 .2v.1a.5.5 0 010 .1v.3a8 8 0 003 .6c4 0 7.9-3.6 10.3-6.4a.6.6 0 00.2-.5.7.7 0 00-.2-.6zm-2.6-7.9L18 5.2c-3.8 3.7-11 10.4-14.5 14-.6.6.3 1.6 1 1l1.6-1.7 14.5-14c.6-.6-.4-1.6-1-1z"
+                                />
+                                <path
+                                  d="M15.8 11.1l-1 .9a1.4 1.4 0 01-.1.4 2.6 2.6 0 01-1.7 2 3.3 3.3 0 01-.7.1h-.1l-.6.6a.4.4 0 01-.1.2c-.2.1-.3.3-.1.4 1.8.2 3.7-.3 4.4-2.1a6.2 6.2 0 00.5-2.1.7.7 0 010-.1c0-.2-.2-.4-.5-.3zM8 10.5a4.6 4.6 0 00-.3 2c.3.3.7.2 1 0v-.2a1.4 1.4 0 00.4-.6v-.1A3 3 0 0112 9.2a1 1 0 00.2-.1l.1-.1.7-.7a.3.3 0 000-.4c-2-.3-4.4.8-5 2.6z"
+                                />
+                              </svg>
+                            </span>
+                          </button>
+                          <div style="flex-basis: 100%; height: 0;"></div>
+                          <p
+                            class="gg-c-form__element-message gg-c-form__element-message--invalid"
+                          >
+                            Uh-oh, your password needs at least one: uppercase
+                            letter, lowercase letter, number, andspecial
+                            character
+                          </p>
+                        </div>
+
+                        <section
+                          id="email-confirmation-msg"
+                          class="gg-t-wild-sand"
+                        >
+                          <p class="gg-u-text-speak">
+                            Your email confirmation will be sent to:
+                          </p>
+                          <p id="email-confirm" class="gg-u-text-loud"></p>
+                        </section>
+
+                        <fieldset class="gg-c-chunky-buttons" id="communications-container">
+                          <legend class="gg-c-chunky-buttons__legend">
+                            Happy to hear from us? We'll help you save money
+                            with phone deals sent only to members and goodybag
+                            advice based on your usage. Opt-out anytime.
+                          </legend>
+                          <ol class="gg-c-chunky-buttons__list">
+                            <li class="gg-c-chunky-buttons__option">
+                              <input
+                                name="communications"
+                                type="radio"
+                                id="communications-0"
+                                class="gg-c-chunky-buttons__radio"
+                                value="yes"
+                              />
+                              <label
+                                class="gg-c-chunky-buttons__button"
+                                for="communications-0"
+                              >
+                                <svg
+                                  class="gg-c-chunky-buttons__icon"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M21.09 16.24a1.64 1.64 0 00-.57-1.24 1.51 1.51 0 00.48-1.1 1.64 1.64 0 00-.89-1.53 1.18 1.18 0 00.53-1 2.35 2.35 0 00-1.57-1.87 9.88 9.88 0 00-4.66-.32c.66-2 1.13-4.19-.76-5.9a2.45 2.45 0 00-1.87-.69 1.57 1.57 0 00-1.11.82 2.29 2.29 0 00-.1 1.69 5 5 0 01.1.82 3.44 3.44 0 01-2.54 3.33v-.61a.62.62 0 00-.29-.55.63.63 0 00-.42-.15H4.14a.71.71 0 00-.7.7V21a.72.72 0 00.7.71h3.25a.72.72 0 00.7-.71v-.3l.95.07c2.56.2 5.22.41 7.85.45a3.9 3.9 0 002.54-1.09 1.7 1.7 0 00.25-2.13 2 2 0 001.41-1.76zm-14.4 4h-2l-.1-11h2.08c-.05 3.66.07 7.38.02 11.03zm13.11-3.85c-.12.32-.52.59-1.17.78a.58.58 0 00-.37.29.63.63 0 00-.05.45s.16.27.24.4a.49.49 0 01.14.17.66.66 0 01.06.45.29.29 0 010 .14c-.16.47-1.24.84-1.76.86-2.62-.05-5.27-.25-7.84-.45l-.77-.06h-.17v-8.89H8.4A4.43 4.43 0 0011.46 8 5.48 5.48 0 0012 5.65c0-.14 0-.31-.06-.52-.06-.45-.15-1.13.07-1.3s.38 0 .57.08c2.13 1 1.17 3.67.54 5.43l-.14.38a.53.53 0 00.1.57.66.66 0 00.62.19.6.6 0 00.23 0 13.72 13.72 0 012.57-.1h.61a6.35 6.35 0 011.07.09h.13c.59 0 1.55.5.89 1.14a.26.26 0 01-.11.07h-.05l-.11.05-.5.11a.63.63 0 00-.29.65.6.6 0 00.47.49h.1a2.41 2.41 0 01.55 0 .41.41 0 01.3.05.67.67 0 01.19.14.49.49 0 01.12.47.46.46 0 01-.22.52c-.35.17-.78.15-1.12.32a.63.63 0 00-.15.45.6.6 0 00.6.58 1.17 1.17 0 01.88.35.4.4 0 01-.06.53z"
+                                  />
+                                </svg>
+                                <span class="gg-c-chunky-buttons__text">
+                                  Yes, please
+                                </span>
+                                <div
+                                  class="gg-c-chunky-buttons__radio-circle"
+                                ></div>
+                              </label>
+                            </li>
+                            <li class="gg-c-chunky-buttons__option">
+                              <input
+                                name="communications"
+                                type="radio"
+                                id="communications-1"
+                                class="gg-c-chunky-buttons__radio"
+                                value="no"
+                              />
+                              <label
+                                class="gg-c-chunky-buttons__button"
+                                for="communications-1"
+                              >
+                                <svg
+                                  class="gg-c-chunky-buttons__icon"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    transform="scale(1, -1) translate(0, -24)"
+                                    d="M21.09 16.24a1.64 1.64 0 00-.57-1.24 1.51 1.51 0 00.48-1.1 1.64 1.64 0 00-.89-1.53 1.18 1.18 0 00.53-1 2.35 2.35 0 00-1.57-1.87 9.88 9.88 0 00-4.66-.32c.66-2 1.13-4.19-.76-5.9a2.45 2.45 0 00-1.87-.69 1.57 1.57 0 00-1.11.82 2.29 2.29 0 00-.1 1.69 5 5 0 01.1.82 3.44 3.44 0 01-2.54 3.33v-.61a.62.62 0 00-.29-.55.63.63 0 00-.42-.15H4.14a.71.71 0 00-.7.7V21a.72.72 0 00.7.71h3.25a.72.72 0 00.7-.71v-.3l.95.07c2.56.2 5.22.41 7.85.45a3.9 3.9 0 002.54-1.09 1.7 1.7 0 00.25-2.13 2 2 0 001.41-1.76zm-14.4 4h-2l-.1-11h2.08c-.05 3.66.07 7.38.02 11.03zm13.11-3.85c-.12.32-.52.59-1.17.78a.58.58 0 00-.37.29.63.63 0 00-.05.45s.16.27.24.4a.49.49 0 01.14.17.66.66 0 01.06.45.29.29 0 010 .14c-.16.47-1.24.84-1.76.86-2.62-.05-5.27-.25-7.84-.45l-.77-.06h-.17v-8.89H8.4A4.43 4.43 0 0011.46 8 5.48 5.48 0 0012 5.65c0-.14 0-.31-.06-.52-.06-.45-.15-1.13.07-1.3s.38 0 .57.08c2.13 1 1.17 3.67.54 5.43l-.14.38a.53.53 0 00.1.57.66.66 0 00.62.19.6.6 0 00.23 0 13.72 13.72 0 012.57-.1h.61a6.35 6.35 0 011.07.09h.13c.59 0 1.55.5.89 1.14a.26.26 0 01-.11.07h-.05l-.11.05-.5.11a.63.63 0 00-.29.65.6.6 0 00.47.49h.1a2.41 2.41 0 01.55 0 .41.41 0 01.3.05.67.67 0 01.19.14.49.49 0 01.12.47.46.46 0 01-.22.52c-.35.17-.78.15-1.12.32a.63.63 0 00-.15.45.6.6 0 00.6.58 1.17 1.17 0 01.88.35.4.4 0 01-.06.53z"
+                                  />
+                                </svg>
+                                <span class="gg-c-chunky-buttons__text">
+                                  No, thanks
+                                </span>
+                                <div
+                                  class="gg-c-chunky-buttons__radio-circle"
+                                ></div>
+                              </label>
+                            </li>
+                          </ol>
+                          <p
+                            class="gg-c-form__element-message gg-c-form__element-message--invalid"
+                          >
+                            Please fill in this field
+                          </p>
+                        </fieldset>
+                      </form>
+                      <div>
+                        <p class="gg-u-text-whisper" style="margin: 1em 0;">
+                          You accept our
+                          <a class="gg-u-link" id="terms-modal-btn"
+                            >terms and conditions</a
+                          >
+                          and
+                          <a class="gg-u-link" id="privacy-modal-btn"
+                            >privacy policy</a
+                          >
+                          by clicking "Activate".
+                        </p>
+                        <dialog class="gg-c-modal" id="terms-modal">
+                          <div class="gg-c-modal__header">
+                            <h2 class="gg-c-modal__main-title">
+                              Terms and conditions
+                            </h2>
+                            <button class="gg-c-modal__close-button">
+                              <svg
+                                class="gg-c-modal__close-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 13.22 13.15"
+                              >
+                                <path
+                                  d="M7.64,6.6l1.1-1.1a41.63,41.63,0,0,0,4.2-4.2c.3-.4.4-.4.1-.9a.71.71,0,0,0-1-.3c-.1,0-.1.1-.2.1l-.2.3c-1.8,1.8-3.3,3.3-5,5.1l-1-1c-1.2-1.1-2.3-2.4-3.5-3.4C1.84.9,1.24-.1.64.3a.8.8,0,0,0-.3,1.1l.1.1Q3,4.2,5.54,6.6L4.14,8a35.9,35.9,0,0,0-3.9,3.9c-.7.8.3,1.7,1,1A47.8,47.8,0,0,0,5.14,9a18.48,18.48,0,0,1,1.4-1.4c.6.6,1.2,1.1,1.7,1.7.9,1,2.6,2.8,3.4,3.5s1.9-.3,1-1.1C11.24,10.4,9.34,8.4,7.64,6.6Z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="gg-c-modal__content">
+                            <p>
+                              This would show the T's & C's but it's way too
+                              much effort to get them to show up here.
+                            </p>
+                            <p>
+                              Bob's your uncle. Woohoo. Payback. Nice one.
+                              goodybags. We do things differently. We do things
+                              differently. Bonnie to our Clyde. Embrace life
+                              with no contracts. Come join us. Save yourself a
+                              few bob. Super Recruiter. We're chuffed to be
+                              uSwitch Network of the Year.
+                            </p>
+                            <p>
+                              Chuffed. We do things differently. Easy as pie.
+                              Our super helpful members are available to offer
+                              support around the clock. We do things
+                              differently. Hi there. Save yourself a few bob.
+                              You're all that and a bag of chips. Change month
+                              to month or cancel anytime.
+                            </p>
+                            <p>
+                              Nice one. Nice one. Join an award-winning network.
+                              We believe that together, with our members,
+                              anything is possible. Enjoy life with no
+                              contracts. Join an award-winning network. Choose
+                              giffgaff. Thanks a bunch. You’re always in
+                              control. Super Recruiter.
+                            </p>
+                            <p>
+                              Come join us. Bonnie to our Clyde. Super
+                              Recruiter. Save yourself a few bob. Bonnie to our
+                              Clyde. Join an award-winning network. You're all
+                              that and a bag of chips. Hi there. Bonnie to our
+                              Clyde. Save yourself a few bob. Great value
+                              flexible plans where you're in control.
+                            </p>
+                            <p>
+                              Pleased as punch. You're all that and a bag of
+                              chips. We believe that together, with our members,
+                              anything is possible. Easy as pie. Super
+                              Recruiter. Bonnie to our Clyde. Run by you. We
+                              believe that together, with our members, anything
+                              is possible.
+                            </p>
+                            <p>
+                              Order your Free SIM. Award winning. Community.
+                              Save yourself a few bob. Payback. Great value
+                              flexible plans where you're in control. Nice one.
+                              Community. Nice one. Super Recruiter. No
+                              contracts. Save yourself a few bob. Order your
+                              Free SIM. Choose giffgaff.
+                            </p>
+                            <p>
+                              Super Recruiter. No contracts. Bob's your uncle.
+                              Pleased as punch. Choose giffgaff. Hi there.
+                              ooops... seems like we've got gremlins. ooops...
+                              seems like we've got gremlins. Save yourself a few
+                              bob. You're all that and a bag of chips.
+                            </p>
+                            <p>
+                              Our super helpful members are available to offer
+                              support around the clock. We do things
+                              differently. Great value flexible plans where
+                              you're in control. No contracts. Order your Free
+                              SIM. We do things differently. We do things
+                              differently. ooops... seems like we've got
+                              gremlins.
+                            </p>
+                            <p>
+                              No contracts. Woohoo. Payback. Easy peasy. Change
+                              month to month or cancel anytime. Woohoo. Enjoy
+                              life with no contracts. We're chuffed to be
+                              uSwitch Network of the Year. We have members, not
+                              customers. Order your Free SIM. Bonnie to our
+                              Clyde. Bonnie to our Clyde.
+                            </p>
+                            <p>
+                              Woohoo. Easy as pie. Order your Free SIM. We have
+                              members, not customers. Community. Save yourself a
+                              few bob. Bob's your uncle. No contracts.
+                              Community. Order your Free SIM. Great value
+                              flexible plans where you're in control. Come join
+                              us. Thanks a bunch.
+                            </p>
+                          </div>
+                        </dialog>
+                        <dialog class="gg-c-modal" id="privacy-modal">
+                          <div class="gg-c-modal__header">
+                            <h2 class="gg-c-modal__main-title">
+                              Privacy policy
+                            </h2>
+                            <button class="gg-c-modal__close-button">
+                              <svg
+                                class="gg-c-modal__close-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 13.22 13.15"
+                              >
+                                <path
+                                  d="M7.64,6.6l1.1-1.1a41.63,41.63,0,0,0,4.2-4.2c.3-.4.4-.4.1-.9a.71.71,0,0,0-1-.3c-.1,0-.1.1-.2.1l-.2.3c-1.8,1.8-3.3,3.3-5,5.1l-1-1c-1.2-1.1-2.3-2.4-3.5-3.4C1.84.9,1.24-.1.64.3a.8.8,0,0,0-.3,1.1l.1.1Q3,4.2,5.54,6.6L4.14,8a35.9,35.9,0,0,0-3.9,3.9c-.7.8.3,1.7,1,1A47.8,47.8,0,0,0,5.14,9a18.48,18.48,0,0,1,1.4-1.4c.6.6,1.2,1.1,1.7,1.7.9,1,2.6,2.8,3.4,3.5s1.9-.3,1-1.1C11.24,10.4,9.34,8.4,7.64,6.6Z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="gg-c-modal__content">
+                            <p>
+                              This would show the privacy policy but it's way
+                              too much effort to get them to show up here.
+                            </p>
+                            <p>
+                              Bob's your uncle. Woohoo. Payback. Nice one.
+                              goodybags. We do things differently. We do things
+                              differently. Bonnie to our Clyde. Embrace life
+                              with no contracts. Come join us. Save yourself a
+                              few bob. Super Recruiter. We're chuffed to be
+                              uSwitch Network of the Year.
+                            </p>
+                            <p>
+                              Chuffed. We do things differently. Easy as pie.
+                              Our super helpful members are available to offer
+                              support around the clock. We do things
+                              differently. Hi there. Save yourself a few bob.
+                              You're all that and a bag of chips. Change month
+                              to month or cancel anytime.
+                            </p>
+                            <p>
+                              Nice one. Nice one. Join an award-winning network.
+                              We believe that together, with our members,
+                              anything is possible. Enjoy life with no
+                              contracts. Join an award-winning network. Choose
+                              giffgaff. Thanks a bunch. You’re always in
+                              control. Super Recruiter.
+                            </p>
+                            <p>
+                              Come join us. Bonnie to our Clyde. Super
+                              Recruiter. Save yourself a few bob. Bonnie to our
+                              Clyde. Join an award-winning network. You're all
+                              that and a bag of chips. Hi there. Bonnie to our
+                              Clyde. Save yourself a few bob. Great value
+                              flexible plans where you're in control.
+                            </p>
+                            <p>
+                              Pleased as punch. You're all that and a bag of
+                              chips. We believe that together, with our members,
+                              anything is possible. Easy as pie. Super
+                              Recruiter. Bonnie to our Clyde. Run by you. We
+                              believe that together, with our members, anything
+                              is possible.
+                            </p>
+                            <p>
+                              Order your Free SIM. Award winning. Community.
+                              Save yourself a few bob. Payback. Great value
+                              flexible plans where you're in control. Nice one.
+                              Community. Nice one. Super Recruiter. No
+                              contracts. Save yourself a few bob. Order your
+                              Free SIM. Choose giffgaff.
+                            </p>
+                            <p>
+                              Super Recruiter. No contracts. Bob's your uncle.
+                              Pleased as punch. Choose giffgaff. Hi there.
+                              ooops... seems like we've got gremlins. ooops...
+                              seems like we've got gremlins. Save yourself a few
+                              bob. You're all that and a bag of chips.
+                            </p>
+                            <p>
+                              Our super helpful members are available to offer
+                              support around the clock. We do things
+                              differently. Great value flexible plans where
+                              you're in control. No contracts. Order your Free
+                              SIM. We do things differently. We do things
+                              differently. ooops... seems like we've got
+                              gremlins.
+                            </p>
+                            <p>
+                              No contracts. Woohoo. Payback. Easy peasy. Change
+                              month to month or cancel anytime. Woohoo. Enjoy
+                              life with no contracts. We're chuffed to be
+                              uSwitch Network of the Year. We have members, not
+                              customers. Order your Free SIM. Bonnie to our
+                              Clyde. Bonnie to our Clyde.
+                            </p>
+                            <p>
+                              Woohoo. Easy as pie. Order your Free SIM. We have
+                              members, not customers. Community. Save yourself a
+                              few bob. Bob's your uncle. No contracts.
+                              Community. Order your Free SIM. Great value
+                              flexible plans where you're in control. Come join
+                              us. Thanks a bunch.
+                            </p>
+                          </div>
+                        </dialog>
+                      </div>
+                      <button
+                        id="step2activatebtn"
+                        class="gg-c-btn gg-c-btn--primary gg-c-btn--center"
+                      >
+                        <span class="gg-c-btn__switch">Activate</span>
+                      </button>
+                    </div>
+                    <div>
+                      <h3 class="gg-u-text-louder">Already a member?</h3>
+                      <p class="gg-u-speak">
+                        Nice one. Log in with your existing membername and
+                        password.
+                      </p>
+                      <form class="gg-c-form">
+                        <label for="currentMembername" class="gg-c-form__label"
+                          >Email or membername</label
+                        >
+                        <div class="gg-c-form__element">
+                          <input
+                            type="text"
+                            autocomplete="username"
+                            id="currentMembername"
+                            class="gg-c-form__input"
+                          />
+                        </div>
+
+                        <label for="currentPwd" class="gg-c-form__label"
+                          >Password</label
+                        >
+                        <div class="gg-c-form__element gg-c-input-with-button">
+                          <input
+                            type="password"
+                            autocomplete="current-password"
+                            id="currentPwd"
+                            class="gg-c-form__input gg-c-input-with-button__input"
+                            aria-describedby="email-message"
+                          />
+                          <button
+                            class="gg-c-input-with-button__btn"
+                            type="submit"
+                            id="toggle-pwd-visibility-2"
+                          >
+                            <span class="hidden" id="show-pwd2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M22.4 12a.7.7 0 00-.1-.6C19.9 8.6 16 5 12 5S4.2 8.6 1.8 11.4a.7.7 0 00-.2.6.7.7 0 00.2.6C4.2 15.3 8 18.9 12 18.9s7.8-3.6 10.3-6.4a.6.6 0 00.1-.5zM12 17.6c-3.4 0-6.7-3.1-9-5.6C5.2 9.5 8.6 6 12 6.2s6.7 3.2 9 5.8c-2.2 2.4-5.6 5.6-9 5.6z"
+                                />
+                                <path
+                                  d="M13.8 8c-2-.7-5 .4-5.8 2.5a3.9 3.9 0 001.4 4.8c2 .9 5.4.8 6.4-1.7a4.2 4.2 0 00.3-3A4.9 4.9 0 0013.8 8zm.9 4.4a2.6 2.6 0 01-1.7 2 4 4 0 01-2.9-.3 2.2 2.2 0 01-1-2.5 3.1 3.1 0 013.3-2.4 2.5 2.5 0 012.3 3.2z"
+                                />
+                                <path
+                                  d="M12.9 10.6a2 2 0 00-1.4-.2 1.5 1.5 0 00-1 .7 1.4 1.4 0 00.7 2.2 1.7 1.7 0 002-.2 1.6 1.6 0 00-.3-2.5z"
+                                />
+                              </svg>
+                            </span>
+                            <span id="hide-pwd2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -256,23 +669,10 @@
                         </div>
                       </form>
                       <button
-                        id="step2nextbtn"
+                        id="step2loginbtn"
                         class="gg-c-btn gg-c-btn--primary gg-c-btn--center"
                       >
-                        <span class="gg-c-btn__switch">Activate</span>
-                      </button>
-                    </div>
-                    <div>
-                      <h3 class="gg-u-text-louder">Already a member?</h3>
-                      <p class="gg-u-speak">
-                        Nice one. Log in with your existing membername and
-                        password.
-                      </p>
-                      <button
-                        id="step2nextbtn"
-                        class="gg-c-btn gg-c-btn--primary gg-c-btn--center"
-                      >
-                        <span class="gg-c-btn__switch">Activate</span>
+                        <span class="gg-c-btn__switch">Log in</span>
                       </button>
                     </div>
                   </section>
@@ -281,17 +681,23 @@
             </section>
           </div>
           <section class="gg-o-page-section">
+            <h2 class="gg-u-text-louder">FAQs</h2>
             <ul class="gg-c-faqs">
               <li class="gg-c-faqs__item">
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    What do I need to activate my SIM?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    <p>
+                      You'll need either a credit/debit card or a top-up
+                      voucher.
+                    </p>
+                    <p>
+                      After your SIM's active, pop it into an unlocked phone and
+                      you're ready to go.
+                    </p>
                   </div>
                 </details>
               </li>
@@ -299,12 +705,17 @@
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Sed do eiusmod tempor incididunt ut
+                    How do I activate with a voucher?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    <p>
+                      It's a doddle! Pop in your activation code, follow the
+                      quick, easy steps to activate your SIM.
+                    </p>
+                    <p>
+                      On the payment page, select voucher and enter your 16
+                      digit voucher code.
+                    </p>
                   </div>
                 </details>
               </li>
@@ -312,12 +723,13 @@
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Adipisicing elit, sed do eiusmod tempor
+                    Can I keep my old phone number?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    Sure thing! We’d love to bring your old number to giffgaff.
+                    After you’ve activated your SIM, we’ll give you a link to
+                    transfer your old number. You’ll just need your PAC code
+                    from your previous network.
                   </div>
                 </details>
               </li>
@@ -325,12 +737,18 @@
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Labore et dolore magna
+                    I'm already with giffgaff but my SIM is faulty or the wrong
+                    size.
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    You want to perform a
+                    <a
+                      class="gg-u-link gg-u-link--arrow"
+                      onclick="alert('this would link to the new sim swap not logged in article ive prototyped')"
+                      >SIM swap instead</a
+                    >. That's where you keep your current giffgaff number,
+                    account, credit and goodybag but replace your SIM with a new
+                    one.
                   </div>
                 </details>
               </li>
@@ -338,12 +756,13 @@
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Ut enim ad minim veniam
+                    Can't find your activation code?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    You can find your activation code on the small plactic card
+                    that came with your SIM. If you haven't got that, you can
+                    also use the 16 or 19 digit serial number on the back of
+                    your SIM. It should come just before "4Ggg6".
                   </div>
                 </details>
               </li>
@@ -353,120 +772,119 @@
       </main>
 
       <footer class="gg-t-black">
-        <div class="gg-o-page-section">
+        <div class="gg-o-page-section gg-u-grid gg-u-@m:grid--2-col">
           <div>
             <p class="gg-u-text-speak-up">giffgaff runs on the O2 network</p>
             <p class="gg-u-text-whisper">Copyright © 2020 giffgaff</p>
           </div>
+          <ul class="gg-c-social-links">
+            <li>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                class="gg-c-social-links__link"
+                href="https://twitter.com/giffgaff"
+              >
+                <svg
+                  class="gg-c-social-links__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 111.9 90.3"
+                >
+                  <title>Twitter</title>
+                  <path
+                    d="M111.9,10.8a40.67,40.67,0,0,1-13.2,3.3,23.43,23.43,0,0,0,9.9-12.3A39.61,39.61,0,0,1,93.9,7.5,22.73,22.73,0,0,0,54.3,22.8a29.11,29.11,0,0,0,.3,5.1A64.26,64.26,0,0,1,7.5,3.9a21.26,21.26,0,0,0-3,11.7A22.17,22.17,0,0,0,14.7,34.5a19.38,19.38,0,0,1-10.2-3v.3A22.55,22.55,0,0,0,22.8,54a36,36,0,0,1-6,.9,19.81,19.81,0,0,1-4.2-.3c3,9,11.1,15.3,21.3,15.9A46.64,46.64,0,0,1,5.7,80.4,36.31,36.31,0,0,1,0,80.1,65.67,65.67,0,0,0,34.8,90.3C77.1,90,99.9,55.2,99.9,25.2v-3A43.46,43.46,0,0,0,111.9,10.8Z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                class="gg-c-social-links__link"
+                href="https://www.facebook.com/giffgaffmobile"
+              >
+                <svg
+                  class="gg-c-social-links__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64.8 124.2"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M42.9,68.4c0-.3,0-.3.3-.3H61.5a.29.29,0,0,0,.3-.3c.3-2.7,2.7-21.9,2.7-22.2H43.2c-.3,0-.3,0-.3-.3v-15c0-1.2.3-3,.3-3.9.3-2.7,2.7-4.2,5.1-5.1a29.11,29.11,0,0,1,5.1-.3H64.8V.9C63.9.9,49.5,0,46.5,0A31.82,31.82,0,0,0,32.7,3c-5.7,3-9.3,7.2-12,13.2-.9,2.7-1.2,4.8-1.8,7.2a44.31,44.31,0,0,0-.3,6.3v15c0,.3,0,.3-.3.3H0V67.2H18.3c.3,0,.3,0,.3.3v56.7h24C42.9,124.2,42.9,85.8,42.9,68.4Z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                class="gg-c-social-links__link"
+                href="https://www.linkedin.com/company/giffgaff/"
+              >
+                <svg
+                  class="gg-c-social-links__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 90.6 86.4"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M90.6,53.1V86.4H71.1V55.2c0-7.8-2.7-13.2-9.9-13.2-5.4,0-8.4,3.6-9.9,7.2a11.7,11.7,0,0,0-.6,4.8V86.4H31.2s.3-52.8,0-58.2H50.7v8.4c2.7-3.9,7.2-9.6,17.4-9.6C81,26.7,90.6,35.1,90.6,53.1ZM11.1,0C4.5,0,0,4.2,0,10.2c0,5.7,4.2,10.2,10.8,10.2,6.9,0,11.1-4.5,11.1-10.2S17.7,0,11.1,0ZM1.2,86.4H20.7V28.2H1.2Z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                class="gg-c-social-links__link"
+                href="https://www.youtube.com/user/giffgaffTV"
+              >
+                <svg
+                  class="gg-c-social-links__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 106.8 75.9"
+                >
+                  <title>Youtube</title>
+                  <path
+                    d="M53.1,75.6h0ZM52.8,0h0Zm51.9,13.8c-2.1-8.1-6-11.1-12.9-12.3C87.9,1.2,68.1.3,53.1.3c-15.3,0-34.8.9-38.7,1.2C7.8,2.7,3.9,5.7,1.8,13.8.9,16.5,0,31.5,0,37.5v1.2c0,5.7.9,20.7,1.8,23.7,2.1,8.1,6,11.1,12.9,12.3,3.9.3,23.7,1.2,38.7,1.2,15.3,0,34.8-.9,38.7-1.2,6.9-1.2,10.8-4.2,12.9-12.3.9-2.7,1.8-17.7,1.8-23.7V37.5C106.5,31.5,105,16.5,104.7,13.8ZM42,52.5V21.9L70.2,36.6Z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                class="gg-c-social-links__link"
+                href="https://www.instagram.com/giffgaffmobile/"
+              >
+                <svg
+                  class="gg-c-social-links__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 108.6 108.6"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M77.7,108.6H30.9A30.86,30.86,0,0,1,0,77.7V30.9A30.86,30.86,0,0,1,30.9,0H77.7a30.86,30.86,0,0,1,30.9,30.9V77.7a30.86,30.86,0,0,1-30.9,30.9ZM30.9,9.3A21.51,21.51,0,0,0,9.3,30.9V77.7A21.51,21.51,0,0,0,30.9,99.3H77.7A21.51,21.51,0,0,0,99.3,77.7V30.9A21.51,21.51,0,0,0,77.7,9.3ZM54.3,82.2A27.9,27.9,0,1,1,82.2,54.3,28,28,0,0,1,54.3,82.2Zm0-46.5A18.6,18.6,0,1,0,72.9,54.3,18.69,18.69,0,0,0,54.3,35.7ZM83.4,18.3A6.6,6.6,0,1,0,90,24.9,6.66,6.66,0,0,0,83.4,18.3Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
 
     <script>
-      let code = "";
-      let pwdShown = false;
+      // dont need this in a final product
 
-      document
-        .getElementById("activationCodeInput")
-        .addEventListener("input", (e) => {
-          e.target.value = e.target.value.toUpperCase();
-        });
-
-      document
-        .getElementById("step1nextbtn")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const error = (msg) => {
-            const error = document.getElementById("activationCodeInputError");
-
-            error.innerText = msg;
-            error.parentElement.classList.add("gg-c-form__element--invalid");
-          };
-
-          const unerror = () => {
-            const error = document.getElementById("activationCodeInputError");
-            error.parentElement.classList.remove("gg-c-form__element--invalid");
-          };
-
-          const activationCodeInput = document.getElementById(
-            "activationCodeInput"
-          );
-
-          if (
-            activationCodeInput.value.length !== 6 &&
-            activationCodeInput.value.length !== 13
-          ) {
-            error(
-              "Uh oh, your activation code should be 6 or 13 characters long."
-            );
-            return false;
-          } else {
-            unerror();
-          }
-
-          if (
-            activationCodeInput.value.length === 6 &&
-            !activationCodeInput.value.match(/^[A-Z0-9]{6}$/)
-          ) {
-            error(
-              "Uh oh, your activation code should only be numbers and letters."
-            );
-            return false;
-          } else {
-            unerror();
-          }
-
-          if (
-            activationCodeInput.value.length === 13 &&
-            !activationCodeInput.value.match(/^[0-9]{13}$/)
-          ) {
-            error("Uh oh, your 13 digit SIM code should only be numbers.");
-            return false;
-          } else {
-            unerror();
-          }
-
-          this.classList.add("gg-c-btn--loading");
-          activationCodeInput.setAttribute("disabled", "disabled");
-
-          code = activationCodeInput.value;
-
-          setTimeout(() => {
-            startStep2();
-          }, 2000);
-        });
-
-      function startStep2() {
-        document.getElementById("step1").classList.add("hidden");
-        document.getElementById("step2").classList.remove("hidden");
-
-        document.getElementById("activationCodeInput2").value = code;
-      }
-
-      document
-        .getElementById("toggle-pwd-visibility")
-        .addEventListener("click", (e) => {
-          e.preventDefault();
-
-          let a = document.getElementById("newPwd");
-
-          a.setAttribute(
-            "type",
-            a.getAttribute("type") === "password" ? "text" : "password"
-          );
-
-          if (a.getAttribute("type") === "password") {
-            document.getElementById("show-pwd").classList.add("hidden");
-            document.getElementById("hide-pwd").classList.remove("hidden");
-          } else {
-            document.getElementById("show-pwd").classList.remove("hidden");
-            document.getElementById("hide-pwd").classList.add("hidden");
-          }
-        });
-    </script>
-
-    <script>
       document.addEventListener("DOMContentLoaded", function () {
         //The first argument are the elements to which the plugin shall be initialized
         //The second argument has to be at least a empty object or a object with your desired options
