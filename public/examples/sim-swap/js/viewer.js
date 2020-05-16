@@ -12,7 +12,7 @@ const frame = document.getElementById("viewer-frame");
 const link = document.getElementById("viewer-link");
 
 if (!Object.keys(pageData).includes(window.location.hash)) {
-  title.innerText = "Uh oh!";
+  title.innerText = "Oops!";
   subtitle.innerText = `Something went wrong. Click back in the top-right of this page and try again. (Error: "${window.location.hash}" is not a valid page.)`;
   frame.classList.add("hidden");
   link.classList.add("hidden");
