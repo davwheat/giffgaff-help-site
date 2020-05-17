@@ -69,7 +69,7 @@ document.getElementById("step1nextbtn").addEventListener("click", function (e) {
   code = activationCodeInput.value;
 
   setTimeout(() => {
-    startStep2();
+    showStep1Success();
   }, 2000);
 });
 
@@ -77,6 +77,14 @@ function scroll() {
   document
     .getElementById("invisScroller")
     .scrollIntoView({ behavior: "smooth" });
+}
+
+function showStep1Success() {
+  document.querySelector("#step1 .woohoo-message").classList.remove("hidden");
+
+  setTimeout(() => {
+    startStep2();
+  }, 1500);
 }
 
 function startStep2() {
@@ -93,7 +101,7 @@ document
   .addEventListener("click", (e) => {
     e.preventDefault();
 
-    let a = document.getElementById("newPwd1");
+    let a = document.getElementById("newPwd");
 
     a.setAttribute(
       "type",
@@ -114,7 +122,7 @@ document
   .addEventListener("click", (e) => {
     e.preventDefault();
 
-    let a = document.getElementById("newPwd2");
+    let a = document.getElementById("currentPwd");
 
     a.setAttribute(
       "type",
@@ -149,49 +157,118 @@ document.getElementById("newEmail").addEventListener("input", (e) => {
   }
 });
 
-document.getElementById("step2activatebtn").addEventListener("click", (e) => {
-  const email = document.getElementById("newEmail");
-  const pwd = document.getElementById("newPwd");
+document
+  .getElementById("step2activatebtn")
+  .addEventListener("click", function (e) {
+    const email = document.getElementById("newEmail");
+    const pwd = document.getElementById("newPwd");
 
-  const commsYes = document.getElementById("communications-0");
-  const commsNo = document.getElementById("communications-1");
+    const commsYes = document.getElementById("communications-0");
+    const commsNo = document.getElementById("communications-1");
 
-  let errored = false;
+    let errored = false;
 
-  if (!email.value.match(emailRegex)) {
-    email.parentElement.classList.add("gg-c-form__element--invalid");
-    errored = true;
-  } else {
-    email.parentElement.classList.remove("gg-c-form__element--invalid");
-  }
+    if (!email.value.match(emailRegex)) {
+      email.parentElement.classList.add("gg-c-form__element--invalid");
+      errored = true;
+    } else {
+      email.parentElement.classList.remove("gg-c-form__element--invalid");
+    }
 
-  if (!pwd.value.match(pwdRegex)) {
-    pwd.parentElement.classList.add("gg-c-form__element--invalid");
-    errored = true;
-  } else {
-    pwd.parentElement.classList.remove("gg-c-form__element--invalid");
-  }
+    if (!pwd.value.match(pwdRegex)) {
+      pwd.parentElement.classList.add("gg-c-form__element--invalid");
+      errored = true;
+    } else {
+      pwd.parentElement.classList.remove("gg-c-form__element--invalid");
+    }
 
-  if (!commsYes.checked && !commsNo.checked) {
+    if (!commsYes.checked && !commsNo.checked) {
+      document
+        .getElementById("communications-container")
+        .classList.add("gg-c-form__element--invalid");
+      errored = true;
+    } else {
+      document
+        .getElementById("communications-container")
+        .classList.remove("gg-c-form__element--invalid");
+    }
+
+    if (errored) {
+      e.preventDefault();
+      return false;
+    }
+
+    email.setAttribute("disabled", "disabled");
+    pwd.setAttribute("disabled", "disabled");
+    pwd.parentElement
+      .querySelector("button")
+      .setAttribute("disabled", "disabled");
+
+    commsYes.setAttribute("disabled", "disabled");
+    commsNo.setAttribute("disabled", "disabled");
+
     document
-      .getElementById("communications-container")
-      .classList.add("gg-c-form__element--invalid");
-    errored = true;
-  } else {
-    document
-      .getElementById("communications-container")
-      .classList.remove("gg-c-form__element--invalid");
-  }
+      .getElementById("step2activatebtn")
+      .setAttribute("disabled", "disabled");
 
-  if (errored) {
-    e.preventDefault();
-    return false;
-  }
+    this.classList.add("gg-c-btn--loading");
+
+    setTimeout(() => {
+      startStep3();
+    }, 2750);
+  });
+
+document
+  .getElementById("step2loginbtn")
+  .addEventListener("click", function (e) {
+    const membername = document.getElementById("currentMembername");
+    const pwd = document.getElementById("currentPwd");
+
+    let errored = false;
+
+    if (membername.value.length === 0) {
+      membername.parentElement.classList.add("gg-c-form__element--invalid");
+      errored = true;
+    } else {
+      membername.parentElement.classList.remove("gg-c-form__element--invalid");
+    }
+
+    if (pwd.value.length === 0) {
+      pwd.parentElement.classList.add("gg-c-form__element--invalid");
+      errored = true;
+    } else {
+      pwd.parentElement.classList.remove("gg-c-form__element--invalid");
+    }
+
+    if (errored) {
+      e.preventDefault();
+      return false;
+    }
+
+    membername.setAttribute("disabled", "disabled");
+    pwd.setAttribute("disabled", "disabled");
+    pwd.parentElement
+      .querySelector("button")
+      .setAttribute("disabled", "disabled");
+
+    this.classList.add("gg-c-btn--loading");
+
+    document
+      .getElementById("step2activatebtn")
+      .setAttribute("disabled", "disabled");
+
+    setTimeout(() => {
+      showStep2Success();
+    }, 2750);
+  });
+
+function showStep2Success() {
+  document.querySelector("#step2 .woohoo-message").classList.remove("hidden");
 
   setTimeout(() => {
     startStep3();
-  }, 2750);
-});
+  }, 1500);
+}
 
 function startStep3() {
   document.getElementById("step2").classList.add("hidden");
@@ -201,6 +278,35 @@ function startStep3() {
 
   document.getElementById("activationCodeInput3").innerText = code;
 }
+
+// modal openers
+
+document
+  .getElementById("goodybag-helper")
+  .addEventListener("change", function () {
+    if (this.checked) {
+      this.checked = false;
+      showModal(document.getElementById("goodybag-helper-modal"));
+    }
+  });
+
+document
+  .querySelector("#terms-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("terms-modal"));
+  });
+
+document
+  .querySelector("#privacy-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("privacy-modal"));
+  });
+
+document
+  .querySelector("#code-modal-btn")
+  .addEventListener("click", function () {
+    showModal(document.getElementById("find-code-dialog"));
+  });
 
 // Modal polyfill
 
@@ -1078,21 +1184,3 @@ function showModal(modal) {
   document.body.style.overflow = "hidden";
   modal.showModal();
 }
-
-document
-  .querySelector("#terms-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("terms-modal"));
-  });
-
-document
-  .querySelector("#privacy-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("privacy-modal"));
-  });
-
-document
-  .querySelector("#code-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("find-code-dialog"));
-  });
