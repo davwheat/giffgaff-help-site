@@ -24,7 +24,7 @@
     <!--[if lt IE 9]>
       <script
         async
-        src="//html5shim.googlecode.com/svn/trunk/html5.js"
+        src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min .js"
       ></script>
     <![endif]-->
   </head>
@@ -98,7 +98,12 @@
           <div class="gg-t-wild-sand">
             <section class="gg-o-page-section">
               <h1 class="gg-u-text-shout">
-                Joining giffgaff?
+                Joining
+                <mark
+                  class="gg-u-doodle-end-boing gg-u-doodle-end-boing--light-pink"
+                >
+                  giffgaff?
+                </mark>
               </h1>
               <p class="gg-u-text-louder">
                 Nice one. You've come to the right place.
@@ -121,8 +126,16 @@
             <section class="gg-o-page-section">
               <div id="step1" class="activation-form--container">
                 <form
-                  class="gg-c-form gg-t-white activation-form gg-u-digital-noise-side"
+                  class="gg-c-form gg-t-white activation-form gg-u-digital-noise-parallel"
                 >
+                  <section class="hidden woohoo-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M22.4 5.7l-.1-.3-2.4-2.1h-1c-.2 0-1.1 1.2-1.3 1.4l-1.5 1.6-2 2L8 14l-.1.2-2.8-3h-.8l-2.7 2.6v.8l.6.7.6.6 2 2v.3l2.8 2.6h.7l1-1.1a48.5 48.5 0 004.6-4.5c1.3-1.3 1.6-1.4 2.8-2.8s2.6-2.6 3.8-3.8c.3-.4 1.8-1.7 1.8-2.2z"
+                      />
+                    </svg>
+                    <p class="gg-u-text-shout">Woohoo</p>
+                  </section>
                   <label for="activationCodeInput" class="gg-c-form__label"
                     >SIM activation code</label
                   >
@@ -185,7 +198,17 @@
                 </form>
               </div>
               <div id="step2" class="activation-form--container hidden">
-                <div class="gg-t-white activation-form gg-u-digital-noise-side">
+                <div
+                  class="gg-t-white activation-form gg-u-digital-noise-parallel"
+                >
+                  <section class="hidden woohoo-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M22.4 5.7l-.1-.3-2.4-2.1h-1c-.2 0-1.1 1.2-1.3 1.4l-1.5 1.6-2 2L8 14l-.1.2-2.8-3h-.8l-2.7 2.6v.8l.6.7.6.6 2 2v.3l2.8 2.6h.7l1-1.1a48.5 48.5 0 004.6-4.5c1.3-1.3 1.6-1.4 2.8-2.8s2.6-2.6 3.8-3.8c.3-.4 1.8-1.7 1.8-2.2z"
+                      />
+                    </svg>
+                    <p class="gg-u-text-shout">Nice one</p>
+                  </section>
                   <div
                     class="repeat-code-container gg-t-wild-sand gg-u-texture-softer"
                   >
@@ -299,7 +322,10 @@
                           <p id="email-confirm" class="gg-u-text-loud"></p>
                         </section>
 
-                        <fieldset class="gg-c-chunky-buttons" id="communications-container">
+                        <fieldset
+                          class="gg-c-chunky-buttons"
+                          id="communications-container"
+                        >
                           <legend class="gg-c-chunky-buttons__legend">
                             Happy to hear from us? We'll help you save money
                             with phone deals sent only to members and goodybag
@@ -678,6 +704,532 @@
                   </section>
                 </div>
               </div>
+              <div id="step3" class="activation-form--container hidden">
+                <div
+                  class="gg-t-white activation-form gg-u-digital-noise-parallel"
+                >
+                  <div
+                    class="repeat-code-container gg-t-wild-sand gg-u-texture-softer"
+                  >
+                    <div>
+                      <p class="gg-u-text-speak-up">
+                        SIM activation code:
+                        <span
+                          class="gg-u-text-speak"
+                          id="activationCodeInput3"
+                        ></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M22.41 5.66l-.14-.29-2.4-2.11h-.95c-.27 0-1.12 1.25-1.32 1.46-.51.51-1 1-1.51 1.54-1 1-1 1-2 2.07-1.93 1.94-4 3.76-6 5.69l-.09.17-2.81-2.9h-.77l-2.67 2.47v.84l.57.72.57.57 2 2.1v.16l2.82 2.68h.69l1.06-1.13A48.51 48.51 0 0014 15.2c1.27-1.32 1.64-1.44 2.84-2.81s2.6-2.57 3.79-3.82c.3-.33 1.76-1.7 1.76-2.15z"
+                          />
+                        </svg>
+                      </p>
+                    </div>
+                  </div>
+                  <form id="goodybags" class="gg-c-form">
+                    <section>
+                      <h3 class="gg-u-text-louder">Choose your monthly plan</h3>
+                      <p class="gg-u-speak">
+                        Packed to the brim with data, minutes and texts, choose
+                        a plan that suits you.
+                      </p>
+                      <fieldset id="goodybag-buttons" class="gg-c-chunky-buttons">
+                        <legend class="gg-c-chunky-buttons__legend">
+                          Pick whichever plan you'd like:
+                        </legend>
+                        <ol class="gg-c-chunky-buttons__list">
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-6"
+                              class="gg-c-chunky-buttons__radio"
+                              value="6"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-6"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-6.svg"
+                                alt="£6 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    500 MB
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-8"
+                              class="gg-c-chunky-buttons__radio"
+                              value="8"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-8"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-8.svg"
+                                alt="£8 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    2 GB
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-10"
+                              class="gg-c-chunky-buttons__radio"
+                              value="10"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-10"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-10-reservetank.svg"
+                                alt="£10 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    6 GB
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-12"
+                              class="gg-c-chunky-buttons__radio"
+                              value="12"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-12"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-12-reservetank.svg"
+                                alt="£12 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    10 GB
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-15"
+                              class="gg-c-chunky-buttons__radio"
+                              value="15"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-15"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-15-reservetank.svg"
+                                alt="£15 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    15 GB
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-20"
+                              class="gg-c-chunky-buttons__radio"
+                              value="20"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-20"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-20-reservetank.svg"
+                                alt="£20 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    <s class="gg-u-text-strikethrough">40 GB</s>
+                                    <span class="gg-u-text-speak-up"
+                                      >80 GB</span
+                                    >
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-25"
+                              class="gg-c-chunky-buttons__radio"
+                              value="25"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-25"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag-25.svg"
+                                alt="£25 goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/data-world-map.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Data:
+                                  <span class="goodybag--allowance_value">
+                                    Always On*
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/phone-call.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Mins:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                                <span class="goodybag--allowance">
+                                  <img
+                                    src="/img/svg/icons/speech-bubble-text.svg"
+                                    alt=""
+                                    class="goodybag--inline_icon"
+                                  />
+                                  Texts:
+                                  <span class="goodybag--allowance_value">
+                                    Unlimited
+                                  </span>
+                                </span>
+                              </span>
+                            </label>
+                          </li>
+                          <li
+                            class="gg-c-chunky-buttons__option gg-c-chunky-buttons__option--icon"
+                          >
+                            <dialog
+                              class="gg-c-modal"
+                              id="goodybag-helper-modal"
+                            >
+                              <div class="gg-c-modal__header">
+                                <h2 class="gg-c-modal__main-title">
+                                  How much data do I need?
+                                </h2>
+                                <button class="gg-c-modal__close-button">
+                                  <svg
+                                    class="gg-c-modal__close-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 13.22 13.15"
+                                  >
+                                    <path
+                                      d="M7.64,6.6l1.1-1.1a41.63,41.63,0,0,0,4.2-4.2c.3-.4.4-.4.1-.9a.71.71,0,0,0-1-.3c-.1,0-.1.1-.2.1l-.2.3c-1.8,1.8-3.3,3.3-5,5.1l-1-1c-1.2-1.1-2.3-2.4-3.5-3.4C1.84.9,1.24-.1.64.3a.8.8,0,0,0-.3,1.1l.1.1Q3,4.2,5.54,6.6L4.14,8a35.9,35.9,0,0,0-3.9,3.9c-.7.8.3,1.7,1,1A47.8,47.8,0,0,0,5.14,9a18.48,18.48,0,0,1,1.4-1.4c.6.6,1.2,1.1,1.7,1.7.9,1,2.6,2.8,3.4,3.5s1.9-.3,1-1.1C11.24,10.4,9.34,8.4,7.64,6.6Z"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="gg-c-modal__content">
+                                <p>
+                                  This would embed the page found at the URL
+                                  below (which seems to be broken at the
+                                  moment).
+                                </p>
+                                <p>
+                                  <a
+                                    href="https://www.giffgaff.com/how-much-data-do-i-need"
+                                    class="gg-u-link"
+                                    target="_blank"
+                                  >
+                                    https://www.giffgaff.com/how-much-data-do-i-need
+                                  </a>
+                                </p>
+                              </div>
+                            </dialog>
+                            <input
+                              name="reason"
+                              type="radio"
+                              id="goodybag-helper"
+                              class="gg-c-chunky-buttons__radio"
+                              value="helper"
+                            />
+                            <label
+                              class="gg-c-chunky-buttons__button"
+                              for="goodybag-helper"
+                            >
+                              <img
+                                src="/img/svg/goodybags/goodybag.svg"
+                                alt="blank goodybag"
+                                class="gg-c-chunky-buttons__icon"
+                              />
+                              <span class="gg-c-chunky-buttons__text">
+                                Not sure? We'll help you choose.
+                              </span>
+                            </label>
+                          </li>
+                        </ol>
+                      </fieldset>
+                      <p class="gg-u-text-whisper goodybag--disclaimer">
+                        *Speed restrictions apply to our Always On data. After
+                        80 GB of data used you'll experience a reduced data
+                        speed of 384kbps from 8am to Midnight. You may notice
+                        that activities which require high amounts of data, like
+                        HD video streaming, will be slower.
+                        <a
+                          href="https://www.giffgaff.com/help/articles/traffic-flow-policy"
+                          target="_blank"
+                          class="gg-u-link"
+                          >Traffic Flow</a
+                        >
+                        and
+                        <a
+                          href="https://giffgaff.com/fair-usage-while-roaming"
+                          target="_blank"
+                          class="gg-u-link"
+                          >Fair Usage while roaming</a
+                        >
+                        applies. A 4G ready phone and coverage required to
+                        access 4G data speed.
+                      </p>
+                      <p class="gg-u-text-whisper">
+                        Once you’ve bought your 3rd goodybag, we’ll boost your
+                        data by 1 GB whenever you buy a £10, £12, £15 or £20
+                        goodybag.
+                      </p>
+                    </section>
+                  </form>
+                </div>
+              </div>
             </section>
           </div>
           <section class="gg-o-page-section">
@@ -691,7 +1243,7 @@
                   </summary>
                   <div class="gg-c-faqs__a">
                     <p>
-                      You'll need either a credit/debit card or a top-up
+                      You'll need a credit/debit card or a top-up
                       voucher.
                     </p>
                     <p>
@@ -723,13 +1275,12 @@
                 <details class="gg-c-faqs__faq">
                   <summary class="gg-c-faqs__q">
                     <span class="gg-c-faqs__icon"></span>
-                    Can I keep my old phone number?
+                    Can I bring my number?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Sure thing! We’d love to bring your old number to giffgaff.
-                    After you’ve activated your SIM, we’ll give you a link to
-                    transfer your old number. You’ll just need your PAC code
-                    from your previous network.
+                    Switching networks is easier than ever. Just text PAC to
+                    65075 and have your PAC code ready to use after you’ve
+                    activated your giffgaff SIM.
                   </div>
                 </details>
               </li>
@@ -749,6 +1300,83 @@
                     >. That's where you keep your current giffgaff number,
                     account, credit and goodybag but replace your SIM with a new
                     one.
+                  </div>
+                </details>
+              </li>
+              <li class="gg-c-faqs__item">
+                <details class="gg-c-faqs__faq">
+                  <summary class="gg-c-faqs__q">
+                    <span class="gg-c-faqs__icon"></span>
+                    What's a goodybag?
+                  </summary>
+                  <div class="gg-c-faqs__a">
+                    Simply, a goodybag is your monthly allowance of data,
+                    minutes and texts. Each month you choose which one is best
+                    for you, or you can have the same one recurring every month.
+                  </div>
+                </details>
+              </li>
+              <li class="gg-c-faqs__item">
+                <details class="gg-c-faqs__faq">
+                  <summary class="gg-c-faqs__q">
+                    <span class="gg-c-faqs__icon"></span>
+                    Extra GB on us
+                  </summary>
+                  <div class="gg-c-faqs__a">
+                    It’s never fun running out of data, especially when you
+                    really need some, which is why we’re giving members a little
+                    extra. really need some, which is why we’re giving members a
+                    little extra.<br />
+                    <br />
+                    Once you’ve bought your third goodybag, we’ll boost your
+                    data by 1 GB whenever you purchase a £10, £12, £15 or £20
+                    goodybag. goodybag.
+                  </div>
+                </details>
+              </li>
+              <li class="gg-c-faqs__item">
+                <details class="gg-c-faqs__faq">
+                  <summary class="gg-c-faqs__q">
+                    <span class="gg-c-faqs__icon"></span>
+                    Is roaming included?
+                  </summary>
+                  <div class="gg-c-faqs__a">
+                    Our plans can be used in the EU and selected destinations
+                    just like you use them at home and at no extra cost.
+                    <br />
+                    Enjoy our low rates when calling outside the EU and selected
+                    destinations. Happy travels.
+                  </div>
+                </details>
+              </li>
+              <li class="gg-c-faqs__item">
+                <details class="gg-c-faqs__faq">
+                  <summary class="gg-c-faqs__q">
+                    <span class="gg-c-faqs__icon"></span>
+                    What if I need help?
+                  </summary>
+                  <div class="gg-c-faqs__a">
+                    You'll always have one of our members to support you through
+                    any issues 24 hours a day, 7 days a week. After all, we’re
+                    the mobile network run by you.
+                    <br />
+                    Pst. We might have a treat for you if you’re able to help
+                    out later on too.
+                  </div>
+                </details>
+              </li>
+
+              <li class="gg-c-faqs__item">
+                <details class="gg-c-faqs__faq">
+                  <summary class="gg-c-faqs__q">
+                    <span class="gg-c-faqs__icon"></span>
+                    Can I get extra rewards?
+                  </summary>
+                  <div class="gg-c-faqs__a">
+                    Earn Payback points by helping someone figure things out on
+                    the community or by bringing new members on-board, and many
+                    other things. It's our way of saying thank you for being one
+                    of our awesome members.
                   </div>
                 </details>
               </li>

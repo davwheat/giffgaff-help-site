@@ -14,6 +14,12 @@
 
 //#endregion
 
+.gg-c-masthead__text {
+  @media (min-width: 992px) {
+    padding: 0 !important;
+  }
+}
+
 html {
   min-height: 100vh;
   margin: 0;
@@ -135,8 +141,47 @@ footer {
   justify-content: center;
 
   .activation-form {
+    position: relative;
+
     padding: 24px;
     max-width: 512px;
+
+    .woohoo-message {
+      z-index: 10000;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(245, 245, 245, 0.85);
+      padding: 16px 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 150ms ease-out;
+
+      &.hidden {
+        display: block !important;
+        visibility: hidden;
+        opacity: 0 !important;
+      }
+
+      img,
+      svg {
+        fill: var(--dark-green);
+        flex: 1;
+        max-height: 225px;
+      }
+
+      max-height: 100%;
+      color: var(--dark-green);
+      text-align: center;
+    }
 
     > .repeat-code-container {
       display: flex;
@@ -177,7 +222,7 @@ footer {
 
     .gg-c-input-with-button {
       flex-wrap: wrap;
-      
+
       &__btn {
         svg {
           fill: #fff;
@@ -205,4 +250,62 @@ footer {
   #email-confirm {
     word-break: break-all;
   }
+}
+
+label[for="currentPwd"] {
+  // even up login form due to extra padding from register email error message
+  margin-top: var(--fine);
+}
+
+#goodybags {
+  padding: 24px;
+
+  #goodybag-buttons {
+    --column-count: 2;
+
+    @media (min-width: 720px) {
+      --column-count: 3;
+    }
+
+    ol li {
+      input {
+        + label {
+          .gg-c-chunky-buttons__icon {
+            height: 96px;
+            width: 96px;
+            margin-bottom: 12px;
+
+            @media (min-width: 720px) {
+              height: 112px;
+              width: 112px;
+            }
+
+            @media (min-width: 992px) {
+              height: 144px;
+              width: 144px;
+            }
+          }
+
+          .goodybag--allowance {
+            display: block;
+
+            .goodybag--inline_icon {
+              height: 1.25em;
+              vertical-align: middle;
+              display: inline-block;
+              margin-bottom: 3px;
+            }
+
+            .goodybag--allowance_value {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.goodybag--disclaimer {
+  margin-top: 1rem;
 }
