@@ -61,9 +61,9 @@ When you get a response, you will receive a text and email alert telling you. Yo
   },
   {
     button: `MMS Issues`,
-text:`The MMS issue has been recognised by giffgaff and you can read more about it on the [Service Updates page](https://community.giffgaff.com/d/33109663-issues-using-mms-23-april-2020/). They don't quite know what's causing it but they suggest you contact an agent so they can learn more specifics about these cases.
+text:`An issue with using the MMS (picture message) service was recognised by giffgaff and you can read more about it on the [Service Updates page](https://community.giffgaff.com/d/33109663-resolved-issues-using-mms-23-april-2020). Most of these cases are due to an incorrect "MMSC address" in your phone's settings.
 
-First just double check that all your APN settings are correct. The settings shown on the giffgaff help guides aren't complete. Press the button below to get the full list of settings
+Make sure that all your APN settings (especially the MMSC address) are correct. The settings shown on the giffgaff help guides aren't complete. Press the button below to get the full list of settings
 
 [spoiler]
 
@@ -95,6 +95,10 @@ If you use an Android device, head to Settings, Mobile Networks/Wireless & Netwo
 | MVNO type |  \`SPN\` |
 | MVNO value |  \`giffgaff\` |
 [/spoiler]
+
+
+
+If you're still having issues, it's advised that you contact an agent who can investigate this problem more closely.
 
 You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/Calls-texts-and-data/MMS-%28picture-messaging%29-not-working/form/
 
