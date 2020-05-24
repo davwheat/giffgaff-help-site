@@ -122,10 +122,14 @@ Afterwards, you'll want to report your SIM and Phone as lost or stolen. This pre
 **To bar your phone and SIM, please follow these instructions:**
 
 1. Please go to this URL: https://www.giffgaff.com/support/lost
-2. Select 'Bar my phone & SIM'.
-3. Choose 'Bar my phone & SIM' again.
+2. Select 'Bar my phone & SIM'
+3. Choose 'Bar my phone & SIM' again
 
 giffgaff will send you a new SIM via 1st Class Post to use in a phone of your choice. It should arrive within 1-3 working days.
+
+**The new SIM will arrive in packaging shown below.**
+
+[upl-image-preview url=https://community.giffgaff.com/assets/files/2020-05-24/1590362196-917539-image.png]
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
@@ -294,7 +298,7 @@ You can disable the block from your account settings here: https://www.giffgaff.
 
 If you don't want to leave, you can buy the £20 goodybag instead.
 
-If you do want to leave, you can get your PAC code, text "PAC" to 65075. You'll get your PAC within a minute or two. (You can learn more about Text-to-Switch here: https://mrjeeves.page.link/ofcom-text-to-switch)
+If you do want to leave, you can get your PAC code, text \`PAC\` to \`65075\`. You'll get your PAC within a minute or two. (You can learn more about Text-to-Switch here: https://mrjeeves.page.link/ofcom-text-to-switch)
 
 You can also dial 43431 (pen and paper in hand!) and follow the prompts to get your PAC code.
 
@@ -307,7 +311,7 @@ Your PAC code will be valid for 30 days. giffgaff doesn't have any early termina
 Please note that you will lose any active goodybag, remaining airtime credit and any payback points you've got.`,
   },
   {
-    title: "Credit not Goodybag",
+    title: "Credit not goodybag",
     addFooter: true,
     content: `Credit is different from goodybags.
 
