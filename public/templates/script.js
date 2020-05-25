@@ -3,6 +3,8 @@ const footer = `If you still need help, let us know by clicking the **Reply** bu
 Stay safe,
 David`;
 
+const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to mrjeeves, with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`
+
 let templates = [
   {
     title: "Footer",
@@ -129,7 +131,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-[upl-image-preview url=https://community.giffgaff.com/assets/files/2020-05-24/1590362196-917539-image.png]
+![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-24/1590362196-917539-image.png)
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
@@ -376,7 +378,7 @@ If you want to start your goodybag early, click on the 'Start my next goodybag n
 
 By starting your goodybag early, you will lose all remaining allowances.
 
-[upl-image-preview url=https://community.giffgaff.com/assets/files/2020-04-22/1587569680-107338-chrome-obklihf1v3.png]`,
+![${imageLicense}](https://community.giffgaff.com/assets/files/2020-04-22/1587569680-107338-chrome-obklihf1v3.png)`,
   },
   {
     title: "lol u bad no helpline",
