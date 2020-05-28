@@ -3,7 +3,7 @@ const footer = `If you still need help, let us know by clicking the **Reply** bu
 Stay safe,
 David`;
 
-const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to mrjeeves, with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`
+const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to mrjeeves, with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
 
 let templates = [
   {
@@ -615,5 +615,33 @@ RateSetter contact page: https://www.ratesetter.com/help`,
 **Please wait 24 hours - no less.**
 
 If none of this works, you may need to [contact Apple Support](https://getsupport.apple.com/?locale=en_GB&SG=SG003) as they'll be able to escalate your case.`,
+  },
+  {
+    title: "cheap-roam",
+    content: `
+
+|Service|Cost|
+|:---|:---:|
+|Data|20p/MB|
+|Calls & voicemail ^(\(charged per sec after 30s\))|£1/min|
+|Receiving calls ^(\(charged per min\))|£1/min|
+|Sending texts|30p each|
+|Receiving texts|Free!|
+|MMS to UK/EU mobiles|30p each|
+|MMS to all other mobiles|24p each|`,
+  },
+  {
+    title: "high-roam",
+    content: `
+
+|Service|Cost|
+|:---|:---:|
+|Data|[color=red]£5/MB[/color]|
+|Calls & voicemail ^(\(charged per sec after 30s\))|£1/min|
+|Receiving calls ^(\(charged per min\))|£1/min|
+|Sending texts|30p each|
+|Receiving texts|Free!|
+|MMS to UK/EU mobiles|30p each|
+|MMS to all other mobiles|24p each|`,
   },
 ];
