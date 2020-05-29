@@ -131,11 +131,30 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-24/1590362196-917539-image.png)
+![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-29/1590763684-73932-image.png)
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
 After barring your phone, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
+  },
+  {
+    title: "Lost SIM",
+    addFooter: true,
+    content: `I recommend reporting your SIM as lost instead of performing a SIM swap.
+
+**To bar your phone and SIM, please follow these instructions:**
+
+1. Please go to this URL: https://www.giffgaff.com/support/lost
+2. Select 'Bar my SIM'
+3. Choose 'Bar my SIM' again
+
+giffgaff will send you a new SIM via 1st Class Post to use in a phone of your choice. It should arrive within 1-3 working days.
+
+**The new SIM will arrive in packaging shown below.**
+
+![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-29/1590763684-73932-image.png)
+
+After barring your SIM, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
   },
   {
     title: "SIM Swap",

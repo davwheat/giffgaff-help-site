@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>realme X2 Pro | Custom ROM & Unlocking</title>
+    <meta name="title" content="realme X2 Pro | Custom ROM & Unlocking" />
+    <meta
+      name="description"
+      content="An easy to follow guide for unlocking and flashing a custom ROM onto your realme X2 Pro."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="realme X2 Pro | Custom ROM & Unlocking"
+    />
+    <meta
+      property="og:description"
+      content="An easy to follow guide for unlocking and flashing a custom ROM onto your realme X2 Pro."
+    />
+    <meta property="og:image" content="/realme/img/x2-pro-sharing-img.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="realme X2 Pro | Custom ROM & Unlocking"
+    />
+    <meta
+      property="twitter:description"
+      content="An easy to follow guide for unlocking and flashing a custom ROM onto your realme X2 Pro."
+    />
+    <meta
+      property="twitter:image"
+      content="/realme/img/x2-pro-sharing-img.png"
+    />
+
+    <link
+      rel="preload"
+      href="/examples/sim-swap/css/fonts/giffgaff-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/examples/sim-swap/css/fonts/giffgaff-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/examples/sim-swap/css/fonts/giffgaff-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <script src="/js/custom-components.min.js" async></script>
+    <script src="/js/modernizr-custom.js" async defer></script>
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="stylesheet" href="/realme/styles.min.css" />
+
+    <script src="/realme/js/modals.js" async defer></script>
+    <script src="/realme/js/script.js" async defer></script>
+    <script src="/realme/js/prism.js" async defer></script>
+  </head>
+  <body class="qa-page">
+    <gg-header></gg-header>
+    <main id="main-content">
+      <div class="gg-u-digital-noise-chunky">
+        <header class="gg-c-masthead gg-c-masthead--digital-noise">
+          <div class="gg-c-masthead__content">
+            <div class="gg-c-masthead__text">
+              <h1 class="gg-u-text-megaphone">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >realme</mark
+                >
+                X2 Pro
+              </h1>
+              <p class="gg-c-masthead__page-subtitle">
+                Unlocking and custom ROM installation
+              </p>
+            </div>
+            <picture class="gg-c-masthead__picture" style="align-self: center;">
+              <source
+                media="(min-width: 992px)"
+                srcset="/realme/img/x2-pro.png"
+              />
+              <img src="/realme/img/x2-pro_mobile.png" />
+            </picture>
+          </div>
+        </header>
+        <div class="gg-t-light-blue">
+          <section class="gg-o-page-section homepage-hero-section">
+            <h2
+              class="homepage-hero-section__title gg-u-text-shout gg-u-doodle-squiggle gg-u-doodle-squiggle--white"
+            >
+              What's wrong with realme UI?
+            </h2>
+            <span
+              class="homepage-hero-section__image-link realme--hero-image_container"
+              aria-hidden="true"
+            >
+              <img
+                alt=""
+                class="homepage-hero-section__image realme--hero-image"
+                src="/realme/img/realme-ui.jpg"
+              />
+            </span>
+            <div class="gg-s-rich-text homepage-hero-section__text">
+              <p>
+                <strong>Everything.</strong> From battery bugs to memory leaks
+                to stuttering in games, realme's software is insanely
+                unoptimised. Furthermore, their privacy policy states that they
+                can record everything you do on your device and send it to
+                Chinese servers, and that you are not allowed to view or store
+                pornography on your device.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="gg-t-light-pink">
+          <section
+            class="gg-o-page-section homepage-hero-section homepage-hero-section--reverse"
+          >
+            <h2
+              class="homepage-hero-section__title gg-u-text-shout gg-u-doodle-squiggle gg-u-doodle-squiggle--white"
+            >
+              How can we fix it?
+            </h2>
+            <span
+              class="homepage-hero-section__image-link realme--hero-image_container"
+              aria-hidden="true"
+            >
+              <img
+                alt=""
+                class="homepage-hero-section__image realme--hero-image"
+                src="/examples/sim-swap/img/megaphone.png"
+              />
+            </span>
+            <div class="gg-s-rich-text homepage-hero-section__text">
+              <p>
+                The easiest way to fix this for your device is taking back
+                control and installing a custom ROM. Some manufacturers, like
+                realme, make this a pain to do, so you'll need some patience and
+                the ability to read instructions.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="gg-t-white">
+          <section id="version" class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Select</mark
+                >
+                your Android version
+              </h1>
+              <div class="gg-o-page-section">
+                <p>
+                  Some instructions vary based on the version of Android that
+                  you are running on your device. Selecting the version your
+                  device is running allows us to hide steps which don't apply to
+                  your version and add steps that do, so it is critical that you
+                  choose the right option.
+                </p>
+              </div>
+
+              <fieldset class="gg-c-chunky-buttons">
+                <ol class="gg-c-chunky-buttons__list">
+                  <li class="gg-c-chunky-buttons__option">
+                    <input
+                      name="test-apk"
+                      type="radio"
+                      id="version--color-os"
+                      class="gg-c-chunky-buttons__radio"
+                    />
+                    <label
+                      class="gg-c-chunky-buttons__button"
+                      for="version--color-os"
+                    >
+                      <span class="gg-c-chunky-buttons__text">
+                        Android 9 (ColorOS)
+                      </span>
+                    </label>
+                  </li>
+                  <li class="gg-c-chunky-buttons__option">
+                    <input
+                      name="test-apk"
+                      type="radio"
+                      id="version--realme-ui"
+                      class="gg-c-chunky-buttons__radio"
+                    />
+                    <label
+                      class="gg-c-chunky-buttons__button"
+                      for="version--realme-ui"
+                    >
+                      <span class="gg-c-chunky-buttons__text">
+                        Android 10 (realme UI 1.0)
+                      </span>
+                    </label>
+                  </li>
+                </ol>
+              </fieldset>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-wild-sand">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Unlocking</mark
+                >
+                the bootloader
+              </h1>
+              <section class="gg-o-page-section">
+                <div class="version-warning">
+                  <p class="gg-u-screen-reader-only">
+                    Error.
+                  </p>
+                  <img
+                    src="/realme/img/icons/exclamation-circle.svg"
+                    class="version-warning__icon"
+                  />
+                  <div class="version-warning__message">
+                    <p class="version-warning__title">No version selected</p>
+                    <p>
+                      You haven't selected which version of Android your device
+                      uses. These steps may be inaccurate or even brick your
+                      device.
+                    </p>
+                    <a href="#version" class="gg-u-link">Select your version</a>
+                  </div>
+                </div>
+                <div class="version-info">
+                  <img
+                    src="/realme/img/icons/info-circle.svg"
+                    class="version-info__icon"
+                  />
+                  <div class="version-info__message">
+                    <p class="version-info__title">You're running</p>
+                    <p>
+                      Not right?
+                      <a href="#version" class="gg-u-link"
+                        >Change your selected version</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <ol class="gg-c-list-ordered">
+                  <li data-version="9">
+                    <a
+                      target="_blank"
+                      href="/realme/files/x2-pro/unlock-color-os.apk"
+                      class="gg-u-link"
+                    >
+                      Download</a
+                    >
+                    the in-depth testing APK for ColorOS 6
+                  </li>
+                  <li data-version="10">
+                    <a
+                      target="_blank"
+                      href="/realme/files/x2-pro/unlock-realme-ui-1.0.apk"
+                      class="gg-u-link"
+                    >
+                      Download</a
+                    >
+                    the in-depth testing APK for realme UI 1.0
+                  </li>
+                  <li>Install and run the APK you downloaded</li>
+                  <li>
+                    In the app, tap <b>Start applying</b> and follow the on
+                    screen instructions
+                  </li>
+                  <li>
+                    When you reach the <b>Application submitted</b> screen,
+                    press back
+                  </li>
+                  <li>
+                    Keep checking the status of your application.
+                    <ul class="gg-c-list">
+                      <li>
+                        It can take up to 15 minutes for your application to be
+                        accepted
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    When you see <b>Review successful</b>, tap
+                    <b>Start the in-depth test</b>
+                    <ul class="gg-c-list">
+                      <li>
+                        <strong
+                          >All data on your device will be deleted.</strong
+                        >
+                        Make sure you've backed up your data. Google Photos is a
+                        great way to back up your photos and videos free of
+                        charge.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button data-modal="platform-tools-modal" class="gg-u-link">
+                      Download
+                    </button>
+                    the ADB and Fastboot zip to your device and extract their
+                    contents to a folder
+                  </li>
+                  <li>
+                    Connect your device to your computer via a USB cable
+                  </li>
+                  <li>
+                    Open a command prompt or terminal and change directory to
+                    the extracted folder
+                    <ul class="gg-c-list">
+                      <li>
+                        On Windows, for example, if you extracted them to your
+                        downloads folder you could type
+                        <code class="language-bash"
+                          >cd "%userprofile%\Downloads\extracted folder"</code
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="unknown-step">
+                    Run these commands:
+                    <pre class="language-bash"><code>adb reboot bootloader
+fastboot flashing unlock</code></pre>
+                    <div
+                      class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/flag.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          The step above might not be needed. Let me know on
+                          Discord: MrJeeves#6969
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-version="10">
+                    Press Volume Up to highlight the
+                    <b>UNLOCK THE BOOTLOADER</b>
+                    option, then press Power to select it
+                  </li>
+                  <li data-version="9">
+                    Press Volume Up to choose the
+                    <b>UNLOCK THE BOOTLOADER</b>
+                    option
+                  </li>
+                  <li data-version="9">
+                    In your command prompt/terminal, enter the command
+                    <code class="language-bash">fastboot reboot</code>
+                  </li>
+                  <li>
+                    The phone will reboot, perform a factory reset, then show
+                    the setup screen
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Flashing</mark
+                >
+                OrangeFox recovery
+              </h1>
+              <section class="gg-o-page-section">
+                <div class="version-info">
+                  <img
+                    src="/realme/img/icons/info-circle.svg"
+                    class="version-info__icon"
+                  />
+                  <div class="version-info__message">
+                    <p class="version-info__title">You're running</p>
+                    <p>
+                      Not right?
+                      <a href="#version" class="gg-u-link"
+                        >Change your selected version</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <ol class="gg-c-list-ordered">
+                  <li>
+                    Unplug your phone, then turn it off fully
+                  </li>
+                  <li>
+                    Hold Volume Down and the Power button to boot the phone into
+                    Fastboot mode
+                  </li>
+                  <li>Plug the phone back into your computer</li>
+                  <li>
+                    <a
+                      class="gg-u-link"
+                      href="/realme/files/x2-pro/OrangeFox-R10.1_1.img"
+                      target="_blank"
+                    >
+                      Download OrangeFox Recovery
+                    </a>
+                    <ul class="gg-c-list">
+                      <li>
+                        OrangeFox is a skinned version of TWRP recovery with
+                        added features and a simpler UI. If you have issues,
+                        you're more likely to find a solution by using TWRP in
+                        your Google search than OrangeFox. Note that options are
+                        in different locations in OrangeFox and TWRP so
+                        solutions might not work without some looking around.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="gg-u-link"
+                      href="/realme/files/x2-pro/vbmeta.img"
+                      target="_blank"
+                    >
+                      Download vbmeta.img
+                    </a>
+                  </li>
+                  <li>
+                    Move both of these files to the same directory as ADB and
+                    Fastboot
+                  </li>
+                  <li>
+                    In your command prompt, run these commands to install
+                    OrangeFox and flash your vbmeta. It should say
+                    <b>successful</b> after each command.
+                    <pre
+                      class="language-bash"
+                    ><code>fastboot flash recovery OrangeFox-R10.1_1.img
+fastboot flash vbmeta vbmeta.img</code></pre>
+                  </li>
+                  <li>
+                    On your phone, press Volume Down until you see
+                    <b>RECOVERY MODE</b> at the top, then press Power
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-wild-sand">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Flashing</mark
+                >
+                the Custom ROM
+              </h1>
+              <section class="gg-o-page-section">
+                <div class="version-warning">
+                  <p class="gg-u-screen-reader-only">
+                    Error.
+                  </p>
+                  <img
+                    src="/realme/img/icons/exclamation-circle.svg"
+                    class="version-warning__icon"
+                  />
+                  <div class="version-warning__message">
+                    <p class="version-warning__title">No version selected</p>
+                    <p>
+                      You haven't selected which version of Android your device
+                      uses. These steps may be inaccurate or even brick your
+                      device.
+                    </p>
+                    <a href="#version" class="gg-u-link">Select your version</a>
+                  </div>
+                </div>
+                <div class="version-info">
+                  <img
+                    src="/realme/img/icons/info-circle.svg"
+                    class="version-info__icon"
+                  />
+                  <div class="version-info__message">
+                    <p class="version-info__title">You're running</p>
+                    <p>
+                      Not right?
+                      <a href="#version" class="gg-u-link"
+                        >Change your selected version</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <h2 data-version="10" class="gg-u-text-loud">
+                  Downgrade to ColorOS firmware
+                </h2>
+                <p data-version="10">
+                  Due to how most Custom ROMs are made for the X2 Pro, you need
+                  to downgrade to the ColorOS firmware and vendor files before
+                  being able to run them.
+                </p>
+                <div data-version="10" class="warning-message">
+                  <p class="gg-u-screen-reader-only">
+                    Warning.
+                  </p>
+                  <img
+                    src="/realme/img/icons/exclamation-triangle.svg"
+                    class="warning-message__icon"
+                  />
+                  <p class="warning-message__message">
+                    After doing this, you will not be able to boot into realme
+                    UI because you'll have some files from Android 9 and some
+                    from Android 10. This is normal.
+                  </p>
+                </div>
+                <ol data-version="10" class="gg-c-list-ordered">
+                  <li>
+                    Download the Pie firmware and vendor zip for your device
+                    <ul class="gg-c-list">
+                      <li>
+                        <a
+                          href="https://androidfilehost.com/?fid=4349826312261754839"
+                          target="_blank"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          Global devices
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://androidfilehost.com/?fid=4349826312261754856"
+                          target="_blank"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          Chinese devices
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Move this zip file to the same folder as your ADB and
+                    Fastboot
+                  </li>
+                  <li>
+                    Push this zip file to your phone:
+                    <pre
+                      class="language-bash"
+                    ><code>adb push -p "&lt;FILE NAME&gt;" "/sdcard"</code></pre>
+                    <ul class="gg-c-list">
+                      <li>
+                        Replace
+                        <code class="language-bash">&lt;FILE NAME&gt;</code>
+                        with the name of the zip file that you downloaded
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    On your phone, after the push is complete, tap
+                    <b>Files</b> (even if already selected), then scroll and tap
+                    the zip you just pushed. Swipe the bar to flash it.
+                  </li>
+                </ol>
+                <h2 data-version="10" class="gg-u-text-loud">
+                  Flashing AOSiP
+                </h2>
+                <p>
+                  This guide is specific to the AOSiP Custom ROM. If you know
+                  what you're doing, you can adapt this to almost any other
+                  Custom ROM you want. At the moment, AOSiP seems to be the most
+                  stable and have the most features.
+                </p>
+
+                <!-- Normal instructions -->
+                <ol class="gg-c-list-ordered">
+                  <li>
+                    <a
+                      href="https://forum.xda-developers.com/realme-x2-pro/development/rom-aosip-t4083341"
+                      target="_blank"
+                      class="gg-u-link gg-u-link--arrow"
+                    >
+                      Download the latest build of AOSiP
+                    </a>
+                    <ul class="gg-c-list">
+                      <li>
+                        This can be found at the link above, under the
+                        <b>Downloads</b> header. Top one is most recent.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    If you use VoLTE, also
+                    <a
+                      href="https://androidfilehost.com/?fid=4349826312261750809"
+                      target="_blank"
+                      class="gg-u-link gg-u-link--arrow"
+                      >download the VoLTE fix</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://sourceforge.net/projects/opengapps/files/arm64/20200415/open_gapps-arm64-10.0-nano-20200415.zip/download"
+                      target="_blank"
+                      class="gg-u-link gg-u-link--arrow"
+                    >
+                      Download OpenGApps (Google apps)
+                    </a>
+                  </li>
+                  <li>
+                    Move both of these files to the same folder as ADB and
+                    Fastboot
+                  </li>
+                  <li>
+                    In your command prompt, enter this command:
+                    <code class="language-bash"
+                      >adb push -p "&lt;AOSiP FILE NAME&gt;" "/sdcard"</code
+                    >
+                    <ul class="gg-c-list">
+                      <li>
+                        Replace
+                        <code class="language-bash"
+                          >&lt;AOSiP FILE NAME&gt;</code
+                        >
+                        with the name of your AOSiP zip file that you downloaded
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Wait for this command to complete. This may take several
+                    minutes. The progress will be shown in your command prompt
+                    window.
+                  </li>
+                  <li>
+                    On your phone, tap <b>Files</b> (even if already selected)
+                    at the bottom of OrangeFox
+                  </li>
+                  <li>
+                    Scroll down and find your AOSiP zip file and tap it, then
+                    swipe the bar to flash the ROM
+                  </li>
+                  <li class="unknown-step">
+                    On your phone, tap <b>Menu</b> > <b>Manage Partitions</b> >
+                    <b>Data</b> > <b>Format Data</b> > Type <b>yes</b> > Press
+                    <img
+                      class="inline"
+                      alt=""
+                      src="/realme/img/icons/tick-black-large.svg"
+                    />
+                    (tick)
+                    <div
+                      class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/exclamation-circle.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          If you see a red error, you <b>must</b> go to Menu >
+                          Reboot > Recovery.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    Next, push the OpenGApps zip file to your device:
+                    <pre
+                      class="language-bash"
+                    ><code>adb push -p "&lt;OpenGApps ZIP NAME&gt;" "/sdcard"</code></pre>
+                    <ul class="gg-c-list">
+                      <li>
+                        Replace
+                        <code class="language-bash"
+                          >&lt;OpenGApps ZIP NAME&gt;</code
+                        >
+                        with the name of your OpenGApps zip file that you
+                        downloaded
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    On your phone, after the push is complete, tap
+                    <b>Files</b> (even if already selected), then scroll and
+                    find your OpenGApps zip. Tap it, and swipe the bar to flash
+                    it.
+                  </li>
+                  <li>
+                    After the flash is complete, tap <b>Menu</b>, then
+                    <b>Reboot</b>, then <b>System</b>
+                  </li>
+                  <li class="unknown-step">
+                    If you want Magisk for rooting,
+                    <a
+                      href="https://github.com/topjohnwu/Magisk/releases/download/v20.3/Magisk-v20.3.zip"
+                      class="gg-u-link"
+                      target="_blank"
+                      >download Magisk 20.3</a
+                    >, then push and flash it like the other files
+                    <div
+                      class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/info-circle.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          You don't need Magisk to pass SafetyNet on AOSiP, but
+                          you might on other ROMs. Note that Magisk is helpful
+                          for other things, like Substratum themes and Full
+                          Navigation Gestures.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Reverting</mark
+                >
+                to ColorOS or realme UI
+              </h1>
+              <section class="gg-o-page-section">
+                <div class="version-info">
+                  <img
+                    src="/realme/img/icons/info-circle.svg"
+                    class="version-info__icon"
+                  />
+                  <div class="version-info__message">
+                    <p class="version-info__title">You're running</p>
+                    <p>
+                      Not right?
+                      <a href="#version" class="gg-u-link"
+                        >Change your selected version</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <ol class="gg-c-list-ordered">
+                  <li>
+                    Unplug your phone, then turn it off fully
+                  </li>
+                  <li>
+                    Hold Volume Down and the Power button to boot the phone into
+                    Fastboot mode
+                  </li>
+                  <li>Plug the phone back into your computer</li>
+                  <li>
+                    On your phone, press Volume Down until you see
+                    <b>RECOVERY MODE</b> at the top, then press Power
+                  </li>
+                  <li class="unknown-step">
+                    Download the OZIP file for the Android variant you want to
+                    use. You can find all realme OZIPs on Realme Updater.
+                    <ul class="gg-c-list">
+                      <li>
+                        Axx is ColorOS 6. Cxx is realme UI 1.0.
+                      </li>
+                      <li>
+                        <a
+                          href="https://realmeupdater.com/downloads/archive/RMX1931EX/"
+                          target="_blank"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          Global devices
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://realmeupdater.com/downloads/archive/RMX1931/"
+                          target="_blank"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          Chinese devices
+                        </a>
+                      </li>
+                    </ul>
+                    <div
+                      class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/flag.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          You should be able to flash the Global OZIP on a
+                          Chinese device and vice versa using this method.
+                        </p>
+                        <p>
+                          If something goes wrong, just reflash OrangeFox and
+                          flash the OZIP designed for your device.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    In your command prompt, enter this command:
+                    <code class="language-bash"
+                      >adb push -p "&lt;AOSiP FILE NAME&gt;" "/sdcard"</code
+                    >
+                    <ul class="gg-c-list">
+                      <li>
+                        Replace
+                        <code class="language-bash"
+                          >&lt;OZIP FILE NAME&gt;</code
+                        >
+                        with the name of your OZIP file that you downloaded
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    In OrangeFox, after the push is complete, tap
+                    <b>Files</b> at the bottom (even if already selected)
+                  </li>
+                  <li>
+                    Scroll and tap on your OZIP file, then swipe the bar to
+                    flash it
+                  </li>
+
+                  <li>
+                    Tap <b>Menu</b> > <b>Manage Partitions</b> > <b>Data</b> >
+                    <b>Format Data</b> > Type <b>yes</b> > Press
+                    <img
+                      class="inline"
+                      alt=""
+                      src="/realme/img/icons/tick-black-large.svg"
+                    />
+                    (tick)
+                  </li>
+
+                  <li>Tap <b>Menu</b> > <b>Reboot</b> > <b>System</b></li>
+
+                  <li class="unknown-step">
+                    If you want to re-lock your bootloader, download the
+                    in-depth test APK (at the start of this guide), and press
+                    <b>Apply to exit in-depth test</b>. Follow the instructions
+                    in the app.
+
+                    <ul class="gg-c-list">
+                      <li>
+                        If you have an unlocked bootloader, you'll only have L3
+                        Widevine DRM (no HD Netflix), and you may not pass
+                        SafetyNet (no Netflix or Google Pay at all)
+                      </li>
+                    </ul>
+
+                    <div
+                      class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/exclamation-circle.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          This could brick your device if you still have traces
+                          of Magisk or OrangeFox on your device.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <gg-footer></gg-footer>
+
+    <dialog class="gg-c-modal" id="platform-tools-modal">
+      <div class="gg-c-modal__header">
+        <h2 class="gg-c-modal__main-title">ADB and Fastboot download</h2>
+        <button class="gg-c-modal__close-button">
+          <svg
+            class="gg-c-modal__close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 13.22 13.15"
+          >
+            <path
+              d="M7.64,6.6l1.1-1.1a41.63,41.63,0,0,0,4.2-4.2c.3-.4.4-.4.1-.9a.71.71,0,0,0-1-.3c-.1,0-.1.1-.2.1l-.2.3c-1.8,1.8-3.3,3.3-5,5.1l-1-1c-1.2-1.1-2.3-2.4-3.5-3.4C1.84.9,1.24-.1.64.3a.8.8,0,0,0-.3,1.1l.1.1Q3,4.2,5.54,6.6L4.14,8a35.9,35.9,0,0,0-3.9,3.9c-.7.8.3,1.7,1,1A47.8,47.8,0,0,0,5.14,9a18.48,18.48,0,0,1,1.4-1.4c.6.6,1.2,1.1,1.7,1.7.9,1,2.6,2.8,3.4,3.5s1.9-.3,1-1.1C11.24,10.4,9.34,8.4,7.64,6.6Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="gg-c-modal__content">
+        <p>
+          Download the correct platform tools for your operating system.
+        </p>
+        <br />
+        <fieldset class="gg-c-chunky-buttons gg-c-chunky-buttons--3-col">
+          <ol class="gg-c-chunky-buttons__list">
+            <li class="gg-c-chunky-buttons__option">
+              <input
+                name="test-apk"
+                type="radio"
+                id="windows-platform-tools"
+                class="gg-c-chunky-buttons__radio"
+              />
+              <label
+                class="gg-c-chunky-buttons__button"
+                for="windows-platform-tools"
+              >
+                <span class="gg-c-chunky-buttons__text">
+                  Windows
+                </span>
+              </label>
+            </li>
+            <li class="gg-c-chunky-buttons__option">
+              <input
+                name="test-apk"
+                type="radio"
+                id="mac-platform-tools"
+                class="gg-c-chunky-buttons__radio"
+              />
+              <label
+                class="gg-c-chunky-buttons__button"
+                for="mac-platform-tools"
+              >
+                <span class="gg-c-chunky-buttons__text">
+                  Mac
+                </span>
+              </label>
+            </li>
+            <li class="gg-c-chunky-buttons__option">
+              <input
+                name="test-apk"
+                type="radio"
+                id="linux-platform-tools"
+                class="gg-c-chunky-buttons__radio"
+              />
+              <label
+                class="gg-c-chunky-buttons__button"
+                for="linux-platform-tools"
+              >
+                <span class="gg-c-chunky-buttons__text">
+                  Linux
+                </span>
+              </label>
+            </li>
+          </ol>
+        </fieldset>
+      </div>
+    </dialog>
+  </body>
+</html>

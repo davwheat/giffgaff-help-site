@@ -1,0 +1,181 @@
+.realme--hero-image_container {
+  margin: auto;
+  display: block;
+
+  .realme--hero-image {
+    max-height: 420px;
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gg-o-page-section {
+  h1,
+  h2,
+  h3,
+  ol,
+  ul {
+    + p,
+    &:not(ol):not(ul) + ol,
+    &:not(ol):not(ul) + ul {
+      margin-top: var(--tiny);
+    }
+  }
+
+  ol,
+  ul {
+    + h1,
+    + h2,
+    + h3 {
+      margin-top: 32px;
+    }
+  }
+}
+
+ol.gg-c-list-ordered,
+ul.gg-c-list {
+  ol.gg-c-list-ordered,
+  ul.gg-c-list {
+    margin-top: var(--tiny);
+  }
+}
+
+code,
+pre {
+  font-family: "Consolas", monospace;
+}
+
+code {
+  display: inline-block;
+  padding: 2px 6px !important;
+}
+
+pre {
+  display: block;
+}
+
+.version {
+  &-warning {
+    background-color: rgba(214, 0, 0, 0.1);
+    border-top: solid var(--tiny) var(--red);
+  }
+
+  &-info {
+    background-color: rgba(0, 82, 138, 0.15);
+    border-top: solid var(--tiny) var(--dark-blue);
+  }
+
+  &-info,
+  &-warning {
+    padding: var(--small);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &__icon {
+      width: var(--large);
+      height: var(--large);
+      align-self: start;
+      flex-shrink: 0;
+    }
+
+    &__message {
+      padding-left: var(--small);
+    }
+
+    &__title {
+      font-size: var(--small);
+      font-weight: 700;
+      line-height: var(--medium);
+    }
+  }
+}
+
+.warning-message {
+  background-color: rgba(252, 195, 30, 0.15);
+  border-top: solid var(--tiny) var(--yellow);
+
+  padding: var(--small);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 32px;
+
+  &__icon {
+    width: var(--large);
+    height: var(--large);
+    align-self: start;
+    flex-shrink: 0;
+  }
+
+  &__message {
+    padding-left: var(--small);
+  }
+
+  &__title {
+    font-size: var(--small);
+    font-weight: 700;
+    line-height: var(--medium);
+  }
+}
+
+li > pre:last-child {
+  margin-bottom: var(--small) !important;
+}
+
+.unknown-step > .unknown-step__message {
+  padding: var(--small);
+  margin-bottom: var(--small);
+  margin-top: var(--tiny);
+
+  background-color: rgba(0, 82, 138, 0.15);
+  border-top: solid var(--tiny) var(--dark-blue);
+
+  &.important {
+    background-color: rgba(214, 0, 0, 0.1);
+    border-top: solid var(--tiny) var(--red);
+  }
+}
+
+img.inline {
+  height: 1em;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+body[data-version="10"] {
+  [data-version="9"] {
+    display: none;
+  }
+
+  .version-warning {
+    display: none;
+  }
+}
+
+body[data-version="9"] {
+  [data-version="10"] {
+    display: none;
+  }
+
+  .version-warning {
+    display: none;
+  }
+}
+
+body:not([data-version="9"]):not([data-version="10"]) {
+  [data-version="9"] {
+    display: none;
+  }
+
+  .version-info {
+    display: none;
+  }
+}
+
+@import (inline) "./prism.css";
