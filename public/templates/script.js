@@ -140,14 +140,16 @@ After barring your phone, you'll have a replacement SIM sent to your address. Un
   {
     title: "SIM Swap",
     addFooter: true,
-    content: `You'll need to perform a SIM Swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one!
+    content: `You'll need to perform a SIM swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one.
 
 You can only complete a SIM swap can only between 4:30 AM and 9:30 PM.
+
+**Perform a SIM swap here:** https://www.giffgaff.com/profile/details#simswap
 
 You need any unactivated giffgaff SIM. You can get one from:
 - 1. a member's affiliate link (click my name at the top of this post)
 - 2. this link: https://www.giffgaff.com/orders/mgm
-- 3. your local Tesco, Asda, Co-Op, etc. for a SIM for under £1
+- 3. your local shop (Tesco, Asda, Co-op, etc.) for under £1
 
 Options 1 and 2 involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
 
@@ -155,7 +157,9 @@ The SIM swap process itself can take up to 24 hours to complete but usually only
 
 #### You do not need to make a payment to perform a SIM swap.
 
-If you get to a top-up step, [color=red]*STOP*[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.`,
+If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
+
+See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
   },
   {
     title: "Return Phone",
@@ -190,7 +194,7 @@ This is another variation of a scam designed to get you to hand over personal an
 
 [spoiler]
 
-Please do not enter any details and, if you have clicked on the link, follow these steps immediately!
+Please do not enter any details and, if you have clicked on the link, follow these steps immediately.
 
 1. Change the password to your giffgaff account: https://www.giffgaff.com/support/lost-password
 
@@ -221,7 +225,7 @@ We've alerted a giffgaff educator to the scam and they will contact you shortly 
     addFooter: true,
     content: `Sorry to hear you're leaving giffgaff.
 
-To get your PAC code, text \`PAC\` to \`65075\`. You'll get your PAC within a minute. You can also dial \`43431\` (pen and paper in hand!) and follow the prompts to get your PAC code.
+To get your PAC code, text \`PAC\` to \`65075\`. You'll get your PAC within a minute. You can also dial \`43431\` (pen and paper in hand) and follow the prompts to get your PAC code.
 
 Both of these are completely free but will only work in the UK.
 
@@ -296,13 +300,13 @@ You can disable the block from your account settings here: https://www.giffgaff.
   {
     title: "Always On £25 goodybag ban",
     addFooter: true,
-    content: `The ban can't be lifted and there is no way of appealing the ban. It usually lasts around 6 months. If you want to leave giffgaff and take your number with you, follow the instructions below to get your PAC. Note that Three offer unlimited data (1000 GB) for £35 p/mth (or sometimes less during offer periods!).
+    content: `The ban can't be lifted and there is no way of appealing the ban. It usually lasts around 6 months. If you want to leave giffgaff and take your number with you, follow the instructions below to get your PAC. Note that Smarty offer unlimited data (1000 GB) for £20 per month.
 
 If you don't want to leave, you can buy the £20 goodybag instead.
 
 If you do want to leave, you can get your PAC code, text \`PAC\` to \`65075\`. You'll get your PAC within a minute or two. (You can learn more about Text-to-Switch here: https://mrjeeves.page.link/ofcom-text-to-switch)
 
-You can also dial 43431 (pen and paper in hand!) and follow the prompts to get your PAC code.
+You can also dial 43431 (pen and paper in hand) and follow the prompts to get your PAC code.
 
 Both of these are completely free but will only work in the UK.
 
@@ -345,11 +349,20 @@ You can redeem these as credit, donate them to charity or get them paid to PayPa
   {
     title: "Family Account",
     addFooter: true,
-    content: `There isn't a way to do this at the moment on giffgaff. There is a [member suggested idea](https://labs.giffgaff.com/idea/4660/handling-multiple-sims-from-a-single-companyfamily-account) on giffgaff Labs that is being "worked on", though. You should vote on that if you think it's a good idea.
+    content: `There isn't a way to have multiple SIMs on one account at the moment on giffgaff.
 
 In the meantime, you will have to have a separate account for each SIM. You can still use the same payment method, email, address, etc. on each account but they will each have a different number and membername.
 
-Sorry about that!`,
+Sorry about that.`,
+  },
+  {
+    title: "2 SIMs 1 Number",
+    addFooter: true,
+    content: `There isn't a way to have multiple SIMs for the same number on **any UK network**. This is due to the laws surrounding SIMs and phone numbers not allowing this.
+
+In the meantime, you will have to have a separate account for each SIM, and a different number for each. You can still use the same payment method, email, address, etc. on each account but they will each need to have a different number and membername.
+
+Sorry about that.`,
   },
   {
     title: "Number recycling",
@@ -383,7 +396,7 @@ By starting your goodybag early, you will lose all remaining allowances.
   {
     title: "lol u bad no helpline",
     addFooter: true,
-    content: `The fact we don't have a call centre is the reason giffgaff can offer cheaper service than other providers. Instead of a call centre, giffgaff pay members to provide support on the forum. For account related issues, [agents](https://support2.giffgaff.com/app/ask) are available to help. Either way, who has time for *phone calls*... it's 2020!
+    content: `The fact we don't have a call centre is the reason giffgaff can offer cheaper service than other providers. Instead of a call centre, giffgaff pay members to provide support on the forum. For account related issues, [agents](https://support2.giffgaff.com/app/ask) are available to help. Either way, who has time for *phone calls*... it's ${(new Date()).getFullYear()}!
 
 You don't have to be part of the mobile network if you don't want to. If you'd rather be with a network that offers a call centre, feel free to join one of the other big players.
 
@@ -398,7 +411,7 @@ After all, there's a reason [we've won uSwitch network of the year 2018 and 19](
 
 ## Via your phone
 
-You can text the word \`FORGOTTEN\` to \`43430\` to get a password reset link for your account and your member name! Simple!
+You can text the word \`FORGOTTEN\` to \`43430\` to get a password reset link for your account and your member name. Easy as pie.
 
 ## Via the website
 
@@ -457,7 +470,7 @@ So far, only three networks support the Apple Watch: O2, EE and Vodafone.
 
 This is because the Apple Watch relies on a new technology called eSIM. This is a virtual SIM stored on a small chip inside the device. At the moment, only some big networks support this (EE, O2 and Vodafone). No piggyback networks (e.g. giffgaff, Tesco, Plusnet, BT, ID Mobile, Smarty) can use the technology. This is because Apple  refuse to license their proprietary and non-standard technology to any of the 'small folk'.
 
-You'll have to switch network to use the **cellular** functions of the Watch, but the **WiFi and Bluetooth connections will still work fine**!`,
+You'll have to switch network to use the **cellular** functions of the Watch, but the **WiFi and Bluetooth connections will still work fine**.`,
   },
   {
     title: "EU Roam Like At Home",
@@ -468,7 +481,7 @@ You'll have to switch network to use the **cellular** functions of the Watch, bu
 
 You can spend up to **63 days within a 4 month period in the EU under the Roam Like At Home** (RLAH) policy. Any usage outside of this period is subject to small charges for goodybag users (0.36p/MB for data, 3.2p/minute for calls and 1p/text for texts). Pay As You Go users will still be charged the [normal UK rates](https://www.giffgaff.com/pricing).
 
-When visiting any country listed at the bottom of this post, network usage (calls, texts, data) will cost exactly the same as when you're at home in the UK. Sweet, right?!
+When visiting any country listed at the bottom of this post, network usage (calls, texts, data) will cost exactly the same as when you're at home in the UK. Sweet, right?
 
 [/spoiler]
 
@@ -559,14 +572,16 @@ The easiest thing to try first is checking the giffgaff service status page for 
 
 If you've still got issues, try performing a manual roam via these instructions: https://www.giffgaff.com/help/articles/how-to-perform-a-manual-roam
 
-If that doesn't help, the next best thing is attempting a SIM swap. This is where you keep your number, credit and goodybag but just swap your SIM out for a new one!
+If that doesn't help, the next best thing is attempting a SIM swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one.
 
 You can only complete a SIM swap can only between 4:30 AM and 9:30 PM.
+
+**Perform a SIM swap here:** https://www.giffgaff.com/profile/details#simswap
 
 You need any unactivated giffgaff SIM. You can get one from:
 - 1. a member's affiliate link (click my name at the top of this post)
 - 2. this link: https://www.giffgaff.com/orders/mgm
-- 3. your local Tesco, Asda, Co-Op, etc. for a SIM for under £1
+- 3. your local shop (Tesco, Asda, Co-op, etc.) for under £1
 
 Options 1 and 2 involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
 
@@ -574,7 +589,7 @@ The SIM swap process itself can take up to 24 hours to complete but usually only
 
 #### You do not need to make a payment to perform a SIM swap.
 
-If you get to a top-up step, [color=red]*STOP*[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
+If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
 
 See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken
 `,
