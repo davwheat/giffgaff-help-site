@@ -218,3 +218,8 @@ main#main-content {
     margin: 8px;
   }
 }
+
+.gg-c-masthead:not(.gg-c-masthead--minor) .gg-c-masthead__content {
+  // fixes masthead image overflow
+  grid-template-columns: 1fr minmax(0, 504px);
+}
