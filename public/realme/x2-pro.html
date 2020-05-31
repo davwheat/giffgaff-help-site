@@ -23,7 +23,10 @@
       property="og:description"
       content="An easy to follow guide for unlocking and flashing a custom ROM onto your realme X2 Pro."
     />
-    <meta property="og:image" content="/realme/img/x2-pro-sharing-img.png" />
+    <meta
+      property="og:image"
+      content="/realme/img/x2-pro-sharing-img.png?v=2"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -38,7 +41,7 @@
     />
     <meta
       property="twitter:image"
-      content="/realme/img/x2-pro-sharing-img.png"
+      content="/realme/img/x2-pro-sharing-img.png?v=2"
     />
 
     <link
@@ -115,9 +118,33 @@
             <div class="gg-s-rich-text homepage-hero-section__text">
               <p>
                 <strong>Everything.</strong> From battery bugs to memory leaks
-                to stuttering in games, realme's software is insanely
-                unoptimised. Furthermore, their privacy policy states that they
-                can record everything you do on your device and send it to
+                to stuttering in games to restricting features to their stock
+                launcher, realme's software is insanely unoptimised.
+              </p>
+              <p>
+                Furthermore, their
+                <a
+                  href="https://www.realme.com/eu/legal/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="gg-u-link"
+                  >Privacy Policy</a
+                >
+                and
+                <a
+                  href="https://www.realme.com/eu/legal/user-agreement"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="gg-u-link"
+                  >User Agreement</a
+                >
+                states that they can (<a
+                  href="https://forum.xda-developers.com/realme-x2-pro/how-to/global-x2-pro-random-connections-to-t4086975"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="gg-u-link"
+                  >and do!</a
+                >) record everything you do on your device and send it to
                 Chinese servers, and that you are not allowed to view or store
                 pornography on your device.
               </p>
@@ -215,7 +242,7 @@
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
-              <h1 class="gg-u-text-shout">
+              <h1 class="gg-u-text-shout" id="unlock">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Unlocking</mark
                 >
@@ -260,6 +287,7 @@
                   <li data-version="9">
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="/realme/files/x2-pro/unlock-color-os.apk"
                       class="gg-u-link"
                     >
@@ -270,6 +298,7 @@
                   <li data-version="10">
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="/realme/files/x2-pro/unlock-realme-ui-1.0.apk"
                       class="gg-u-link"
                     >
@@ -381,7 +410,7 @@ fastboot flashing unlock</code></pre>
         <div class="gg-t-white">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
-              <h1 class="gg-u-text-shout">
+              <h1 class="gg-u-text-shout" id="recovery">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
                 >
@@ -418,6 +447,7 @@ fastboot flashing unlock</code></pre>
                       class="gg-u-link"
                       href="/realme/files/x2-pro/OrangeFox-R10.1_1.img"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Download OrangeFox Recovery
                     </a>
@@ -437,6 +467,7 @@ fastboot flashing unlock</code></pre>
                       class="gg-u-link"
                       href="/realme/files/x2-pro/vbmeta.img"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Download vbmeta.img
                     </a>
@@ -467,7 +498,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
-              <h1 class="gg-u-text-shout">
+              <h1 class="gg-u-text-shout" id="rom">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
                 >
@@ -537,6 +568,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         <a
                           href="https://androidfilehost.com/?fid=4349826312261754839"
                           target="_blank"
+                          rel="noopener noreferrer"
                           class="gg-u-link gg-u-link--arrow"
                         >
                           Global devices
@@ -546,6 +578,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         <a
                           href="https://androidfilehost.com/?fid=4349826312261754856"
                           target="_blank"
+                          rel="noopener noreferrer"
                           class="gg-u-link gg-u-link--arrow"
                         >
                           Chinese devices
@@ -592,6 +625,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                     <a
                       href="https://forum.xda-developers.com/realme-x2-pro/development/rom-aosip-t4083341"
                       target="_blank"
+                      rel="noopener noreferrer"
                       class="gg-u-link gg-u-link--arrow"
                     >
                       Download the latest build of AOSiP
@@ -608,6 +642,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                     <a
                       href="https://androidfilehost.com/?fid=4349826312261750809"
                       target="_blank"
+                      rel="noopener noreferrer"
                       class="gg-u-link gg-u-link--arrow"
                       >download the VoLTE fix</a
                     >
@@ -616,6 +651,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                     <a
                       href="https://sourceforge.net/projects/opengapps/files/arm64/20200415/open_gapps-arm64-10.0-nano-20200415.zip/download"
                       target="_blank"
+                      rel="noopener noreferrer"
                       class="gg-u-link gg-u-link--arrow"
                     >
                       Download OpenGApps (Google apps)
@@ -675,16 +711,29 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                       <div class="gg-o-media__content">
                         <p>
                           If you see a red error, you <b>must</b> go to Menu >
-                          Reboot > Recovery.
+                          Reboot > Recovery, and try this step again.
                         </p>
                       </div>
                     </div>
                   </li>
                   <li>
+                    If you use VoLTE, push the file, then use the same method as
+                    above to flash it.
+                    <ul class="gg-c-list">
+                      <li>
+                        Use this command to push the VoLTE fix file, using the
+                        correct file name in place of the placeholder
+                        <pre
+                          class="language-bash"
+                        ><code>adb -p push "&lt;VoLTE FIX FILE NAME&gt;" "/sdcard"</code></pre>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="unknown-step">
                     Next, push the OpenGApps zip file to your device:
-                    <pre
-                      class="language-bash"
-                    ><code>adb push -p "&lt;OpenGApps ZIP NAME&gt;" "/sdcard"</code></pre>
+                    <code class="language-bash"
+                      >adb push -p "&lt;OpenGApps ZIP NAME&gt;" "/sdcard"</code
+                    >
                     <ul class="gg-c-list">
                       <li>
                         Replace
@@ -695,6 +744,23 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         downloaded
                       </li>
                     </ul>
+                    <div
+                      class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/exclamation-circle.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          If you see a red error, you <b>must</b> go to Menu >
+                          Reboot > Recovery, and try this step again.
+                        </p>
+                      </div>
+                    </div>
                   </li>
                   <li>
                     On your phone, after the push is complete, tap
@@ -707,11 +773,12 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                     <b>Reboot</b>, then <b>System</b>
                   </li>
                   <li class="unknown-step">
-                    If you want Magisk for rooting,
+                    If you want Magisk for root access,
                     <a
                       href="https://github.com/topjohnwu/Magisk/releases/download/v20.3/Magisk-v20.3.zip"
                       class="gg-u-link"
                       target="_blank"
+                      rel="noopener noreferrer"
                       >download Magisk 20.3</a
                     >, then push and flash it like the other files
                     <div
@@ -728,8 +795,30 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         <p>
                           You don't need Magisk to pass SafetyNet on AOSiP, but
                           you might on other ROMs. Note that Magisk is helpful
-                          for other things, like Substratum themes and Full
+                          for other things, like Substratum themes and Fluid
                           Navigation Gestures.
+                        </p>
+                        <p>
+                          Some people have reported issues with flashing Magisk
+                          before booting once, so it's recommended that your
+                          boot at least once before flashing Magisk.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                    >
+                      <div class="gg-o-media__img">
+                        <img
+                          class="gg-u-icon gg-u-icon--medium"
+                          src="/realme/img/icons/exclamation-circle.svg"
+                          alt="Info"
+                        />
+                      </div>
+                      <div class="gg-o-media__content">
+                        <p>
+                          If you see a red error, you <b>must</b> go to Menu >
+                          Reboot > Recovery, and try this step again.
                         </p>
                       </div>
                     </div>
@@ -743,7 +832,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
         <div class="gg-t-white">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
-              <h1 class="gg-u-text-shout">
+              <h1 class="gg-u-text-shout" id="revert">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Reverting</mark
                 >
@@ -781,7 +870,8 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                   </li>
                   <li class="unknown-step">
                     Download the OZIP file for the Android variant you want to
-                    use. You can find all realme OZIPs on Realme Updater.
+                    use. You can find all realme OZIPs on Realme Updater (links
+                    below).
                     <ul class="gg-c-list">
                       <li>
                         Axx is ColorOS 6. Cxx is realme UI 1.0.
@@ -790,6 +880,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         <a
                           href="https://realmeupdater.com/downloads/archive/RMX1931EX/"
                           target="_blank"
+                          rel="noopener noreferrer"
                           class="gg-u-link gg-u-link--arrow"
                         >
                           Global devices
@@ -799,6 +890,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                         <a
                           href="https://realmeupdater.com/downloads/archive/RMX1931/"
                           target="_blank"
+                          rel="noopener noreferrer"
                           class="gg-u-link gg-u-link--arrow"
                         >
                           Chinese devices
@@ -829,9 +921,10 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                   </li>
 
                   <li>
-                    In your command prompt, enter this command:
+                    In your command prompt, enter this command to "push"
+                    (transfer) the OZIP update file to your phone:
                     <code class="language-bash"
-                      >adb push -p "&lt;AOSiP FILE NAME&gt;" "/sdcard"</code
+                      >adb push -p "&lt;OZIP FILE NAME&gt;" "/sdcard"</code
                     >
                     <ul class="gg-c-list">
                       <li>
