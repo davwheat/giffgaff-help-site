@@ -113,9 +113,9 @@ Enter the APN values shown below. Please note that some fields may not be shown 
   {
     title: "Lost SIM and Phone",
     addFooter: true,
-    content: `#### Follow these instructions. I recommend not to follow any suggestions to perform a SIM Swap instead.
+    content: `#### Follow these instructions. I recommend not to follow any suggestions to perform a SIM swap instead.
 
-_Performing a SIM Swap won't prevent people using your device on other UK networks, nor will it prevent people selling it, so I strongly recommend against this method._
+_Performing a SIM swap won't prevent people using your device on other UK networks, nor will it prevent people selling it, so I strongly recommend against this method._
 
 First, try locating your phone via [Find My iPhone](https://www.icloud.com/#find) or [Android's Find My Device](https://www.google.com/search?q=find+my+device). You can remotely lock your device via the respective links, as well as locate, or ring them.
 
