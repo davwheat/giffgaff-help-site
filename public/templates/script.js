@@ -415,7 +415,7 @@ By starting your goodybag early, you will lose all remaining allowances.
   {
     title: "lol u bad no helpline",
     addFooter: true,
-    content: `The fact we don't have a call centre is the reason giffgaff can offer cheaper service than other providers. Instead of a call centre, giffgaff pay members to provide support on the forum. For account related issues, [agents](https://support2.giffgaff.com/app/ask) are available to help. Either way, who has time for *phone calls*... it's ${(new Date()).getFullYear()}!
+    content: `The fact we don't have a call centre is the reason giffgaff can offer cheaper service than other providers. Instead of a call centre, giffgaff pay members to provide support on the forum. For account related issues, [agents](https://support2.giffgaff.com/app/ask) are available to help. Either way, who has time for *phone calls*... it's ${new Date().getFullYear()}!
 
 You don't have to be part of the mobile network if you don't want to. If you'd rather be with a network that offers a call centre, feel free to join one of the other big players.
 
@@ -618,7 +618,9 @@ See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-b
     addFooter: true,
     content: `You need to contact RateSetter, the company managing giffgaff phone loans.
 
-You can call them on 020 3142 6226 or email at borrow@ratesetter.com but they recommend email at the moment due to COVID-19.
+You can call RateSetter on 020 3142 6226 or email at borrow@ratesetter.com.
+
+**Email is recommended at the moment due to COVID-19.**
 
 Their contact hours are shown below.
 
@@ -628,6 +630,38 @@ Their contact hours are shown below.
 | Saturday|9:30 am - 5:30 pm |
 
 RateSetter contact page: https://www.ratesetter.com/help`,
+  },
+  {
+    title: "ratesetter loan",
+    addFooter: true,
+    content: `RateSetter are the company that manage loan applications for pay monthly phone purchases.
+
+When buying a pay monthly phone, you'll go through a soft credit check by RateSetter. This will not affect your credit score. They will then decide whether or not to approve your loan application.
+
+You'll know if you were approved or not as you'll be sent an email. This is sent by the end of the next working day (not 24 hours as some say).
+
+If you're approved **you must click the link in the email to confirm your order.** If you don't you won't receive your phone and your application will expire, so you will have to go through the whole process over again.
+
+If you decide you no longer want to buy the phone (for example you found a better deal elsewhere) then ignore the email. You won't be charged.
+
+If you don't get an email after 2 business days, you should contain RateSetter. For contact details, click the button below.
+
+[spoiler]
+
+You can call RateSetter on 020 3142 6226 or email at borrow@ratesetter.com.
+
+**Email is recommended at the moment due to COVID-19.**
+
+Their contact hours are shown below.
+
+|Days|Times|
+|---|---|
+| Monday - Friday | 8 am - 6 pm |
+| Saturday | 9:30 am - 5:30 pm |
+
+RateSetter contact page: https://www.ratesetter.com/help
+
+[/spoiler]`,
   },
   {
     title: "imessage advanced",
