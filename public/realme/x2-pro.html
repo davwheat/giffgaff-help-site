@@ -180,16 +180,83 @@
             </div>
           </section>
         </div>
+
         <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout" id="unlock">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Guide</mark
+                >
+                info
+              </h1>
+              <section class="gg-o-page-section" style="padding-top: 16px;">
+                <h2 class="gg-u-text-louder">Credit</h2>
+                <p>
+                  Massive thanks to Gamr13 for the original guide which I
+                  spruced up into this fancy webpage.
+                </p>
+                <p>
+                  Thanks to all the testers on the realme Discord server who
+                  made sure this actually worked.
+                </p>
+
+                <h2 class="gg-u-text-louder">Disclaimer</h2>
+                <p class="gg-u-text-speak">
+                  No-one except yourself is responsible for bricked devices,
+                  dead NAND flash, thermonuclear war, or you getting fired
+                  because the alarm app failed. <b>YOU</b> are choosing to make
+                  these modifications, and if you point the finger at me for
+                  messing up your device, I will laugh at you (but probably
+                  still try to help). Your warranty might be void if you tamper
+                  with any part of your device / software.
+                </p>
+
+                <h2 class="gg-u-text-louder">Version and changelog</h2>
+                <p class="gg-u-text-speak-up">
+                  This version: v1.1
+                </p>
+                <details class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                      >
+                        <path
+                          d="M15.5 6.1c-.7-.1-.7 0-2.2-.1-.7 0-1.1 0-1.8.1H9.6l-3.5-.2H4.5c-2.1.1-3.7.2-4.3.2l.1 3.1c1.7.1 2.2.3 4 .4l1.6.1 3.6.2h4.1c.8 0 .5 0 1.3.1.3 0 .4-.1.4-.1.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          class="gg-c-accordion__marker-open"
+                          d="M6.1.5c-.1.7 0 .7-.1 2.2 0 .7 0 1.1.1 1.8v1.9l-.2 3.5v1.6c.1 2.1.2 3.7.2 4.3l3.1-.1c.1-1.7.3-2.2.4-4l.1-1.6.2-3.6V2.4c0-.8 0-.5.1-1.3 0-.3-.1-.4-.1-.4C9.2.2 7.5.2 6.1.5z"
+                        />
+                      </svg>
+                      Changelog
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 1.1</h3>
+                    <p>
+                      Added changelog, about guide section. Adds universal
+                      ADB/Fastboot driver info. Adds info about prepping your
+                      device.
+                    </p>
+                  </div>
+                </details>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-light-blue">
           <section id="version" class="gg-o-page-section">
             <div class="gg-u-readable-width">
               <h1 class="gg-u-text-shout">
-                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
-                  >Select</mark
-                >
+                <mark class="gg-u-doodle-boing">Choose</mark>
                 your Android version
               </h1>
-              <div class="gg-o-page-section">
+              <div class="gg-o-page-section" style="padding-bottom: 0;">
                 <p>
                   Some instructions vary based on the version of Android that
                   you are running on your device. Selecting the version your
@@ -197,44 +264,203 @@
                   your version and add steps that do, so it is critical that you
                   choose the right option.
                 </p>
-              </div>
 
-              <fieldset class="gg-c-chunky-buttons">
-                <ol class="gg-c-chunky-buttons__list">
-                  <li class="gg-c-chunky-buttons__option">
-                    <input
-                      name="test-apk"
-                      type="radio"
-                      id="version--color-os"
-                      class="gg-c-chunky-buttons__radio"
+                <fieldset class="gg-c-chunky-buttons">
+                  <ol class="gg-c-chunky-buttons__list">
+                    <li class="gg-c-chunky-buttons__option">
+                      <input
+                        name="test-apk"
+                        type="radio"
+                        id="version--color-os"
+                        class="gg-c-chunky-buttons__radio"
+                      />
+                      <label
+                        class="gg-c-chunky-buttons__button"
+                        for="version--color-os"
+                      >
+                        <span class="gg-c-chunky-buttons__text">
+                          Android 9 (ColorOS)
+                        </span>
+                      </label>
+                    </li>
+                    <li class="gg-c-chunky-buttons__option">
+                      <input
+                        name="test-apk"
+                        type="radio"
+                        id="version--realme-ui"
+                        class="gg-c-chunky-buttons__radio"
+                      />
+                      <label
+                        class="gg-c-chunky-buttons__button"
+                        for="version--realme-ui"
+                      >
+                        <span class="gg-c-chunky-buttons__text">
+                          Android 10 (realme UI 1.0)
+                        </span>
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout" id="unlock">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Before</mark
+                >
+                you start
+              </h1>
+              <section class="gg-o-page-section">
+                <div class="version-info">
+                  <img
+                    src="/realme/img/icons/info-circle.svg"
+                    class="version-info__icon"
+                  />
+                  <div class="version-info__message">
+                    <p class="version-info__title">You're running</p>
+                    <p>
+                      Not right?
+                      <a href="#version" class="gg-u-link"
+                        >Change your selected version</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="gg-u-text-louder">Backing up your data</h2>
+                <p>
+                  This guide will involve completely wiping your device. If you
+                  have nay data you wish to keep, <b>back it up now</b>.
+                </p>
+
+                <h3 class="gg-u-text-loud">Photos</h3>
+                <p>
+                  If you want an easy way to back up your photos and videos,
+                  take a look at
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.google.android.apps.photos"
+                    rel="noopener noreferer"
+                    target="_blank"
+                    class="gg-u-link"
+                    >Google Photos</a
+                  >. It keeps all your media synced to the cloud for free. If
+                  you choose "High Quality" then it won't even use your Google
+                  Drive data.
+                </p>
+
+                <h3 class="gg-u-text-loud">2-factor authentication apps</h3>
+                <p>
+                  If you use authenticator software, make sure you know how to
+                  reactivate it on your new device. Some apps don't allow for
+                  new activations before enabling them on your old device. You
+                  don't want to get stuck out of your device.
+                </p>
+                <p>
+                  <b>
+                    If you use Google Authenticator, you need to use another
+                    device as a go-between to back up your codes.
+                  </b>
+                  Open the Authenticator app on your phone and tap the three
+                  dots
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="gg-u-icon gg-u-icon--medium gg-u-icon--inline"
+                  >
+                    <path
+                      d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
                     />
-                    <label
-                      class="gg-c-chunky-buttons__button"
-                      for="version--color-os"
-                    >
-                      <span class="gg-c-chunky-buttons__text">
-                        Android 9 (ColorOS)
-                      </span>
-                    </label>
+                  </svg>
+                  in the top right. Choose <b>Transfer accounts</b>, then
+                  <b>Export accounts</b>. Select all accounts you wish to
+                  transfer, then tap <b>Next</b>. Take a photo of the generated
+                  QR code with another device, or use Authenticator on that
+                  device to import them. Once your phone is set up with a Custom
+                  ROM, you can import them again.
+                </p>
+                <p>
+                  Personally, I use
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.authy.authy"
+                    rel="noopener noreferer"
+                    target="_blank"
+                    class="gg-u-link"
+                    >Authy</a
+                  >
+                  as it syncs between all my devices easily.
+                </p>
+
+                <h3 class="gg-u-text-loud">Documents</h3>
+                <p>
+                  The easiest way to back up other data is by transferring it to
+                  another device via USB. You can plug in USB drives directly to
+                  your phone via <b>USB C OTG connectors</b> (<a
+                    href="https://amzn.to/2Xs7OiY"
+                    rel="noopener noreferer"
+                    target="_blank"
+                    class="gg-u-link"
+                    >Amazon UK</a
+                  >).
+                </p>
+
+                <h2 class="gg-u-text-louder">Requirements</h2>
+                <ul class="gg-c-list">
+                  <li>Charge your phone to 75% or more</li>
+                  <li>Have a PC with Windows/Mac/Linux</li>
+                  <li>
+                    Make sure you've got working ADB and fastboot drivers
+                    (Windows only)
+                    <ul class="gg-c-list">
+                      <li>
+                        <a
+                          download
+                          href="/realme/files/UniversalAdbDriverSetup.msi"
+                          class="gg-u-link"
+                        >
+                          Download Clockwork's Universal ADB Drivers for Windows
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="gg-c-chunky-buttons__option">
-                    <input
-                      name="test-apk"
-                      type="radio"
-                      id="version--realme-ui"
-                      class="gg-c-chunky-buttons__radio"
-                    />
-                    <label
-                      class="gg-c-chunky-buttons__button"
-                      for="version--realme-ui"
-                    >
-                      <span class="gg-c-chunky-buttons__text">
-                        Android 10 (realme UI 1.0)
-                      </span>
-                    </label>
+                  <li>
+                    Ensure your brain is correctly inserted with no loose
+                    connections
                   </li>
-                </ol>
-              </fieldset>
+                </ul>
+
+                <h2 class="gg-u-text-louder">Final notes</h2>
+                <ul class="gg-c-list">
+                  <li>
+                    For a few days after installing AOSiP you may see much lower
+                    battery life. This is normal and stops after around 2-3
+                    days. It's due to your phone performing extra setup steps in
+                    the background, like updating system apps (Google Apps, Play
+                    Store, etc), registering your device with Google, etc.
+                  </li>
+                  <li>
+                    The fingerprint sensor is slower (about 1s to scan and
+                    unlock) on AOSiP compared to realme UI
+                  </li>
+                  <li>
+                    AOSiP does not support facial unlock as Google officially
+                    removed it in Android 10. Facial unlock is just picture
+                    matching so is very insecure and not recommended anyway.
+                  </li>
+                  <li>
+                    When turning on your device display, the lock screen
+                    brightness may be significantly lower than normal
+                    brightness. This is a bug to do with fingerprint detection.
+                  </li>
+                  <li>
+                    Some have reported green displays at specific brightness
+                    levels. This can be fixed by toggling DC Dimming off and on.
+                  </li>
+                </ul>
+              </section>
             </div>
           </section>
         </div>
@@ -286,8 +512,7 @@
                 <ol class="gg-c-list-ordered">
                   <li data-version="9">
                     <a
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      download
                       href="/realme/files/x2-pro/unlock-color-os.apk"
                       class="gg-u-link"
                     >
@@ -297,8 +522,7 @@
                   </li>
                   <li data-version="10">
                     <a
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      download
                       href="/realme/files/x2-pro/unlock-realme-ui-1.0.apk"
                       class="gg-u-link"
                     >
@@ -329,12 +553,10 @@
                     <b>Start the in-depth test</b>
                     <ul class="gg-c-list">
                       <li>
-                        <strong
-                          >All data on your device will be deleted.</strong
-                        >
-                        Make sure you've backed up your data. Google Photos is a
-                        great way to back up your photos and videos free of
-                        charge.
+                        <strong>
+                          All data on your device will be deleted during this
+                          step.
+                        </strong>
                       </li>
                     </ul>
                   </li>
@@ -446,8 +668,7 @@ fastboot flashing unlock</code></pre>
                     <a
                       class="gg-u-link"
                       href="/realme/files/x2-pro/OrangeFox-R10.1_1.img"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      download
                     >
                       Download OrangeFox Recovery
                     </a>
@@ -466,8 +687,7 @@ fastboot flashing unlock</code></pre>
                     <a
                       class="gg-u-link"
                       href="/realme/files/x2-pro/vbmeta.img"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      download
                     >
                       Download vbmeta.img
                     </a>
