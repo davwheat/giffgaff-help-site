@@ -36,6 +36,11 @@
       crossorigin="anonymous"
     ></script>
     <script async defer src="/community-nonsense/kb-diff/kb.js"></script>
+    <script
+      async
+      defer
+      src="/community-nonsense/kb-diff/articleParser.js"
+    ></script>
   </head>
   <body class="qa-page">
     <gg-header></gg-header>
@@ -175,7 +180,118 @@
                 <label for="article-data-input" class="gg-c-form__label">
                   Article Data
                 </label>
-                <div id="article-data-input-container" class="gg-c-form__element">
+                <div
+                  id="article-data-input-container"
+                  class="gg-c-form__element"
+                >
+                  <input
+                    type="text"
+                    id="article-data-input"
+                    class="gg-c-form__input"
+                    placeholder='{"articleId":169,"title":"What’s Payback?","content":"{\"blocks\":[{\"key\":\"eci56\",\"text\":\"Payback is our way of rewarding you for doing something that helps giffgaff and the giffgaff community...'
+                  />
+                  <p
+                    class="gg-c-form__element-message gg-c-form__element-message--invalid"
+                  >
+                    Uh-oh, that doesn't look right. If this happens again,
+                    contact mrjeeves on the community.
+                  </p>
+                </div>
+              </div>
+              <button class="gg-c-btn gg-c-btn--primary gg-c-btn--center">
+                <span class="gg-c-btn__switch">Next</span>
+              </button>
+            </section>
+
+            <section id="articleDrafts" class="hidden">
+              <div>
+                <h2 class="gg-u-text-louder">
+                  We need a small helping hand from you
+                </h2>
+                <p class="gg-u-text-speak">
+                  To make sure the article data is up-to-date, we need you to
+                  copy and paste the article data below.
+                </p>
+                <p class="gg-u-text-speak">
+                  Click
+                  <a
+                    id="article-data-link"
+                    href=""
+                    class="gg-u-link"
+                    target="_blank"
+                    >this link</a
+                  >, then copy and paste the whole page content in the box
+                  below.
+                </p>
+              </div>
+
+              <ul class="faq gg-t-wild-sand">
+                <li>
+                  <h3 class="gg-u-text-loud">
+                    Important questions with detailed answers
+                  </h3>
+                </li>
+                <li class="gg-c-faqs__item">
+                  <details class="gg-c-faqs__faq">
+                    <summary class="gg-c-faqs__q">
+                      <span class="gg-c-faqs__icon"></span>
+                      What's in this data?
+                    </summary>
+                    <div class="gg-c-faqs__a">
+                      <p>
+                        This data contains:
+                      </p>
+                      <ul class="gg-c-list">
+                        <li>the article's ID (a number assigned to it)</li>
+                        <li>the article content in JSON format</li>
+                        <li>the article's URL</li>
+                        <li>
+                          the article's category, category URL and category ID
+                          (the number assigned to the article's category)
+                        </li>
+                        <li>the article's SEO metadata (description)</li>
+                        <li>the article's visibility state (true/false)</li>
+                      </ul>
+                      <p class="gg-u-text-speak-up">
+                        No personal information is transferred in this request.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="gg-c-faqs__item">
+                  <details class="gg-c-faqs__faq">
+                    <summary class="gg-c-faqs__q">
+                      <span class="gg-c-faqs__icon"></span>
+                      Why do I have to get this data myself?
+                    </summary>
+                    <div class="gg-c-faqs__a">
+                      <p>
+                        For security purposes, requests to the giffgaff API can
+                        only be made from within the "giffgaff.com" domain, or
+                        directly in a user's browser. This is to prevent
+                        malicious sites accessing the "me" API which provides
+                        your address, full name, and other personal info.
+                      </p>
+                      <p>
+                        It's possible to download these server-side but that
+                        would require infrastructure which I honestly can't be
+                        bothered to support, run, or pay for (if needed). I also
+                        can't maintain a list of every article 24/7. It requires
+                        far more effort than it's worth.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ul>
+
+              <div>
+                <label for="article-data-input" class="gg-c-form__label">
+                  Article Data
+                </label>
+                <div
+                  id="article-data-input-container"
+                  class="gg-c-form__element"
+                >
                   <input
                     type="text"
                     id="article-data-input"

@@ -160,6 +160,8 @@ $("#article button").click((e) => {
 $("#articleData button").click((e) => {
   e.preventDefault();
 
+  showLoadingMsg();
+
   const $articleData = $("#article-data-input");
   const u_data = $articleData.val();
 
@@ -174,6 +176,7 @@ $("#articleData button").click((e) => {
     $("#article-data-input-container").addClass("gg-c-form__element--invalid");
     console.error("ERROR: invalid JSON", u_data);
 
+    hideLoadingMsg();
     return false;
   }
 
@@ -181,8 +184,13 @@ $("#articleData button").click((e) => {
     $("#article-data-input-container").addClass("gg-c-form__element--invalid");
     console.error("ERROR: JSON is an error! ", u_data);
 
+    hideLoadingMsg();
     return false;
   }
 
   u_selectedArticleData = JSON.parse(u_data);
+
+  const Article = ParseArticle(u_selectedArticleData);
+
+  
 });

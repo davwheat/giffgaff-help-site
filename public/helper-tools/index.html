@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Helper tools | giffgaff unofficial</title>
+    <meta name="title" content="Helper tools | giffgaff unofficial" />
+    <meta
+      name="description"
+      content="A collection of handy tools for giffgaff community helpers."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gg-help.web.app/helper-tools" />
+    <meta property="og:title" content="Helper tools | giffgaff unofficial" />
+    <meta
+      property="og:description"
+      content="A collection of handy tools for giffgaff community helpers."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://gg-help.web.app/helper-tools"
+    />
+    <meta
+      property="twitter:title"
+      content="Helper tools | giffgaff unofficial"
+    />
+    <meta
+      property="twitter:description"
+      content="A collection of handy tools for giffgaff community helpers."
+    />
+
+    <link
+      rel="preload"
+      href="/examples/sim-swap/css/fonts/giffgaff-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/examples/sim-swap/css/fonts/giffgaff-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      href="/examples/sim-swap/css/fonts/giffgaff-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <script src="/js/custom-components.min.js" async></script>
+    <script src="/js/modernizr-custom.js" async defer></script>
+    <link rel="stylesheet" href="/css/styles.min.css" />
+
+    <!-- <link rel="stylesheet" href="/helper-tools/styles.min.css" /> -->
+    <link rel="stylesheet" href="/helper-tools/styles.css" />
+
+    <!-- <script src="/realme/js/modals.js" async defer></script>
+    <script src="/realme/js/script.js" async defer></script>
+    <script src="/realme/js/prism.js" async defer></script> -->
+
+    <script
+      async
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"
+    ></script>
+    <script async defer src="/helper-tools/js/html2canvas.min.js"></script>
+    <script async defer src="/helper-tools/js/script.js"></script>
+  </head>
+  <body class="qa-page">
+    <gg-header></gg-header>
+
+    <div
+      id="copy-success"
+      hidden
+      class="gg-c-alert gg-c-alert--success"
+      role="alert"
+    >
+      <div class="gg-c-alert__wrapper">
+        <div class="gg-c-alert__content">
+          <div class="gg-c-alert__message">
+            <p class="gg-c-alert__title">Woohoo</p>
+            <p>
+              Copied successfully. Just paste it into your forum&nbsp;post.
+            </p>
+          </div>
+          <button class="gg-c-alert__close" aria-label="Close alert">
+            <svg
+              class="gg-c-alert__close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M33.3 25L45 13.3 36.7 5 25 16.7 13.3 5 5 13.3 16.7 25 5 36.7l8.3 8.3L25 33.3 36.7 45l8.3-8.3z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <div class="gg-u-digital-noise-chunky gg-t-wild-sand">
+        <header class="gg-c-masthead gg-c-masthead--digital-noise">
+          <div class="gg-c-masthead__content">
+            <div class="gg-c-masthead__text">
+              <h1 class="gg-u-text-megaphone">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Helper</mark
+                >
+                tools
+              </h1>
+              <p class="gg-c-masthead__page-subtitle">
+                A collection of handy tools for giffgaff community helpers.
+              </p>
+            </div>
+            <picture class="gg-c-masthead__picture" style="align-self: center;">
+              <source
+                media="(min-width: 992px)"
+                srcset="/helper-tools/img/components.png"
+              />
+              <img src="/helper-tools/img/components_mobile.png" />
+            </picture>
+          </div>
+        </header>
+
+        <div class="single gg-o-page-section">
+          <aside class="single__side-nav">
+            <nav>
+              <ul class="gg-c-sidenav">
+                <li>
+                  <a
+                    class="gg-c-sidenav__item gg-c-sidenav__item--current-page"
+                    href="#"
+                    >Placeholder</a
+                  >
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#">Another placeholder</a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#"
+                    >Yet another placeholder</a
+                  >
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#">Lorem ipsum</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <article class="single__article gg-t-white">
+            <h1 class="gg-u-text-shout">
+              <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">
+                Buttons
+              </mark>
+            </h1>
+
+            <h2 class="gg-u-text-loud">
+              Button type
+            </h2>
+            <p>
+              Choose your button type. Primary buttons are used as a "Call to
+              action" (CTA) to try to generate a user action. Secondary buttons
+              are used for more general scenarios where you still want to make
+              sure a user knows something is an option, but it shouldn't be the
+              default or most used one.
+            </p>
+
+            <fieldset class="gg-c-chunky-buttons">
+              <ol class="gg-c-chunky-buttons__list">
+                <li class="gg-c-chunky-buttons__option">
+                  <input
+                    name="button-choice"
+                    type="radio"
+                    id="button-choice--primary"
+                    class="gg-c-chunky-buttons__radio"
+                    checked=""
+                  />
+                  <label
+                    class="gg-c-chunky-buttons__button"
+                    for="button-choice--primary"
+                  >
+                    <span class="gg-c-chunky-buttons__text">
+                      Primary
+                    </span>
+                  </label>
+                </li>
+                <li class="gg-c-chunky-buttons__option">
+                  <input
+                    name="button-choice"
+                    type="radio"
+                    id="button-choice--secondary"
+                    class="gg-c-chunky-buttons__radio"
+                  />
+                  <label
+                    class="gg-c-chunky-buttons__button"
+                    for="button-choice--secondary"
+                  >
+                    <span class="gg-c-chunky-buttons__text">
+                      Secondary
+                    </span>
+                  </label>
+                </li>
+              </ol>
+            </fieldset>
+
+            <h2 class="gg-u-text-loud">Text</h2>
+            <p>Click the button to modify its text.</p>
+
+            <div id="ug-button-container" class="gg-t-wild-sand">
+              <div>
+                <button
+                  id="ug-button"
+                  class="gg-c-btn gg-c-btn--primary gg-c-btn--center"
+                >
+                  <span
+                    contenteditable="plaintext-only"
+                    class="gg-c-btn__switch"
+                    >Button</span
+                  >
+                </button>
+              </div>
+            </div>
+            <br />
+
+            <h2 class="gg-u-text-loud">Preview of community appearance</h2>
+            <p>
+              Your button will be generated automatically and shown here.
+            </p>
+            <div class="heading-m" id="ug-button--preview"></div>
+
+            <h2 class="gg-u-text-loud">Forum code</h2>
+            <p>
+              Use this button in your forum posts
+            </p>
+            <button
+              id="copy-btn"
+              data-open-alert="copy-success"
+              class="gg-c-btn"
+            >
+              <span class="gg-c-btn__switch">
+                Copy generated button
+              </span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </main>
+    <gg-footer></gg-footer>
+  </body>
+</html>
