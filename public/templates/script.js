@@ -585,17 +585,87 @@ When you get a response, you will receive a text and email alert telling you. Yo
   {
     title: "sim problems",
     addFooter: true,
-    content: `Remember that first time activations can take up to 24 hours. Try restarting your phone every 30 mins or so.
+    content: `Have a look through these great troubleshooting steps that I've put together for you.
 
-The easiest thing to try first is checking the giffgaff service status page for any issues in your local area: https://www.giffgaff.com/coverage-and-service#network
+## Troubleshooting steps
 
-If you've still got issues, try performing a manual roam via these instructions: https://www.giffgaff.com/help/articles/how-to-perform-a-manual-roam
+### Check your local masts
 
-If that doesn't help, the next best thing is attempting a SIM swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one.
+[spoiler]
+
+Have a look and check that the network isn't down in your area: https://giffgaff.com/coverage-and-service#network
+
+If it is, you can sign up for text alerts when the problem is solved here: https://status.o2.co.uk
+
+[/spoiler]
+
+### New member?
+
+[spoiler]
+
+Are you new to giffgaff? If so, you might need to wait for up to 24 hours for your SIM to be fully activated.
+
+Usually this happens much quicker (within 30 mins or so) but in some periods, it can take longer.
+
+[/spoiler]
+
+### APN settings
+
+[spoiler]
+
+Please check if your APN settings are correct. Sometimes they are only partially set up.
+
+If you use an iPhone, please follow this Apple Support guide to change your APN settings: https://support.apple.com/en-gb/HT201699
+
+If you use an Android device, head to Settings, Mobile Networks/Wireless & Networks, Mobile Network, APNs. After click the 'Add' or 'New' button (it may be hidden behind 3 dots).
+
+Enter the APN values shown below. Please note that some fields may not be shown on all devices, so you might not have to enter all of these.
+
+| Field Name | Field Value |
+|---|---|
+| Connection Name | giffgaff |
+| APN | \`giffgaff.com\` |
+| Proxy | [leave blank] |
+| Port | [leave blank] |
+| Username | \`giffgaff\` |
+| Password | [leave blank] |
+| Server | \`http://mmsc.mediamessaging.co.uk:8002\` |
+| MMSC | \`http://mmsc.mediamessaging.co.uk:8002\` |
+| MMS proxy | \`82.132.254.1\` |
+| MMS port | \`8080\` |
+| MCC | \`234\` |
+| MNC | \`10\` |
+| Authentication Type | \`PAP or CHAP\` |
+| APN type | \`default,supl,mms,ia,xcap\` |
+| APN protocol | \`IPv4\` |
+| APN roaming protocol | \`IPv4\` |
+| Bearer |  [leave blank] or \`Unspecified\` |
+| MVNO type |  \`SPN\` |
+| MVNO value |  \`giffgaff\` |
+
+[/spoiler]
+
+### Manual roam
+
+[spoiler]
+
+See this great guide to perform a manual roam: https://www.giffgaff.com/help/articles/how-to-perform-a-manual-roam
+
+This can often fix all sorts of strange issues you're having.
+
+[/spoiler]
+
+### Faulty SIM
+
+[spoiler]
+
+If it's still not working, your SIM might be faulty. This can just happen at random, but it's easy to replace your SIM.
+
+You'll need to perform a SIM swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one.
 
 You can only complete a SIM swap can only between 4:30 AM and 9:30 PM.
 
-**Perform a SIM swap here:** https://www.giffgaff.com/profile/details#simswap
+#### Perform a SIM swap here https://www.giffgaff.com/profile/details#simswap
 
 You need any unactivated giffgaff SIM. You can get one from:
 - 1. a member's affiliate link (click my name at the top of this post)
@@ -610,8 +680,7 @@ The SIM swap process itself can take up to 24 hours to complete but usually only
 
 If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
 
-See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken
-`,
+[/spoiler]`,
   },
   {
     title: "ratesetter-contact",
