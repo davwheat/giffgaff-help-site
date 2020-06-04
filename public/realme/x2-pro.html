@@ -214,7 +214,7 @@
 
                 <h2 class="gg-u-text-louder">Version and changelog</h2>
                 <p class="gg-u-text-speak-up">
-                  This version: v1.2
+                  This version: v1.3
                 </p>
                 <details class="gg-c-accordion">
                   <summary>
@@ -236,6 +236,10 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 1.3</h3>
+                    <p>
+                      Clarify bootloader unlock command line steps.
+                    </p>
                     <h3 class="gg-u-text-loud">Version 1.2</h3>
                     <p>
                       Clarify that ADB and Fastboot should be downloaded to your
@@ -588,30 +592,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="unknown-step">
-                    Run these commands:
-                    <pre class="language-bash"><code>adb reboot bootloader
-fastboot flashing unlock</code></pre>
-                    <div
-                      class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
-                    >
-                      <div class="gg-o-media__img">
-                        <img
-                          class="gg-u-icon gg-u-icon--medium"
-                          src="/realme/img/icons/flag.svg"
-                          alt="Info"
-                        />
-                      </div>
-                      <div class="gg-o-media__content">
-                        <p>
-                          The step above might not be needed. Let me know on
-                          Discord: MrJeeves#6969
-                        </p>
-                      </div>
-                    </div>
+                  <li>
+                    The phone should reboot and show in green text <b>START</b>.
+                    If it doesn't, run this command:
+                    <pre
+                      class="language-bash"
+                    ><code>adb reboot bootloader</code></pre>
+                  </li>
+                  <li>
+                    Unlock the bootloader by running this command:
+                    <pre
+                      class="language-bash"
+                    ><code>fastboot flashing unlock</code></pre>
                   </li>
                   <li data-version="10">
-                    Press Volume Up to highlight the
+                    Press Volume Down to highlight the
                     <b>UNLOCK THE BOOTLOADER</b>
                     option, then press Power to select it
                   </li>
