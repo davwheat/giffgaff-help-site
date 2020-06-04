@@ -156,29 +156,6 @@ represent the views or opinions of giffgaff Limited, or its staff
 </a>
 </div>
 </footer>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAT0fbey8ETQULa-SSIyBEfsVmIjtToh48",
-    authDomain: "gg-help.firebaseapp.com",
-    databaseURL: "https://gg-help.firebaseio.com",
-    projectId: "gg-help",
-    storageBucket: "gg-help.appspot.com",
-    messagingSenderId: "441453803789",
-    appId: "1:441453803789:web:c6e2cd6b1a07c3c6999844",
-    measurementId: "G-0TVVBKR3LE"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
 `;
 
     (function() {
