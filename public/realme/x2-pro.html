@@ -214,7 +214,7 @@
 
                 <h2 class="gg-u-text-louder">Version and changelog</h2>
                 <p class="gg-u-text-speak-up">
-                  This version: v1.3
+                  This version: v1.4
                 </p>
                 <details class="gg-c-accordion">
                   <summary>
@@ -236,6 +236,12 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 1.4</h3>
+                    <p>
+                      Add "completing installation" section, with info about
+                      Magisk, GCam, 90 Hz, fluid navigation gestures, and screen
+                      recording.
+                    </p>
                     <h3 class="gg-u-text-loud">Version 1.3</h3>
                     <p>
                       Clarify bootloader unlock command line steps.
@@ -318,7 +324,7 @@
         <div class="gg-t-white">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
-              <h1 class="gg-u-text-shout" id="unlock">
+              <h1 class="gg-u-text-shout" id="start">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Before</mark
                 >
@@ -992,56 +998,6 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                     After the flash is complete, tap <b>Menu</b>, then
                     <b>Reboot</b>, then <b>System</b>
                   </li>
-                  <li class="unknown-step">
-                    If you want Magisk for root access,
-                    <a
-                      download
-                      href="https://github.com/topjohnwu/Magisk/releases/download/v20.3/Magisk-v20.3.zip"
-                      class="gg-u-link"
-                      >download Magisk 20.3</a
-                    >, then push and flash it like the other files
-                    <div
-                      class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
-                    >
-                      <div class="gg-o-media__img">
-                        <img
-                          class="gg-u-icon gg-u-icon--medium"
-                          src="/realme/img/icons/info-circle.svg"
-                          alt="Info"
-                        />
-                      </div>
-                      <div class="gg-o-media__content">
-                        <p>
-                          You don't need Magisk to pass SafetyNet on AOSiP, but
-                          you might on other ROMs. Note that Magisk is helpful
-                          for other things, like Substratum themes and Fluid
-                          Navigation Gestures.
-                        </p>
-                        <p>
-                          Some people have reported issues with flashing Magisk
-                          before booting once, so it's recommended that your
-                          boot at least once before flashing Magisk.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
-                    >
-                      <div class="gg-o-media__img">
-                        <img
-                          class="gg-u-icon gg-u-icon--medium"
-                          src="/realme/img/icons/exclamation-circle.svg"
-                          alt="Info"
-                        />
-                      </div>
-                      <div class="gg-o-media__content">
-                        <p>
-                          If you see a red error, you <b>must</b> go to Menu >
-                          Reboot > Recovery, and try this step again.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
                 </ol>
               </section>
             </div>
@@ -1049,6 +1005,616 @@ fastboot flash vbmeta vbmeta.img</code></pre>
         </div>
 
         <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <div class="gg-u-readable-width">
+              <h1 class="gg-u-text-shout" id="complete">
+                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
+                  >Completing</mark
+                >
+                installation
+              </h1>
+              <section class="gg-o-page-section" id="root">
+                <h2 class="gg-u-text-louder gg-u-mb-medium">
+                  <mark class="gg-u-doodle-end-boing">Extra steps</mark>
+                </h2>
+
+                <details id="root" class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.5 6.1L13.3 6l-1.8.1H9.6l-3.5-.2H4.5l-4.3.2.1 3.1 4 .4 1.6.1 3.6.2h4.1l1.3.1.4-.1c.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          d="M6.1.5L6 2.7l.1 1.8v1.9l-.2 3.5v1.6l.2 4.3 3.1-.1.4-4 .1-1.6.2-3.6V2.4l.1-1.3-.1-.4C9.2.2 7.5.2 6.1.5z"
+                          class="gg-c-accordion__marker-open"
+                        />
+                      </svg>
+                      Rooting with Magisk
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__icon gg-u-icon gg-u-icon--medium"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20.5 11.2c0-.3-.3-.6-.6-.6h-9.5c-.2-1.2-.2-2.6 0-3.8.2-1.1.9-1 1.8-1s1.4-.1 1.8.9c.2.7 0 1.6.6 2.1.7.8 3.6.9 3.6-.6.1-2.4-.2-4.7-2.3-6.1-1.4-1-3.5-.7-5.1-.6-1.7 0-3.1.4-4.1 2-1.2 1.8-.6 4.9-.6 7.2H4.3c-.3 0-.6.3-.6.6.2 3.6.1 7.2 0 10.8 0 .3.3.6.6.6 5.3-.2 10.7-.3 15.9 0 .3 0 .6-.3.6-.6-.4-3.6-.3-7.2-.3-10.9zm-9.9-8.5c1 0 2.2-.2 3.2 0 2.7.5 3.1 3.1 3 5.4 0-.3-1.2 0-1.5-.4-.4-.5-.2-1.6-.4-2.2-.5-1.3-1.8-1-3-1.1-1 0-2-.1-2.5.9-.3.7-.3 1.4-.3 2.1-.1 1.1-.1 2.1 0 3.2h-2c.2-3.2-.9-7.7 3.5-7.9zm4.7 18.7H4.8l.1-6V11.8h13.8c.2 0 .7-.1.7.5v5.2l.1 2.3v1.5h-.2l-4 .1z"
+                        />
+                        <path
+                          d="M12.2 13.8c-1.3 0-1.8.7-1.8 1.4 0 .6.3 1 .9 1.2v3c0 .8 1.2.8 1.2 0v-3c.5-.1.9-.4.9-1.3.1-1-.6-1.3-1.2-1.3z"
+                        />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <p>It's surprisingly simple to root with Magisk!</p>
+
+                    <div class="unknown-step">
+                      <p>
+                        Just
+                        <a
+                          download
+                          href="/realme/files/Magisk-v20.3.zip"
+                          class="gg-u-link"
+                          >download Magisk 20.3</a
+                        >, then push and flash it like the other files.
+                      </p>
+
+                      <h3 class="gg-u-text-loud gg-u-mb-small">Method</h3>
+
+                      <ol class="gg-c-list-ordered">
+                        <li>
+                          Unplug and turn off your phone. Wait about 20 seconds.
+                        </li>
+                        <li>
+                          Hold Volume Down and Power to boot the phone into the
+                          bootloader menu
+                        </li>
+                        <li>
+                          Use Volume Up and Down to select <b>Recovery Mode</b>,
+                          then press Power to select it
+                        </li>
+                        <li>
+                          Enter your passcode (if you have one) to decrypt your
+                          data
+                        </li>
+                        <li>
+                          Push
+                          <a
+                            download
+                            href="/realme/files/Magisk-v20.3.zip"
+                            class="gg-u-link"
+                            >Magisk 20.3</a
+                          >
+                          to your phone via ADB (like you did with other files
+                          above)
+                        </li>
+                        <li>
+                          Tap <b>Files</b> again to refresh the list, then find
+                          your Magisk ZIP in the list and tap it
+                        </li>
+                        <li class="unknown-step">
+                          Swipe the bar to flash Magisk
+
+                          <div
+                            class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                          >
+                            <div class="gg-o-media__img">
+                              <img
+                                class="gg-u-icon gg-u-icon--medium"
+                                src="/realme/img/icons/exclamation-circle.svg"
+                                alt="Info"
+                              />
+                            </div>
+                            <div class="gg-o-media__content">
+                              <p class="gg-u-text-loud">
+                                Do not update Magisk!
+                              </p>
+                              <p>
+                                If you do, your device gets stuck in a bootloop
+                                (soft brick) and you need to flash the
+                                <a
+                                  download
+                                  href="/realme/files/Magisk-uninstaller-20200323.zip"
+                                  class="gg-u-link"
+                                  >Magisk Uninstaller</a
+                                >, then reflash
+                                <a
+                                  download
+                                  href="/realme/files/Magisk-v20.3.zip"
+                                  class="gg-u-link"
+                                  >Magisk 20.3</a
+                                >.
+                              </p>
+                              <p>
+                                If this happens, your phone should automatically
+                                reboot to OrangeFox recovery. If it doesn't,
+                                just hold Power and Volume Up until it switches
+                                off, then quickly swap to holding Volume Down.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+
+                      <h3 class="gg-u-text-loud gg-u-mb-small">Notes</h3>
+
+                      <div
+                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/info-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <p>
+                            You don't need Magisk to pass SafetyNet on AOSiP,
+                            but you might on other ROMs. Note that Magisk is
+                            helpful for other things, like Substratum themes and
+                            Fluid Navigation Gestures.
+                          </p>
+                          <p>
+                            Some people have reported issues with flashing
+                            Magisk before booting once, so it's recommended that
+                            your boot at least once before flashing Magisk.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/exclamation-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <p>
+                            If you see a red error, you <b>must</b> go to Menu >
+                            Reboot > Recovery, and try this step again.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+                <details id="gcam" class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.5 6.1L13.3 6l-1.8.1H9.6l-3.5-.2H4.5l-4.3.2.1 3.1 4 .4 1.6.1 3.6.2h4.1l1.3.1.4-.1c.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          d="M6.1.5L6 2.7l.1 1.8v1.9l-.2 3.5v1.6l.2 4.3 3.1-.1.4-4 .1-1.6.2-3.6V2.4l.1-1.3-.1-.4C9.2.2 7.5.2 6.1.5z"
+                          class="gg-c-accordion__marker-open"
+                        />
+                      </svg>
+                      GCam Ports
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__icon gg-u-icon gg-u-icon--medium"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20 6.1c.1-1.5-1.2-2.2-2.4-2.8a15.7 15.7 0 00-5.2-1.8.5.5 0 00-.5.2 8.7 8.7 0 00-2.6 3.5 3.6 3.6 0 00-3 0 2 2 0 00-.8 1.7 1.6 1.6 0 00-.4.1 2 2 0 00-.8 2.3h-.2a2.1 2.1 0 00-1.3 2.2 1.8 1.8 0 00-.7.9 1.6 1.6 0 00.2 1.7 4 4 0 001.3.9l-.3.5a.6.6 0 000 .3 2.4 2.4 0 00.5 2.5 13.3 13.3 0 002.4 1.5l-.3.4c-.4.7.7 1.3 1.1.7A23.3 23.3 0 009 17c.3-.8 1.3-4.2 2.7-4 .8.4.1 2.4 0 3.2a8.4 8.4 0 000 1.9c-.3.7.7 1.2 1 .5a15.3 15.3 0 014.3-5.3c.5-.3.1-.9-.4-1h.1l.1-.2.7-1.3c2 4.1-2.4 7-2.8 11 0 .8 1.2.8 1.3 0 .2-2.6 2.4-4.6 3-7a6.4 6.4 0 00-.8-5.3l1.6-3a.6.6 0 00.2-.4zm-12.7 0a3.6 3.6 0 011.4.2L8 7.6A10.3 10.3 0 006.7 7c-.1-.4.3-.8.7-.9zM6 8.1a3.8 3.8 0 011.5.6l-.7 1.2a2.4 2.4 0 00-1.2-.6c0-.4-.2-1.2.4-1.2zm0 2.8c-.1.4-.3.8-.6 1.1a3.7 3.7 0 00-1.3-.6c0-1 1.4-1.2 2-.5zM3.2 13c.2-.8 1.1-.3 1.5 0l-.5.9c-.4-.1-1.2-.4-1-.9zm12.6-1.5a.6.6 0 00.4.9 16.3 16.3 0 00-3.2 3.3 10.7 10.7 0 01.3-1.2 2 2 0 00-.9-2.5.5.5 0 01-.4-.1c-1.6-.3-2.4 1-3 2.3a46.4 46.4 0 01-2.2 4.6c-1-.6-2.8-1.2-2.3-2.6a.5.5 0 000-.2l3.8-6.3 2-3.6c.6-1 1.3-2.7 2.3-3.3a11 11 0 013 1c1 .3 3 1 3.1 2z"
+                        />
+                        <path
+                          d="M15.2 5l-.9-.3a4.3 4.3 0 00-.9 0 .5.5 0 00-.4.3.5.5 0 00-.3.6.3.3 0 000 .1c.2.3.4.3.6.4a8.6 8.6 0 01.9.3 1.4 1.4 0 001.5-.2c.6-.6 0-1-.5-1.2z"
+                        />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <p>
+                      There's a
+                      <a
+                        href="https://www.celsoazevedo.com/files/android/google-camera/"
+                        target="_blank"
+                        rel="noopener noreferer"
+                        class="gg-u-link"
+                        >huge repository full of different GCam ports</a
+                      >
+                      put together by celsoazevedo, but it can be difficult to
+                      choose which one to use, so I've done the hard work for
+                      you.
+                    </p>
+
+                    <div class="unknown-step">
+                      <p>
+                        I recommend using using
+                        <a
+                          download
+                          href="/realme/files/x2-pro/GCam_7.3.018_Urnyx05-v1.9.apk"
+                          class="gg-u-link"
+                          >Urnyx05's GCam 7 port</a
+                        >. It's (fairly) stable and supports the ultrawide and
+                        telephoto lenses.
+                      </p>
+
+                      <p>
+                        Once you install, you'll want to change some settings.
+                        These will improve your photos <b>significantly</b> and
+                        you only have to do it once!
+                      </p>
+
+                      <div
+                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/info-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <ul class="gg-c-list">
+                            <li>
+                              You cannot record video with the telephoto camera:
+                              the viewfinder freezes.
+                            </li>
+                            <li>
+                              Slow motion does not work, but I haven't had it
+                              working on any other GCam port either.
+                            </li>
+                            <li>
+                              Wide angle has distortion at the edges of the
+                              image.
+                            </li>
+                            <li>
+                              Timelapse and HDR+ Enhanced work amazingly!
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <ul class="gg-c-list">
+                        <li><b>Advanced > Pixel AWB:</b> Pixel 3</li>
+                        <li><b>Advanced > HDR+ Enhanced Frames:</b> 15</li>
+                        <li><b>Advanced > Auxiliary camera:</b> all ON</li>
+                        <li><b>Ultra-high-resolution video:</b> ON</li>
+                        <li><b>4K TimeLapse:</b> ON</li>
+                        <li>
+                          <b>Video stabilisation:</b> ON (OFF for optical)
+                        </li>
+                        <li><b>Bitrate:</b> 40 or higher</li>
+                        <li>
+                          <b>Advanced > Lib Patcher > Tone Curve</b>
+                          <ul class="gg-c-list">
+                            <li>Enable Tone Curve: ON</li>
+                            <li>Dark Point: 0.5</li>
+                            <li>White Point: 0.33</li>
+                            <li>Shadows: -4</li>
+                            <li>Highlights: 14</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <b>Advanced > Lib Patcher > Back Camera</b>
+                          <ul class="gg-c-list">
+                            <li>Sharpness: 1.125</li>
+                            <li>Luma denoise: 1.25</li>
+                            <li>Chroma denoise: 1.125</li>
+                            <li>Contrast: 1.0</li>
+                            <li>
+                              Saturation: your choice between 1.125 and 1.5 (I
+                              choose 1.375)
+                            </li>
+                            <li><b>First set</b></li>
+                            <li>Level 1: 1.125</li>
+                            <li>Level 2: 1.125</li>
+                            <li>Level 3: 1.125</li>
+                            <li>Level 4: 1.375</li>
+                            <li><b>Second set</b></li>
+                            <li>Level 1: 1.125</li>
+                            <li>Level 2: 1.25</li>
+                            <li>Level 3: 1.125</li>
+                            <li>Level 4: 1.25</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <b>Advanced > Lib Patcher > Telephoto lens</b>
+                          <ul class="gg-c-list">
+                            <li>Sharpness: 1.0</li>
+                            <li>Luma denoise: 0.5</li>
+                            <li>Chroma denoise: 0.375</li>
+                            <li>Contrast: 1.0</li>
+                            <li>
+                              Saturation: your choice between 1.0 and 1.5 (I
+                              choose 1.25)
+                            </li>
+                            <li>All others at default</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <b>Advanced > Lib Patcher > Wide lens</b>
+                          <ul class="gg-c-list">
+                            <li>Sharpness: 1.125</li>
+                            <li>Luma denoise: 1.0</li>
+                            <li>Chroma denoise: 1.0</li>
+                            <li>Contrast: 1.125</li>
+                            <li>
+                              Saturation: your choice between 1.0 and 1.5 (I
+                              choose 1.375)
+                            </li>
+                            <li><b>First set</b></li>
+                            <li>Level 1: 1.125</li>
+                            <li>Level 2: 1.125</li>
+                            <li>Level 3: 1.25</li>
+                            <li>Level 4: 1.25</li>
+                            <li><b>Second set</b></li>
+                            <li>Level 1: 1.125</li>
+                            <li>Level 2: 1.125</li>
+                            <li>Level 3: 1.125</li>
+                            <li>Level 4: 1.125</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+
+                <details id="90hz" class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.5 6.1L13.3 6l-1.8.1H9.6l-3.5-.2H4.5l-4.3.2.1 3.1 4 .4 1.6.1 3.6.2h4.1l1.3.1.4-.1c.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          d="M6.1.5L6 2.7l.1 1.8v1.9l-.2 3.5v1.6l.2 4.3 3.1-.1.4-4 .1-1.6.2-3.6V2.4l.1-1.3-.1-.4C9.2.2 7.5.2 6.1.5z"
+                          class="gg-c-accordion__marker-open"
+                        />
+                      </svg>
+                      Enabling 90 Hz
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__icon gg-u-icon gg-u-icon--medium"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M21.1 3.7v-.4C20.8.7 17.9 1 15.9 1c-1.7 0-3.5-.1-5.2.1-.7 0-1.3 0-1.7.7-.6 1-.3 2.6-.3 3.7v1.4L8 7c-2.2.6-3.5 2.5-3.9 4.7l-.4-.4c-.5-.6-1.4.3-.9.9l1.1 1.1c.2.2.6.6.9.6.4 0 .6-.4.8-.7l1-1.3c.5-.6-.4-1.5-.9-.9l-.5.6a4.3 4.3 0 013.4-3.4v2.1l-.2 4.8v1.5A4 4 0 016 14.8c-.4-.7-1.5 0-1.1.6 1 1.4 2.2 2.2 3.5 2.4-.1 1.3-.3 3.2.3 4.1.6.9 1.7.7 2.7.7l5.1.1c1.9 0 4.7.7 4.4-2.1-.1-5.5.4-11.2.2-16.9zm-7.4 17.8c-.8 0-2.6.3-3.3-.1-.9-.4-.9-2.2-.8-3.5 2-.2 3.8-1.6 4.6-3.7l.2.4c.3.7 1.4.1 1.1-.6l-.6-1.3-.5-.8c-.2-.2-.4-.2-.6-.2l-.8.6-1.1.9c-.7.4-.1 1.5.6 1.1l.5-.3a4.3 4.3 0 01-3.2 2.7l.3-6.3V8.3c1.1.2 2.1.9 2.8 2.3.4.7 1.4.1 1.1-.6a5.4 5.4 0 00-3.9-3V5c0-.6-.2-1.6.1-2.2.3-.6 1.2-.4 2-.4 1.3 0 7.5-.7 7.7 1v.4c.2 5.7-.3 11.4-.1 17.1.1 1.3-5.1.7-6.1.6z"
+                        />
+                        <path
+                          d="M16.4 4.2h-3.1c-.8 0-.8 1.3 0 1.2h3.1c.8.1.8-1.2 0-1.2z"
+                        />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <div class="unknown-step">
+                      <p>
+                        You can enable a range of settings specific to the X2
+                        Pro in <b>Realme Settings</b>.
+                      </p>
+
+                      <ol class="gg-c-list-ordered">
+                        <li>Open <b>Settings</b></li>
+                        <li>
+                          Scroll all the way down, and tap
+                          <b>Realme Settings</b>
+                        </li>
+                        <li>
+                          I recommend setting these:
+                          <ul class="gg-c-list">
+                            <li>DC-Dimming: ON</li>
+                            <li>Auto refresh mode: OFF</li>
+                            <li>Force 90Hz peak refresh rate: ON</li>
+                          </ul>
+                        </li>
+                      </ol>
+
+                      <div
+                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/info-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <p>
+                            90 Hz is disabled when Battery Saver is switched on.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+                <details id="record" class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.5 6.1L13.3 6l-1.8.1H9.6l-3.5-.2H4.5l-4.3.2.1 3.1 4 .4 1.6.1 3.6.2h4.1l1.3.1.4-.1c.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          d="M6.1.5L6 2.7l.1 1.8v1.9l-.2 3.5v1.6l.2 4.3 3.1-.1.4-4 .1-1.6.2-3.6V2.4l.1-1.3-.1-.4C9.2.2 7.5.2 6.1.5z"
+                          class="gg-c-accordion__marker-open"
+                        />
+                      </svg>
+                      Built-in screen recorder
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__icon gg-u-icon gg-u-icon--medium"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20.8 3c-.5-1.8-2.8-.7-3.8.5l-.4-.5c-.8-.8-4.6-.5-6.3-.5-2.2-.1-3.1.3-3.4 1.5-.8-.4-1.9-.3-2.5.4-.5.5-.6 1.6-.2 2.4-.4.1-.7.4-.9.8-.4.7-.5 1.8.2 2.3-.7.9-.6 2.6.6 3h.1c-.6.8-.2 2.2.8 2.6h.2c.5.2 1.1.1 1.6 0-.1 1.7-.3 3.9.5 4.9.7.9 2.5.9 4.1.8.3.2.6.5.6.7.2.6 1.2.4 1-.3l-.3-.5 1.1-.1c3.4.2 3.7-.4 3.5-3.6V4.9c-.1-.3.1-.5.3-.8.1.1.2 0 .4-.1.3-.4.7-.8 1.1-1 .5-.2.9.5.5.7l-.3.9-.4 1.7c-.2 1.3-.4 2.8-.3 4 .1 1.4.7 2.8.6 4.3-.1 1.4-.3 2.6 0 4 .1.7 1.1.4 1-.3-.3-1.6.2-3.1.1-4.7 0-1.3-.5-2.6-.6-3.9-.1-1.5.3-3 .7-4.4.1-.5.6-1.6.4-2.3zM7.6 17.6l.2-3V8.3L7.9 6h8.3v1.1c.1 1.3-.1 3-.1 3.9v6.6H7.6zM8 4.2c.1-.3.4-.5.7-.7l2.3-.1 1.5-.1c1.1-.1 2.1 0 2.7.2.8.4.7.7.8 1.4H7.9l.1-.7zM5 5.4c.1-.3.3-.5.6-.6.7-.1 1.6.2 1.4 1 0 .5-.6.6-1.1.7h-.7C5 6.3 5 5.6 5 5.4zm-.6 6.5c-.6-.2-.5-1.1-.1-1.4.2-.2.7-.3 1-.4.5 0 1.6.2 1.8.9.1 1-2 1-2.7.9zm2.5 2.4c-.4.4-1 .5-1.5.4-.5-.3-.5-1.1-.1-1.5.3-.4.9-.3 1.3-.1.4 0 .6.8.3 1.2zM4.3 9.2c-.7 0-.1-1.2.2-1.5.5-.4 2.1-.3 2.4.3.8 1.2-2 1.3-2.6 1.2zm9 10.9l-1.5.1H9.3c-.6 0-1.3-.3-1.5-.6l-.2-1h8.6c0 .8 0 .9-.3 1.2-.3.5-2.6.3-2.6.3z"
+                        />
+                        <path
+                          d="M10.7 13.3c.2.2.5.3.7.1l3.3-3c.2-.2.2-.5 0-.6l-.5-.5c-.2-.3-.5-.3-.7-.1l-1.6 1.5-.6.7-.1.2-.1-.2-.8-.8c-.2-.2-.5-.2-.6 0-.4.3-.7.6-.4 1.1.3.6 1 1 1.4 1.6z"
+                        />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <div class="unknown-step">
+                      <p>
+                        You can enable the built-in screen recorder via
+                        Settings.
+                      </p>
+
+                      <ol class="gg-c-list-ordered">
+                        <li>Open <b>Settings</b></li>
+                        <li>
+                          Search for <b>Power</b> and choose the top result
+                        </li>
+                        <li>Toggle on <b>Screenrecord</b></li>
+                        <li>
+                          To record, just hold the power button and tap
+                          <b>Screenrecord</b>
+                        </li>
+                      </ol>
+
+                      <div
+                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/info-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <p>
+                            90 Hz is disabled when Battery Saver is switched on.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+                <details id="gestures" class="gg-c-accordion">
+                  <summary>
+                    <div class="gg-c-accordion__summary gg-u-text-speak-up">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__marker gg-u-icon gg-u-icon--small"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.5 6.1L13.3 6l-1.8.1H9.6l-3.5-.2H4.5l-4.3.2.1 3.1 4 .4 1.6.1 3.6.2h4.1l1.3.1.4-.1c.5-.7.5-2.4.2-3.8z"
+                        />
+                        <path
+                          d="M6.1.5L6 2.7l.1 1.8v1.9l-.2 3.5v1.6l.2 4.3 3.1-.1.4-4 .1-1.6.2-3.6V2.4l.1-1.3-.1-.4C9.2.2 7.5.2 6.1.5z"
+                          class="gg-c-accordion__marker-open"
+                        />
+                      </svg>
+                      realme UI like gestures
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="gg-c-accordion__icon gg-u-icon gg-u-icon--medium"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.2 12.3h1.7a2.9 2.9 0 002.6 2.1 2.8 2.8 0 002.8-2.1h9.4c.4 0 1.2 0 1.3-.5s0-.9-.5-.9H10.4a2.7 2.7 0 00-2.7-2.2A2.9 2.9 0 004.9 11H3.2a.7.7 0 000 1.3zm3-1.8l.3-.1a1.5 1.5 0 012-.3 1.5 1.5 0 01.8 1.5 1.7 1.7 0 11-3.3 0 1.4 1.4 0 01.3-1.1zm-3-4.1h11.3a2.7 2.7 0 002.6 2.2A2.8 2.8 0 0020 6.4h.3c.4 0 .5.1.8-.3a.6.6 0 00-.5-.9H20a2.8 2.8 0 00-5.4 0H3.4c-.4 0-.5 0-.7.4a.6.6 0 00.5.8zM17 4.1a1.7 1.7 0 012 1v.2a1.1 1.1 0 010 .5c-.2 2.2-3.5 2.3-3.5 0A1.6 1.6 0 0117 4.1zm3.5 13.4h-6a2.7 2.7 0 00-2.6-2.1A2.9 2.9 0 009 17.4a1.3 1.3 0 00-.3 0 1.5 1.5 0 01-.2 0h-3l-2.7.1a.7.7 0 00.3 1.2H9a3 3 0 002.6 2.2 2.8 2.8 0 002.9-2.2h5.9c.8-.1.8-1.3 0-1.3zm-10.4.7a1.8 1.8 0 011.5-1.8 1.7 1.7 0 011.9 1.7 1.7 1.7 0 11-3.4 0z"
+                        />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div class="gg-c-accordion__content">
+                    <div class="unknown-step">
+                      <p>
+                        There's a great app on the Play Store called
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.fb.fluid"
+                          target="_blank"
+                          rel="noopener noreferer"
+                          class="gg-u-link"
+                          >Fluid Navigation Guestures</a
+                        >. It adds gestures to your phone which are similar to
+                        the gestures found in realme UI.
+                      </p>
+
+                      <p>
+                        Here's how to set it up. For full functionality, you
+                        should be rooted with Magisk first.
+                      </p>
+
+                      <ol class="gg-c-list-ordered">
+                        <li>
+                          In AOSiP settings, make sure you are using the
+                          navigation bar and <b>not</b> gestures
+                        </li>
+                        <li>
+                          Install Fluid Navigation Gestures (FNG) from the Play
+                          Store
+                        </li>
+                        <li>Launch it!</li>
+                        <li>
+                          Swipe through the intro
+                        </li>
+                        <li>Toggle <b>Enabled</b> to <b>ON</b></li>
+                        <li>Enable the permissions that the app needs</li>
+                        <li>
+                          Tap <b>Hide navigation bar</b>, then tap
+                          <b>3 button navigation</b>, then select
+                          <b>Grant with Root</b>
+                        </li>
+                        <li>Grant the superuser request with Magisk</li>
+                        <li>Select <b>3 button navigation</b> again</li>
+                        <li>
+                          Go back, then tap <b>Look and feel</b> and choose
+                          <b>Fluid</b> (or your preference) for
+                          <b>Sides animation</b>
+                        </li>
+                        <li>
+                          Go back and customise your edges the way you want
+                        </li>
+                      </ol>
+
+                      <div
+                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                      >
+                        <div class="gg-o-media__img">
+                          <img
+                            class="gg-u-icon gg-u-icon--medium"
+                            src="/realme/img/icons/info-circle.svg"
+                            alt="Info"
+                          />
+                        </div>
+                        <div class="gg-o-media__content">
+                          <p>
+                            90 Hz is disabled when Battery Saver is switched on.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width">
               <h1 class="gg-u-text-shout" id="revert">
