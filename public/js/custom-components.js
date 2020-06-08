@@ -146,7 +146,7 @@ class ggFooter extends HTMLElement {
 This page is run by a member of the giffgaff community and does not
 represent the views or opinions of giffgaff Limited, or its staff
 </p>
-<a href="https://www.giffgaff.com/orders/affiliate/mrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
+<a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
 <picture class="gg-b128-n256-r512">
 <source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png">
 <source media="(min-width: 550px)" srcset="/img/gg-img/aff-med.png">
