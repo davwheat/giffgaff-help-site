@@ -3,7 +3,7 @@ const footer = `If you still need help, let us know by clicking the **Reply** bu
 Stay safe,
 David`;
 
-const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to mrjeeves, with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
+const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to David Wheatley (mrjeeves), with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
 
 const imageUrls = {
   replacement_sim: `https://community.giffgaff.com/assets/files/2020-06-08/1591632862-177768-image.png`,
