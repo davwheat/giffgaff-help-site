@@ -5,6 +5,11 @@ David`;
 
 const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to mrjeeves, with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
 
+const imageUrls = {
+  replacement_sim: `https://community.giffgaff.com/assets/files/2020-06-08/1591632862-177768-image.png`,
+  start_goodybag_early: `https://community.giffgaff.com/assets/files/2020-04-22/1587569680-107338-chrome-obklihf1v3.png`,
+};
+
 let templates = [
   {
     title: "Footer",
@@ -131,7 +136,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-29/1590763684-73932-image.png)
+![${imageLicense}](${imageUrls.replacement_sim})
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
@@ -152,7 +157,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-![${imageLicense}](https://community.giffgaff.com/assets/files/2020-05-29/1590763684-73932-image.png)
+![${imageLicense}](${imageUrls.replacement_sim})
 
 After barring your SIM, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
   },
@@ -410,7 +415,7 @@ If you want to start your goodybag early, click on the 'Start my next goodybag n
 
 By starting your goodybag early, you will lose all remaining allowances.
 
-![${imageLicense}](https://community.giffgaff.com/assets/files/2020-04-22/1587569680-107338-chrome-obklihf1v3.png)`,
+![${imageLicense}](${imageUrls.start_goodybag_early})`,
   },
   {
     title: "lol u bad no helpline",
