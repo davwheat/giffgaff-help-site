@@ -940,7 +940,7 @@ body {
 }
 .gg-c-form__element-message--invalid:before {
   content: "";
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm-.51 4.07A1.91 1.91 0 0 1 12.76 4a.31.31 0 0 1 .18.16c.72 1.14.53 7.13.4 8.61-.07.91-1.59 1.07-2 .71-1-1.05-.6-3.86-.65-5.38.04-.96-.15-3.71.8-4.03zm.57 15.2a1 1 0 0 1-.3-.05 1.59 1.59 0 0 1-1.13-1.95 2.31 2.31 0 0 1 .1-.28 2.08 2.08 0 0 1 1.18-.87 1.37 1.37 0 0 1 1.46.42 1.43 1.43 0 0 1 .49 1.18 1.67 1.67 0 0 1-1.8 1.55z' fill='%23d60000'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0a12 12 0 1012 12A12 12 0 0012 0zm-.51 4.07A1.91 1.91 0 0112.76 4a.31.31 0 01.18.16c.72 1.14.53 7.13.4 8.61-.07.91-1.59 1.07-2 .71-1-1.05-.6-3.86-.65-5.38.04-.96-.15-3.71.8-4.03zm.57 15.2a1 1 0 01-.3-.05 1.59 1.59 0 01-1.13-1.95 2.31 2.31 0 01.1-.28 2.08 2.08 0 011.18-.87 1.37 1.37 0 011.46.42 1.43 1.43 0 01.49 1.18 1.67 1.67 0 01-1.8 1.55z' fill='%23d60000'/%3E%3C/svg%3E");
   height: var(--small);
   width: var(--small);
   display: inline-block;
@@ -1008,21 +1008,20 @@ body {
 }
 .gg-c-form-error {
   background-color: rgba(214, 0, 0, 0.1);
-  display: flex;
   border-top: solid var(--tiny) var(--red);
+  padding: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-.gg-c-form-error__message {
-  padding: 16px 16px 16px 12px;
-  margin-left: 56px;
-  position: relative;
-}
-.gg-c-form-error__message:before {
-  content: "";
-  background-image: url(https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg);
+.gg-c-form-error__icon {
   width: 48px;
   height: 48px;
-  position: absolute;
-  left: -44px;
+  align-self: start;
+  flex-shrink: 0;
+}
+.gg-c-form-error__message {
+  padding-left: 16px;
 }
 .gg-c-form-error__title {
   font-size: 16px;
@@ -1501,6 +1500,47 @@ body {
     transform: translateX(0);
   }
 }
+.gg-goodybag-detailed__container {
+  display: flex;
+  align-items: flex-end;
+}
+.gg-goodybag-detailed__details {
+  margin: 0;
+}
+.gg-goodybag-detailed__details--item {
+  margin-bottom: 6px;
+}
+.gg-goodybag-detailed__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.gg-goodybag-detailed__icon {
+  width: var(--medium);
+  height: var(--medium);
+  background-repeat: no-repeat;
+  display: table-cell;
+}
+.gg-goodybag-detailed__icon--data {
+  background-image: url(https://www.giffgaff.design/iconography/icons/library/data-world-map.svg);
+}
+.gg-goodybag-detailed__icon--minutes {
+  background-image: url(https://www.giffgaff.design/iconography/icons/library/phone-call.svg);
+}
+.gg-goodybag-detailed__icon--texts {
+  background-image: url(https://www.giffgaff.design/iconography/icons/library/speech-bubble-text.svg);
+}
+.gg-goodybag-detailed__value {
+  display: table-cell;
+  margin-left: var(--medium);
+  padding-left: var(--tiny);
+}
 .gg-c-list {
   padding-left: 16px;
 }
@@ -1895,6 +1935,12 @@ body {
 .gg-c-btn--primary .gg-c-btn__switch:hover {
   color: #000;
   background-color: #ffd966;
+}
+.gg-c-btn--destructive .gg-c-btn__switch,
+.gg-c-btn--destructive .gg-c-btn__switch:focus,
+.gg-c-btn--destructive .gg-c-btn__switch:hover {
+  color: #fff;
+  background-color: #d60000;
 }
 .gg-c-btn--loading {
   -webkit-user-select: none;
