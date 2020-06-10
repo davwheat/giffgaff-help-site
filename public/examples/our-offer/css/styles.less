@@ -104,6 +104,15 @@ main#main-content {
   }
 }
 
+.homepage-hero-section__image-link {
+  img {
+    @media (max-width: 679px) {
+      max-width: 360px;
+      max-height: 100vh;
+    }
+  }
+}
+
 .gg-c-masthead:not(.gg-c-masthead--minor) .gg-c-masthead__content {
   // fixes masthead image overflow
   grid-template-columns: 1fr minmax(0, 504px);
@@ -146,8 +155,8 @@ main#main-content {
     }
   }
 
-  .goodybag-showcase {
-    margin-top: 24px;
+  div.gg-u-readable-width {
+    margin: auto;
   }
 
   @media (min-width: 992px) {
@@ -156,6 +165,7 @@ main#main-content {
 
   .goodybag-showcase {
     padding: 24px;
+    margin-top: 24px;
 
     @media (max-width: 999px) {
       display: flex;
@@ -168,12 +178,100 @@ main#main-content {
       display: inline-block;
       padding-top: 24px;
     }
+
+    &--grid {
+      @lg-bp: 700px;
+      @md-bp: 580px;
+
+      grid-row-gap: 8px;
+      row-gap: 8px;
+
+      @media (min-width: @lg-bp) {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+      }
+
+      @media (min-width: @md-bp) and (max-width: @lg-bp - 1) {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+
+        grid-row-gap: 16px;
+        row-gap: 16px;
+
+        .gg-goodybag-detailed__container {
+          .gg-goodybag-detailed__details {
+            margin-top: 16px;
+          }
+
+          > .gg-u-icon {
+            width: 96px;
+            height: 96px;
+            align-items: center;
+          }
+
+          .gg-goodybag-detailed__details--item {
+            .gg-goodybag-detailed__icon {
+              &--minutes {
+                display: none;
+
+                + .gg-goodybag-detailed__value {
+                  visibility: collapse;
+                  padding-left: 0;
+                  font-size: 12px;
+                  line-height: 16px;
+                  font-weight: 400;
+                  font-size: 0.1px;
+                  letter-spacing: -1px;
+
+                  &:before {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: normal;
+                    visibility: visible;
+                    display: inline;
+                    content: "Plus unlimited minutes and texts";
+                  }
+                }
+              }
+              &--texts {
+                display: none;
+
+                + .gg-goodybag-detailed__value {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: @md-bp - 1) {
+        display: flex;
+        flex-direction: column;
+
+        > *:not(:first-child) {
+          margin-top: 8px;
+        }
+      }
+    }
   }
 }
 
 .always-on-notice {
   line-height: 1.1 !important;
   opacity: 0.65;
+
+  &__large {
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__small {
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
 }
 
 .get-a-phone-benefits {
