@@ -92,12 +92,37 @@ document.querySelectorAll(".ozip-download--realmemeui__cn").forEach((link) => {
 });
 
 // realmeme UI Global C.27
-document.querySelectorAll(".ozip-download--realmemeui__global").forEach((link) => {
-  link.setAttribute(
-    "href",
-    randomiseDownloadLink([
-      "https://mega.nz/file/CAB2SYLQ#Q_EXGe1apsUkYLPy_FzVumlI1x6hDPDweAOHHT_LO6U",
-      "https://drive.google.com/file/d/1S8WcOvgnLzTxgu6UZ0h2cJyKoQ6s0X7Z/view?usp=sharing",
-    ])
-  );
-});
+document
+  .querySelectorAll(".ozip-download--realmemeui__global")
+  .forEach((link) => {
+    link.setAttribute(
+      "href",
+      randomiseDownloadLink([
+        "https://mega.nz/file/CAB2SYLQ#Q_EXGe1apsUkYLPy_FzVumlI1x6hDPDweAOHHT_LO6U",
+        "https://drive.google.com/file/d/1S8WcOvgnLzTxgu6UZ0h2cJyKoQ6s0X7Z/view?usp=sharing",
+      ])
+    );
+  });
+
+function ToggleNav() {
+  const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+  const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+  const nav = document.getElementById("contents");
+
+  if (nav.classList.contains("in")) {
+    nav.classList.remove("in");
+    nav.classList.add("out");
+    enableBodyScroll(nav);
+  } else {
+    nav.classList.remove("out");
+    nav.classList.add("in");
+    disableBodyScroll(nav);
+  }
+}
+
+document.getElementById("toggle-contents").addEventListener("click", ToggleNav);
+
+document
+  .querySelectorAll("#contents li a")
+  .forEach((heading) => heading.addEventListener("click", ToggleNav));

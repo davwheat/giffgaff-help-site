@@ -66,11 +66,7 @@
     <script src="/js/custom-components.min.js" async></script>
     <script src="/js/modernizr-custom.js" async defer></script>
     <link rel="stylesheet" href="/css/styles.min.css" />
-    <link rel="stylesheet" href="/realme/styles.min.css" />
-
-    <script src="/realme/js/modals.js" async defer></script>
-    <script src="/realme/js/script.js" async defer></script>
-    <script src="/realme/js/prism.js" async defer></script>
+    <link rel="stylesheet" href="/realme/styles.css" />
   </head>
   <body class="qa-page">
     <gg-header></gg-header>
@@ -99,7 +95,7 @@
           </div>
         </header>
 
-        <div class="gg-t-light-blue">
+        <div class="gg-t-light-blue" id="intro">
           <section class="gg-o-page-section homepage-hero-section">
             <h2
               class="homepage-hero-section__title gg-u-text-shout gg-u-doodle-squiggle gg-u-doodle-squiggle--white"
@@ -183,16 +179,85 @@
           </section>
         </div>
 
-        <div class="gg-t-white">
-          <section class="gg-o-page-section">
+        <nav id="contents" class="gg-t-wild-sand">
+          <div class="gg-o-page-section">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="unlock">
+              <h2 class="gg-u-text-louder">Contents</h2>
+              <p>Tap a header below to skip to that section</p>
+              <ul class="gg-c-sidenav">
+                <li>
+                  <a class="gg-c-sidenav__item" href="#intro">
+                    Intro
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#info">
+                    Guide info
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#version">
+                    Choose your Android version
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#start">
+                    Before you start
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#unlock">
+                    Unlocking the bootloader
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#recovery">
+                    Flashing OrangeFox recovery
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#rom">
+                    Flashing the Custom ROM
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#complete">
+                    Completing installation
+                  </a>
+                </li>
+                <li>
+                  <a class="gg-c-sidenav__item" href="#revert">
+                    Reverting to ColorOS or realme UI
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <button id="toggle-contents">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="gg-u-icon gg-u-icon--medium"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.3 19.5L13.8 16a3.6 3.6 0 00-.6-.7c-.7-.7-1-1.2-1.8-1.8L9.8 12l.6-.6c2.4-2.1 4.4-4.7 6.7-7a.5.5 0 000-.7A7.7 7.7 0 0015.3 2l-.5.1c-.7.2-1.2 1-1.7 1.5l-4 4.1c-1.4 1.4-2.7 2.5-3.9 4a.5.5 0 000 .7l4.6 5 5 4.7a.5.5 0 00.6 0l2-1.9v-.6z"
+            />
+          </svg>
+          <span>Contents</span>
+        </button>
+
+        <div class="gg-t-white">
+          <section class="gg-o-page-section" id="info">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Guide</mark
                 >
                 info
               </h1>
-              <section class="gg-o-page-section" style="padding-top: 16px;">
+              <section class="gg-u-mt-medium">
                 <h2 class="gg-u-text-louder">Credit</h2>
                 <p>
                   Massive thanks to Gamr13 for the original guide which I
@@ -282,13 +347,13 @@
         </div>
 
         <div class="gg-t-light-blue">
-          <section id="version" class="gg-o-page-section">
+          <section class="gg-o-page-section" id="version">
             <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing">Choose</mark>
                 your Android version
               </h1>
-              <div class="gg-o-page-section" style="padding-bottom: 0;">
+              <div class="gg-u-mt-medium">
                 <p>
                   Some instructions vary based on the version of Android that
                   you are running on your device. Selecting the version your
@@ -339,15 +404,15 @@
         </div>
 
         <div class="gg-t-white">
-          <section class="gg-o-page-section">
+          <section class="gg-o-page-section" id="start">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="start">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Before</mark
                 >
                 you start
               </h1>
-              <section class="gg-o-page-section">
+              <section class="gg-u-mt-medium">
                 <div class="version-info">
                   <img
                     src="/realme/img/icons/info-circle.svg"
@@ -498,15 +563,15 @@
         </div>
 
         <div class="gg-t-wild-sand">
-          <section class="gg-o-page-section">
+          <section class="gg-o-page-section" id="unlock">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="unlock">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Unlocking</mark
                 >
                 the bootloader
               </h1>
-              <section class="gg-o-page-section">
+              <section class="gg-u-mt-medium">
                 <div class="version-warning">
                   <p class="gg-u-screen-reader-only">
                     Error.
@@ -610,7 +675,8 @@
                         On Windows, for example, if you extracted them to your
                         downloads folder you could type
                         <code class="language-bash"
-                          >cd "%userprofile%\<wbr>Downloads\<wbr>extracted folder"</code
+                          >cd "%userprofile%\<wbr />Downloads\<wbr />extracted
+                          folder"</code
                         >
                       </li>
                     </ul>
@@ -649,15 +715,15 @@
         </div>
 
         <div class="gg-t-white">
-          <section class="gg-o-page-section">
+          <section class="gg-o-page-section" id="recovery">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="recovery">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
                 >
                 OrangeFox recovery
               </h1>
-              <section class="gg-o-page-section">
+              <section class="gg-u-mt-medium">
                 <div class="version-info">
                   <img
                     src="/realme/img/icons/info-circle.svg"
@@ -721,7 +787,7 @@
                     <b>successful</b>.
                     <br />
                     <code class="language-bash"
-                      >fastboot flash recovery OrangeFox-<wbr>R10.<wbr>1_1.img</code
+                      >fastboot flash recovery OrangeFox-<wbr />R10.<wbr />1_1.img</code
                     >
                   </li>
                   <li>
@@ -743,15 +809,15 @@
         </div>
 
         <div class="gg-t-wild-sand">
-          <section class="gg-o-page-section">
+          <section class="gg-o-page-section" id="rom">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="rom">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
                 >
                 the Custom ROM
               </h1>
-              <section class="gg-o-page-section">
+              <section class="gg-u-mt-medium">
                 <div class="version-warning">
                   <p class="gg-u-screen-reader-only">
                     Error.
@@ -837,13 +903,6 @@
                     <code class="language-bash"
                       >adb push -p "&lt;FILE NAME&gt;" "/sdcard"</code
                     >
-                    <ul class="gg-c-list">
-                      <li>
-                        Replace
-                        <code class="language-bash">&lt;FILE NAME&gt;</code>
-                        with the name of the zip file that you downloaded
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     On your phone, after the push is complete, tap
@@ -906,17 +965,9 @@
                   <li>
                     In your command prompt, enter this command:
                     <code class="language-bash"
-                      >adb push -p "&lt;AOSiP FILE&nbsp;NAME&gt;" "/sdcard"</code
+                      >adb push -p "&lt;AOSiP FILE&nbsp;NAME&gt;"
+                      "/sdcard"</code
                     >
-                    <ul class="gg-c-list">
-                      <li>
-                        Replace
-                        <code class="language-bash"
-                          >&lt;AOSiP FILE NAME&gt;</code
-                        >
-                        with the name of your AOSiP zip file that you downloaded
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     Wait for this command to complete. This may take several
@@ -970,16 +1021,6 @@
                     <code class="language-bash"
                       >adb push -p "&lt;OpenGApps ZIP NAME&gt;" "/sdcard"</code
                     >
-                    <ul class="gg-c-list">
-                      <li>
-                        Replace
-                        <code class="language-bash"
-                          >&lt;OpenGApps ZIP NAME&gt;</code
-                        >
-                        with the name of your OpenGApps zip file that you
-                        downloaded
-                      </li>
-                    </ul>
                     <div
                       class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
                     >
@@ -1014,16 +1055,16 @@
           </section>
         </div>
 
-        <div class="gg-t-white">
+        <div class="gg-t-white" id="complete">
           <section class="gg-o-page-section">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="complete">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Completing</mark
                 >
                 installation
               </h1>
-              <section class="gg-o-page-section" id="root">
+              <section class="gg-u-mt-medium">
                 <h2 class="gg-u-text-louder gg-u-mb-medium">
                   <mark class="gg-u-doodle-end-boing">Extra steps</mark>
                 </h2>
@@ -1513,7 +1554,9 @@
                         </div>
                         <div class="gg-o-media__content">
                           <p>
-                            90 Hz is disabled when Battery Saver is switched on.
+                            The built-in screen recorder is fairly limited. If
+                            it doesn't do what you need, find a suitable
+                            replacement on the Play Store.
                           </p>
                         </div>
                       </div>
@@ -1601,18 +1644,20 @@
                       </ol>
 
                       <div
-                        class="unknown-step__message gg-o-media gg-o-media--tiny-gutter"
+                        class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter"
                       >
                         <div class="gg-o-media__img">
                           <img
                             class="gg-u-icon gg-u-icon--medium"
-                            src="/realme/img/icons/info-circle.svg"
+                            src="/realme/img/icons/exclamation-circle.svg"
                             alt="Info"
                           />
                         </div>
                         <div class="gg-o-media__content">
                           <p>
-                            90 Hz is disabled when Battery Saver is switched on.
+                            If you decide to remove this later on, make sure you
+                            disable it before uninstalling it, or your nav bar
+                            may remain hidden.
                           </p>
                         </div>
                       </div>
@@ -1625,15 +1670,15 @@
         </div>
 
         <div class="gg-t-wild-sand">
-          <section class="gg-o-page-section">
+          <section class="gg-o-page-section" id="revert">
             <div class="gg-u-readable-width gg-u-mlr-auto">
-              <h1 class="gg-u-text-shout" id="revert">
+              <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Reverting</mark
                 >
                 to ColorOS or realme UI
               </h1>
-              <section class="gg-o-page-section">
+              <section class="gg-u-mt-medium">
                 <div class="version-info">
                   <img
                     src="/realme/img/icons/info-circle.svg"
@@ -1668,10 +1713,9 @@
                     use.
                     <ul class="gg-c-list">
                       <li>
-                        Note: these are hosted on my personal file sharing
-                        accounts. When clicking the link below, you'll be sent
-                        to a random mirror of the file on either Google Drive or
-                        Mega.
+                        <b>Note:</b> these are hosted on my personal file
+                        sharing accounts. The links below will be randomised
+                        between Mega and Google Drive on each page load.
                       </li>
                       <li>
                         Global:
@@ -1716,13 +1760,14 @@
                       </div>
                       <div class="gg-o-media__content">
                         <p>
-                          You should be able to flash the Global OZIP on a
-                          Chinese device and vice versa using this method. If
-                          you modify the OZIP file.
+                          It's very likely possible to convert a Chinese device
+                          to Global via an OZIP, but it must first be modified
+                          to allow it to be installed on the other device.
                         </p>
                         <p>
-                          If something goes wrong, just reflash OrangeFox and
-                          flash the OZIP designed for your device.
+                          If you know how to do this, feel free, but I'm not
+                          going to say how are we can't guarantee this will
+                          work, and you could likely brick your device.
                         </p>
                       </div>
                     </div>
@@ -1734,15 +1779,6 @@
                     <code class="language-bash"
                       >adb push -p "&lt;OZIP FILE NAME&gt;" "/sdcard"</code
                     >
-                    <ul class="gg-c-list">
-                      <li>
-                        Replace
-                        <code class="language-bash"
-                          >&lt;OZIP FILE NAME&gt;</code
-                        >
-                        with the name of your OZIP file that you downloaded
-                      </li>
-                    </ul>
                   </li>
 
                   <li>
@@ -1882,6 +1918,12 @@
         </fieldset>
       </div>
     </dialog>
+
+    <script src="/realme/js/modals.js" async></script>
+    <script src="/realme/js/script.js" async></script>
+    <script src="/realme/js/prism.js" async></script>
+    <script src="/realme/js/bodyScrollLock.min.js" async></script>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
