@@ -98,6 +98,7 @@
             </picture>
           </div>
         </header>
+
         <div class="gg-t-light-blue">
           <section class="gg-o-page-section homepage-hero-section">
             <h2
@@ -151,6 +152,7 @@
             </div>
           </section>
         </div>
+
         <div class="gg-t-light-pink">
           <section
             class="gg-o-page-section homepage-hero-section homepage-hero-section--reverse"
@@ -183,7 +185,7 @@
 
         <div class="gg-t-white">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="unlock">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Guide</mark
@@ -214,7 +216,7 @@
 
                 <h2 class="gg-u-text-louder">Version and changelog</h2>
                 <p class="gg-u-text-speak-up">
-                  This version: v1.4
+                  This version: v1.5
                 </p>
                 <details class="gg-c-accordion">
                   <summary>
@@ -236,6 +238,11 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 1.5</h3>
+                    <p>
+                      Replace firmware downloads with OZIP downloads after the
+                      AFH files were deleted.
+                    </p>
                     <h3 class="gg-u-text-loud">Version 1.4</h3>
                     <p>
                       Add "completing installation" section, with info about
@@ -266,7 +273,7 @@
 
         <div class="gg-t-light-blue">
           <section id="version" class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing">Choose</mark>
                 your Android version
@@ -323,7 +330,7 @@
 
         <div class="gg-t-white">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="start">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Before</mark
@@ -482,7 +489,7 @@
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="unlock">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Unlocking</mark
@@ -637,7 +644,7 @@
 
         <div class="gg-t-white">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="recovery">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
@@ -723,7 +730,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="rom">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Flashing</mark
@@ -772,40 +779,35 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                   to downgrade to the ColorOS firmware and vendor files before
                   being able to run them.
                 </p>
-                <div data-version="10" class="warning-message">
-                  <p class="gg-u-screen-reader-only">
-                    Warning.
-                  </p>
-                  <img
-                    src="/realme/img/icons/exclamation-triangle.svg"
-                    class="warning-message__icon"
-                  />
-                  <p class="warning-message__message">
-                    After doing this, you will not be able to boot into realme
-                    UI because you'll have some files from Android 9 and some
-                    from Android 10. This is normal.
-                  </p>
-                </div>
+                <p data-version="10">
+                  The easiest way to do this is by downloading a ColorOS update
+                  file (OZIP) and installing it via your new custom recovery.
+                  This method also allows you to downgrade to ColorOS 6 if you'd
+                  like to.
+                </p>
                 <ol data-version="10" class="gg-c-list-ordered">
                   <li>
-                    Download the Pie firmware and vendor zip for your device
+                    Download the appropriate ColorOS OZIP file for your device
                     <ul class="gg-c-list">
                       <li>
+                        <b>Note:</b> these are hosted on my personal file
+                        sharing accounts. The links below will be randomised
+                        between Mega and Google Drive on each page load.
+                      </li>
+                      <li>
                         <a
-                          href="https://androidfilehost.com/?fid=4349826312261754839"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="gg-u-link gg-u-link--arrow"
+                          class="gg-u-link gg-u-link--arrow ozip-download--coloros__global"
                         >
                           Global devices
                         </a>
                       </li>
                       <li>
                         <a
-                          href="https://androidfilehost.com/?fid=4349826312261754856"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="gg-u-link gg-u-link--arrow"
+                          class="gg-u-link gg-u-link--arrow ozip-download--coloros__cn"
                         >
                           Chinese devices
                         </a>
@@ -1006,7 +1008,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
 
         <div class="gg-t-white">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="complete">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Completing</mark
@@ -1616,7 +1618,7 @@ fastboot flash vbmeta vbmeta.img</code></pre>
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width">
+            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout" id="revert">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink"
                   >Reverting</mark
@@ -1655,31 +1657,43 @@ fastboot flash vbmeta vbmeta.img</code></pre>
                   </li>
                   <li class="unknown-step">
                     Download the OZIP file for the Android variant you want to
-                    use. You can find all realme OZIPs on Realme Updater (links
-                    below).
+                    use.
                     <ul class="gg-c-list">
                       <li>
-                        Axx is ColorOS 6. Cxx is realme UI 1.0.
+                        Note: these are hosted on my personal file sharing
+                        accounts. When clicking the link below, you'll be sent
+                        to a random mirror of the file on either Google Drive or
+                        Mega.
                       </li>
                       <li>
+                        Global:
                         <a
-                          href="https://realmeupdater.com/downloads/archive/RMX1931EX/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="gg-u-link gg-u-link--arrow"
+                          class="gg-u-link ozip-download--coloros__global"
+                          >Android 9 (ColorOS)</a
+                        >,
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="gg-u-link ozip-download--realmemeui__global"
+                          >Android 10 (realme UI)</a
                         >
-                          Global devices
-                        </a>
                       </li>
                       <li>
+                        Chinese:
                         <a
-                          href="https://realmeupdater.com/downloads/archive/RMX1931/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="gg-u-link gg-u-link--arrow"
+                          class="gg-u-link ozip-download--coloros__cn"
+                          >Android 9 (ColorOS)</a
+                        >,
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="gg-u-link ozip-download--realmemeui__cn"
+                          >Android 10 (realme UI)</a
                         >
-                          Chinese devices
-                        </a>
                       </li>
                     </ul>
                     <div
