@@ -58,6 +58,10 @@ code {
   font-family: "Consolas", monospace;
   width: max-content;
   max-width: 100%;
+
+  .token.entity {
+    color: inherit;
+  }
 }
 
 .version {
@@ -187,7 +191,7 @@ body:not([data-version="9"]):not([data-version="10"]) {
   left: 0;
   right: 0;
   z-index: 9999998;
-  padding-left: 43px;
+  padding-left: 48px;
   padding-top: 72px;
 
   overflow-y: auto;
@@ -207,13 +211,12 @@ body:not([data-version="9"]):not([data-version="10"]) {
 
     + #toggle-contents {
       transform-origin: right 0;
-      transform: translateX(calc(-100vw + 43px)) rotate(90deg);
+      transform: translateX(calc(-100vw + 36px)) rotate(90deg);
       flex-direction: row-reverse;
-      border-bottom: none;
+      border: none !important;
 
       @media (min-width: 900px) {
         transform: translateX(calc(-100vw + 100%));
-        border-left: none;
       }
 
       svg {
@@ -257,6 +260,8 @@ body:not([data-version="9"]):not([data-version="10"]) {
   }
 
   padding: 8px;
+  padding-top: 2px;
+  padding-bottom: 4px;
   padding-right: 16px;
   transform: rotate(90deg);
   transform-origin: right 0;
