@@ -1,5 +1,21 @@
 const seasonalTemplates = [
   {
+    button: `No payback!`,
+    text: `Some people's payback is still being paid out.
+
+Check your emails for any messages from the giffgaff team as they've needed to contact some people for more information.
+
+If you still don't have your payback in July, you should contact an agent.
+
+**Do not contact an agent before 1 July. They won't respond before July and might not respond at all.**
+
+You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app/ask/Payback-and-recruits/My-payback-payout/form
+
+Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
+
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
+  },
+  {
     button: "COVID-19 roaming",
     text: `Because of COVID-19, giffgaff are extending the time you can use goodybags in the EU for. Agents are handling EU Roaming extensions for those stuck abroad on a case-by-case basis.
 
@@ -47,7 +63,7 @@ To all the 5G conspiracy theorists: if you're going to start burning down 5G tow
   },
   {
     button: `Balance Notifications`,
-    text:`A recent update to the way balance notifications are provided means that automated devices (like gates or alarms) may start forwarding these messages to your phone.
+    text: `A recent update to the way balance notifications are provided means that automated devices (like gates or alarms) may start forwarding these messages to your phone.
 
 These notifications used to be sent via an outdated system called USSD messaging, but now they're being sent by text instead. These devices are set up to automatically forward incoming texts to the owner's phone number. The forwarding of this text causes another balance notification to be sent, leading to an endless cycle of credit draining.
 
@@ -57,11 +73,11 @@ To get a refund, you should contact an agent which you can do so here: https://s
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
     button: `MMS Issues`,
-text:`An issue with using the MMS (picture message) service was recognised by giffgaff and you can read more about it on the [Service Updates page](https://community.giffgaff.com/d/33109663-resolved-issues-using-mms-23-april-2020). Most of these cases are due to an incorrect "MMSC address" in your phone's settings.
+    text: `An issue with using the MMS (picture message) service was recognised by giffgaff and you can read more about it on the [Service Updates page](https://community.giffgaff.com/d/33109663-resolved-issues-using-mms-23-april-2020). Most of these cases are due to an incorrect "MMSC address" in your phone's settings.
 
 Make sure that all your APN settings (especially the MMSC address) are correct. The settings shown on the giffgaff help guides aren't complete. Press the button below to get the full list of settings
 
@@ -104,8 +120,8 @@ You can contact a giffgaff agent at this link: https://support2.giffgaff.com/app
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
 
-When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`
-  }
+When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
+  },
 ];
 
 seasonalTemplates.forEach((template, i) => {
