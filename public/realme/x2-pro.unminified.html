@@ -262,7 +262,7 @@
 
                 <h2 class="gg-u-text-louder">Version and changelog</h2>
                 <p class="gg-u-text-speak-up">
-                  This version: v2.0
+                  This version: v2.1
                 </p>
                 <details class="gg-c-accordion">
                   <summary>
@@ -284,6 +284,14 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 2.1</h3>
+                    <p class="gg-u-text-speak-up">27/6/20</p>
+                    <p>
+                      Update OF img filename. Add step to allow OF to modify
+                      system. Add AOSiP to "supported" instructions. Switch to
+                      NikGApps from OpenGApps (don't want no bootloop, do we?!).
+                      Add missing "back" step after flashing&nbsp;complete.
+                    </p>
                     <h3 class="gg-u-text-loud">Version 2.0</h3>
                     <p class="gg-u-text-speak-up">20/6/20</p>
                     <p>
@@ -532,23 +540,20 @@
                 <h2 class="gg-u-text-louder">Final notes</h2>
                 <ul class="gg-c-list">
                   <li>
-                    For a few days after installing LineageOS you may see much
-                    lower battery life. This is normal and stops after around
-                    2-3 days. It's due to your phone performing extra setup
+                    For a few days after installing LineageOS or AOSiP you may
+                    see much lower battery life. This is normal and stops after
+                    around 2 days. It's due to your phone performing extra setup
                     steps in the background, like updating system apps (Google
                     Apps, Play Store, etc), registering your device with
                     Google,&nbsp;etc.
                   </li>
                   <li>
-                    When turning on your device display, the lock screen
-                    brightness may be significantly lower than normal
-                    brightness. This is a bug to do with
-                    fingerprint&nbsp;detection.
+                    AOSiP does not have facial unlock support, but
+                    LineageOS&nbsp;does.
                   </li>
                   <li>
-                    Some have reported green displays at specific brightness
-                    levels. This can be fixed by toggling DC Dimming off
-                    and&nbsp;on.
+                    Don't burn your retinas: the setup screen is full white at
+                    100% brightness.
                   </li>
                 </ul>
               </section>
@@ -805,7 +810,7 @@
                     <br />
                     <code class="language-bash"
                       >fastboot flash recovery
-                      OrangeFox-&#8203;R10.&#8203;1_1.img</code
+                      OrangeFox-&#8203;R10.&#8203;1_2.img</code
                     >
                   </li>
                   <li>
@@ -819,6 +824,11 @@
                   <li>
                     On your phone, press Volume Down until you see
                     <b>RECOVERY MODE</b> at the top, then press&nbsp;Power
+                  </li>
+                  <li>
+                    If you see a screen saying
+                    <b>System Partition - Unmodified System Partition</b>, swipe
+                    the bar at the bottom to allow&nbsp;modifications.
                   </li>
                 </ol>
               </section>
@@ -923,46 +933,72 @@
                     >
                   </li>
                   <li>
-                    On your phone, after the push is complete, tap
-                    <b>Files</b> (even if already selected), then scroll and tap
-                    the zip you just pushed. Swipe the bar to flash&nbsp;it.
+                    On your phone, scroll and tap the zip you just pushed. Swipe
+                    the bar to flash&nbsp;it.
                   </li>
                 </ol>
                 <h2 data-version="9" class="gg-u-text-loud">
-                  Flashing LineageOS
+                  Flashing LineageOS or AOSiP
                 </h2>
                 <p>
                   This guide will primarily focus on how to flash
-                  <b>LineageOS</b> but you can also use this guide to flash any
-                  custom ROM based on realme UI firmware/vendor&nbsp;files.
+                  <b>LineageOS</b> or <b>AOSiP</b> but you can also use this
+                  guide to flash any custom ROM based on realme UI
+                  firmware/vendor&nbsp;files.
                 </p>
 
                 <ol class="gg-c-list-ordered">
                   <li>
-                    <a
-                      href="https://sourceforge.net/projects/hyperteam/files/karthick111/RMX1931/lineage-17.1/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="gg-u-link gg-u-link--arrow"
-                    >
-                      Download the latest build of&nbsp;LineageOS
-                    </a>
+                    Download the latest build of the custom ROM you want
+                    to&nbsp;use
+
                     <ul class="gg-c-list">
                       <li>
-                        This can be found at the link above. The top of the list
-                        is the most recent.
+                        <a
+                          href="https://github.com/4j17h/AOSiP_OTA/releases/latest"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          AOSiP
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://sourceforge.net/projects/hyperteam/files/karthick111/RMX1931/lineage-17.1/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="gg-u-link gg-u-link--arrow"
+                        >
+                          LineageOS
+                        </a>
                       </li>
                     </ul>
                   </li>
                   <li>
+                    https://nikgapps.com/downloads#downloads
                     <a
-                      href="https://mega.nz/file/SFYXGA7a#LqEEfesLoIDeet_C7dxcmpaLifUyMn7nwpmxNKLZjn8"
+                      href="https://mega.nz/file/yExlSCJT#egOO9qkc9zu4nc3h7WwE9cIvY8q9HaxUak23dIMhwuY"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="gg-u-link gg-u-link--arrow"
                     >
-                      Download OpenGApps (Google&nbsp;apps)
+                      Download Google&nbsp;apps
                     </a>
+                    <ul class="gg-c-list">
+                      <li>
+                        This package is the "full" package, which includes all
+                        Google apps shown&nbsp;<a
+                          href="https://nikgapps.com/downloads#downloads"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="gg-u-link"
+                          >here</a
+                        >. You can download any of the packages here and they'll
+                        all work, but using Macro at the least
+                        is&nbsp;recommended.
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     Move both of these files to the same folder as ADB
@@ -971,7 +1007,7 @@
                   <li>
                     In your command prompt, enter this&nbsp;command:
                     <code class="language-bash"
-                      >adb push -p "&lt;LineageOS FILE&nbsp;NAME&gt;"
+                      >adb push -p "&lt;LineageOS/AOSiP FILE&nbsp;NAME&gt;"
                       "/sdcard"</code
                     >
                   </li>
@@ -981,12 +1017,11 @@
                     prompt&nbsp;window.
                   </li>
                   <li>
-                    On your phone, tap <b>Files</b> (even if already selected)
-                    at the bottom of&nbsp;OrangeFox
+                    Scroll down and find your LineageOS or AOSiP zip file and
+                    tap it, then swipe the bar to flash the&nbsp;ROM
                   </li>
                   <li>
-                    Scroll down and find your LineageOS zip file and tap it,
-                    then swipe the bar to flash the&nbsp;ROM
+                    After the flashing is complete, tap the back&nbsp;button
                   </li>
                   <li class="unknown-step">
                     On your phone, tap <b>Menu</b> > <b>Manage Partitions</b> >
@@ -1038,14 +1073,13 @@
                     </div>
                   </li>
                   <li>
-                    On your phone, after the push is complete, tap
-                    <b>Files</b> (even if already selected), then scroll and
-                    find your OpenGApps zip. Tap it, and swipe the bar to
+                    On your phone, after the push is complete, scroll and find
+                    your OpenGApps zip. Tap it, and swipe the bar to
                     flash&nbsp;it.
                   </li>
                   <li>
-                    After the flash is complete, tap <b>Menu</b>, then
-                    <b>Reboot</b>, then&nbsp;<b>System</b>
+                    After the flash is complete, tap back at the bottom, then
+                    <b>Menu</b>, then <b>Reboot</b>, then&nbsp;<b>System</b>
                   </li>
                 </ol>
               </section>
