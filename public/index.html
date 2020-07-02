@@ -36,6 +36,10 @@
               </p>
             </div>
             <picture draggable="false" class="gg-c-masthead__picture" style="align-self: center;">
+              <source type="image/webp" media="(max-width: 992px)" srcset="/img/books.mobile.webp" />
+              <source type="image/png" media="(max-width: 992px)" srcset="/img/books.mobile.png" />
+              <source type="image/webp" srcset="/img/books.webp" />
+              <source type="image/png" srcset="/img/books.png" />
               <img draggable="false" src="/img/books.png" alt="Books" style="height: auto;" />
             </picture>
           </div>
@@ -46,8 +50,13 @@
               <a href="/kb">Handy guides</a>
             </h2>
             <a href="/kb" class="homepage-hero-section__image-link" aria-hidden="true" tabindex="-1" draggable="false">
-              <img draggable="false" alt="" class="homepage-hero-section__image" src="/img/bubbles-idea-question.png" />
+              <picture>
+                <source type="image/webp" srcset="/img/bubbles-idea-question.webp" />
+                <source type="image/png" srcset="/img/bubbles-idea-question.png" />
+                <img draggable="false" alt="" class="homepage-hero-section__image" src="/img/bubbles-idea-question.png" />
+              </picture>
             </a>
+
             <div class="gg-s-rich-text homepage-hero-section__text">
               <p>
                 The community has compiled some handy dandy guides for using your phone on giffgaff. If you're heading on holiday, why not check out our guide for
