@@ -12,11 +12,11 @@ const imageUrls = {
 
 let templates = [
   {
-    title: "Footer",
+    title: 'Footer',
     addFooter: true,
   },
   {
-    title: "Contact an agent",
+    title: 'Contact an agent',
     content: `You can contact a giffgaff agent at this link:
 
 Agents always aim to respond within 24 hours (in some busy periods it can take up to 48 hours). It usually only takes 3-5 hours. Agents work everyday between 8 am and 11 pm.
@@ -24,7 +24,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "iMessage number reset",
+    title: 'iMessage number reset',
     addFooter: true,
     content: `This is very common when switching phone numbers and using an iPhone.
 
@@ -54,7 +54,7 @@ When you get a response, you will receive a text and email alert telling you. Yo
 2. Tap **Reset Network Settings**`,
   },
   {
-    title: "Problems after number reset",
+    title: 'Problems after number reset',
     addFooter: true,
     content: `If your old number is showing for text messages and you're using an iPhone, try these steps:
 
@@ -83,7 +83,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "APN Settings",
+    title: 'APN Settings',
     addFooter: true,
     content: `Please check if your APN settings are correct. Sometimes they are only partially set up.
 
@@ -116,7 +116,7 @@ Enter the APN values shown below. Please note that some fields may not be shown 
 | MVNO value |  \`giffgaff\` |`,
   },
   {
-    title: "Lost SIM and Phone",
+    title: 'Lost SIM and Phone',
     addFooter: true,
     content: `#### Follow these instructions. I recommend not to follow any suggestions to perform a SIM swap instead.
 
@@ -143,7 +143,7 @@ If you find your phone again, you'll need to contact a giffgaff agent to get the
 After barring your phone, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
   },
   {
-    title: "Lost SIM",
+    title: 'Lost SIM',
     addFooter: true,
     content: `I recommend reporting your SIM as lost instead of performing a SIM swap.
 
@@ -162,7 +162,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 After barring your SIM, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
   },
   {
-    title: "SIM Swap",
+    title: 'SIM Swap',
     addFooter: true,
     content: `You'll need to perform a SIM swap. This is where you keep your number, credit and goodybag but swap your SIM out for a new one.
 
@@ -186,7 +186,7 @@ If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are l
 See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
   },
   {
-    title: "Return Phone",
+    title: 'Return Phone',
     addFooter: true,
     content: `You can return any phone for any reason within 21 days or 30 days if it's faulty.
 
@@ -196,7 +196,7 @@ See this link for faulty device: https://www.giffgaff.com/help/articles/return-o
 Or this link for changing your mind: https://www.giffgaff.com/help/articles/changing-your-mind-and-returning-your-phone`,
   },
   {
-    title: "Phishing",
+    title: 'Phishing',
     addFooter: true,
     content: `Well done for being suspicious and posting this to the forums to double check. I've left some advice down below.
 
@@ -245,7 +245,7 @@ We've alerted a giffgaff educator to the scam and they will contact you shortly 
 @report_phishing`,
   },
   {
-    title: "Leaving giffgaff",
+    title: 'Leaving giffgaff',
     addFooter: true,
     content: `Sorry to hear you're leaving giffgaff.
 
@@ -268,7 +268,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "Close Account",
+    title: 'Close Account',
     addFooter: true,
     content: `You can fully close your giffgaff account by contacting an agent. Do NOT do this is you want to transfer your phone number. Transferring your number will prevent further charges from giffgaff due to OFCOM's new regulations.
 
@@ -279,7 +279,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "Get a new GG number",
+    title: 'Get a new GG number',
     addFooter: true,
     content: `It's easy to get a new number; you don't even have to replace your SIM. Remember that you can't choose your number: you get given one randomly. 
 
@@ -298,7 +298,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "Change phone order",
+    title: 'Change phone order',
     addFooter: true,
     content: `You can't change an order. You will have to cancel it and reorder it.
 
@@ -313,7 +313,7 @@ If they can't cancel your order, you will have to return it when it arrives.
 To see how to return your phone, see this link: https://www.giffgaff.com/help/articles/return-or-repair-a-faulty-phone`,
   },
   {
-    title: "Adult Content Block",
+    title: 'Adult Content Block',
     addFooter: true,
     content: `To deactivate the adult content block, you need either a valid British driver's license or a machine-readable passport.
 
@@ -322,7 +322,7 @@ Northern Irish driver's licenses are not supported at the moment.
 You can disable the block from your account settings here: https://www.giffgaff.com/profile/details#adultcontent`,
   },
   {
-    title: "Always On £25 goodybag ban",
+    title: 'Always On £25 goodybag ban',
     addFooter: true,
     content: `The ban can't be lifted and there is no way of appealing the ban. It usually lasts around 6 months. If you want to leave giffgaff and take your number with you, follow the instructions below to get your PAC. Note that Smarty offer unlimited data (1000 GB) for £20 per month.
 
@@ -341,7 +341,7 @@ Your PAC code will be valid for 30 days. giffgaff doesn't have any early termina
 Please note that you will lose any active goodybag, remaining airtime credit and any payback points you've got.`,
   },
   {
-    title: "Credit not goodybag",
+    title: 'Credit not goodybag',
     addFooter: true,
     content: `Credit is different from goodybags.
 
@@ -356,7 +356,7 @@ You can buy goodybags from the 'Buy a goodybag' button on the giffgaff website: 
 You can buy credit top-ups from the 'Add credit' button on the giffgaff website : https://giffgaff.com/top-up`,
   },
   {
-    title: "Referral Payback",
+    title: 'Referral Payback',
     addFooter: true,
     content: `If you have referred someone to giffgaff via an affiliate SIM, you get 500 payback points (equal to £5) added to your account.
 
@@ -371,7 +371,7 @@ The points can be seen here: https://giffgaff.com/profile/payback
 You can redeem these as credit, donate them to charity or get them paid to PayPal (if you have £10 or more) every 6 months, in June and December.`,
   },
   {
-    title: "Family Account",
+    title: 'Family Account',
     addFooter: true,
     content: `There isn't a way to have multiple SIMs on one account at the moment on giffgaff.
 
@@ -380,7 +380,7 @@ In the meantime, you will have to have a separate account for each SIM. You can 
 Sorry about that.`,
   },
   {
-    title: "2 SIMs 1 Number",
+    title: '2 SIMs 1 Number',
     addFooter: true,
     content: `There isn't a way to have multiple SIMs for the same number on **any UK network**. This is due to the laws surrounding SIMs and phone numbers not allowing this.
 
@@ -389,7 +389,7 @@ In the meantime, you will have to have a separate account for each SIM, and a di
 Sorry about that.`,
   },
   {
-    title: "Number recycling",
+    title: 'Number recycling',
     addFooter: true,
     content: `If you haven't used your SIM for 6 months or more, it will be deactivated with all credit lost and the number gone forever. This is in compliance with Ofcom's number recycling regulations.
 
@@ -405,7 +405,7 @@ Sorry about that.
 You can [order another free SIM](https://www.giffgaff.com/orders/mgm) and activate it on your giffgaff account if you want to use giffgaff again.`,
   },
   {
-    title: "Start goodybag early",
+    title: 'Start goodybag early',
     addFooter: true,
     content: `It's only possible to start a goodybag early if you have under 100 MB data left in your current goodybag.
 
@@ -418,7 +418,7 @@ By starting your goodybag early, you will lose all remaining allowances.
 ![${imageLicense}](${imageUrls.start_goodybag_early})`,
   },
   {
-    title: "lol u bad no helpline",
+    title: 'lol u bad no helpline',
     addFooter: true,
     content: `The fact we don't have a call centre is the reason giffgaff can offer cheaper service than other providers. Instead of a call centre, giffgaff pay members to provide support on the forum. For account related issues, [agents](https://support2.giffgaff.com/app/ask) are available to help. Either way, who has time for *phone calls*... it's ${new Date().getFullYear()}!
 
@@ -429,7 +429,7 @@ If you want a good deal and **90 second response time** (something that call cen
 After all, there's a reason [we've won uSwitch network of the year 2018 and 19](https://www.uswitch.com/mobiles/networks/giffgaff/).`,
   },
   {
-    title: "Reset Password",
+    title: 'Reset Password',
     addFooter: true,
     content: `There's a few ways to get your password reset.
 
@@ -444,7 +444,7 @@ Head to the [password reset page](https://www.giffgaff.com/support/lost-password
 You can either enter your member name or phone number. If you're getting the link sent to your email, you can also enter your email instead.`,
   },
   {
-    title: "Network shortcodes/balance or goodybag info",
+    title: 'Network shortcodes/balance or goodybag info',
     addFooter: true,
     content: `Here are some useful short codes. If what you're looking for isn't shown below, you'll have to check the dashboard on the website or the app: https://giffgaff.com/dashboard
 
@@ -458,7 +458,7 @@ You can either enter your member name or phone number. If you're getting the lin
 To check the data remaining on your goodybag, you have to use the app or website or dial \`43430\` and choose Option 2. Then you'll hear everything remaining on your goodybag.`,
   },
   {
-    title: "RCS",
+    title: 'RCS',
     addFooter: true,
     content: `It is here!
 
@@ -486,7 +486,7 @@ If that doesn't work, you may have to use a workaround...
 7. Follow the above instructions again`,
   },
   {
-    title: "Apple Watch eSIM",
+    title: 'Apple Watch eSIM',
     addFooter: true,
     content: `Sorry but the Apple Watch **Cellular** won't be supported any time soon.
 
@@ -497,7 +497,7 @@ This is because the Apple Watch relies on a new technology called eSIM. This is 
 You'll have to switch network to use the **cellular** functions of the Watch, but the **WiFi and Bluetooth connections will still work fine**.`,
   },
   {
-    title: "EU Roam Like At Home",
+    title: 'EU Roam Like At Home',
     addFooter: true,
     content: `#### Roaming in the EU Basics
 
@@ -542,7 +542,7 @@ Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, F
 For more info, please read the [fair usage while roaming](https://www.giffgaff.com/fair-usage-while-roaming) page.`,
   },
   {
-    title: "Unlock phone",
+    title: 'Unlock phone',
     addFooter: true,
     content: `If your phone asks for a Network PIN or Network Unlock Code, it means that your device is locked to another mobile network.
 
@@ -553,7 +553,7 @@ As your device is locked, you'll need to contact your old network for an unlock 
 You can find out how to unlock your phone on the [giffgaff unlockapedia](https://www.giffgaff.com/unlock/unlocking-quick-start-guide-faq). Please note that unlocking your phone via a 3^rd party will [likely void your device's warranty](https://www.giffgaff.com/unlock/mobile-phone-unlocking-affect-warranty-faq) so, if your device is still covered under warranty and that matters to you, you'll want to contact your previous network to unlock it.`,
   },
   {
-    title: "Always on not unlimited",
+    title: 'Always on not unlimited',
     addFooter: true,
     content: `The £25 goodybag comes with Always On data. This is **not the same as unlimited**.
 
@@ -562,7 +562,7 @@ With the Always On goodybag, you get a whopping 80 GB of full-speed 4G data. How
 Sorry about that misunderstanding.`,
   },
   {
-    title: "repair phone",
+    title: 'repair phone',
     addFooter: true,
     content: `If you bought your phone from giffgaff, you can send it back to get it repaired if it's faulty.
 
@@ -573,7 +573,7 @@ Please see this guide for sending in your phone for repair: https://www.giffgaff
 **Make sure not to send in any accessories (except the charger if it's a charging issue) or the original box as they may not send them back afterwards.**`,
   },
   {
-    title: "giffgaff locked phone",
+    title: 'giffgaff locked phone',
     addFooter: true,
     content: `All giffgaff phones are sold unlocked for use on any network you please.
 
@@ -588,7 +588,7 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
   {
-    title: "sim problems",
+    title: 'sim problems',
     addFooter: true,
     content: `Have a look through these great troubleshooting steps that I've put together for you.
 
@@ -688,7 +688,7 @@ If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are l
 [/spoiler]`,
   },
   {
-    title: "ratesetter-contact",
+    title: 'ratesetter-contact',
     addFooter: true,
     content: `You need to contact RateSetter, the company managing giffgaff phone loans.
 
@@ -706,7 +706,7 @@ Their contact hours are shown below.
 RateSetter contact page: https://www.ratesetter.com/help`,
   },
   {
-    title: "ratesetter loan",
+    title: 'ratesetter loan',
     addFooter: true,
     content: `RateSetter are the company that manage loan applications for pay monthly phone purchases.
 
@@ -738,7 +738,7 @@ RateSetter contact page: https://www.ratesetter.com/help
 [/spoiler]`,
   },
   {
-    title: "imessage advanced",
+    title: 'imessage advanced',
     addFooter: true,
     content: `Here's some advanced troubleshooting steps to take. Do these in order, making sure to wait any time period specified.
 
@@ -759,7 +759,7 @@ RateSetter contact page: https://www.ratesetter.com/help
 If none of this works, you may need to [contact Apple Support](https://getsupport.apple.com/?locale=en_GB&SG=SG003) as they'll be able to escalate your case.`,
   },
   {
-    title: "cheap-roam",
+    title: 'cheap-roam',
     content: `
 
 |Service|Cost|
@@ -773,7 +773,7 @@ If none of this works, you may need to [contact Apple Support](https://getsuppor
 |MMS to all other mobiles|24p each|`,
   },
   {
-    title: "high-roam",
+    title: 'high-roam',
     content: `
 
 |Service|Cost|

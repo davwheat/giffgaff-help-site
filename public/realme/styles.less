@@ -6,6 +6,15 @@ html {
   }
 }
 
+.gg-u-hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.gg-o-page-section p:not(:last-child) + hr {
+  margin-top: 0;
+}
+
 .realme--hero-image_container {
   margin: auto;
   display: block;
@@ -55,7 +64,7 @@ ul.gg-c-list {
 code {
   display: block;
   padding: 2px 6px !important;
-  font-family: "Consolas", monospace;
+  font-family: 'Consolas', monospace;
   width: max-content;
   max-width: 100%;
 
@@ -154,8 +163,8 @@ img.inline {
   margin-bottom: 4px;
 }
 
-body[data-version="10"] {
-  [data-version="9"] {
+body[data-version='10'] {
+  [data-version='9'] {
     display: none;
   }
 
@@ -164,8 +173,8 @@ body[data-version="10"] {
   }
 }
 
-body[data-version="9"] {
-  [data-version="10"] {
+body[data-version='9'] {
+  [data-version='10'] {
     display: none;
   }
 
@@ -174,8 +183,8 @@ body[data-version="9"] {
   }
 }
 
-body:not([data-version="9"]):not([data-version="10"]) {
-  [data-version="9"] {
+body:not([data-version='9']):not([data-version='10']) {
+  [data-version='9'] {
     display: none;
   }
 
@@ -298,4 +307,12 @@ body:not([data-version="9"]):not([data-version="10"]) {
   transform: scale(2);
 }
 
-@import (inline) "./prism.css";
+.gg-c-modal__close-button--custom {
+  position: relative;
+  height: 48px;
+  width: auto;
+  top: unset;
+  right: unset;
+}
+
+@import (inline) './prism.css';

@@ -1,74 +1,57 @@
-let code = "";
+let code = '';
 let pwdShown = false;
 
-document
-  .getElementById("activationCodeInput")
-  .addEventListener("input", (e) => {
-    e.target.value = e.target.value.toUpperCase();
-  });
+document.getElementById('activationCodeInput').addEventListener('input', (e) => {
+  e.target.value = e.target.value.toUpperCase();
+});
 
-document.getElementById("step1nextbtn").addEventListener("click", function (e) {
+document.getElementById('step1nextbtn').addEventListener('click', function (e) {
   e.preventDefault();
 
   const error = (msg) => {
-    const error = document.getElementById("activationCodeInputError");
+    const error = document.getElementById('activationCodeInputError');
 
     error.innerText = msg;
-    error.parentElement.classList.add("gg-c-form__element--invalid");
+    error.parentElement.classList.add('gg-c-form__element--invalid');
   };
 
   const unerror = () => {
-    const error = document.getElementById("activationCodeInputError");
-    error.parentElement.classList.remove("gg-c-form__element--invalid");
+    const error = document.getElementById('activationCodeInputError');
+    error.parentElement.classList.remove('gg-c-form__element--invalid');
   };
 
-  const activationCodeInput = document.getElementById("activationCodeInput");
+  const activationCodeInput = document.getElementById('activationCodeInput');
 
   if (activationCodeInput.value.length === 0) {
-    error("Uh-oh, you need to enter you activation code");
+    error('Uh-oh, you need to enter you activation code');
     return false;
   } else {
     unerror();
   }
 
-  if (
-    activationCodeInput.value.length !== 6 &&
-    activationCodeInput.value.length !== 13 &&
-    activationCodeInput.value.length !== 16 &&
-    activationCodeInput.value.length !== 19
-  ) {
-    error(
-      "Uh-oh, your activation code should be 6, 13, 16, or 19 characters long"
-    );
+  if (activationCodeInput.value.length !== 6 && activationCodeInput.value.length !== 13 && activationCodeInput.value.length !== 16 && activationCodeInput.value.length !== 19) {
+    error('Uh-oh, your activation code should be 6, 13, 16, or 19 characters long');
     return false;
   } else {
     unerror();
   }
 
-  if (
-    activationCodeInput.value.length === 6 &&
-    !activationCodeInput.value.match(/^[A-Z0-9]{6}$/)
-  ) {
-    error("Uh-oh, your activation code should only be numbers and letters");
+  if (activationCodeInput.value.length === 6 && !activationCodeInput.value.match(/^[A-Z0-9]{6}$/)) {
+    error('Uh-oh, your activation code should only be numbers and letters');
     return false;
   } else {
     unerror();
   }
 
-  if (
-    (activationCodeInput.value.length === 13 ||
-      activationCodeInput.value.length === 16 ||
-      activationCodeInput.value.length === 19) &&
-    !activationCodeInput.value.match(/^[0-9]*$/)
-  ) {
+  if ((activationCodeInput.value.length === 13 || activationCodeInput.value.length === 16 || activationCodeInput.value.length === 19) && !activationCodeInput.value.match(/^[0-9]*$/)) {
     error("Uh-oh, your SIM's code should only have numbers in it");
     return false;
   } else {
     unerror();
   }
 
-  this.classList.add("gg-c-btn--loading");
-  activationCodeInput.setAttribute("disabled", "disabled");
+  this.classList.add('gg-c-btn--loading');
+  activationCodeInput.setAttribute('disabled', 'disabled');
 
   code = activationCodeInput.value;
 
@@ -78,13 +61,11 @@ document.getElementById("step1nextbtn").addEventListener("click", function (e) {
 });
 
 function scroll() {
-  document
-    .getElementById("invisScroller")
-    .scrollIntoView({ behavior: "smooth" });
+  document.getElementById('invisScroller').scrollIntoView({ behavior: 'smooth' });
 }
 
 function showStep1Success() {
-  document.querySelector("#step1 .woohoo-message").classList.remove("hidden");
+  document.querySelector('#step1 .woohoo-message').classList.remove('hidden');
 
   setTimeout(() => {
     startStep2();
@@ -92,182 +73,156 @@ function showStep1Success() {
 }
 
 function startStep2() {
-  document.getElementById("step1").classList.add("hidden");
-  document.getElementById("step2").classList.remove("hidden");
+  document.getElementById('step1').classList.add('hidden');
+  document.getElementById('step2').classList.remove('hidden');
 
   scroll();
 
-  document.getElementById("activationCodeInput2").innerText = code;
+  document.getElementById('activationCodeInput2').innerText = code;
 }
 
-document
-  .getElementById("toggle-pwd-visibility-1")
-  .addEventListener("click", (e) => {
-    e.preventDefault();
+document.getElementById('toggle-pwd-visibility-1').addEventListener('click', (e) => {
+  e.preventDefault();
 
-    let a = document.getElementById("newPwd");
+  let a = document.getElementById('newPwd');
 
-    a.setAttribute(
-      "type",
-      a.getAttribute("type") === "password" ? "text" : "password"
-    );
+  a.setAttribute('type', a.getAttribute('type') === 'password' ? 'text' : 'password');
 
-    if (a.getAttribute("type") === "password") {
-      document.getElementById("show-pwd1").classList.add("hidden");
-      document.getElementById("hide-pwd1").classList.remove("hidden");
-    } else {
-      document.getElementById("show-pwd1").classList.remove("hidden");
-      document.getElementById("hide-pwd1").classList.add("hidden");
-    }
-  });
+  if (a.getAttribute('type') === 'password') {
+    document.getElementById('show-pwd1').classList.add('hidden');
+    document.getElementById('hide-pwd1').classList.remove('hidden');
+  } else {
+    document.getElementById('show-pwd1').classList.remove('hidden');
+    document.getElementById('hide-pwd1').classList.add('hidden');
+  }
+});
 
-document
-  .getElementById("toggle-pwd-visibility-2")
-  .addEventListener("click", (e) => {
-    e.preventDefault();
+document.getElementById('toggle-pwd-visibility-2').addEventListener('click', (e) => {
+  e.preventDefault();
 
-    let a = document.getElementById("currentPwd");
+  let a = document.getElementById('currentPwd');
 
-    a.setAttribute(
-      "type",
-      a.getAttribute("type") === "password" ? "text" : "password"
-    );
+  a.setAttribute('type', a.getAttribute('type') === 'password' ? 'text' : 'password');
 
-    if (a.getAttribute("type") === "password") {
-      document.getElementById("show-pwd2").classList.add("hidden");
-      document.getElementById("hide-pwd2").classList.remove("hidden");
-    } else {
-      document.getElementById("show-pwd2").classList.remove("hidden");
-      document.getElementById("hide-pwd2").classList.add("hidden");
-    }
-  });
+  if (a.getAttribute('type') === 'password') {
+    document.getElementById('show-pwd2').classList.add('hidden');
+    document.getElementById('hide-pwd2').classList.remove('hidden');
+  } else {
+    document.getElementById('show-pwd2').classList.remove('hidden');
+    document.getElementById('hide-pwd2').classList.add('hidden');
+  }
+});
 
 const emailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).{8,}$/;
 
-document.getElementById("newEmail").addEventListener("blur", (e) => {
+document.getElementById('newEmail').addEventListener('blur', (e) => {
   if (!e.target.value.match(emailRegex)) {
-    e.target.parentElement.classList.add("gg-c-form__element--invalid");
+    e.target.parentElement.classList.add('gg-c-form__element--invalid');
   } else {
-    e.target.parentElement.classList.remove("gg-c-form__element--invalid");
+    e.target.parentElement.classList.remove('gg-c-form__element--invalid');
   }
 });
 
-document.getElementById("newEmail").addEventListener("input", (e) => {
-  document.getElementById("email-confirm").innerText = e.target.value;
+document.getElementById('newEmail').addEventListener('input', (e) => {
+  document.getElementById('email-confirm').innerText = e.target.value;
 
   if (e.target.value.match(emailRegex)) {
-    e.target.parentElement.classList.remove("gg-c-form__element--invalid");
+    e.target.parentElement.classList.remove('gg-c-form__element--invalid');
   }
 });
 
-document
-  .getElementById("step2activatebtn")
-  .addEventListener("click", function (e) {
-    const email = document.getElementById("newEmail");
-    const pwd = document.getElementById("newPwd");
+document.getElementById('step2activatebtn').addEventListener('click', function (e) {
+  const email = document.getElementById('newEmail');
+  const pwd = document.getElementById('newPwd');
 
-    const commsYes = document.getElementById("communications-0");
-    const commsNo = document.getElementById("communications-1");
+  const commsYes = document.getElementById('communications-0');
+  const commsNo = document.getElementById('communications-1');
 
-    let errored = false;
+  let errored = false;
 
-    if (!email.value.match(emailRegex)) {
-      email.parentElement.classList.add("gg-c-form__element--invalid");
-      errored = true;
-    } else {
-      email.parentElement.classList.remove("gg-c-form__element--invalid");
-    }
+  if (!email.value.match(emailRegex)) {
+    email.parentElement.classList.add('gg-c-form__element--invalid');
+    errored = true;
+  } else {
+    email.parentElement.classList.remove('gg-c-form__element--invalid');
+  }
 
-    if (!pwd.value.match(pwdRegex)) {
-      pwd.parentElement.classList.add("gg-c-form__element--invalid");
-      errored = true;
-    } else {
-      pwd.parentElement.classList.remove("gg-c-form__element--invalid");
-    }
+  if (!pwd.value.match(pwdRegex)) {
+    pwd.parentElement.classList.add('gg-c-form__element--invalid');
+    errored = true;
+  } else {
+    pwd.parentElement.classList.remove('gg-c-form__element--invalid');
+  }
 
-    if (!commsYes.checked && !commsNo.checked) {
-      document
-        .getElementById("communications-container")
-        .classList.add("gg-c-form__element--invalid");
-      errored = true;
-    } else {
-      document
-        .getElementById("communications-container")
-        .classList.remove("gg-c-form__element--invalid");
-    }
+  if (!commsYes.checked && !commsNo.checked) {
+    document.getElementById('communications-container').classList.add('gg-c-form__element--invalid');
+    errored = true;
+  } else {
+    document.getElementById('communications-container').classList.remove('gg-c-form__element--invalid');
+  }
 
-    if (errored) {
-      e.preventDefault();
-      return false;
-    }
+  if (errored) {
+    e.preventDefault();
+    return false;
+  }
 
-    email.setAttribute("disabled", "disabled");
-    pwd.setAttribute("disabled", "disabled");
-    pwd.parentElement
-      .querySelector("button")
-      .setAttribute("disabled", "disabled");
+  email.setAttribute('disabled', 'disabled');
+  pwd.setAttribute('disabled', 'disabled');
+  pwd.parentElement.querySelector('button').setAttribute('disabled', 'disabled');
 
-    commsYes.setAttribute("disabled", "disabled");
-    commsNo.setAttribute("disabled", "disabled");
+  commsYes.setAttribute('disabled', 'disabled');
+  commsNo.setAttribute('disabled', 'disabled');
 
-    document
-      .getElementById("step2activatebtn")
-      .setAttribute("disabled", "disabled");
+  document.getElementById('step2activatebtn').setAttribute('disabled', 'disabled');
 
-    this.classList.add("gg-c-btn--loading");
+  this.classList.add('gg-c-btn--loading');
 
-    setTimeout(() => {
-      startStep3();
-    }, 2750);
-  });
+  setTimeout(() => {
+    startStep3();
+  }, 2750);
+});
 
-document
-  .getElementById("step2loginbtn")
-  .addEventListener("click", function (e) {
-    const membername = document.getElementById("currentMembername");
-    const pwd = document.getElementById("currentPwd");
+document.getElementById('step2loginbtn').addEventListener('click', function (e) {
+  const membername = document.getElementById('currentMembername');
+  const pwd = document.getElementById('currentPwd');
 
-    let errored = false;
+  let errored = false;
 
-    if (membername.value.length === 0) {
-      membername.parentElement.classList.add("gg-c-form__element--invalid");
-      errored = true;
-    } else {
-      membername.parentElement.classList.remove("gg-c-form__element--invalid");
-    }
+  if (membername.value.length === 0) {
+    membername.parentElement.classList.add('gg-c-form__element--invalid');
+    errored = true;
+  } else {
+    membername.parentElement.classList.remove('gg-c-form__element--invalid');
+  }
 
-    if (pwd.value.length === 0) {
-      pwd.parentElement.classList.add("gg-c-form__element--invalid");
-      errored = true;
-    } else {
-      pwd.parentElement.classList.remove("gg-c-form__element--invalid");
-    }
+  if (pwd.value.length === 0) {
+    pwd.parentElement.classList.add('gg-c-form__element--invalid');
+    errored = true;
+  } else {
+    pwd.parentElement.classList.remove('gg-c-form__element--invalid');
+  }
 
-    if (errored) {
-      e.preventDefault();
-      return false;
-    }
+  if (errored) {
+    e.preventDefault();
+    return false;
+  }
 
-    membername.setAttribute("disabled", "disabled");
-    pwd.setAttribute("disabled", "disabled");
-    pwd.parentElement
-      .querySelector("button")
-      .setAttribute("disabled", "disabled");
+  membername.setAttribute('disabled', 'disabled');
+  pwd.setAttribute('disabled', 'disabled');
+  pwd.parentElement.querySelector('button').setAttribute('disabled', 'disabled');
 
-    this.classList.add("gg-c-btn--loading");
+  this.classList.add('gg-c-btn--loading');
 
-    document
-      .getElementById("step2activatebtn")
-      .setAttribute("disabled", "disabled");
+  document.getElementById('step2activatebtn').setAttribute('disabled', 'disabled');
 
-    setTimeout(() => {
-      showStep2Success();
-    }, 2750);
-  });
+  setTimeout(() => {
+    showStep2Success();
+  }, 2750);
+});
 
 function showStep2Success() {
-  document.querySelector("#step2 .woohoo-message").classList.remove("hidden");
+  document.querySelector('#step2 .woohoo-message').classList.remove('hidden');
 
   setTimeout(() => {
     startStep3();
@@ -275,60 +230,52 @@ function showStep2Success() {
 }
 
 function startStep3() {
-  document.getElementById("step2").classList.add("hidden");
-  document.getElementById("step3").classList.remove("hidden");
+  document.getElementById('step2').classList.add('hidden');
+  document.getElementById('step3').classList.remove('hidden');
 
   scroll();
 
-  document.getElementById("activationCodeInput3").innerText = code;
+  document.getElementById('activationCodeInput3').innerText = code;
 }
 
 // modal openers
 
-document
-  .getElementById("goodybag-helper")
-  .addEventListener("change", function () {
-    if (this.checked) {
-      this.checked = false;
-      showModal(document.getElementById("goodybag-helper-modal"));
-    }
-  });
+document.getElementById('goodybag-helper').addEventListener('change', function () {
+  if (this.checked) {
+    this.checked = false;
+    showModal(document.getElementById('goodybag-helper-modal'));
+  }
+});
 
-document
-  .querySelector("#terms-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("terms-modal"));
-  });
+document.querySelector('#terms-modal-btn').addEventListener('click', function () {
+  showModal(document.getElementById('terms-modal'));
+});
 
-document
-  .querySelector("#privacy-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("privacy-modal"));
-  });
+document.querySelector('#privacy-modal-btn').addEventListener('click', function () {
+  showModal(document.getElementById('privacy-modal'));
+});
 
-document
-  .querySelector("#code-modal-btn")
-  .addEventListener("click", function () {
-    showModal(document.getElementById("find-code-dialog"));
-  });
+document.querySelector('#code-modal-btn').addEventListener('click', function () {
+  showModal(document.getElementById('find-code-dialog'));
+});
 
 // Modal polyfill
 
 (function (global, factory) {
-  typeof exports === "object" && typeof module !== "undefined"
+  typeof exports === 'object' && typeof module !== 'undefined'
     ? (module.exports = factory())
-    : typeof define === "function" && define.amd
+    : typeof define === 'function' && define.amd
     ? define(factory)
     : ((global = global || self), (global.dialogPolyfill = factory()));
 })(this, function () {
-  "use strict";
+  'use strict';
 
   // nb. This is for IE10 and lower _only_.
   var supportCustomEvent = window.CustomEvent;
-  if (!supportCustomEvent || typeof supportCustomEvent === "object") {
+  if (!supportCustomEvent || typeof supportCustomEvent === 'object') {
     supportCustomEvent = function CustomEvent(event, x) {
       x = x || {};
-      var ev = document.createEvent("CustomEvent");
+      var ev = document.createEvent('CustomEvent');
       ev.initCustomEvent(event, !!x.bubbles, !!x.cancelable, x.detail || null);
       return ev;
     };
@@ -348,14 +295,14 @@ document
 
       if (
         s.opacity < 1 ||
-        invalid("zIndex", "auto") ||
-        invalid("transform", "none") ||
-        invalid("mixBlendMode", "normal") ||
-        invalid("filter", "none") ||
-        invalid("perspective", "none") ||
-        s["isolation"] === "isolate" ||
-        s.position === "fixed" ||
-        s.webkitOverflowScrolling === "touch"
+        invalid('zIndex', 'auto') ||
+        invalid('transform', 'none') ||
+        invalid('mixBlendMode', 'normal') ||
+        invalid('filter', 'none') ||
+        invalid('perspective', 'none') ||
+        s['isolation'] === 'isolate' ||
+        s.position === 'fixed' ||
+        s.webkitOverflowScrolling === 'touch'
       ) {
         return true;
       }
@@ -372,7 +319,7 @@ document
    */
   function findNearestDialog(el) {
     while (el) {
-      if (el.localName === "dialog") {
+      if (el.localName === 'dialog') {
         return /** @type {HTMLDialogElement} */ (el);
       }
       el = el.parentElement;
@@ -412,10 +359,10 @@ document
    * @return {boolean} whether this form has method="dialog"
    */
   function isFormMethodDialog(el) {
-    if (!el || !el.hasAttribute("method")) {
+    if (!el || !el.hasAttribute('method')) {
       return false;
     }
-    return el.getAttribute("method").toLowerCase() === "dialog";
+    return el.getAttribute('method').toLowerCase() === 'dialog';
   }
 
   /**
@@ -428,21 +375,21 @@ document
     this.openAsModal_ = false;
 
     // Set a11y role. Browsers that support dialog implicitly know this already.
-    if (!dialog.hasAttribute("role")) {
-      dialog.setAttribute("role", "dialog");
+    if (!dialog.hasAttribute('role')) {
+      dialog.setAttribute('role', 'dialog');
     }
 
     dialog.show = this.show.bind(this);
     dialog.showModal = this.showModal.bind(this);
     dialog.close = this.close.bind(this);
 
-    if (!("returnValue" in dialog)) {
-      dialog.returnValue = "";
+    if (!('returnValue' in dialog)) {
+      dialog.returnValue = '';
     }
 
-    if ("MutationObserver" in window) {
+    if ('MutationObserver' in window) {
       var mo = new MutationObserver(this.maybeHideModal.bind(this));
-      mo.observe(dialog, { attributes: true, attributeFilter: ["open"] });
+      mo.observe(dialog, { attributes: true, attributeFilter: ['open'] });
     } else {
       // IE10 and below support. Note that DOMNodeRemoved etc fire _before_ removal. They also
       // seem to fire even if the element was removed as part of a parent removal. Use the removed
@@ -457,30 +404,26 @@ document
         if (ev.target !== dialog) {
           return;
         } // not for a child element
-        var cand = "DOMNodeRemoved";
+        var cand = 'DOMNodeRemoved';
         removed |= ev.type.substr(0, cand.length) === cand;
         window.clearTimeout(timeout);
         timeout = window.setTimeout(cb, 0);
       };
-      [
-        "DOMAttrModified",
-        "DOMNodeRemoved",
-        "DOMNodeRemovedFromDocument",
-      ].forEach(function (name) {
+      ['DOMAttrModified', 'DOMNodeRemoved', 'DOMNodeRemovedFromDocument'].forEach(function (name) {
         dialog.addEventListener(name, delayModel);
       });
     }
     // Note that the DOM is observed inside DialogManager while any dialog
     // is being displayed as a modal, to catch modal removal from the DOM.
 
-    Object.defineProperty(dialog, "open", {
+    Object.defineProperty(dialog, 'open', {
       set: this.setOpen.bind(this),
-      get: dialog.hasAttribute.bind(dialog, "open"),
+      get: dialog.hasAttribute.bind(dialog, 'open'),
     });
 
-    this.backdrop_ = document.createElement("div");
-    this.backdrop_.className = "backdrop";
-    this.backdrop_.addEventListener("click", this.backdropClick_.bind(this));
+    this.backdrop_ = document.createElement('div');
+    this.backdrop_.className = 'backdrop';
+    this.backdrop_.addEventListener('click', this.backdropClick_.bind(this));
   }
 
   dialogPolyfillInfo.prototype = {
@@ -494,10 +437,7 @@ document
      * longer open or is no longer part of the DOM.
      */
     maybeHideModal: function () {
-      if (
-        this.dialog_.hasAttribute("open") &&
-        document.body.contains(this.dialog_)
-      ) {
+      if (this.dialog_.hasAttribute('open') && document.body.contains(this.dialog_)) {
         return;
       }
       this.downgradeModal();
@@ -511,19 +451,18 @@ document
         return;
       }
       this.openAsModal_ = false;
-      this.dialog_.style.zIndex = "";
+      this.dialog_.style.zIndex = '';
 
       // This won't match the native <dialog> exactly because if the user set top on a centered
       // polyfill dialog, that top gets thrown away when the dialog is closed. Not sure it's
       // possible to polyfill this perfectly.
       if (this.replacedStyleTop_) {
-        this.dialog_.style.top = "";
+        this.dialog_.style.top = '';
         this.replacedStyleTop_ = false;
       }
 
       // Clear the backdrop and remove from the manager.
-      this.backdrop_.parentNode &&
-        this.backdrop_.parentNode.removeChild(this.backdrop_);
+      this.backdrop_.parentNode && this.backdrop_.parentNode.removeChild(this.backdrop_);
       dialogPolyfill.dm.removeDialog(this);
     },
 
@@ -532,10 +471,9 @@ document
      */
     setOpen: function (value) {
       if (value) {
-        this.dialog_.hasAttribute("open") ||
-          this.dialog_.setAttribute("open", "");
+        this.dialog_.hasAttribute('open') || this.dialog_.setAttribute('open', '');
       } else {
-        this.dialog_.removeAttribute("open");
+        this.dialog_.removeAttribute('open');
         this.maybeHideModal(); // nb. redundant with MutationObserver
       }
     },
@@ -547,11 +485,11 @@ document
      * @param {!Event} e to redirect
      */
     backdropClick_: function (e) {
-      if (!this.dialog_.hasAttribute("tabindex")) {
+      if (!this.dialog_.hasAttribute('tabindex')) {
         // Clicking on the backdrop should move the implicit cursor, even if dialog cannot be
         // focused. Create a fake thing to focus on. If the backdrop was _before_ the dialog, this
         // would not be needed - clicks would move the implicit cursor there.
-        var fake = document.createElement("div");
+        var fake = document.createElement('div');
         this.dialog_.insertBefore(fake, this.dialog_.firstChild);
         fake.tabIndex = -1;
         fake.focus();
@@ -560,7 +498,7 @@ document
         this.dialog_.focus();
       }
 
-      var redirectedEvent = document.createEvent("MouseEvents");
+      var redirectedEvent = document.createEvent('MouseEvents');
       redirectedEvent.initMouseEvent(
         e.type,
         e.bubbles,
@@ -588,20 +526,20 @@ document
      */
     focus_: function () {
       // Find element with `autofocus` attribute, or fall back to the first form/tabindex control.
-      var target = this.dialog_.querySelector("[autofocus]:not([disabled])");
+      var target = this.dialog_.querySelector('[autofocus]:not([disabled])');
       if (!target && this.dialog_.tabIndex >= 0) {
         target = this.dialog_;
       }
       if (!target) {
         // Note that this is 'any focusable area'. This list is probably not exhaustive, but the
         // alternative involves stepping through and trying to focus everything.
-        var opts = ["button", "input", "keygen", "select", "textarea"];
+        var opts = ['button', 'input', 'keygen', 'select', 'textarea'];
         var query = opts.map(function (el) {
-          return el + ":not([disabled])";
+          return el + ':not([disabled])';
         });
         // TODO(samthor): tabindex values that are not numeric are not focusable.
         query.push('[tabindex]:not([disabled]):not([tabindex=""])'); // tabindex != "", not disabled
-        target = this.dialog_.querySelector(query.join(", "));
+        target = this.dialog_.querySelector(query.join(', '));
       }
       safeBlur(document.activeElement);
       target && target.focus();
@@ -615,7 +553,7 @@ document
      */
     updateZIndex: function (dialogZ, backdropZ) {
       if (dialogZ < backdropZ) {
-        throw new Error("dialogZ should never be < backdropZ");
+        throw new Error('dialogZ should never be < backdropZ');
       }
       this.dialog_.style.zIndex = dialogZ;
       this.backdrop_.style.zIndex = backdropZ;
@@ -635,27 +573,21 @@ document
      * Show this dialog modally.
      */
     showModal: function () {
-      if (this.dialog_.hasAttribute("open")) {
-        throw new Error(
-          "Failed to execute 'showModal' on dialog: The element is already open, and therefore cannot be opened modally."
-        );
+      if (this.dialog_.hasAttribute('open')) {
+        throw new Error("Failed to execute 'showModal' on dialog: The element is already open, and therefore cannot be opened modally.");
       }
       if (!document.body.contains(this.dialog_)) {
-        throw new Error(
-          "Failed to execute 'showModal' on dialog: The element is not in a Document."
-        );
+        throw new Error("Failed to execute 'showModal' on dialog: The element is not in a Document.");
       }
       if (!dialogPolyfill.dm.pushDialog(this)) {
-        throw new Error(
-          "Failed to execute 'showModal' on dialog: There are too many open modal dialogs."
-        );
+        throw new Error("Failed to execute 'showModal' on dialog: There are too many open modal dialogs.");
       }
 
       if (createsStackingContext(this.dialog_.parentElement)) {
         console.warn(
-          "A dialog is being shown inside a stacking context. " +
-            "This may cause it to be unusable. For more information, see this link: " +
-            "https://github.com/GoogleChrome/dialog-polyfill/#stacking-context"
+          'A dialog is being shown inside a stacking context. ' +
+            'This may cause it to be unusable. For more information, see this link: ' +
+            'https://github.com/GoogleChrome/dialog-polyfill/#stacking-context'
         );
       }
 
@@ -671,10 +603,7 @@ document
       }
 
       // Insert backdrop.
-      this.dialog_.parentNode.insertBefore(
-        this.backdrop_,
-        this.dialog_.nextSibling
-      );
+      this.dialog_.parentNode.insertBefore(this.backdrop_, this.dialog_.nextSibling);
 
       // Focus on whatever inside the dialog.
       this.focus_();
@@ -687,10 +616,8 @@ document
      * @param {string=} opt_returnValue to use as the returnValue
      */
     close: function (opt_returnValue) {
-      if (!this.dialog_.hasAttribute("open")) {
-        throw new Error(
-          "Failed to execute 'close' on dialog: The element does not have an 'open' attribute, and therefore cannot be closed."
-        );
+      if (!this.dialog_.hasAttribute('open')) {
+        throw new Error("Failed to execute 'close' on dialog: The element does not have an 'open' attribute, and therefore cannot be closed.");
       }
       this.setOpen(false);
 
@@ -700,7 +627,7 @@ document
       }
 
       // Triggering "close" event for any attached listeners on the <dialog>.
-      var closeEvent = new supportCustomEvent("close", {
+      var closeEvent = new supportCustomEvent('close', {
         bubbles: false,
         cancelable: false,
       });
@@ -718,10 +645,9 @@ document
   var dialogPolyfill = {};
 
   dialogPolyfill.reposition = function (element) {
-    var scrollTop =
-      document.body.scrollTop || document.documentElement.scrollTop;
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     var topValue = scrollTop + (window.innerHeight - element.offsetHeight) / 2;
-    element.style.top = Math.max(scrollTop, topValue) + "px";
+    element.style.top = Math.max(scrollTop, topValue) + 'px';
   };
 
   dialogPolyfill.isInlinePositionSetByStylesheet = function (element) {
@@ -745,12 +671,9 @@ document
         if (!selectedNodes || !inNodeList(selectedNodes, element)) {
           continue;
         }
-        var cssTop = rule.style.getPropertyValue("top");
-        var cssBottom = rule.style.getPropertyValue("bottom");
-        if (
-          (cssTop && cssTop !== "auto") ||
-          (cssBottom && cssBottom !== "auto")
-        ) {
+        var cssTop = rule.style.getPropertyValue('top');
+        var cssBottom = rule.style.getPropertyValue('bottom');
+        if ((cssTop && cssTop !== 'auto') || (cssBottom && cssBottom !== 'auto')) {
           return true;
         }
       }
@@ -760,7 +683,7 @@ document
 
   dialogPolyfill.needsCentering = function (dialog) {
     var computedStyle = window.getComputedStyle(dialog);
-    if (computedStyle.position !== "absolute") {
+    if (computedStyle.position !== 'absolute') {
       return false;
     }
 
@@ -768,10 +691,7 @@ document
     // WebKit/Blink, checking computedStyle.top == 'auto' is sufficient, but
     // Firefox returns the used value. So we do this crazy thing instead: check
     // the inline style and then go through CSS rules.
-    if (
-      (dialog.style.top !== "auto" && dialog.style.top !== "") ||
-      (dialog.style.bottom !== "auto" && dialog.style.bottom !== "")
-    ) {
+    if ((dialog.style.top !== 'auto' && dialog.style.top !== '') || (dialog.style.bottom !== 'auto' && dialog.style.bottom !== '')) {
       return false;
     }
     return !dialogPolyfill.isInlinePositionSetByStylesheet(dialog);
@@ -782,16 +702,10 @@ document
    */
   dialogPolyfill.forceRegisterDialog = function (element) {
     if (window.HTMLDialogElement || element.showModal) {
-      console.warn(
-        "This browser already supports <dialog>, the polyfill " +
-          "may not work correctly",
-        element
-      );
+      console.warn('This browser already supports <dialog>, the polyfill ' + 'may not work correctly', element);
     }
-    if (element.localName !== "dialog") {
-      throw new Error(
-        "Failed to register dialog: The element is not a dialog."
-      );
+    if (element.localName !== 'dialog') {
+      throw new Error('Failed to register dialog: The element is not a dialog.');
     }
     new dialogPolyfillInfo(/** @type {!HTMLDialogElement} */ (element));
   };
@@ -819,10 +733,10 @@ document
     // the dialogs on the pending dialog stack are positioned below it. In the
     // actual implementation, the modal dialog stacking is controlled by the
     // top layer, where z-index has no effect.
-    this.overlay = document.createElement("div");
-    this.overlay.className = "_dialog_overlay";
+    this.overlay = document.createElement('div');
+    this.overlay.className = '_dialog_overlay';
     this.overlay.addEventListener(
-      "click",
+      'click',
       function (e) {
         this.forwardTab_ = undefined;
         e.stopPropagation();
@@ -838,17 +752,17 @@ document
 
     this.forwardTab_ = undefined;
 
-    if ("MutationObserver" in window) {
+    if ('MutationObserver' in window) {
       this.mo_ = new MutationObserver(function (records) {
         var removed = [];
         records.forEach(function (rec) {
           for (var i = 0, c; (c = rec.removedNodes[i]); ++i) {
             if (!(c instanceof Element)) {
               continue;
-            } else if (c.localName === "dialog") {
+            } else if (c.localName === 'dialog') {
               removed.push(c);
             }
-            removed = removed.concat(c.querySelectorAll("dialog"));
+            removed = removed.concat(c.querySelectorAll('dialog'));
           }
         });
         removed.length && checkDOM(removed);
@@ -861,8 +775,8 @@ document
    * handlers.
    */
   dialogPolyfill.DialogManager.prototype.blockDocument = function () {
-    document.documentElement.addEventListener("focus", this.handleFocus_, true);
-    document.addEventListener("keydown", this.handleKey_);
+    document.documentElement.addEventListener('focus', this.handleFocus_, true);
+    document.addEventListener('keydown', this.handleKey_);
     this.mo_ && this.mo_.observe(document, { childList: true, subtree: true });
   };
 
@@ -871,12 +785,8 @@ document
    * dialogs are visible.
    */
   dialogPolyfill.DialogManager.prototype.unblockDocument = function () {
-    document.documentElement.removeEventListener(
-      "focus",
-      this.handleFocus_,
-      true
-    );
-    document.removeEventListener("keydown", this.handleKey_);
+    document.documentElement.removeEventListener('focus', this.handleFocus_, true);
+    document.removeEventListener('keydown', this.handleKey_);
     this.mo_ && this.mo_.disconnect();
   };
 
@@ -907,9 +817,7 @@ document
    * @param {Element} candidate to check if contained or is the top-most modal dialog
    * @return {boolean} whether candidate is contained in top dialog
    */
-  dialogPolyfill.DialogManager.prototype.containedByTopDialog_ = function (
-    candidate
-  ) {
+  dialogPolyfill.DialogManager.prototype.containedByTopDialog_ = function (candidate) {
     while ((candidate = findNearestDialog(candidate))) {
       for (var i = 0, dpi; (dpi = this.pendingDialogStack[i]); ++i) {
         if (dpi.dialog === candidate) {
@@ -959,7 +867,7 @@ document
     if (event.keyCode === 27) {
       event.preventDefault();
       event.stopPropagation();
-      var cancelEvent = new supportCustomEvent("cancel", {
+      var cancelEvent = new supportCustomEvent('cancel', {
         bubbles: false,
         cancelable: true,
       });
@@ -1037,35 +945,28 @@ document
      * If HTMLFormElement translates method="DIALOG" into 'get', then replace the descriptor with
      * one that returns the correct value.
      */
-    var testForm = document.createElement("form");
-    testForm.setAttribute("method", "dialog");
-    if (testForm.method !== "dialog") {
-      var methodDescriptor = Object.getOwnPropertyDescriptor(
-        HTMLFormElement.prototype,
-        "method"
-      );
+    var testForm = document.createElement('form');
+    testForm.setAttribute('method', 'dialog');
+    if (testForm.method !== 'dialog') {
+      var methodDescriptor = Object.getOwnPropertyDescriptor(HTMLFormElement.prototype, 'method');
       if (methodDescriptor) {
         // nb. Some older iOS and older PhantomJS fail to return the descriptor. Don't do anything
         // and don't bother to update the element.
         var realGet = methodDescriptor.get;
         methodDescriptor.get = function () {
           if (isFormMethodDialog(this)) {
-            return "dialog";
+            return 'dialog';
           }
           return realGet.call(this);
         };
         var realSet = methodDescriptor.set;
         methodDescriptor.set = function (v) {
-          if (typeof v === "string" && v.toLowerCase() === "dialog") {
-            return this.setAttribute("method", v);
+          if (typeof v === 'string' && v.toLowerCase() === 'dialog') {
+            return this.setAttribute('method', v);
           }
           return realSet.call(this, v);
         };
-        Object.defineProperty(
-          HTMLFormElement.prototype,
-          "method",
-          methodDescriptor
-        );
+        Object.defineProperty(HTMLFormElement.prototype, 'method', methodDescriptor);
       }
     }
 
@@ -1075,7 +976,7 @@ document
      * document.activeElement.
      */
     document.addEventListener(
-      "click",
+      'click',
       function (ev) {
         dialogPolyfill.formSubmitter = null;
         dialogPolyfill.useValue = null;
@@ -1088,15 +989,13 @@ document
           return;
         }
 
-        var valid =
-          target.type === "submit" &&
-          ["button", "input"].indexOf(target.localName) > -1;
+        var valid = target.type === 'submit' && ['button', 'input'].indexOf(target.localName) > -1;
         if (!valid) {
-          if (!(target.localName === "input" && target.type === "image")) {
+          if (!(target.localName === 'input' && target.type === 'image')) {
             return;
           }
           // this is a <input type="image">, which can submit forms
-          dialogPolyfill.useValue = ev.offsetX + "," + ev.offsetY;
+          dialogPolyfill.useValue = ev.offsetX + ',' + ev.offsetY;
         }
 
         var dialog = findNearestDialog(target);
@@ -1128,7 +1027,7 @@ document
      * and possibly sets its return value.
      */
     document.addEventListener(
-      "submit",
+      'submit',
       function (ev) {
         if (ev.defaultPrevented) {
           return false;
@@ -1163,20 +1062,18 @@ document
 });
 
 function makeModal(modal) {
-  if (typeof HTMLDialogElement !== "function") {
+  if (typeof HTMLDialogElement !== 'function') {
     // doesn't support modal element so use polyfill
     dialogPolyfill.registerDialog(modal);
   }
-  modal
-    .querySelector(".gg-c-modal__close-button")
-    .addEventListener("click", function () {
-      modal.close();
-    });
-  modal.addEventListener("close", function () {
-    document.body.style.overflow = "";
+  modal.querySelector('.gg-c-modal__close-button').addEventListener('click', function () {
+    modal.close();
+  });
+  modal.addEventListener('close', function () {
+    document.body.style.overflow = '';
   });
 
-  modal.addEventListener("click", function (event) {
+  modal.addEventListener('click', function (event) {
     if (event.target === modal) {
       modal.close();
     }
@@ -1185,6 +1082,6 @@ function makeModal(modal) {
 
 function showModal(modal) {
   makeModal(modal);
-  document.body.style.overflow = "hidden";
+  document.body.style.overflow = 'hidden';
   modal.showModal();
 }

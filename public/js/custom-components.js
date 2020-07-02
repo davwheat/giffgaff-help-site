@@ -1,19 +1,19 @@
 const menuItems = [
   {
-    title: "Handy Guides",
-    link: "/kb",
-    items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
+    title: 'Handy Guides',
+    link: '/kb',
+    items: [{ link: '/kb#roaming', title: 'Roaming with giffgaff' }],
   },
   {
-    title: "Bits and bobs",
-    link: "/bits-and-bobs",
+    title: 'Bits and bobs',
+    link: '/bits-and-bobs',
     items: [
       {
-        link: "/bits-and-bobs/number-checker",
-        title: "Number pricing calculator"
-      }
-    ]
-  }
+        link: '/bits-and-bobs/number-checker',
+        title: 'Number pricing calculator',
+      },
+    ],
+  },
 ];
 
 class ggHeader extends HTMLElement {
@@ -61,7 +61,7 @@ unofficial help
 <ul class="gg-c-website-header__lrg-screen-list">
 ${menuItems
   .map(
-    items =>
+    (items) =>
       `
 <li class="gg-c-website-header__lrg-screen-item">
 <a href="${items.link}" class="gg-c-website-header__lrg-screen-link">
@@ -72,7 +72,7 @@ ${menuItems
   <ul class="website-header-large-screen__major-menu">
   ${items.items
     .map(
-      item =>
+      (item) =>
         `<li>
       <a
         href="${item.link}"
@@ -81,13 +81,13 @@ ${menuItems
       >
     </li>`
     )
-    .join("")}
+    .join('')}
   </ul>
 </div>
 </div>
 </li>`
   )
-  .join("")}
+  .join('')}
 </ul>
 </nav>
 
@@ -98,7 +98,7 @@ ${menuItems
 <ul>      
 ${menuItems
   .map(
-    items => `
+    (items) => `
 <li class="gg-c-website-header__sm-screen-item">
 <details class="gg-c-website-header__sm-screen-accordion">
 <summary class="gg-c-website-header__sm-screen-category">
@@ -108,7 +108,7 @@ ${items.title}
 <ul class="gg-c-website-header__sm-screen-sub-menu">      
 ${items.items
   .map(
-    item =>
+    (item) =>
       `
 <li class="gg-c-website-header__sm-screen-sub-menu-item">
 <a
@@ -118,12 +118,12 @@ ${items.items
 >
 </li>`
   )
-  .join("")}        
+  .join('')}        
 </ul>
 </details>
 </li>`
   )
-  .join("")}
+  .join('')}
 
 </ul>
 </nav>
@@ -149,7 +149,7 @@ represent the views or opinions of giffgaff Limited, or its staff
 <a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
 <picture class="gg-b128-n256-r512">
 <source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png">
-<source media="(min-width: 550px)" srcset="/img/gg-img/aff-med.png">
+<source media="(min-width: 550px and max-width: 727px)" srcset="/img/gg-img/aff-med.png">
 <source media="(max-width: 549px)" srcset="/img/gg-img/aff-small.png">
 <img src="/img/gg-img/aff-large.png" alt="Get 80 gigabytes data for just £20 per month.">
 </picture>
@@ -158,24 +158,18 @@ represent the views or opinions of giffgaff Limited, or its staff
 </footer>
 `;
 
-    (function() {
-      const websiteHeader = document.querySelector(".gg-c-website-header");
-      const smNavTrigger = websiteHeader.querySelector(
-        ".gg-c-website-header__sm-nav-trigger"
-      );
-      const smNav = websiteHeader.querySelector(
-        ".gg-c-website-header__sm-screen-nav"
-      );
+    (function () {
+      const websiteHeader = document.querySelector('.gg-c-website-header');
+      const smNavTrigger = websiteHeader.querySelector('.gg-c-website-header__sm-nav-trigger');
+      const smNav = websiteHeader.querySelector('.gg-c-website-header__sm-screen-nav');
 
-      smNavTrigger.onclick = function() {
-        smNavTrigger.classList.toggle(
-          "gg-c-website-header__sm-nav-trigger--active"
-        );
-        smNav.classList.toggle("gg-c-website-header__sm-screen-nav--open");
+      smNavTrigger.onclick = function () {
+        smNavTrigger.classList.toggle('gg-c-website-header__sm-nav-trigger--active');
+        smNav.classList.toggle('gg-c-website-header__sm-screen-nav--open');
       };
     })();
   }
 }
 
-window.customElements.define("gg-header", ggHeader);
-window.customElements.define("gg-footer", ggFooter);
+window.customElements.define('gg-header', ggHeader);
+window.customElements.define('gg-footer', ggFooter);

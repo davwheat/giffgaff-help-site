@@ -1,5 +1,5 @@
-@import (inline) "style-guide.new.css";
-@import (inline) "app-styles.css";
+@import (inline) 'style-guide.new.css';
+@import (inline) 'app-styles.css';
 
 html {
   min-height: 100vh;
@@ -229,7 +229,7 @@ main#main-content {
                     letter-spacing: normal;
                     visibility: visible;
                     display: inline;
-                    content: "Plus unlimited minutes and texts";
+                    content: 'Plus unlimited minutes and texts';
                   }
                 }
               }
@@ -331,7 +331,7 @@ main#main-content {
     display: grid;
     grid-template-columns: auto 1fr;
     > * {
-      grid-column: ~"1 / 1";
+      grid-column: ~'1 / 1';
     }
   }
 }
@@ -381,7 +381,7 @@ main#main-content {
   .phone-bg {
     @img-width: @img-bg-width / 3 * 2;
 
-    grid-row: ~"1 / 4";
+    grid-row: ~'1 / 4';
 
     position: relative;
     height: @img-bg-width;
@@ -403,7 +403,7 @@ main#main-content {
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 8px;
       bottom: 8px;

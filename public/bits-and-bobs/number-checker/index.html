@@ -4,34 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check a number | giffgaff community help</title>
-    <link
-      rel="preload"
-      href="/css/fonts/giffgaff-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin=""
-    />
-    <link
-      href="/css/fonts/giffgaff-medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin=""
-    />
-    <link
-      href="/css/fonts/giffgaff-bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin=""
-    />
+
+    <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/custom-components.min.js" async></script>
     <script src="/js/modernizr-custom.js" async defer></script>
-    <script
-      defer
-      async
-      src="https://unpkg.com/libphonenumber-js@1.7.26/bundle/libphonenumber-max.js"
-      crossorigin="anonymous"
-    ></script>
+    <script defer async src="https://unpkg.com/libphonenumber-js@1.7.26/bundle/libphonenumber-max.js" crossorigin="anonymous"></script>
     <script defer async src="/bits-and-bobs/number-checker/scripts.js"></script>
   </head>
   <body class="qa-section gg-t-wild-sand">
@@ -44,8 +24,7 @@
               Check a phone number
             </h1>
             <p class="gg-c-masthead__page-subtitle">
-              You can double-check whether a phone number is included in your
-              goodybag, or how much credit it costs to call.
+              You can double-check whether a phone number is included in your goodybag, or how much credit it costs to call.
             </p>
           </div>
         </header>
@@ -55,31 +34,17 @@
               Enter a phone number
             </h1>
             <br />
-            <label for="phoneNumber" class="gg-c-form__label"
-              >Phone number</label
-            >
+            <label for="phoneNumber" class="gg-c-form__label">Phone number</label>
             <div class="gg-c-form__element">
               <input type="text" id="phoneNumber" class="gg-c-form__input" />
               <br />
-              <p
-                class="gg-c-form__element-message gg-c-form__element-message--invalid"
-                id="output1"
-                style="padding: 0;"
-              >
+              <p class="gg-c-form__element-message gg-c-form__element-message--invalid" id="output1" style="padding: 0;">
                 An example error message
               </p>
-              <p
-                class="gg-u-text-loud gg-c-form__element-message gg-c-form__element-message--valid"
-                id="output2"
-                style="padding: 0;"
-              >
+              <p class="gg-u-text-loud gg-c-form__element-message gg-c-form__element-message--valid" id="output2" style="padding: 0;">
                 An example error message
               </p>
-              <p
-                class="gg-c-form__element-message gg-c-form__element-message--info"
-                id="output3"
-                style="padding: 0;"
-              >
+              <p class="gg-c-form__element-message gg-c-form__element-message--info" id="output3" style="padding: 0;">
                 An example error message
               </p>
             </div>
@@ -94,17 +59,12 @@
             <p class="gg-u-text-speak gg-u-mt-tiny">
               All prices listed are for calls only, unless otherwise stated.
             </p>
-            <div
-              class="gg-o-focus-panel__container gg-u-mlr-auto gg-u-mt-large"
-            >
+            <div class="gg-o-focus-panel__container gg-u-mlr-auto gg-u-mt-large">
               <ul class="gg-o-tiles gg-o-tiles--columns">
                 <li class="gg-o-tiles__item">
                   <div class="gg-o-tiles__tile">
                     <h3 class="gg-u-text-loud gg-u-text-center gg-u-mt-small">
-                      <svg
-                        class="gg-u-icon gg-u-icon--large gg-u-icon--inline"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg class="gg-u-icon gg-u-icon--large gg-u-icon--inline" viewBox="0 0 24 24">
                         <path
                           d="M20.7 17.6l.1-2.5c-.1-1.5-.4-2.9-1-4.2a6.5 6.5 0 00-4.4-3.4l.1-.5-.1-1.1.9-.8c.4-.3.4-.7.8-1.1.2-.2.2-.5.1-.7-.2-.5-.6-.8-1.1-1.1-.4-.1-.7.1-1 .3-.5-.5-1.1-.9-1.6-1-.6 0-1.2.4-1.6 1l-.3-.2c-.2-.1-.5-.1-.8 0a2 2 0 00-1.3 1.2c-.4 1.2 1 2.1 1.9 2.7v.7l.1.7c-1 .3-2 .7-2.8 1.4a6.3 6.3 0 00-2.4 4.8c0 .7 1.1.7 1.2 0 .2-3.1 2.7-5.2 5.7-5.3h.5l.9.1h.1c3.2.7 4.7 3.4 4.8 6.6v4.6l-1.9-.1h-6.1c-.3 0-.5.3-.5.7 0 .3.2.5.5.5H18c1.2 0 2.9.7 3-1.1l-.3-2.2zM14.1 7.2h-1.4v-.9h1.4c.1.2.2.8 0 .9zm.5-2.3l-.4.3h-2C11.8 4.9 11 4.5 11 4c-.1-.3 0-.6.4-.6.3 0 .4.2.4.4l.5.2c.2 0 .4-.1.5-.3l.2-.4.1-.3.1-.1c.2-.2.4-.2.5-.1l.2.2.1.1c-.1.3.1.6.4.7h.4l.5-.3c.4-.4 1.1.3.6.6l-1 .7-.3.1z"
                         />
@@ -114,10 +74,7 @@
                       </svg>
                       Airtime Credit
                     </h3>
-                    <p
-                      class="gg-u-text-speak gg-u-text-center gg-u-mt-medium gg-u-mb-medium"
-                      id="payg"
-                    >
+                    <p class="gg-u-text-speak gg-u-text-center gg-u-mt-medium gg-u-mb-medium" id="payg">
                       Please enter a phone number.
                     </p>
                   </div>
@@ -125,10 +82,7 @@
                 <li class="gg-o-tiles__item">
                   <div class="gg-o-tiles__tile">
                     <h3 class="gg-u-text-loud gg-u-text-center gg-u-mt-small">
-                      <svg
-                        class="gg-u-icon gg-u-icon--large gg-u-icon--inline"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg class="gg-u-icon gg-u-icon--large gg-u-icon--inline" viewBox="0 0 24 24">
                         <path
                           d="M18.6 6.8s-.1 0 0 0c-1.1 0-2.1 0-3.1-.2-.4-.2-.3-1.1-.8-2-.6-1.1-.7-1.8-2-2.1C10 2 8.4 3.7 8.2 6.6c0 .2-.1.3-.3.3H5.6c-.3 0-.6.2-.6.6v10.8c0 .6.4 1 1 1h12.2c.6 0 1-.4 1-1V7.4c0-.4-.3-.6-.6-.6zm-4.4 0h-1.5v-.4c-.1-.4-.1-.9-.5-1.2a1 1 0 00-1.2.2c-.4.4-.3.9-.3 1.4H9.3c.2-3.7 4.1-4.4 4.9 0zM17.9 9v8.8c0 .2-.3.2-.5.2h-4.5l-6.2-.1-.4-.1V8.4c-.3-.2-.1-.4.1-.4h11.1c.2 0 .3.1.3.2l.1.8z"
                         />
@@ -138,23 +92,14 @@
                       </svg>
                       Goodybag
                     </h3>
-                    <p
-                      class="gg-u-text-speak gg-u-text-center gg-u-mt-medium gg-u-mb-medium"
-                      id="goodybag"
-                    >
+                    <p class="gg-u-text-speak gg-u-text-center gg-u-mt-medium gg-u-mb-medium" id="goodybag">
                       Please enter a phone number.
                     </p>
                   </div>
                 </li>
               </ul>
-              <p
-                class="gg-u-text-speak gg-u-text-center gg-u-pt-small"
-                style="margin-bottom: -16px;"
-              >
-                <svg
-                  class="gg-u-icon gg-u-icon--medium gg-u-icon--inline"
-                  viewBox="0 0 24 24"
-                >
+              <p class="gg-u-text-speak gg-u-text-center gg-u-pt-small" style="margin-bottom: -16px;">
+                <svg class="gg-u-icon gg-u-icon--medium gg-u-icon--inline" viewBox="0 0 24 24">
                   <path
                     d="M12.7 15.6a1.1 1.1 0 01-1.3 1 1 1 0 01-.7-1.5 1.3 1.3 0 01.8-.6 1 1 0 011 .3 1 1 0 01.2.8zM12.2 6.7c.4.8.3 4.7.2 5.7 0 .6-1 .7-1.3.5-.7-.7-.4-2.6-.4-3.6 0-.6-.2-2.5.5-2.7a1.2 1.2 0 01.8 0 .2.2 0 01.2 0z"
                   />
@@ -163,11 +108,7 @@
                   />
                 </svg>
                 Pay as you go pricing increased on 26 February 2020.
-                <a
-                  href="https://community.giffgaff.com/d/33064069-we-re-adding-more-to-some-goodybags-in-february"
-                  class="gg-u-link gg-u-link--arrow"
-                  target="_blank"
-                  style="display: inline-block;"
+                <a href="https://community.giffgaff.com/d/33064069-we-re-adding-more-to-some-goodybags-in-february" class="gg-u-link gg-u-link--arrow" target="_blank" style="display: inline-block;"
                   >Learn more</a
                 >
               </p>
@@ -182,28 +123,13 @@
                 Information last updated 26 February 2020.
               </li>
               <li class="gg-c-list__item">
-                Information not guaranteed to be accurate. For up-to-date
-                pricing info, please see
-                <a
-                  href="https://giffgaff.com/pricing"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="gg-u-link"
-                  >giffgaff's UK pricing page</a
-                >
+                Information not guaranteed to be accurate. For up-to-date pricing info, please see
+                <a href="https://giffgaff.com/pricing" target="_blank" rel="noreferrer" class="gg-u-link">giffgaff's UK pricing page</a>
                 and
-                <a
-                  href="https://giffgaff.com/pricing"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="gg-u-link"
-                  >international calling page</a
-                >.
+                <a href="https://giffgaff.com/pricing" target="_blank" rel="noreferrer" class="gg-u-link">international calling page</a>.
               </li>
               <li class="gg-c-list__item">
-                Isle of Man, Jersey, Guernsey and other non-UK regions with
-                UK-style phone numbers may have separate international calling
-                charges.
+                Isle of Man, Jersey, Guernsey and other non-UK regions with UK-style phone numbers may have separate international calling charges.
               </li>
             </ul>
           </div>
@@ -221,14 +147,14 @@
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyAT0fbey8ETQULa-SSIyBEfsVmIjtToh48",
-        authDomain: "gg-help.firebaseapp.com",
-        databaseURL: "https://gg-help.firebaseio.com",
-        projectId: "gg-help",
-        storageBucket: "gg-help.appspot.com",
-        messagingSenderId: "441453803789",
-        appId: "1:441453803789:web:c6e2cd6b1a07c3c6999844",
-        measurementId: "G-0TVVBKR3LE",
+        apiKey: 'AIzaSyAT0fbey8ETQULa-SSIyBEfsVmIjtToh48',
+        authDomain: 'gg-help.firebaseapp.com',
+        databaseURL: 'https://gg-help.firebaseio.com',
+        projectId: 'gg-help',
+        storageBucket: 'gg-help.appspot.com',
+        messagingSenderId: '441453803789',
+        appId: '1:441453803789:web:c6e2cd6b1a07c3c6999844',
+        measurementId: 'G-0TVVBKR3LE',
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);

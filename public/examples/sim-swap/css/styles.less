@@ -1,6 +1,6 @@
-@import (inline) "style-guide.new.css";
-@import (inline) "app-styles.css";
-@import (inline) "fonts/fonts.css";
+@import (inline) 'style-guide.new.css';
+@import (inline) 'app-styles.css';
+@import (inline) 'fonts/fonts.css';
 
 html {
   min-height: 100vh;
@@ -261,7 +261,7 @@ main#main-content {
         &.mobile {
           min-height: unset;
 
-          &[data-size="320x568"] {
+          &[data-size='320x568'] {
             // iphone 5
             @w: 320px;
             @h: 568px;
@@ -291,7 +291,7 @@ main#main-content {
               }
             }
           }
-          &[data-size="375x667"] {
+          &[data-size='375x667'] {
             // iphone 6/7/8
             @w: 375px;
             @h: 667px;
@@ -320,7 +320,7 @@ main#main-content {
               }
             }
           }
-          &[data-size="375x812"] {
+          &[data-size='375x812'] {
             // iphone xs
             @w: 375px;
             @h: 812px;
@@ -336,7 +336,7 @@ main#main-content {
             max-height: @h + 2 * @py;
             min-height: @h + 2 * @py;
             .viewer-frame-container2 {
-              background: url("/examples/sim-swap/img/Apple_iPhone_XS_Space_Gray.svg");
+              background: url('/examples/sim-swap/img/Apple_iPhone_XS_Space_Gray.svg');
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
@@ -351,7 +351,7 @@ main#main-content {
               }
             }
           }
-          &[data-size="360x800"] {
+          &[data-size='360x800'] {
             // pixel 4
             @w: 411px;
             @h: 869px;
@@ -367,7 +367,7 @@ main#main-content {
             max-height: @h + 2 * @py;
             min-height: @h + 2 * @py;
             .viewer-frame-container2 {
-              background: url("/examples/sim-swap/img/Google_Pixel_4_Clearly_White.svg");
+              background: url('/examples/sim-swap/img/Google_Pixel_4_Clearly_White.svg');
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;

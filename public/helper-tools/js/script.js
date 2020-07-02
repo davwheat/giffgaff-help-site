@@ -40,50 +40,48 @@ function debounce(func, wait, immediate) {
   };
 }
 
-document
-  .querySelector("#ug-button > span")
-  .addEventListener("input", debounce(generateButton, 500));
+document.querySelector('#ug-button > span').addEventListener('input', debounce(generateButton, 500));
 
 function generateButton() {
-  const button = document.getElementById("ug-button");
+  const button = document.getElementById('ug-button');
 
-  button.classList.add("generated");
+  button.classList.add('generated');
 
   html2canvas(button, {
     backgroundColor: null,
     useCORS: true,
   }).then(function (canvas) {
-    canvas.id = "ug-btn-canvas";
+    canvas.id = 'ug-btn-canvas';
 
-    button.classList.remove("generated");
+    button.classList.remove('generated');
 
-    document.querySelector("#ug-button--preview").innerHTML = "";
-    document.querySelector("#ug-button--preview").appendChild(canvas);
+    document.querySelector('#ug-button--preview').innerHTML = '';
+    document.querySelector('#ug-button--preview').appendChild(canvas);
 
-    console.log(canvas.toDataURL("image/png"));
+    console.log(canvas.toDataURL('image/png'));
 
-    document.getElementById("copy-btn").setAttribute("data-clipboard-text", "");
+    document.getElementById('copy-btn').setAttribute('data-clipboard-text', '');
   });
 }
 
-document.querySelectorAll(".gg-c-alert__close").forEach(function (n) {
-  n.addEventListener("click", function (e) {
+document.querySelectorAll('.gg-c-alert__close').forEach(function (n) {
+  n.addEventListener('click', function (e) {
     const alertParent = n.parentNode.parentNode.parentElement;
 
     closeAlert(alertParent);
   });
 });
 
-document.querySelectorAll("[data-open-alert]").forEach(function (n) {
-  n.addEventListener("click", function (e) {
-    openAlertWithID(n.getAttribute("data-open-alert"));
+document.querySelectorAll('[data-open-alert]').forEach(function (n) {
+  n.addEventListener('click', function (e) {
+    openAlertWithID(n.getAttribute('data-open-alert'));
   });
 });
 
 function openAlertWithID(id) {
   const alert = document.querySelector(`#${id}`);
 
-  alert.removeAttribute("hidden");
+  alert.removeAttribute('hidden');
 
   setTimeout(() => {
     closeAlert(alert);
@@ -93,36 +91,30 @@ function openAlertWithID(id) {
 function closeAlert(node) {
   const alertParent = node;
 
-  alertParent.classList.add("gg-c-alert--animate-out");
+  alertParent.classList.add('gg-c-alert--animate-out');
 
   setTimeout(function () {
-    alertParent.setAttribute("hidden", "hidden");
-    alertParent.classList.remove("gg-c-alert--animate-out");
+    alertParent.setAttribute('hidden', 'hidden');
+    alertParent.classList.remove('gg-c-alert--animate-out');
   }, 250);
 }
 
-document.getElementById("copy-btn").addEventListener("click", function () {
+document.getElementById('copy-btn').addEventListener('click', function () {
   navigator.clipboard.write([
     new ClipboardItem({
-      "image/png": document.getElementById("ug-btn-canvas").toBlob("image/png"),
+      'image/png': document.getElementById('ug-btn-canvas').toBlob('image/png'),
     }),
   ]);
 });
 
-document
-  .getElementById("button-choice--primary")
-  .addEventListener("input", function (e) {
-    if (e.target.checked) {
-      document.getElementById("ug-button").classList.add("gg-c-btn--primary");
-    }
-  });
+document.getElementById('button-choice--primary').addEventListener('input', function (e) {
+  if (e.target.checked) {
+    document.getElementById('ug-button').classList.add('gg-c-btn--primary');
+  }
+});
 
-document
-  .getElementById("button-choice--secondary")
-  .addEventListener("input", function (e) {
-    if (e.target.checked) {
-      document
-        .getElementById("ug-button")
-        .classList.remove("gg-c-btn--primary");
-    }
-  });
+document.getElementById('button-choice--secondary').addEventListener('input', function (e) {
+  if (e.target.checked) {
+    document.getElementById('ug-button').classList.remove('gg-c-btn--primary');
+  }
+});

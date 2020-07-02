@@ -1,16 +1,14 @@
 const menuItems =
-  window.location.pathname.endsWith("view") ||
-  window.location.pathname.endsWith("view.html") ||
-  window.location.pathname.endsWith("view/")
+  window.location.pathname.endsWith('view') || window.location.pathname.endsWith('view.html') || window.location.pathname.endsWith('view/')
     ? [
         {
-          title: "Back",
-          link: "/examples/sim-swap/index.html",
+          title: 'Back',
+          link: '/examples/sim-swap/index.html',
           // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
         },
         {
-          title: "Community Help Site",
-          link: "/",
+          title: 'Community Help Site',
+          link: '/',
           // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
         },
         // {
@@ -26,8 +24,8 @@ const menuItems =
       ]
     : [
         {
-          title: "Community Help Site",
-          link: "/",
+          title: 'Community Help Site',
+          link: '/',
           // items: [{ link: "/kb#roaming", title: "Roaming with giffgaff" }]
         },
       ];
@@ -100,15 +98,15 @@ ${
       >
     </li>`
     )
-    .join("")}
+    .join('')}
   </ul>
 </div>
 </div>`
-    : ""
+    : ''
 }
 </li>`
   )
-  .join("")}
+  .join('')}
 </ul>
 </nav>
 
@@ -142,14 +140,14 @@ ${items.items
 >
 </li>`
   )
-  .join("")}        
+  .join('')}        
 </ul>`
-    : ""
+    : ''
 }
 </details>
 </li>`
   )
-  .join("")}
+  .join('')}
 
 </ul>
 </nav>
@@ -185,23 +183,17 @@ represent the views or opinions of giffgaff Limited, or its staff
 `;
 
     (function () {
-      const websiteHeader = document.querySelector(".gg-c-website-header");
-      const smNavTrigger = websiteHeader.querySelector(
-        ".gg-c-website-header__sm-nav-trigger"
-      );
-      const smNav = websiteHeader.querySelector(
-        ".gg-c-website-header__sm-screen-nav"
-      );
+      const websiteHeader = document.querySelector('.gg-c-website-header');
+      const smNavTrigger = websiteHeader.querySelector('.gg-c-website-header__sm-nav-trigger');
+      const smNav = websiteHeader.querySelector('.gg-c-website-header__sm-screen-nav');
 
       smNavTrigger.onclick = function () {
-        smNavTrigger.classList.toggle(
-          "gg-c-website-header__sm-nav-trigger--active"
-        );
-        smNav.classList.toggle("gg-c-website-header__sm-screen-nav--open");
+        smNavTrigger.classList.toggle('gg-c-website-header__sm-nav-trigger--active');
+        smNav.classList.toggle('gg-c-website-header__sm-screen-nav--open');
       };
     })();
   }
 }
 
-window.customElements.define("gg-header", ggHeader);
-window.customElements.define("gg-footer", ggFooter);
+window.customElements.define('gg-header', ggHeader);
+window.customElements.define('gg-footer', ggFooter);

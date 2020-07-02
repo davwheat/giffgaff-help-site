@@ -10,11 +10,11 @@ function hideLoadingMsg() {
   }
 
   canHideMsg = false;
-  $("#loading-message").addClass("hidden");
+  $('#loading-message').addClass('hidden');
 }
 
 function showLoadingMsg() {
-  $("#loading-message").removeClass("hidden");
+  $('#loading-message').removeClass('hidden');
 }
 
 let allCategories;
@@ -31,7 +31,7 @@ $.get(`${dataUrl}/categories.json`, function (data) {
   allCategories = data;
   allCategories.sort((a, b) => a.catOrder - b.catOrder);
 
-  $catList = $("#category fieldset ol");
+  $catList = $('#category fieldset ol');
 
   allCategories.forEach((category) => {
     $catList.append(
@@ -59,10 +59,10 @@ $.get(`${dataUrl}/categories.json`, function (data) {
   hideLoadingMsg();
 });
 
-$("#category button").click((e) => {
+$('#category button').click((e) => {
   e.preventDefault();
 
-  if ($("#category input:checked").length < 1) {
+  if ($('#category input:checked').length < 1) {
     return;
   }
 
@@ -70,15 +70,13 @@ $("#category button").click((e) => {
 
   // hide last category AFTER loading msg has appeared
   setTimeout(() => {
-    $("#category").addClass("hidden");
-    $("#article").removeClass("hidden");
+    $('#category').addClass('hidden');
+    $('#article').removeClass('hidden');
 
     canHideMsg = true;
   }, 400);
 
-  const selectedCategoryId = parseInt(
-    $("#category input:checked").attr("value")
-  );
+  const selectedCategoryId = parseInt($('#category input:checked').attr('value'));
   selectedCategory = allCategories.find((c) => c.id === selectedCategoryId);
 
   $.get(`${dataUrl}/articles/${selectedCategory.catUrl}.json`, (data) => {
@@ -92,7 +90,7 @@ $("#category button").click((e) => {
       return 0;
     });
 
-    $articleList = $("#article fieldset ol");
+    $articleList = $('#article fieldset ol');
 
     categoryArticles.forEach((article, i) => {
       $articleList.append(
@@ -120,10 +118,10 @@ $("#category button").click((e) => {
   });
 });
 
-$("#article button").click((e) => {
+$('#article button').click((e) => {
   e.preventDefault();
 
-  if ($("#article input:checked").length < 1) {
+  if ($('#article input:checked').length < 1) {
     return;
   }
 
@@ -131,12 +129,12 @@ $("#article button").click((e) => {
 
   // hide last category AFTER loading msg has appeared
   setTimeout(() => {
-    $("#article").addClass("hidden");
-    $("#articleData").removeClass("hidden");
+    $('#article').addClass('hidden');
+    $('#articleData').removeClass('hidden');
     canHideMsg = true;
   }, 400);
 
-  const selectedArticleId = parseInt($("#article input:checked").attr("value"));
+  const selectedArticleId = parseInt($('#article input:checked').attr('value'));
   selectedArticle = categoryArticles[selectedArticleId];
 
   let selectedArticleUrl = selectedArticle.url;
@@ -150,39 +148,37 @@ $("#article button").click((e) => {
 
   const url = `https://publicapi.giffgaff.com/gateway/knowledgebase-api/v1/articles/url/${selectedArticleUrl}`;
 
-  $("#article-data-link").attr("href", url);
+  $('#article-data-link').attr('href', url);
 
   hideLoadingMsg();
   //   }
   // );
 });
 
-$("#articleData button").click((e) => {
+$('#articleData button').click((e) => {
   e.preventDefault();
 
   showLoadingMsg();
 
-  const $articleData = $("#article-data-input");
+  const $articleData = $('#article-data-input');
   const u_data = $articleData.val();
 
   let u_data_JSON;
 
   try {
     u_data_JSON = JSON.parse(u_data);
-    $("#article-data-input-container").removeClass(
-      "gg-c-form__element--invalid"
-    );
+    $('#article-data-input-container').removeClass('gg-c-form__element--invalid');
   } catch (e) {
-    $("#article-data-input-container").addClass("gg-c-form__element--invalid");
-    console.error("ERROR: invalid JSON", u_data);
+    $('#article-data-input-container').addClass('gg-c-form__element--invalid');
+    console.error('ERROR: invalid JSON', u_data);
 
     hideLoadingMsg();
     return false;
   }
 
   if (u_data_JSON.code) {
-    $("#article-data-input-container").addClass("gg-c-form__element--invalid");
-    console.error("ERROR: JSON is an error! ", u_data);
+    $('#article-data-input-container').addClass('gg-c-form__element--invalid');
+    console.error('ERROR: JSON is an error! ', u_data);
 
     hideLoadingMsg();
     return false;
@@ -191,6 +187,4 @@ $("#articleData button").click((e) => {
   u_selectedArticleData = JSON.parse(u_data);
 
   const Article = ParseArticle(u_selectedArticleData);
-
-  
 });

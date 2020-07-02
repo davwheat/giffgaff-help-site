@@ -1,19 +1,19 @@
 const specialNumbers = {
-  "999": "the Emergency Services",
-  "112": "the Emergency Services",
-  "911": "the Emergency Services",
-  "01189998819991197253": "an Easter Egg",
-  "101": "the Police non-emergency",
-  "111": "the NHS non-emergency",
-  "105": "the Powercut emergency",
-  "43430": "a giffgaff member services",
-  "43431": "a giffgaff member services",
-  "123": "the talking clock",
-  "118118": "a Directory Enquiries"
+  '999': 'the Emergency Services',
+  '112': 'the Emergency Services',
+  '911': 'the Emergency Services',
+  '01189998819991197253': 'an Easter Egg',
+  '101': 'the Police non-emergency',
+  '111': 'the NHS non-emergency',
+  '105': 'the Powercut emergency',
+  '43430': 'a giffgaff member services',
+  '43431': 'a giffgaff member services',
+  '123': 'the talking clock',
+  '118118': 'a Directory Enquiries',
 };
 
-const normMinsPrice = "25p per minute";
-const normTextsPrice = "10p per text";
+const normMinsPrice = '25p per minute';
+const normTextsPrice = '10p per text';
 
 const phoneCallSvg = `<svg class="gg-u-icon gg-u-icon--medium gg-u-icon--inline" viewBox="0 0 24 24"><path d="M15.6 13.6c-.2-.2-.6-.2-.9 0l-1.6 1.3c-.9-1.6-2-3.1-3.1-4.6l-.4-.5h.1c.9-.4 1.8-1 2.6-1.6.3-.2.4-.6.2-.8-.6-1.4-1.2-3.6-2.5-4.3-1.9-1-4.2 1.4-5.4 2.7-.2.2-.4.5-.3.8a24 24 0 004.2 9.3c1.2 1.9 3.1 5.3 5.6 5.4 1.2.1 3.3-1.4 4.2-2.3 2-2-1.3-4.2-2.7-5.4zm-.6 1zm.4 4.7c-1.4.9-1.6.8-3.2-.7-3.2-3-5.4-7.8-6.6-12 1-1 2.8-2.8 4-2.1.7.4 1 2.1 1.5 2.7l.1.2-.6.3c-.7.4-1.5.8-2.1 1.3-.3.2-.4.5-.3.8l4.1 6.3c.2.3.6.4.9.2l.1-.1c.5-.4 1.1-1.2 1.8-1.5l.3.3c.3.5 1 .8 1.4 1.3 1.2 2.1 0 2.2-1.4 3z"/><path d="M14.2 8.9c.8.3 1.4.8 1.7 1.6.3.8 1.5.4 1.2-.3a4 4 0 00-2.5-2.6c-.8-.2-1.1 1-.4 1.3zm.9-2.4c1.5.1 2.7 1.2 3 2.7.1.8 1.3.5 1.2-.3-.4-2-2.1-3.5-4.2-3.6-.8 0-.8 1.2 0 1.2z"/></svg>`;
 const textSvg = `<svg class="gg-u-icon gg-u-icon--medium gg-u-icon--inline" viewBox="0 0 24 24"><path d="M6.3 8.7l11.5.1c.3 0 .6-.3.6-.6s-.3-.6-.6-.6L6.3 7.5c-.3 0-.6.3-.6.6-.1.4.2.6.6.6zm0 2.6l11.5.1c.3 0 .6-.3.6-.6s-.3-.6-.6-.6c-4-.2-7.5-.2-11.5-.2-.3 0-.6.3-.6.6s.2.7.6.7zm0 2.4l11.5.1c.3 0 .6-.3.6-.6s-.3-.6-.6-.6l-11.5-.1c-.4 0-.6.3-.6.6-.1.4.2.6.6.6z"/><path d="M21.2 13.2l-.1-2.1-.2-4.3c-.2-1.2-.4-2.1-1.8-2.5L18 4.1l-.7-.1h-.8c-2.5.4-4.9 0-7.3.1-1.6.1-3.4 0-4.9.7-.5.1-1 .5-1.2 1.5-.7 2.4-.3 4.8-.3 7.2a7 7 0 00.4 3.2c.3.4.8.7 1.3.7.4 1 .1 2.1.2 3.6 0 .3.3.5.6.5l.4-.2a6.1 6.1 0 014.3-3.8h8.5a2 2 0 001.3-.4 2 2 0 001.1-1.6c.2-.7.3-1.5.3-2.3zm-1.5 2.1c-.3.7-.9.8-1.5 1h-4.3c-3.7-.2-6.1.2-7.9 2.6l.1-1.6c.1-.5-.2-.9-.6-1.1l-.7-.2c-.4-.1-.6-.5-.7-.8-.4-1 0-2.3-.2-3.5-.2-1.6-.4-3.5.5-5 1.1-1.8 7.8-1.1 10-1.1 1.1 0 4.4-.5 5.1.5l.1.4c.2.7.3 1.5.2 2.2 0 .1.1.7 0 .8l.1 3.3a6 6 0 010 1.9l-.2.6z"/></svg>`;
@@ -22,109 +22,107 @@ const freeSvg = `<svg class="gg-u-icon gg-u-icon--medium gg-u-icon--inline" view
 const warnSvg = `<svg class="gg-u-icon gg-u-icon--medium gg-u-icon--inline" viewBox="0 0 24 24"><path d="M12.7 15.6a1.1 1.1 0 01-1.3 1 1 1 0 01-.7-1.5 1.3 1.3 0 01.8-.6 1 1 0 011 .3 1 1 0 01.2.8zM12.2 6.7c.4.8.3 4.7.2 5.7 0 .6-1 .7-1.3.5-.7-.7-.4-2.6-.4-3.6 0-.6-.2-2.5.5-2.7a1.2 1.2 0 01.8 0 .2.2 0 01.2 0z"/><path d="M19.5 12a8.1 8.1 0 01-9 7.7C6.3 19.3 3 15.3 3 11.1s4.3-6.8 8.2-6.8c4.7 0 8 3 8.2 7.8a.6.6 0 001.2 0 8.8 8.8 0 00-9-9C7.2 2.9 2 5.9 2 11c0 4.8 3.6 9.4 8.5 10a9.4 9.4 0 0010.3-9c.1-.8-1.1-.8-1.2 0z"/></svg>`;
 
 const ggPrices = {
-  "a mobile": {
+  'a mobile': {
     payg: `${phoneCallSvg} ${normMinsPrice}\n${textSvg} ${normTextsPrice}`,
-    goodybag: `${goodybagInclusiveSvg} Inclusive`
+    goodybag: `${goodybagInclusiveSvg} Inclusive`,
   },
-  "a landline": {
+  'a landline': {
     payg: `${phoneCallSvg} ${normMinsPrice}\n${textSvg} ${normTextsPrice}`,
-    goodybag: `${goodybagInclusiveSvg} Inclusive`
+    goodybag: `${goodybagInclusiveSvg} Inclusive`,
   },
-  "a mobile or landline": {
+  'a mobile or landline': {
     payg: `${phoneCallSvg} ${normMinsPrice}\n${textSvg} ${normTextsPrice}`,
-    goodybag: `${goodybagInclusiveSvg} Inclusive`
+    goodybag: `${goodybagInclusiveSvg} Inclusive`,
   },
-  "your giffgaff voicemail": {
+  'your giffgaff voicemail': {
     payg: `${phoneCallSvg} 8p per call`,
-    goodybag: `${goodybagInclusiveSvg} 1 minute per call`
+    goodybag: `${goodybagInclusiveSvg} 1 minute per call`,
   },
-  "a freephone": {
+  'a freephone': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "a personal": {
+  'a personal': {
     payg: `${phoneCallSvg} ${normMinsPrice} if starting 070`,
-    goodybag: `${goodybagInclusiveSvg} Inclusive if starting 070`
+    goodybag: `${goodybagInclusiveSvg} Inclusive if starting 070`,
   },
-  "a premium rate": {
+  'a premium rate': {
     payg: `${phoneCallSvg} 25p per minute + service charge`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "the emergency services": {
+  'the emergency services': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "the police non-emergency": {
+  'the police non-emergency': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "the nhs 111": {
+  'the nhs 111': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "the powercut emergency": {
+  'the powercut emergency': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "the talking clock": {
+  'the talking clock': {
     payg: `${phoneCallSvg} 15p per call`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a support helpline": {
+  'a support helpline': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "a pager": {
+  'a pager': {
     payg: `${phoneCallSvg}40p per minute`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a corporate": {
+  'a corporate': {
     payg: `${phoneCallSvg} 20p per minute`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a voice over ip (voip)": {
+  'a voice over ip (voip)': {
     payg: `${phoneCallSvg} 8p per minute`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a shared cost": {
+  'a shared cost': {
     payg: `${phoneCallSvg} 25p per minute + service charge`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a shortcode": {
+  'a shortcode': {
     payg: `${phoneCallSvg} Pricing set by service provider (between free and £5)`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a society lottery shortcode": {
+  'a society lottery shortcode': {
     payg: `${phoneCallSvg} Pricing set by service provider (between free and £5)`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a directory enquiries": {
+  'a directory enquiries': {
     payg: `${phoneCallSvg} 25p per minute + service charge`,
-    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`
+    goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
-  "a giffgaff member services": {
+  'a giffgaff member services': {
     payg: `${freeSvg} Free`,
-    goodybag: `${freeSvg} Free`
+    goodybag: `${freeSvg} Free`,
   },
-  "a non-geographical standard rate": {
+  'a non-geographical standard rate': {
     payg: `${phoneCallSvg} ${normMinsPrice}\n${textSvg} ${normTextsPrice}`,
-    goodybag: `${goodybagInclusiveSvg} Inclusive`
+    goodybag: `${goodybagInclusiveSvg} Inclusive`,
   },
-  "an easter egg": {
+  'an easter egg': {
     payg: `<a target="_blank" href="https://www.youtube.com/watch?v=ab8GtuPdrUQ" class="gg-u-link">The IT Crowd</a>`,
-    goodybag: `<a target="_blank" href="https://www.youtube.com/watch?v=ab8GtuPdrUQ" class="gg-u-link">The IT Crowd</a>`
-  }
+    goodybag: `<a target="_blank" href="https://www.youtube.com/watch?v=ab8GtuPdrUQ" class="gg-u-link">The IT Crowd</a>`,
+  },
 };
 
 let InternationalPricing;
 
-fetch("/bits-and-bobs/number-checker/intl-prices.json").then(result =>
-  result.json().then(j => (InternationalPricing = j))
-);
+fetch('/bits-and-bobs/number-checker/intl-prices.json').then((result) => result.json().then((j) => (InternationalPricing = j)));
 
-document.querySelector("main input").focus();
+document.querySelector('main input').focus();
 
-document.querySelector("main input").addEventListener("keydown", function(e) {
+document.querySelector('main input').addEventListener('keydown', function (e) {
   var key = e.keyCode ? e.keyCode : e.which;
 
   if (
@@ -134,226 +132,203 @@ document.querySelector("main input").addEventListener("keydown", function(e) {
       (key >= 35 && key <= 40) ||
       (key >= 48 && key <= 57 && !(e.shiftKey || e.altKey)) ||
       (key >= 96 && key <= 105) ||
-      event.key === "+"
+      event.key === '+'
     )
   )
     e.preventDefault();
 });
 
 function errorForm() {
-  document.querySelector("input#phoneNumber").parentElement.classList.value =
-    "gg-c-form__element gg-c-form__element--invalid";
+  document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element gg-c-form__element--invalid';
 }
 
 function infoForm() {
-  console.log("info");
+  console.log('info');
 
-  document.querySelector("input#phoneNumber").parentElement.classList.value =
-    "gg-c-form__element gg-c-form__element--info";
+  document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element gg-c-form__element--info';
 }
 
 function validForm() {
-  console.log("valid");
+  console.log('valid');
   console.trace();
 
-  document.querySelector("input#phoneNumber").parentElement.classList.value =
-    "gg-c-form__element gg-c-form__element--valid";
+  document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element gg-c-form__element--valid';
 }
 
 function noneForm() {
-  document.querySelector("input#phoneNumber").parentElement.classList.value =
-    "gg-c-form__element";
+  document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element';
 }
 
 function setResultText(text) {
-  document.querySelector("#output1").innerHTML = text;
-  document.querySelector("#output2").innerHTML = text;
-  document.querySelector("#output3").innerHTML = text;
+  document.querySelector('#output1').innerHTML = text;
+  document.querySelector('#output2').innerHTML = text;
+  document.querySelector('#output3').innerHTML = text;
 }
 
 function setPayg(text) {
-  document.querySelector("p#payg").innerHTML = text;
+  document.querySelector('p#payg').innerHTML = text;
 }
 
 function setGoodybag(text) {
-  document.querySelector("p#goodybag").innerHTML = text;
+  document.querySelector('p#goodybag').innerHTML = text;
 }
 
-document
-  .querySelector("input#phoneNumber")
-  .addEventListener("input", function(e) {
-    if (this.value.replace(" ", "") === "") {
-      setResultText("Please enter a complete phone number");
-      infoForm();
+document.querySelector('input#phoneNumber').addEventListener('input', function (e) {
+  if (this.value.replace(' ', '') === '') {
+    setResultText('Please enter a complete phone number');
+    infoForm();
 
-      setPayg("Please enter a complete phone number");
-      setGoodybag("Please enter a complete phone number");
+    setPayg('Please enter a complete phone number');
+    setGoodybag('Please enter a complete phone number');
+    return;
+  }
+
+  const numFmt = new libphonenumber.AsYouType('GB');
+
+  let value = this.value;
+
+  if (value.startsWith('00')) {
+    value = '+' + value.substr(2);
+  }
+
+  this.value = numFmt.input(value);
+
+  a = numFmt.getNumber();
+
+  const num = a ? a.number : '';
+  if (!a) {
+    setResultText('Please enter a complete phone number');
+    infoForm();
+
+    setPayg('Please enter a complete phone number');
+    setGoodybag('Please enter a complete phone number');
+    return;
+  }
+
+  delete a;
+
+  const numStr = this.value.replace(/\ /g, '');
+
+  if (Object.keys(specialNumbers).includes(numStr)) {
+    ShowNumberType(specialNumbers[numStr]);
+    return;
+  }
+
+  if (numStr.length === 3) {
+    if (['123', '121', '901', '222'].includes(numStr)) {
+      ShowNumberType('a Mobile network voicemail');
+      validForm();
+      return;
+    } else if (numStr === '443') {
+      ShowNumberType('your giffgaff voicemail');
+      validForm();
       return;
     }
+  }
 
-    const numFmt = new libphonenumber.AsYouType("GB");
-
-    let value = this.value;
-
-    if (value.startsWith("00")) {
-      value = "+" + value.substr(2);
-    }
-
-    this.value = numFmt.input(value);
-
-    a = numFmt.getNumber();
-
-    const num = a ? a.number : "";
-    if (!a) {
-      setResultText("Please enter a complete phone number");
-      infoForm();
-
-      setPayg("Please enter a complete phone number");
-      setGoodybag("Please enter a complete phone number");
+  if (!numStr.startsWith('0') && ((numStr.length === 5 && !numStr.startsWith('+')) || (numStr.length === 8 && numStr.startsWith('+44')))) {
+    if (numStr.startsWith('70')) {
+      ShowNumberType('a Charity Shortcode');
+      validForm();
       return;
-    }
-
-    delete a;
-
-    const numStr = this.value.replace(/\ /g, "");
-
-    if (Object.keys(specialNumbers).includes(numStr)) {
-      ShowNumberType(specialNumbers[numStr]);
+    } else if (numStr.startsWith('72')) {
+      ShowNumberType('a Society Lottery Shortcode');
+      validForm();
       return;
-    }
-
-    if (numStr.length === 3) {
-      if (["123", "121", "901", "222"].includes(numStr)) {
-        ShowNumberType("a Mobile network voicemail");
-        validForm();
-        return;
-      } else if (numStr === "443") {
-        ShowNumberType("your giffgaff voicemail");
+    } else {
+      if (numStr.startsWith('6') || numStr.startsWith('+446') || numStr.startsWith('8') || numStr.startsWith('+448') || numStr.startsWith('7') || numStr.startsWith('+447')) {
+        ShowNumberType('a Shortcode');
         validForm();
         return;
       }
     }
+  }
 
-    if (
-      !numStr.startsWith("0") &&
-      ((numStr.length === 5 && !numStr.startsWith("+")) ||
-        (numStr.length === 8 && numStr.startsWith("+44")))
-    ) {
-      if (numStr.startsWith("70")) {
-        ShowNumberType("a Charity Shortcode");
-        validForm();
-        return;
-      } else if (numStr.startsWith("72")) {
-        ShowNumberType("a Society Lottery Shortcode");
-        validForm();
-        return;
-      } else {
-        if (
-          numStr.startsWith("6") ||
-          numStr.startsWith("+446") ||
-          numStr.startsWith("8") ||
-          numStr.startsWith("+448") ||
-          numStr.startsWith("7") ||
-          numStr.startsWith("+447")
-        ) {
-          ShowNumberType("a Shortcode");
-          validForm();
-          return;
-        }
-      }
-    }
+  if (numStr.length === 6 && numStr.startsWith('118')) {
+    ShowNumberType('a directory enquiries');
+    validForm();
+    return;
+  }
 
-    if (numStr.length === 6 && numStr.startsWith("118")) {
-      ShowNumberType("a directory enquiries");
+  try {
+    const NumberInstance = libphonenumber.parsePhoneNumberFromString(num);
+
+    if (NumberInstance.nationalNumber.startsWith('116') && NumberInstance.nationalNumber.length === 6) {
+      ShowNumberType('a Support Helpline');
       validForm();
       return;
     }
 
-    try {
-      const NumberInstance = libphonenumber.parsePhoneNumberFromString(num);
+    if (NumberInstance.countryCallingCode !== '44') {
+      ShowNumberType('an International', NumberInstance.country);
+      validForm();
+      return;
+    }
 
-      if (
-        NumberInstance.nationalNumber.startsWith("116") &&
-        NumberInstance.nationalNumber.length === 6
-      ) {
-        ShowNumberType("a Support Helpline");
-        validForm();
-        return;
-      }
+    const type = NumberInstance.getType();
 
-      if (NumberInstance.countryCallingCode !== "44") {
-        ShowNumberType("an International", NumberInstance.country);
-        validForm();
-        return;
-      }
+    if (type === 'UAN' && numStr.startsWith('03')) {
+      ShowNumberType('a Non-geographical standard rate');
+      validForm();
+      return;
+    }
 
-      const type = NumberInstance.getType();
+    const valueToText = {
+      MOBILE: 'a mobile',
+      FIXED_LINE: 'a landline',
+      FIXED_LINE_OR_MOBILE: 'a mobile or landline',
+      PREMIUM_RATE: 'a premium rate',
+      TOLL_FREE: 'a Freephone',
+      SHARED_COST: 'a Shared Cost',
+      VOIP: 'a Voice over IP (VoIP)',
+      PERSONAL_NUMBER: 'a Personal',
+      PAGER: 'a Pager',
+      UAN: 'a Corporate',
+      VOICEMAIL: 'a Voicemail',
+      undefined: '...',
+    };
 
-      if (type === "UAN" && numStr.startsWith("03")) {
-        ShowNumberType("a Non-geographical standard rate");
-        validForm();
-        return;
-      }
-
-      const valueToText = {
-        MOBILE: "a mobile",
-        FIXED_LINE: "a landline",
-        FIXED_LINE_OR_MOBILE: "a mobile or landline",
-        PREMIUM_RATE: "a premium rate",
-        TOLL_FREE: "a Freephone",
-        SHARED_COST: "a Shared Cost",
-        VOIP: "a Voice over IP (VoIP)",
-        PERSONAL_NUMBER: "a Personal",
-        PAGER: "a Pager",
-        UAN: "a Corporate",
-        VOICEMAIL: "a Voicemail",
-        undefined: "..."
-      };
-
-      ShowNumberType(
-        valueToText[type ? type : typeof type],
-        NumberInstance.country
-      );
-    } catch {}
-  });
+    ShowNumberType(valueToText[type ? type : typeof type], NumberInstance.country);
+  } catch {}
+});
 
 function ShowNumberType(type, country = undefined) {
-  if (type === "...") {
+  if (type === '...') {
     if (country) {
       setResultText("I don't know this number");
 
-      setPayg("Unknown");
-      setGoodybag("Unknown");
+      setPayg('Unknown');
+      setGoodybag('Unknown');
 
       errorForm();
       return;
     } else {
-      setResultText("Please enter more digits");
+      setResultText('Please enter more digits');
 
-      setPayg("Please enter more digits");
-      setGoodybag("Please enter more digits");
+      setPayg('Please enter more digits');
+      setGoodybag('Please enter more digits');
 
       infoForm();
       return;
     }
-  } else if (type === "an International") {
+  } else if (type === 'an International') {
     setResultText(`This is <b>${type.toLowerCase()}</b> number`);
 
     if (country) {
-      const tariff = InternationalPricing["tariffs"][country.toLowerCase()];
+      const tariff = InternationalPricing['tariffs'][country.toLowerCase()];
 
       setPayg(
         `${phoneCallSvg}${tariff.landline} per minute (landline)
         ${phoneCallSvg}${tariff.mobile} per minute (mobile)
-      ${textSvg}${tariff.text} per text`.replace(/(\r\n|\r|\n)/g, "<br/>")
+      ${textSvg}${tariff.text} per text`.replace(/(\r\n|\r|\n)/g, '<br/>')
       );
 
       setGoodybag(`<span class='warn-text'>${warnSvg}Not included</span>`);
     } else {
-      setResultText("Please enter more digits");
+      setResultText('Please enter more digits');
 
-      setPayg("Please enter more digits");
-      setGoodybag("Please enter more digits");
+      setPayg('Please enter more digits');
+      setGoodybag('Please enter more digits');
 
       infoForm();
       return;
@@ -362,7 +337,7 @@ function ShowNumberType(type, country = undefined) {
     setResultText(`This is <b>${type.toLowerCase()}</b> number`);
     validForm();
 
-    setPayg(ggPrices[type.toLowerCase()]["payg"].replace("\n", "<br/>"));
-    setGoodybag(ggPrices[type.toLowerCase()]["goodybag"]);
+    setPayg(ggPrices[type.toLowerCase()]['payg'].replace('\n', '<br/>'));
+    setGoodybag(ggPrices[type.toLowerCase()]['goodybag']);
   }
 }

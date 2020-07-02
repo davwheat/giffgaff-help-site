@@ -1,0 +1,26 @@
+{
+  "name": "giffgaff-help-site",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "lint": "npm run prettier",
+    "prettier": "prettier --print-width 200 --single-quote true --tab-width 2 --trailing-comma es5 --write \"**/*.{html,js,less}\"",
+    "deploy": "npm run lint && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davwheat/giffgaff-help-site.git"
+  },
+  "author": "davwheat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davwheat/giffgaff-help-site/issues"
+  },
+  "homepage": "https://github.com/davwheat/giffgaff-help-site#readme"
+}

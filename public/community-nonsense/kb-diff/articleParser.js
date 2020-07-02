@@ -5,11 +5,11 @@ function ParseArticle(data) {
   const Parsed = {
     articleId: data.articleId,
     title: data.title,
-    url: GetUrlFromSlug("article", data.url),
+    url: GetUrlFromSlug('article', data.url),
     slug: data.url,
     categoryId: data.categoryId,
     categoryName: data.categoryName,
-    categoryUrl: GetUrlFromSlug("article", data.categoryUrl),
+    categoryUrl: GetUrlFromSlug('article', data.categoryUrl),
     categorySlug: data.categoryUrl,
     visible: data.visible,
     content: JSON.parse(data.content),
@@ -21,10 +21,10 @@ function ParseArticle(data) {
 
 function GetUrlFromSlug(type, slug) {
   switch (type) {
-    case "article":
+    case 'article':
       return `${articlePrefix}/${slug}`;
-    case "category":
-    case "topic":
+    case 'category':
+    case 'topic':
       return `${categoryPrefix}/${slug}`;
   }
 }
@@ -32,14 +32,14 @@ function GetUrlFromSlug(type, slug) {
 function ArticleContentToHtml(article) {
   const { content, title } = article;
 
-  let finalOutput = document.createElement("article");
+  let finalOutput = document.createElement('article');
 
-  let textOutput = "";
+  let textOutput = '';
 
   textOutput += `<h1 class="gg-u-text-shout">${title}</h1>`;
 
   content.blocks.forEach((block, i) => {
-    let lastBlock = { type: "unstyled" };
+    let lastBlock = { type: 'unstyled' };
 
     if (i > 0) {
       lastBlock = content.blocks[i - 1];
@@ -55,32 +55,30 @@ function ArticleContentToHtml(article) {
 
 function ParseBlock(block, lastBlock) {
   const { key, text, depth, inlineStyleRanges, entityRanges, data } = block;
-  let textOutput = "";
+  let textOutput = '';
 
   const Element = BlockTypeToElement(block);
 
-  if (["ordered-list-item", "unordered-list-item"].includes(block.type)) {
+  if (['ordered-list-item', 'unordered-list-item'].includes(block.type)) {
     if (lastBlock.type !== block.type) {
       switch (block.type) {
-        case "ordered-list-item":
+        case 'ordered-list-item':
           textOutput += `<ol class="gg-c-list-ordered">`;
           break;
 
-        case "unordered-list-item":
+        case 'unordered-list-item':
           textOutput += `<ul class="gg-c-list">`;
           break;
       }
     }
-  } else if (
-    ["ordered-list-item", "unordered-list-item"].includes(lastBlock.type)
-  ) {
+  } else if (['ordered-list-item', 'unordered-list-item'].includes(lastBlock.type)) {
     if (lastBlock.type !== block.type) {
       switch (block.type) {
-        case "ordered-list-item":
+        case 'ordered-list-item':
           textOutput += `</ol>`;
           break;
 
-        case "unordered-list-item":
+        case 'unordered-list-item':
           textOutput += `</ul>`;
           break;
       }
@@ -92,27 +90,24 @@ function ParseBlock(block, lastBlock) {
   let i = 0;
   for (let char of text) {
     // Stuff to be added *after* the letter.
-    let append = "";
+    let append = '';
 
     inlineStyleRanges.forEach((style) => {
       if (i === style.offset) {
         // Inline style starts!
         switch (style.style) {
-          case "UNDERLINE":
-            textOutput += "<u>";
+          case 'UNDERLINE':
+            textOutput += '<u>';
             break;
 
           default:
             break;
         }
-      } else if (
-        i === style.offset + style.length ||
-        (i === style.offset + style.length + 1 && i + 1 === text.length)
-      ) {
+      } else if (i === style.offset + style.length || (i === style.offset + style.length + 1 && i + 1 === text.length)) {
         // Inline style ends!
         switch (style.style) {
-          case "UNDERLINE":
-            append += "</u>";
+          case 'UNDERLINE':
+            append += '</u>';
             break;
 
           default:
@@ -127,23 +122,18 @@ function ParseBlock(block, lastBlock) {
       if (i === entity.offset) {
         // Inline style starts!
         switch (realEntity.type) {
-          case "LINK":
-            textOutput += `<a class="gg-u-link" href="${
-              realEntity.data.url ? realEntity.data.url : realEntity.data.href
-            }">`;
+          case 'LINK':
+            textOutput += `<a class="gg-u-link" href="${realEntity.data.url ? realEntity.data.url : realEntity.data.href}">`;
             break;
 
           default:
             break;
         }
-      } else if (
-        i === entity.offset + entity.length ||
-        (i === entity.offset + entity.length - 1 && i + 1 === text.length)
-      ) {
+      } else if (i === entity.offset + entity.length || (i === entity.offset + entity.length - 1 && i + 1 === text.length)) {
         // Inline style ends!
         switch (realEntity.type) {
-          case "LINK":
-            append += "</a>";
+          case 'LINK':
+            append += '</a>';
             break;
 
           default:
@@ -171,32 +161,32 @@ function BlockTypeToElement(block) {
     attributes = [];
 
   switch (type) {
-    case "header-two":
+    case 'header-two':
       element = `h2`;
-      classes.push("gg-u-text-loud");
+      classes.push('gg-u-text-loud');
       break;
 
-    case "unstyled":
+    case 'unstyled':
       element = `p`;
       break;
 
-    case "ordered-list-item":
-    case "unordered-list-item":
+    case 'ordered-list-item':
+    case 'unordered-list-item':
       element = `li`;
       break;
 
     default:
       element = `p`;
-      attributes = [{ name: "style", value: `color: #f00;` }];
+      attributes = [{ name: 'style', value: `color: #f00;` }];
       console.warn(`Unknown element type: `, type);
 
       break;
   }
 
-  const attributesString = attributes.reduce(AttributeReducer, "");
+  const attributesString = attributes.reduce(AttributeReducer, '');
 
   return {
-    start: `<${element} class="${classes.join(" ")}" ${attributesString}>`,
+    start: `<${element} class="${classes.join(' ')}" ${attributesString}>`,
     end: `</${element}>`,
   };
 }

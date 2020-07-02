@@ -1,0 +1,6 @@
+# Ignore minified
+*.min.js
+*.min.css
+
+# Ignore minified html file
+public/realme/x2-pro.html
