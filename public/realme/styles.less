@@ -73,72 +73,6 @@ code {
   }
 }
 
-.version {
-  &-warning {
-    background-color: rgba(214, 0, 0, 0.1);
-    border-top: solid var(--tiny) var(--red);
-  }
-
-  &-info {
-    background-color: rgba(0, 82, 138, 0.15);
-    border-top: solid var(--tiny) var(--dark-blue);
-  }
-
-  &-info,
-  &-warning {
-    padding: var(--small);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-bottom: 32px;
-
-    &__icon {
-      width: var(--large);
-      height: var(--large);
-      align-self: start;
-      flex-shrink: 0;
-    }
-
-    &__message {
-      padding-left: var(--small);
-    }
-
-    &__title {
-      font-size: var(--small);
-      font-weight: 700;
-      line-height: var(--medium);
-    }
-  }
-}
-
-.warning-message {
-  background-color: rgba(252, 195, 30, 0.15);
-  border-top: solid var(--tiny) var(--yellow);
-
-  padding: var(--small);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 32px;
-
-  &__icon {
-    width: var(--large);
-    height: var(--large);
-    align-self: start;
-    flex-shrink: 0;
-  }
-
-  &__message {
-    padding-left: var(--small);
-  }
-
-  &__title {
-    font-size: var(--small);
-    font-weight: 700;
-    line-height: var(--medium);
-  }
-}
-
 li > pre:last-child {
   margin-bottom: var(--small) !important;
 }
@@ -168,7 +102,7 @@ body[data-version='10'] {
     display: none;
   }
 
-  .version-warning {
+  .gg-c-minor-alert[data-version-waring] {
     display: none;
   }
 }
@@ -178,7 +112,7 @@ body[data-version='9'] {
     display: none;
   }
 
-  .version-warning {
+  .gg-c-minor-alert[data-version-waring] {
     display: none;
   }
 }
@@ -188,7 +122,7 @@ body:not([data-version='9']):not([data-version='10']) {
     display: none;
   }
 
-  .version-info {
+  .gg-c-minor-alert[data-version-message] {
     display: none;
   }
 }

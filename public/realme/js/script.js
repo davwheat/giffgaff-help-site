@@ -13,8 +13,8 @@ document.getElementById('version--realme-ui').addEventListener('input', function
 });
 
 function UpdateVersionInfoMessages() {
-  document.querySelectorAll('.version-info').forEach(function (n) {
-    n.querySelector('.version-info__title').innerHTML = `You're running Android ${chosenVersion} (${chosenVersion === 9 ? 'ColorOS 6' : 'realme UI 1.0'})`;
+  document.querySelectorAll('.gg-c-minor-alert[data-version-message]').forEach(function (n) {
+    n.querySelector('.gg-c-minor-alert__title').innerHTML = `You're running Android ${chosenVersion} (${chosenVersion === 9 ? 'ColorOS 6' : 'realme UI 1.0'})`;
   });
 }
 

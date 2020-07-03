@@ -23,7 +23,7 @@
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/font.css" as="style" />
 
     <link rel="preload" href="/realme/js/modals.js" as="script" />
-    <link rel="preload" href="/realme/js/bodyScrollLock.min.min.js" as="script" />
+    <link rel="preload" href="/realme/js/bodyScrollLock.min.js" as="script" />
     <link rel="preload" href="/realme/js/prism.js" as="script" />
     <link rel="preload" href="/realme/js/script.js" as="script" />
 
@@ -52,8 +52,6 @@
     <script src="/js/modernizr-custom.min.js" async defer></script>
     <link rel="stylesheet" href="/css/styles.min.css" />
     <link rel="stylesheet" href="/realme/styles.min.css" />
-
-    <script src="/realme/js/modals.js"></script>
   </head>
   <body class="qa-page">
     <gg-header></gg-header>
@@ -190,12 +188,11 @@
 
         <div class="gg-t-white">
           <section class="gg-o-page-section" id="info">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Guide</mark>
                 info
               </h1>
-              <section class="gg-u-mt-medium">
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
                 <h2 class="gg-u-text-louder">Credit</h2>
                 <p>
                   Massive thanks to Gamr13 for the original guide which I spruced up into this fancy&nbsp;webpage.
@@ -208,15 +205,13 @@
 
                 <h2 class="gg-u-text-louder" id="disclaimer">Disclaimer</h2>
 
-                <div class="version-warning gg-u-mt-small">
-                  <p class="gg-u-screen-reader-only">
-                    Important message
-                  </p>
-                  <img src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" class="version-warning__icon" />
-                  <div class="version-warning__message">
-                    <p class="version-warning__title">
+                <div class="gg-c-minor-alert gg-u-mt-tiny gg-u-mb-small" role="alert">
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">
                       Read this before continuing
                     </p>
+                    <div>
                     <p>
                       No-one except yourself is responsible for bricked devices, dead NAND flash, thermonuclear war, or you getting fired because the alarm app failed. You are choosing to make these
                       modifications, and if you point the finger at me for messing up your device, I will laugh at you (but probably still try to help). Your warranty might be void if you tamper with
@@ -233,11 +228,12 @@
                       and we'll help you as best we can. Just don't blame it on us &mdash; you chose to modify your device, not us.
                     </p>
                   </div>
+                  </div>
                 </div>
 
                 <h2 class="gg-u-text-louder">Version and changelog</h2>
                 <p class="gg-u-text-speak-up">
-                  This version: v2.1
+                  This version: v2.2
                 </p>
                 <details class="gg-c-accordion">
                   <summary>
@@ -255,6 +251,11 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
+                    <h3 class="gg-u-text-loud">Version 2.2</h3>
+                    <p class="gg-u-text-speak-up">3/7/20</p>
+                    <p>
+                      Make disclaimer big and red! Switch to using giffgaff minor alerts (rip off of my existing alerts).
+                    </p>
                     <h3 class="gg-u-text-loud">Version 2.1</h3>
                     <p class="gg-u-text-speak-up">27/6/20</p>
                     <p>
@@ -307,18 +308,16 @@
                   </div>
                 </details>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-light-blue">
           <section class="gg-o-page-section" id="version">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing">Choose</mark>
                 your Android version
               </h1>
-              <div class="gg-u-mt-medium">
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
                 <p>
                   Some instructions vary based on the version of Android that you are running on your device. Selecting the version your device is running allows us to hide steps which don't apply to
                   your version and add steps that do, so it is critical that you choose the right&nbsp;option.
@@ -344,23 +343,21 @@
                     </li>
                   </ol>
                 </fieldset>
-              </div>
-            </div>
+              </section>
           </section>
         </div>
 
         <div class="gg-t-white">
           <section class="gg-o-page-section" id="start">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Before</mark>
                 you start
               </h1>
-              <section class="gg-u-mt-medium">
-                <div class="version-info">
-                  <img src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" class="version-info__icon" />
-                  <div class="version-info__message">
-                    <p class="version-info__title">You're running</p>
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
+                <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mb-small" data-version-message>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">You're running</p>
                     <p>
                       Not right?
                       <a href="#version" class="gg-u-link">Change your selected&nbsp;version</a>
@@ -446,35 +443,30 @@
                   </li>
                 </ul>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section" id="unlock">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Unlocking</mark>
                 the bootloader
               </h1>
-              <section class="gg-u-mt-medium">
-                <div class="version-warning">
-                  <p class="gg-u-screen-reader-only">
-                    Error.
-                  </p>
-                  <img src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" class="version-warning__icon" />
-                  <div class="version-warning__message">
-                    <p class="version-warning__title">No version selected</p>
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
+                <div class="gg-c-minor-alert gg-u-mb-small" role="alert">
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">No version selected</p>
                     <p>
                       You haven't selected which version of Android your device uses. These steps may be inaccurate or even brick your&nbsp;device.
                     </p>
                     <a href="#version" class="gg-u-link">Select your version</a>
                   </div>
                 </div>
-                <div class="version-info">
-                  <img src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" class="version-info__icon" />
-                  <div class="version-info__message">
-                    <p class="version-info__title">You're running</p>
+                <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mb-small" data-version-message>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">You're running</p>
                     <p>
                       Not right?
                       <a href="#version" class="gg-u-link">Change your selected&nbsp;version</a>
@@ -566,22 +558,20 @@
                   </li>
                 </ol>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-white">
           <section class="gg-o-page-section" id="recovery">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Flashing</mark>
                 OrangeFox recovery
               </h1>
-              <section class="gg-u-mt-medium">
-                <div class="version-info">
-                  <img src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" class="version-info__icon" />
-                  <div class="version-info__message">
-                    <p class="version-info__title">You're running</p>
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
+                <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mb-small" data-version-message>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">You're running</p>
                     <p>
                       Not right?
                       <a href="#version" class="gg-u-link">Change your selected&nbsp;version</a>
@@ -638,35 +628,33 @@
                   </li>
                 </ol>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section" id="rom">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Flashing</mark>
                 the Custom ROM
               </h1>
-              <section class="gg-u-mt-medium">
-                <div class="version-warning">
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
+                <div class="gg-c-minor-alert gg-u-mb-small" role="alert">
                   <p class="gg-u-screen-reader-only">
                     Error.
                   </p>
-                  <img src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" class="version-warning__icon" />
-                  <div class="version-warning__message">
-                    <p class="version-warning__title">No version selected</p>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">No version selected</p>
                     <p>
                       You haven't selected which version of Android your device uses. These steps may be inaccurate or even brick your&nbsp;device.
                     </p>
                     <a href="#version" class="gg-u-link">Select your version</a>
                   </div>
                 </div>
-                <div class="version-info">
-                  <img src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" class="version-info__icon" />
-                  <div class="version-info__message">
-                    <p class="version-info__title">You're running</p>
+                <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mb-small" data-version-message>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">You're running</p>
                     <p>
                       Not right?
                       <a href="#version" class="gg-u-link">Change your selected&nbsp;version</a>
@@ -767,32 +755,28 @@
                   <li>
                     After the flashing is complete, tap the back&nbsp;button
                   </li>
-                  <li class="unknown-step">
+                  <li >
                     On your phone, tap <b>Menu</b> > <b>Manage Partitions</b> > <b>Data</b> > <b>Format Data</b> > Type <b>yes</b> > Press
                     <img class="inline" alt="" src="https://www.giffgaff.design/iconography/icons/library/tick-black-large.svg" />&nbsp;(tick)
-                    <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                      <div class="gg-o-media__img">
-                        <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                      </div>
-                      <div class="gg-o-media__content">
-                        <p>If you see a red error, you <b>must</b> go to Menu > Reboot > Recovery, and try this step&nbsp;again.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="unknown-step">
-                    Next, push the OpenGApps zip file to your&nbsp;device:
-                    <code class="language-bash">adb push -p "&lt;OpenGApps ZIP NAME&gt;" "/sdcard"</code>
-                    <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                      <div class="gg-o-media__img">
-                        <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                      </div>
-                      <div class="gg-o-media__content">
+                    <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                      <div class="gg-c-minor-alert__icon"></div>
+                      <div class="gg-c-minor-alert__message">
                         <p>If you see a red error, you <b>must</b> go to Menu > Reboot > Recovery, and try this step&nbsp;again.</p>
                       </div>
                     </div>
                   </li>
                   <li>
-                    On your phone, after the push is complete, scroll and find your OpenGApps zip. Tap it, and swipe the bar to flash&nbsp;it.
+                    Next, push the NikGApps zip file to your&nbsp;device:
+                    <code class="language-bash">adb push -p "&lt;NikGApps ZIP NAME&gt;" "/sdcard"</code>
+                    <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                      <div class="gg-c-minor-alert__icon"></div>
+                      <div class="gg-c-minor-alert__message">
+                        <p>If you see a red error, you <b>must</b> go to Menu > Reboot > Recovery, and try this step&nbsp;again.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    On your phone, after the push is complete, scroll and find your NikGApps zip. Tap it, and swipe the bar to flash&nbsp;it.
                   </li>
                   <li>
                     After the flash is complete, tap back at the bottom, then
@@ -800,18 +784,16 @@
                   </li>
                 </ol>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-white" id="complete">
           <section class="gg-o-page-section">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Completing</mark>
                 installation
               </h1>
-              <section class="gg-u-mt-medium">
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
                 <h2 class="gg-u-text-louder gg-u-mb-medium">
                   <mark class="gg-u-doodle-end-boing">Extra steps</mark>
                 </h2>
@@ -830,7 +812,7 @@
                   <div class="gg-c-accordion__content">
                     <p>It's surprisingly simple to root with&nbsp;Magisk!</p>
 
-                    <div class="unknown-step">
+                    <div >
                       <p>
                         Just
                         <a rel="noopener noreferrer" target="_blank" href="https://mega.nz/file/yMBnTKYC#HTxcGQ58TbTXZIyennk3hxeRXFA-_LEzXkwcMLjHxLE" class="gg-u-link">download Magisk 20.3</a>, then
@@ -856,15 +838,13 @@
                           to your phone via ADB (like you did with other files&nbsp;above)
                         </li>
                         <li>Tap <b>Files</b> again to refresh the list, then find your Magisk ZIP in the list and tap&nbsp;it</li>
-                        <li class="unknown-step">
+                        <li >
                           Swipe the bar to flash&nbsp;Magisk
 
-                          <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                            <div class="gg-o-media__img">
-                              <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                            </div>
-                            <div class="gg-o-media__content">
-                              <p class="gg-u-text-loud">
+                          <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                            <div class="gg-c-minor-alert__icon"></div>
+                            <div class="gg-c-minor-alert__message">
+                              <p class="gg-c-minor-alert__title">
                                 Do not update Magisk!
                               </p>
                               <p>
@@ -884,11 +864,9 @@
 
                       <h3 class="gg-u-text-loud gg-u-mb-small">Notes</h3>
 
-                      <div class="unknown-step__message gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <p>
                             You don't need Magisk to pass SafetyNet on LineageOS, but you might on other ROMs. Note that Magisk is helpful for other things, like Substratum themes and Fluid
                             Navigation&nbsp;Gestures.
@@ -898,11 +876,9 @@
                           </p>
                         </div>
                       </div>
-                      <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <p>If you see a red error, you <b>must</b> go to Menu > Reboot > Recovery, and try this step&nbsp;again.</p>
                         </div>
                       </div>
@@ -928,7 +904,7 @@
                       put together by celsoazevedo, but it can be difficult to choose which one to use, so I've done the hard work for&nbsp;you.
                     </p>
 
-                    <div class="unknown-step">
+                    <div >
                       <p>
                         I recommend using using
                         <a target="_blank" rel="noopener noreferrer" href="https://mega.nz/file/DEZRhaTT#sS3S2p9RlW51yoEy35Gcj6Sa1YJupv0MoeHMOCQ4WNc" class="gg-u-link">PixelCam Plus</a>. It's (fairly)
@@ -937,11 +913,9 @@
 
                       <p>Once you install, you'll want to change some settings. These will improve your photos <b>significantly</b> and you only have to do it&nbsp;once!</p>
 
-                      <div class="unknown-step__message gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <ul class="gg-c-list">
                             <li>
                               You cannot record video with the telephoto camera: the viewfinder&nbsp;freezes.
@@ -1051,7 +1025,7 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
-                    <div class="unknown-step">
+                    <div >
                       <p>You can enable a range of settings specific to the X2 Pro in <b>Realme&nbsp;Settings</b>.</p>
 
                       <ol class="gg-c-list-ordered">
@@ -1070,11 +1044,9 @@
                         </li>
                       </ol>
 
-                      <div class="unknown-step__message gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <p>
                             90 Hz is disabled when Battery Saver is switched&nbsp;on.
                           </p>
@@ -1096,7 +1068,7 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
-                    <div class="unknown-step">
+                    <div >
                       <p>
                         You can enable the built-in screen recorder via&nbsp;Settings.
                       </p>
@@ -1112,11 +1084,9 @@
                         <li>To record, just hold the power button and tap&nbsp;<b>Screenrecord</b></li>
                       </ol>
 
-                      <div class="unknown-step__message gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-c-minor-alert--warning gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <p>
                             The built-in screen recorder is fairly limited. If it doesn't do what you need, find a suitable replacement on the Play&nbsp;Store.
                           </p>
@@ -1138,7 +1108,7 @@
                     </div>
                   </summary>
                   <div class="gg-c-accordion__content">
-                    <div class="unknown-step">
+                    <div >
                       <p>
                         There's a great app on the Play Store called
                         <a href="https://play.google.com/store/apps/details?id=com.fb.fluid" target="_blank" rel="noopener noreferer" class="gg-u-link">Fluid Navigation Guestures</a>. It adds gestures
@@ -1169,11 +1139,9 @@
                         </li>
                       </ol>
 
-                      <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                        <div class="gg-o-media__img">
-                          <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                        </div>
-                        <div class="gg-o-media__content">
+                      <div class="gg-c-minor-alert gg-u-mt-tiny gg-u-mb-small">
+                        <div class="gg-c-minor-alert__icon"></div>
+                        <div class="gg-c-minor-alert__message">
                           <p>
                             If you decide to remove this later on, make sure you disable it before uninstalling it, or your nav bar may remain&nbsp;hidden.
                           </p>
@@ -1183,22 +1151,20 @@
                   </div>
                 </details>
               </section>
-            </div>
           </section>
         </div>
 
         <div class="gg-t-wild-sand">
           <section class="gg-o-page-section" id="revert">
-            <div class="gg-u-readable-width gg-u-mlr-auto">
               <h1 class="gg-u-text-shout">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Reverting</mark>
                 to ColorOS or realme UI
               </h1>
-              <section class="gg-u-mt-medium">
-                <div class="version-info">
-                  <img src="https://www.giffgaff.design/iconography/icons/library/info-circle.svg" class="version-info__icon" />
-                  <div class="version-info__message">
-                    <p class="version-info__title">You're running</p>
+              <section class="gg-u-mt-medium gg-u-readable-width gg-u-mlr-auto">
+                <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mb-small" data-version-message>
+                  <div class="gg-c-minor-alert__icon"></div>
+                  <div class="gg-c-minor-alert__message">
+                    <p class="gg-c-minor-alert__title">You're running</p>
                     <p>
                       Not right?
                       <a href="#version" class="gg-u-link">Change your selected&nbsp;version</a>
@@ -1218,7 +1184,7 @@
                     On your phone, press Volume Down until you see
                     <b>RECOVERY MODE</b> at the top, then press&nbsp;Power
                   </li>
-                  <li class="unknown-step">
+                  <li >
                     Download the OZIP file for the Android variant you want to&nbsp;use.
                     <ul class="gg-c-list">
                       <li><b>Note:</b> these are hosted on my personal file sharing accounts. The links below will be randomised between Mega and Google Drive on each page&nbsp;load.</li>
@@ -1233,11 +1199,9 @@
                         <a target="_blank" rel="noopener noreferrer" class="gg-u-link ozip-download--realmemeui__cn">Android 10 (realme UI)</a>
                       </li>
                     </ul>
-                    <div class="unknown-step__message gg-o-media gg-o-media--tiny-gutter">
-                      <div class="gg-o-media__img">
-                        <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/flag.svg" alt="Info" />
-                      </div>
-                      <div class="gg-o-media__content">
+                    <div class="gg-c-minor-alert gg-c-minor-alert--info gg-u-mt-tiny gg-u-mb-small">
+                      <div class="gg-c-minor-alert__icon"></div>
+                      <div class="gg-c-minor-alert__message">
                         <p>
                           It's very likely possible to convert a Chinese device to Global via an OZIP, but it must first be modified to allow it to be installed on the other&nbsp;device.
                         </p>
@@ -1268,7 +1232,7 @@
 
                   <li>Tap <b>Menu</b> > <b>Reboot</b> >&nbsp;<b>System</b></li>
 
-                  <li class="unknown-step">
+                  <li >
                     If you want to re-lock your bootloader, download the in-depth test APK (at the start of this guide), and press
                     <b>Apply to exit in-depth test</b>. Follow the instructions in the&nbsp;app.
 
@@ -1278,11 +1242,9 @@
                       </li>
                     </ul>
 
-                    <div class="unknown-step__message important gg-o-media gg-o-media--tiny-gutter">
-                      <div class="gg-o-media__img">
-                        <img class="gg-u-icon gg-u-icon--medium" src="https://www.giffgaff.design/iconography/icons/library/exclamation-circle-alert-lost-stolen.svg" alt="Info" />
-                      </div>
-                      <div class="gg-o-media__content">
+                    <div class="gg-c-minor-alert gg-u-mt-tiny gg-u-mb-small">
+                      <div class="gg-c-minor-alert__icon"></div>
+                      <div class="gg-c-minor-alert__message">
                         <p>
                           This could brick your device if you still have traces of Magisk or OrangeFox on your&nbsp;device.
                         </p>
@@ -1291,7 +1253,6 @@
                   </li>
                 </ol>
               </section>
-            </div>
           </section>
         </div>
       </div>
@@ -1355,9 +1316,10 @@
       }
     </style>
 
-    <script src="/realme/js/bodyScrollLock.min.min.js" async defer></script>
-    <script src="/realme/js/prism.js" async defer></script>
+    <script src="/realme/js/bodyScrollLock.min.js" async defer></script>
+    <script src="/realme/js/modals.js" async defer></script>
     <script src="/realme/js/script.js" async defer></script>
+    <script src="/realme/js/prism.js" async defer></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
