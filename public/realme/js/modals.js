@@ -830,25 +830,3 @@ document.querySelectorAll('[data-modal]').forEach(function (n) {
     showModal(document.querySelector(`dialog#${n.getAttribute('data-modal')}`));
   });
 });
-
-document.addEventListener('load', function () {
-  const disclaimer = localStorage.getItem('has-seen-disclaimer');
-
-  console.log('test');
-
-  if (
-    !disclaimer ||
-    // view date longer than 7 days ago
-    (new Date() - new Date(disclaimer)) / (1000 * 3600 * 24) > 7
-  ) {
-    showModal(document.querySelector('[data-modal-open-default]'));
-
-    document.querySelector('#disclaimer-modal-close').addEventListener('click', function () {
-      localStorage.setItem('has-seen-disclaimer', new Date().getTime());
-    });
-
-    setTimeout(function () {
-      document.querySelector('#disclaimer-modal-close').classList.remove('hide');
-    }, 2500);
-  }
-});

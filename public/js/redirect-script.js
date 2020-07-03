@@ -21,8 +21,12 @@
     hider.style.backgroundColor = '#F5F5F5';
     hider.style.border = '4px solid #000';
 
+    const NewURL = 'https://giffgaff.davwheat.dev' + window.location.pathname + window.location.search + window.location.search + window.location.hash;
+
     hider.innerHTML =
-      '<span class="gg-c-loading-icon gg-c-loading-icon--center" style="height:48px;width:48px;border-width:4px;margin-bottom:24px"></span><p class="gg-u-text-shout gg-u-text-center">Redirecting to new website...</p>';
+      '<span class="gg-c-loading-icon gg-c-loading-icon--center" style="height:48px;width:48px;border-width:4px;margin-bottom:24px"></span><p class="gg-u-text-shout gg-u-text-center">Redirecting to new website...</p><p class="gg-u-text-speak"><a href="' +
+      NewURL +
+      '" class="gg-u-link gg-u-link--arrow">Click here if you\'re not redirected</a></p>';
 
     const checker = setInterval(function () {
       if (document.body) {
@@ -33,6 +37,6 @@
     }, 100);
 
     // Redirect to new domain
-    window.location.replace('https://giffgaff.davwheat.dev' + window.location.pathname + window.location.search + window.location.search + window.location.hash);
+    window.location.replace(NewURL);
   }
 })();

@@ -14,13 +14,13 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gg-help.web.app/helper-tools" />
+    <meta property="og:url" content="https://giffgaff.davwheat.dev/helper-tools" />
     <meta property="og:title" content="Helper tools | giffgaff unofficial" />
     <meta property="og:description" content="A collection of handy tools for giffgaff community helpers." />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://gg-help.web.app/helper-tools" />
+    <meta property="twitter:url" content="https://giffgaff.davwheat.dev/helper-tools" />
     <meta property="twitter:title" content="Helper tools | giffgaff unofficial" />
     <meta property="twitter:description" content="A collection of handy tools for giffgaff community helpers." />
 
@@ -31,13 +31,17 @@
 
     <link rel="preload" href="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js" as="script" />
     <link rel="preload" href="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js" as="script" />
+    <link rel="preload" href="/helper-tools/js/html2canvas.min.js" as="script" />
 
     <link rel="preload" href="/img/gg-img/aff-large.png" as="image" media="(min-width: 728px)" />
     <link rel="preload" href="/img/gg-img/aff-med.png" as="image" media="(min-width: 550px and max-width: 727px)" />
     <link rel="preload" href="/img/gg-img/aff-small.png" as="image" media="(max-width: 549px)" />
 
+    <link rel="preload" href="/helper-tools/img/components.png" as="image" media="(min-width: 992px)" />
+    <link rel="preload" href="/helper-tools/img/components_mobile.png" as="image" media="(max-width: 991px)" />
+
     <script src="/js/custom-components.min.js" async></script>
-    <script src="/js/modernizr-custom.js" async defer></script>
+    <script src="/js/modernizr-custom.min.js" async defer></script>
 
     <link rel="stylesheet" href="/css/styles.min.css" />
     <link rel="stylesheet" href="/helper-tools/styles.css" />
@@ -49,7 +53,7 @@
   <body class="qa-page">
     <gg-header></gg-header>
 
-    <div id="copy-success" hidden class="gg-c-alert gg-c-alert--success" role="alert">
+    <!-- <div id="copy-success" hidden class="gg-c-alert gg-c-alert--success" role="alert">
       <div class="gg-c-alert__wrapper">
         <div class="gg-c-alert__content">
           <div class="gg-c-alert__message">
@@ -65,7 +69,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <main id="main-content">
       <div class="gg-u-digital-noise-chunky gg-t-wild-sand">
