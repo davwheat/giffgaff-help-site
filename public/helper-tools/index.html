@@ -46,9 +46,7 @@
     <link rel="stylesheet" href="/css/styles.min.css" />
     <link rel="stylesheet" href="/helper-tools/styles.css" />
 
-    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-    <script async defer src="/helper-tools/js/html2canvas.min.js"></script>
-    <script async defer src="/helper-tools/js/script.js"></script>
+    <script src="/helper-tools/js/html2canvas.min.js" async defer></script>
   </head>
   <body class="qa-page">
     <gg-header></gg-header>
@@ -91,93 +89,46 @@
           </div>
         </header>
 
-        <div class="single gg-o-page-section">
-          <aside class="single__side-nav">
-            <nav>
-              <ul class="gg-c-sidenav">
-                <li>
-                  <a class="gg-c-sidenav__item gg-c-sidenav__item--current-page" href="#">Placeholder</a>
-                </li>
-                <li>
-                  <a class="gg-c-sidenav__item" href="#">Another placeholder</a>
-                </li>
-                <li>
-                  <a class="gg-c-sidenav__item" href="#">Yet another placeholder</a>
-                </li>
-                <li>
-                  <a class="gg-c-sidenav__item" href="#">Lorem ipsum</a>
-                </li>
-              </ul>
-            </nav>
-          </aside>
-          <article class="single__article gg-t-white">
-            <h1 class="gg-u-text-shout">
-              <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">
-                Buttons
-              </mark>
-            </h1>
-
-            <h2 class="gg-u-text-loud">
-              Button type
+        <div class="gg-t-white">
+          <section class="gg-o-page-section">
+            <h2 class="gg-u-text-louder">
+              Key information
             </h2>
-            <p>
-              Choose your button type. Primary buttons are used as a "Call to action" (CTA) to try to generate a user action. Secondary buttons are used for more general scenarios where you still want
-              to make sure a user knows something is an option, but it shouldn't be the default or most used one.
-            </p>
 
-            <fieldset class="gg-c-chunky-buttons">
-              <ol class="gg-c-chunky-buttons__list">
-                <li class="gg-c-chunky-buttons__option">
-                  <input name="button-choice" type="radio" id="button-choice--primary" class="gg-c-chunky-buttons__radio" checked="" />
-                  <label class="gg-c-chunky-buttons__button" for="button-choice--primary">
-                    <span class="gg-c-chunky-buttons__text">
-                      Primary
-                    </span>
-                  </label>
-                </li>
-                <li class="gg-c-chunky-buttons__option">
-                  <input name="button-choice" type="radio" id="button-choice--secondary" class="gg-c-chunky-buttons__radio" />
-                  <label class="gg-c-chunky-buttons__button" for="button-choice--secondary">
-                    <span class="gg-c-chunky-buttons__text">
-                      Secondary
-                    </span>
-                  </label>
-                </li>
-              </ol>
-            </fieldset>
+            <ul class="gg-o-tiles homepage-bits-and-bobs s-homepage-bits-and-bobs-tiles">
+              <li class="gg-o-tiles__item">
+                <a class="gg-o-tiles__tile homepage-bits-and-bobs__tile" href="/bits-and-bobs/number-checker">
+                  <h3 class="gg-u-text-loud">Phone number identifier</h3>
+                  <p>
+                    Check whether a phone number is included in your goodybag, or how much airtime credit it costs.
+                  </p>
+                  <p class="homepage-bits-and-bobs__link gg-u-link gg-u-link--arrow">
+                    Check a number
+                  </p>
+                </a>
+              </li>
 
-            <h2 class="gg-u-text-loud">Text</h2>
-            <p>Click the button to modify its text.</p>
-
-            <div id="ug-button-container" class="gg-t-wild-sand">
-              <div>
-                <button id="ug-button" class="gg-c-btn gg-c-btn--primary gg-c-btn--center">
-                  <span contenteditable="plaintext-only" class="gg-c-btn__switch">Button</span>
-                </button>
-              </div>
-            </div>
-            <br />
-
-            <h2 class="gg-u-text-loud">Preview of community appearance</h2>
-            <p>
-              Your button will be generated automatically and shown here.
-            </p>
-            <div class="heading-m" id="ug-button--preview"></div>
-
-            <h2 class="gg-u-text-loud">Forum code</h2>
-            <p>
-              Use this button in your forum posts
-            </p>
-            <button id="copy-btn" data-open-alert="copy-success" class="gg-c-btn">
-              <span class="gg-c-btn__switch">
-                Copy generated button
-              </span>
-            </button>
-          </article>
+              <li class="gg-o-tiles__item">
+                <a class="gg-o-tiles__tile homepage-bits-and-bobs__tile" href="/bits-and-bobs/number-checker">
+                  <h3 class="gg-u-text-loud">Phone number identifier</h3>
+                  <p>
+                    Check whether a phone number is included in your goodybag, or how much airtime credit it costs.
+                  </p>
+                  <p class="homepage-bits-and-bobs__link gg-u-link gg-u-link--arrow">
+                    Check a number
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </main>
     <gg-footer></gg-footer>
+
+    <!-- Tools! -->
+    <script async defer src="/helper-tools/js/buttonGenerator.js"></script>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 

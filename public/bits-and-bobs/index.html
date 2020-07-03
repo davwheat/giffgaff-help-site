@@ -2,132 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=/helper-tools" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bits and bobs | giffgaff community help</title>
-    <meta name="description" content="A collection of useful bits and bobs for giffgaff members, created by the community." />
-    <link rel="canonical" href="https://giffgaff.davwheat.dev/bits-and-bobs" />
+    <title>This page has moved | giffgaff community help</title>
 
-    <script src="/js/redirect-script.js"></script>
+    <link rel="canonical" href="https://giffgaff.davwheat.dev/helper-tools" />
 
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/font.css" as="style" />
-    <link rel="preload" href="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js" as="script" />
-    <link rel="preload" href="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js" as="script" />
-
-    <link rel="preload" href="/img/gg-img/aff-large.png" as="image" media="(min-width: 728px)" />
-    <link rel="preload" href="/img/gg-img/aff-med.png" as="image" media="(min-width: 550px and max-width: 727px)" />
-    <link rel="preload" href="/img/gg-img/aff-small.png" as="image" media="(max-width: 549px)" />
 
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/custom-components.min.js" async></script>
-    <script src="/js/modernizr-custom.js" async defer></script>
   </head>
   <body class="qa-section">
-    <gg-header></gg-header>
-    <main id="main-content">
-      <div class="gg-u-digital-noise-chunky">
-        <header class="gg-c-masthead-minor">
-          <div class="gg-c-masthead__content">
-            <h1 class="gg-u-text-megaphone gg-u-doodle-squiggle gg-u-doodle-squiggle--light-pink">
-              Bits and bobs
-            </h1>
-            <p class="gg-c-masthead__page-subtitle">
-              Here's a bunch of bits and bobs which may prove helpful to you.
-            </p>
-          </div>
-        </header>
-        <section>
-          <div class="gg-o-page-section">
-            <!-- <h1 class="gg-u-text-louder gg-u-mb-medium">
-              Roaming
-            </h1> -->
-            <ul class="gg-c-cards">
-              <li class="gg-c-cards__item">
-                <a href="/bits-and-bobs/number-checker" class="gg-c-cards__card">
-                  <article>
-                    <div class="gg-c-cards__body">
-                      <h2 class="gg-c-cards__title">
-                        Phone number identifier
-                      </h2>
-                      <svg class="gg-c-cards__separator" viewBox="0 0 48 16">
-                        <path
-                          d="M47.9 10.6a4.3 4.3 0 00-3.8-4.5 7 7 0 00-3.8 0c-1.8.3-3.9 1.9-6 1.7-3.2-.6-2.2-6.4-6.4-5.5-2.3.4-2.7 3.6-3.9 4.9L19.7 1c-.5-.8-2.3-1.3-2.8 0-.6 1.5-4.6 12.4-6.2 11.6-.6-.2-.5-3-.8-3.5-.2-1-1-2.2-1.9-2.7-.6-.5-1.9-.1-2.1.6a8.6 8.6 0 01-5 4.9c-1.9 1-.4 3.7 1.5 2.7 2.1-.9 3.6-2.2 4.7-3.9.2 1.1.3 2.5.8 3.5a3 3 0 003.5 1.7c2-.3 2.8-2.2 3.7-3.7l3.4-7.6 3.6 5.5c.4.6.9 1 1.6.8 2.2-.6 2.3-2.5 3.6-4.1.1-.2.4-.9.6-1 1-.3.9 1 1.3 1.6.3 1 1 1.9 1.7 2.6a7.6 7.6 0 006.6.5c1.2-.4 7.8-2.9 7.3.3-.3 1.9 2.9 1.9 3.1-.2z"
-                        />
-                      </svg>
-                      <p>
-                        Check whether a phone number is included in your goodybag, or how much airtime credit it costs.
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!--
-        <section class="gg-t-wild-sand">
-          <div class="gg-o-page-section">
-            <h1 class="gg-u-text-louder gg-u-mb-medium">
-              Roaming
-            </h1>
-            <ul class="gg-c-cards">
-              <li class="gg-c-cards__item">
-                <a href="/kb/roaming/eu" class="gg-c-cards__card">
-                  <article>
-                    <div class="gg-c-cards__body">
-                      <h2 class="gg-c-cards__title">
-                        Roaming in the EU
-                      </h2>
+    <style>
+      @keyframes show-after-3s {
+        from,
+        60% {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 48 16"
-                        class="gg-c-cards__separator"
-                      >
-                        <path
-                          d="M47.9 10.6c.2-2.2-1.5-4.2-3.8-4.5a7 7 0 0 0-3.8 0c-1.8.3-3.9 1.9-6 1.7-3.2-.6-2.2-6.4-6.4-5.5-2.3.4-2.7 3.6-3.9 4.9L19.7 1c-.5-.8-2.3-1.3-2.8 0-.6 1.5-4.6 12.4-6.2 11.6-.6-.2-.5-3-.8-3.5-.2-1-1-2.2-1.9-2.7-.6-.5-1.9-.1-2.1.6-.9 2.2-2.7 4.1-5 4.9-1.9 1-.4 3.7 1.5 2.7 2.1-.9 3.6-2.2 4.7-3.9.2 1.1.3 2.5.8 3.5.7 1.4 2.1 2 3.5 1.7 2-.3 2.8-2.2 3.7-3.7 1.2-2.5 2.2-5.1 3.4-7.6l3.6 5.5c.4.6.9 1 1.6.8 2.2-.6 2.3-2.5 3.6-4.1.1-.2.4-.9.6-1 1-.3.9 1 1.3 1.6.3 1 1 1.9 1.7 2.6 1.9 1.2 4.4 1.3 6.6.5 1.2-.4 7.8-2.9 7.3.3-.3 1.9 2.9 1.9 3.1-.2z"
-                        ></path>
-                      </svg>
-                      <p>
-                        Discover some tips and tricks about using your phone in
-                        the EU, EEA, and selected countries.
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        -->
-      </div>
+      .show-after {
+        animation: show-after-3s 5s linear;
+      }
+    </style>
+    <main
+      class="gg-t-wild-sand show-after"
+      style="display: flex; position: fixed; top: 0; bottom: 0; left: 0; right: 0; box-sizing: border-box; align-items: center; justify-content: center; flex-direction: column; z-index: 9999999999;"
+    >
+      <p class="gg-u-text-shout gg-u-text-center gg-u-mb-small">
+        This page has moved location.
+      </p>
+      <p class="gg-u-text-speak-up">
+        <a href="/helper-tools" class="gg-u-link gg-u-link--arrow">
+          Visit new page
+        </a>
+      </p>
     </main>
-    <gg-footer></gg-footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: 'AIzaSyAT0fbey8ETQULa-SSIyBEfsVmIjtToh48',
-        authDomain: 'gg-help.firebaseapp.com',
-        databaseURL: 'https://gg-help.firebaseio.com',
-        projectId: 'gg-help',
-        storageBucket: 'gg-help.appspot.com',
-        messagingSenderId: '441453803789',
-        appId: '1:441453803789:web:c6e2cd6b1a07c3c6999844',
-        measurementId: 'G-0TVVBKR3LE',
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
   </body>
 </html>
