@@ -57,10 +57,6 @@ function generateButton() {
 
     document.querySelector('#ug-button--preview').innerHTML = '';
     document.querySelector('#ug-button--preview').appendChild(canvas);
-
-    console.log(canvas.toDataURL('image/png'));
-
-    document.getElementById('copy-btn').setAttribute('data-clipboard-text', '');
   });
 }
 
@@ -99,22 +95,20 @@ function closeAlert(node) {
   }, 250);
 }
 
-document.getElementById('copy-btn').addEventListener('click', function () {
-  navigator.clipboard.write([
-    new ClipboardItem({
-      'image/png': document.getElementById('ug-btn-canvas').toBlob('image/png'),
-    }),
-  ]);
-});
-
 document.getElementById('button-choice--primary').addEventListener('input', function (e) {
   if (e.target.checked) {
     document.getElementById('ug-button').classList.add('gg-c-btn--primary');
   }
+
+  generateButton();
 });
 
 document.getElementById('button-choice--secondary').addEventListener('input', function (e) {
   if (e.target.checked) {
     document.getElementById('ug-button').classList.remove('gg-c-btn--primary');
   }
+
+  generateButton();
 });
+
+generateButton();
