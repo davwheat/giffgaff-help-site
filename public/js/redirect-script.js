@@ -24,7 +24,7 @@
     const NewURL = 'https://giffgaff.davwheat.dev' + window.location.pathname + window.location.search + window.location.search + window.location.hash;
 
     hider.innerHTML =
-      '<span class="gg-c-loading-icon gg-c-loading-icon--center" style="height:48px;width:48px;border-width:4px;margin-bottom:24px"></span><p class="gg-u-text-shout gg-u-text-center">Redirecting to new website...</p><p class="gg-u-text-speak"><a href="' +
+      '<span class="gg-c-loading-icon gg-c-loading-icon--center" style="height:48px;width:48px;border-width:4px;margin-bottom:24px"></span><p class="gg-u-text-shout gg-u-text-center">Redirecting to new website...</p><p class="gg-u-text-speak gg-u-mt-small"><a href="' +
       NewURL +
       '" class="gg-u-link gg-u-link--arrow">Click here if you\'re not redirected</a></p>';
 
