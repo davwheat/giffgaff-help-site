@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  + p,
+  + .heading-m {
+    margin-top: @gg-spacer-small;
+  }
+
+  &:not(:first-child) {
+    margin-top: @gg-spacer-medium;
+  }
+
+  + h1,
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6 {
+    margin-top: @gg-spacer-medium;
+  }
+}
+
+.single__article {
+  p:not(:last-child) {
+    margin-bottom: @gg-spacer-tiny;
+  }
+}
