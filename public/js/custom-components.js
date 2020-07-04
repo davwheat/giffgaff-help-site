@@ -5,12 +5,16 @@ const menuItems = [
     items: [{ link: '/kb#roaming', title: 'Roaming with giffgaff' }],
   },
   {
-    title: 'Bits and bobs',
-    link: '/bits-and-bobs',
+    title: 'Helper tools',
+    link: '/helper-tools',
     items: [
       {
-        link: '/bits-and-bobs/number-checker',
+        link: '/helper-tools/information/number-checker',
         title: 'Number pricing calculator',
+      },
+      {
+        link: '/helper-tools/responses/buttons',
+        title: 'Button generator',
       },
     ],
   },
@@ -142,9 +146,16 @@ class ggFooter extends HTMLElement {
     this.innerHTML = `
 <footer class="gg-t-black">
 <div class="gg-o-page-section">
-<p class="gg-u-text-speak">
+<p class="gg-u-text-speak-up" style="padding-bottom: 0px">
+giffgaff runs on the O2 network
+</p>
+<p class="gg-u-text-whisper">
+&copy; 2020 David Wheatley
+</p>
+<p class="gg-u-text-whisper">
 This page is run by a member of the giffgaff community and does not
-represent the views or opinions of giffgaff Limited, or its staff
+represent the views or opinions of giffgaff Limited, nor its staff.
+giffgaff is the registered trademark of giffgaff&nbsp;Limited.
 </p>
 <a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
 <picture class="gg-b128-n256-r512">
