@@ -40,16 +40,16 @@ function debounce(func, wait, immediate) {
   };
 }
 
-document.querySelector('#ug-button > span').addEventListener('input', debounce(generateButton, 500));
+document.querySelector('#ug-button > span').addEventListener('input', debounce(generateButton, 1000));
 
 function generateButton() {
   const button = document.getElementById('ug-button');
-
   button.classList.add('generated');
 
   html2canvas(button, {
     backgroundColor: null,
     useCORS: true,
+    scale: 1,
   }).then(function (canvas) {
     canvas.id = 'ug-btn-canvas';
 
@@ -74,27 +74,6 @@ document.querySelectorAll('[data-open-alert]').forEach(function (n) {
   });
 });
 
-function openAlertWithID(id) {
-  const alert = document.querySelector(`#${id}`);
-
-  alert.removeAttribute('hidden');
-
-  setTimeout(() => {
-    closeAlert(alert);
-  }, 2500);
-}
-
-function closeAlert(node) {
-  const alertParent = node;
-
-  alertParent.classList.add('gg-c-alert--animate-out');
-
-  setTimeout(function () {
-    alertParent.setAttribute('hidden', 'hidden');
-    alertParent.classList.remove('gg-c-alert--animate-out');
-  }, 250);
-}
-
 document.getElementById('button-choice--primary').addEventListener('input', function (e) {
   if (e.target.checked) {
     document.getElementById('ug-button').classList.add('gg-c-btn--primary');
@@ -111,4 +90,4 @@ document.getElementById('button-choice--secondary').addEventListener('input', fu
   generateButton();
 });
 
-generateButton();
+setTimeout(generateButton, 200);

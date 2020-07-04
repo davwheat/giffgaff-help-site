@@ -8,19 +8,19 @@
     <title>Button - giffgaff helper tools</title>
     <meta name="title" content="Button - giffgaff helper tools" />
     <meta name="description" content="Generate fancy giffgaffy buttons for your community posts" />
-    <link rel="canonical" href="https://giffgaff.davwheat.dev/helper-tools/buttons" />
+    <link rel="canonical" href="https://giffgaff.davwheat.dev/helper-tools/responses/buttons" />
 
     <script src="/js/redirect-script.js" async></script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://giffgaff.davwheat.dev/helper-tools/buttons" />
+    <meta property="og:url" content="https://giffgaff.davwheat.dev/helper-tools/responses/buttons" />
     <meta property="og:title" content="Button - giffgaff helper tools" />
     <meta property="og:description" content="A collection of handy tools for giffgaff community helpers." />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://giffgaff.davwheat.dev/helper-tools/buttons" />
+    <meta property="twitter:url" content="https://giffgaff.davwheat.dev/helper-tools/responses/buttons" />
     <meta property="twitter:title" content="Button - giffgaff helper tools" />
     <meta property="twitter:description" content="A collection of handy tools for giffgaff community helpers." />
 
@@ -37,52 +37,32 @@
     <link rel="preload" href="/img/gg-img/aff-med.png" as="image" media="(min-width: 550px and max-width: 727px)" />
     <link rel="preload" href="/img/gg-img/aff-small.png" as="image" media="(max-width: 549px)" />
 
-    <link rel="preload" href="/helper-tools/img/components.png" as="image" media="(min-width: 992px)" />
-    <link rel="preload" href="/helper-tools/img/components_mobile.png" as="image" media="(max-width: 991px)" />
+    <link rel="preload" href="/img/components.png" as="image" media="(min-width: 992px)" />
+    <link rel="preload" href="/img/components_mobile.png" as="image" media="(max-width: 991px)" />
+    <link rel="preload" href="/img/components.webp" as="image" media="(min-width: 992px)" type="image/webp" />
+    <link rel="preload" href="/img/components_mobile.webp" as="image" media="(max-width: 991px)" type="image/webp" />
 
     <script src="/js/custom-components.min.js" async></script>
     <script src="/js/modernizr-custom.min.js" async defer></script>
 
     <link rel="stylesheet" href="/css/styles.min.css" />
-    <link rel="stylesheet" href="/helper-tools/styles.css" />
+
+    <link rel="stylesheet" href="/helper-tools/css/styles.css" />
+    <link rel="stylesheet" href="/helper-tools/responses/buttons/button.css" />
 
     <script src="/helper-tools/js/html2canvas.min.js" async defer></script>
   </head>
   <body class="qa-page">
-    <script>
-      if (/Trident\/|MSIE/.test(window.navigator.userAgent)) {
-        document.body.setAttribute('data-ie', '');
-      }
-    </script>
-
     <gg-header></gg-header>
 
     <main id="main-content">
       <div class="gg-u-digital-noise-chunky gg-t-wild-sand">
-        <header class="gg-c-masthead gg-c-masthead--digital-noise">
-          <div class="gg-c-masthead__content">
-            <div class="gg-c-masthead__text">
-              <h1 class="gg-u-text-megaphone">
-                <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">Helper</mark>
-                tools
-              </h1>
-              <p class="gg-c-masthead__page-subtitle">
-                A collection of handy tools for giffgaff community helpers.
-              </p>
-            </div>
-            <picture class="gg-c-masthead__picture" style="align-self: center;">
-              <source media="(min-width: 992px)" srcset="/helper-tools/img/components.png" />
-              <img src="/helper-tools/img/components_mobile.png" />
-            </picture>
-          </div>
-        </header>
-
         <div class="single gg-o-page-section">
           <aside class="single__side-nav">
             <nav>
               <ul class="gg-c-sidenav">
                 <li>
-                  <a class="gg-c-sidenav__item gg-c-sidenav__item--current-page" href="#buttons">Button Generator</a>
+                  <a class="gg-c-sidenav__item gg-c-sidenav__item--current-page" href="/helper-tools/responses/buttons">Button Generator</a>
                 </li>
                 <li>
                   <a class="gg-c-sidenav__item" href="#">Number checker</a>
@@ -98,13 +78,18 @@
           </aside>
           <article class="single__article gg-t-white" id="page">
             <section>
-              <h1 class="gg-u-text-shout">
+              <h1 class="gg-u-text-megaphone">
                 <mark class="gg-u-doodle-boing gg-u-doodle-boing--light-pink">
                   Buttons
                 </mark>
               </h1>
+              <p class="gg-u-text-speak">
+                Buttons are used to show a clear action for a user to take, such as changing payment details, logging in, or ordering a SIM.
+              </p>
 
-              <h2 class="gg-u-text-loud">
+              <hr class="gg-u-hr" />
+
+              <h2 class="gg-u-text-louder">
                 Button type
               </h2>
               <p>
@@ -133,8 +118,8 @@
                 </ol>
               </fieldset>
 
-              <h2 class="gg-u-text-loud">Text</h2>
-              <p>Click the button to modify its text.</p>
+              <h2 class="gg-u-text-louder">Button text</h2>
+              <p>Click the button and start typing to modify its text.</p>
 
               <div id="ug-button-container" class="gg-t-wild-sand">
                 <div>
@@ -145,9 +130,12 @@
               </div>
               <br />
 
-              <h2 class="gg-u-text-loud">Preview of community appearance</h2>
-              <p>
-                Your button will be generated automatically and shown here.
+              <h2 class="gg-u-text-louder">Generated button</h2>
+              <p class="gg-u-text-speak">
+                <b>Your button will be generated automatically and shown below.</b> If it doesn't look right, <span class="gg-u-link" onclick="generateButton()">click here.</span>
+              </p>
+              <p class="gg-u-text-speak">
+                Right click it and choose "Copy image", then paste it into your community posts. For extra fanciness, paste it inside a centring tag.
               </p>
               <div class="heading-m" id="ug-button--preview"></div>
             </section>
@@ -158,7 +146,7 @@
     <gg-footer></gg-footer>
 
     <!-- Tools! -->
-    <script async defer src="/helper-tools/js/buttonGenerator.js"></script>
+    <script async defer src="/helper-tools/responses/buttons/js/buttonGenerator.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
