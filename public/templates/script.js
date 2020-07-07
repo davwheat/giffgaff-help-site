@@ -6,8 +6,8 @@ David`;
 const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to David Wheatley (mrjeeves), with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
 
 const imageUrls = {
-  replacement_sim: `https://community.giffgaff.com/assets/files/2020-06-08/1591632862-177768-image.png`,
-  start_goodybag_early: `https://community.giffgaff.com/assets/files/2020-04-22/1587569680-107338-chrome-obklihf1v3.png`,
+  replacement_sim: `https://community.giffgaff.com/assets/files/2020-07-07/1594161074-399376-lost-sim-envelope.png`,
+  start_goodybag_early: `https://community.giffgaff.com/assets/files/2020-07-07/1594161002-713949-start-a-new-goodybag-early.png`,
 };
 
 let templates = [
