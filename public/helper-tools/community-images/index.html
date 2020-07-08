@@ -504,7 +504,7 @@
         <p class="gg-u-text-speak-up gg-u-mb-tiny">Large preview (not full size)</p>
         <img style="width: 100%;" src="" alt="" id="imgPreview" class="gg-u-mb-small" />
         <label for="imgMarkdown" class="gg-c-form__label" id="imgMarkdown-message">Markdown (for use on forum)</label>
-        <div class="gg-c-form__element">
+        <div class="gg-c-form__element gg-c-input-with-button">
           <textarea
             onclick="this.focus();this.select()"
             readonly
@@ -514,10 +514,11 @@
             aria-describedby="imgMarkdown-message"
             style="resize: none; height: 72px;"
           ></textarea>
+          <button class="gg-c-input-with-button__btn" id="copyMd">Copy</button>
         </div>
 
         <label for="fullSrc" class="gg-c-form__label" id="fullSrc-message">Image URL</label>
-        <div class="gg-c-form__element gg-u-mb-fine">
+        <div class="gg-c-form__element gg-c-input-with-button gg-u-mb-fine">
           <input
             onclick="this.focus();this.select()"
             readonly
@@ -526,6 +527,7 @@
             class="gg-c-form__input"
             aria-describedby="fullSrc-message"
           />
+          <button class="gg-c-input-with-button__btn" id="copySrc">Copy</button>
         </div>
         <p class="gg-u-text-whisper">Ensure you provide the correct attribution, as per the license.</p>
       </div>
@@ -639,6 +641,16 @@
 
         showModalById('code-modal');
       }
+
+      document.getElementById('copyMd').addEventListener('click', function () {
+        mdText.select();
+        document.execCommand('copy');
+      });
+
+      document.getElementById('copySrc').addEventListener('click', function () {
+        srcText.select();
+        document.execCommand('copy');
+      });
     </script>
 
     <script src="/helper-tools/community-images/modals.js"></script>
