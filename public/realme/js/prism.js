@@ -113,7 +113,9 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
             container: e,
             selector: 'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code',
           };
-          C.hooks.run('before-highlightall', r), (r.elements = Array.prototype.slice.apply(r.container.querySelectorAll(r.selector))), C.hooks.run('before-all-elements-highlight', r);
+          C.hooks.run('before-highlightall', r),
+            (r.elements = Array.prototype.slice.apply(r.container.querySelectorAll(r.selector))),
+            C.hooks.run('before-all-elements-highlight', r);
           for (var a, l = 0; (a = r.elements[l++]); ) C.highlightElement(a, !0 === n, r.callback);
         },
         highlightElement: function (e, n, t) {
@@ -124,7 +126,12 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
           l && 'pre' === l.nodeName.toLowerCase() && (l.className = l.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r);
           var i = { element: e, language: r, grammar: a, code: e.textContent };
           function o(e) {
-            (i.highlightedCode = e), C.hooks.run('before-insert', i), (i.element.innerHTML = i.highlightedCode), C.hooks.run('after-highlight', i), C.hooks.run('complete', i), t && t.call(i.element);
+            (i.highlightedCode = e),
+              C.hooks.run('before-insert', i),
+              (i.element.innerHTML = i.highlightedCode),
+              C.hooks.run('after-highlight', i),
+              C.hooks.run('complete', i),
+              t && t.call(i.element);
           }
           if ((C.hooks.run('before-sanity-check', i), !i.code)) return C.hooks.run('complete', i), void (t && t.call(i.element));
           if ((C.hooks.run('before-highlight', i), i.grammar))
@@ -139,7 +146,12 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
         },
         highlight: function (e, n, t) {
           var r = { code: e, grammar: n, language: t };
-          return C.hooks.run('before-tokenize', r), (r.tokens = C.tokenize(r.code, r.grammar)), C.hooks.run('after-tokenize', r), _.stringify(C.util.encode(r.tokens), r.language);
+          return (
+            C.hooks.run('before-tokenize', r),
+            (r.tokens = C.tokenize(r.code, r.grammar)),
+            C.hooks.run('after-tokenize', r),
+            _.stringify(C.util.encode(r.tokens), r.language)
+          );
         },
         tokenize: function (e, n) {
           var t = n.rest;
@@ -182,7 +194,8 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                             S = k;
                           for (S += y.value.length; S <= A; ) (y = y.next), (S += y.value.length);
                           if (((S -= y.value.length), (k = S), y.value instanceof _)) continue;
-                          for (var O = y; O !== t.tail && (S < P || ('string' == typeof O.value && !O.prev.value.greedy)); O = O.next) x++, (S += O.value.length);
+                          for (var O = y; O !== t.tail && (S < P || ('string' == typeof O.value && !O.prev.value.greedy)); O = O.next)
+                            x++, (S += O.value.length);
                           x--, (b = n.slice(k, S)), (w.index -= k);
                         } else {
                           g.lastIndex = 0;
@@ -370,7 +383,22 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
     number: { pattern: /(^|\s)(?:[1-9]\d*|0)(?:[.,]\d+)?\b/, lookbehind: !0 },
   };
   for (
-    var a = ['comment', 'function-name', 'for-or-select', 'assign-left', 'string', 'environment', 'function', 'keyword', 'builtin', 'boolean', 'file-descriptor', 'operator', 'punctuation', 'number'],
+    var a = [
+        'comment',
+        'function-name',
+        'for-or-select',
+        'assign-left',
+        'string',
+        'environment',
+        'function',
+        'keyword',
+        'builtin',
+        'boolean',
+        'file-descriptor',
+        'operator',
+        'punctuation',
+        'number',
+      ],
       r = n.variable[1].inside,
       s = 0;
     s < a.length;

@@ -236,7 +236,14 @@ document.querySelector('input#phoneNumber').addEventListener('input', function (
       validForm();
       return;
     } else {
-      if (numStr.startsWith('6') || numStr.startsWith('+446') || numStr.startsWith('8') || numStr.startsWith('+448') || numStr.startsWith('7') || numStr.startsWith('+447')) {
+      if (
+        numStr.startsWith('6') ||
+        numStr.startsWith('+446') ||
+        numStr.startsWith('8') ||
+        numStr.startsWith('+448') ||
+        numStr.startsWith('7') ||
+        numStr.startsWith('+447')
+      ) {
         ShowNumberType('a Shortcode');
         validForm();
         return;

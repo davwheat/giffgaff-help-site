@@ -14,7 +14,9 @@ document.getElementById('version--realme-ui').addEventListener('input', function
 
 function UpdateVersionInfoMessages() {
   document.querySelectorAll('.gg-c-minor-alert[data-version-message]').forEach(function (n) {
-    n.querySelector('.gg-c-minor-alert__title').innerHTML = `You're running Android ${chosenVersion} (${chosenVersion === 9 ? 'ColorOS 6' : 'realme UI 1.0'})`;
+    n.querySelector('.gg-c-minor-alert__title').innerHTML = `You're running Android ${chosenVersion} (${
+      chosenVersion === 9 ? 'ColorOS 6' : 'realme UI 1.0'
+    })`;
   });
 }
 
@@ -42,7 +44,10 @@ function randomiseDownloadLink(linkArray) {
 document.querySelectorAll('.ozip-download--coloros__cn').forEach((link) => {
   link.setAttribute(
     'href',
-    randomiseDownloadLink(['https://mega.nz/file/6MQSVaoI#uM-PVn1r570URXfGuJ73HGaWyLDVj9g-w7W7bcSfx4I', 'https://drive.google.com/file/d/1R7PlVbnmzUwclQR9-XM9McbuYWyMIdva/view?usp=sharing'])
+    randomiseDownloadLink([
+      'https://mega.nz/file/6MQSVaoI#uM-PVn1r570URXfGuJ73HGaWyLDVj9g-w7W7bcSfx4I',
+      'https://drive.google.com/file/d/1R7PlVbnmzUwclQR9-XM9McbuYWyMIdva/view?usp=sharing',
+    ])
   );
 });
 
@@ -50,7 +55,10 @@ document.querySelectorAll('.ozip-download--coloros__cn').forEach((link) => {
 document.querySelectorAll('.ozip-download--coloros__global').forEach((link) => {
   link.setAttribute(
     'href',
-    randomiseDownloadLink(['https://mega.nz/file/ORRWWSTL#McNOMXRBS8T3wiUuTaiwxFm4jKHfVa6_vgCE8rzDr-w', 'https://drive.google.com/file/d/1qWv1UsrVocCgMqvK2EbqMO11u34Rve7W/view?usp=sharing'])
+    randomiseDownloadLink([
+      'https://mega.nz/file/ORRWWSTL#McNOMXRBS8T3wiUuTaiwxFm4jKHfVa6_vgCE8rzDr-w',
+      'https://drive.google.com/file/d/1qWv1UsrVocCgMqvK2EbqMO11u34Rve7W/view?usp=sharing',
+    ])
   );
 });
 
@@ -58,7 +66,10 @@ document.querySelectorAll('.ozip-download--coloros__global').forEach((link) => {
 document.querySelectorAll('.ozip-download--realmemeui__cn').forEach((link) => {
   link.setAttribute(
     'href',
-    randomiseDownloadLink(['https://mega.nz/file/aFR2QAaB#TvFkHoraHrxXdIxSEvaZwpZTpLjimV2oC0bTsAq-9II', 'https://drive.google.com/file/d/1iZG1QP9ix_av9vTD5GgjCgeSywTN9tWb/view?usp=sharing'])
+    randomiseDownloadLink([
+      'https://mega.nz/file/aFR2QAaB#TvFkHoraHrxXdIxSEvaZwpZTpLjimV2oC0bTsAq-9II',
+      'https://drive.google.com/file/d/1iZG1QP9ix_av9vTD5GgjCgeSywTN9tWb/view?usp=sharing',
+    ])
   );
 });
 
@@ -66,7 +77,10 @@ document.querySelectorAll('.ozip-download--realmemeui__cn').forEach((link) => {
 document.querySelectorAll('.ozip-download--realmemeui__global').forEach((link) => {
   link.setAttribute(
     'href',
-    randomiseDownloadLink(['https://mega.nz/file/CAB2SYLQ#Q_EXGe1apsUkYLPy_FzVumlI1x6hDPDweAOHHT_LO6U', 'https://drive.google.com/file/d/1S8WcOvgnLzTxgu6UZ0h2cJyKoQ6s0X7Z/view?usp=sharing'])
+    randomiseDownloadLink([
+      'https://mega.nz/file/CAB2SYLQ#Q_EXGe1apsUkYLPy_FzVumlI1x6hDPDweAOHHT_LO6U',
+      'https://drive.google.com/file/d/1S8WcOvgnLzTxgu6UZ0h2cJyKoQ6s0X7Z/view?usp=sharing',
+    ])
   );
 });
 

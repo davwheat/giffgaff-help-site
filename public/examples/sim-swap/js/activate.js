@@ -29,7 +29,12 @@ document.getElementById('step1nextbtn').addEventListener('click', function (e) {
     unerror();
   }
 
-  if (activationCodeInput.value.length !== 6 && activationCodeInput.value.length !== 13 && activationCodeInput.value.length !== 16 && activationCodeInput.value.length !== 19) {
+  if (
+    activationCodeInput.value.length !== 6 &&
+    activationCodeInput.value.length !== 13 &&
+    activationCodeInput.value.length !== 16 &&
+    activationCodeInput.value.length !== 19
+  ) {
     error('Uh-oh, your activation code should be 6, 13, 16, or 19 characters long');
     return false;
   } else {
@@ -43,7 +48,10 @@ document.getElementById('step1nextbtn').addEventListener('click', function (e) {
     unerror();
   }
 
-  if ((activationCodeInput.value.length === 13 || activationCodeInput.value.length === 16 || activationCodeInput.value.length === 19) && !activationCodeInput.value.match(/^[0-9]*$/)) {
+  if (
+    (activationCodeInput.value.length === 13 || activationCodeInput.value.length === 16 || activationCodeInput.value.length === 19) &&
+    !activationCodeInput.value.match(/^[0-9]*$/)
+  ) {
     error("Uh-oh, your SIM's code should only have numbers in it");
     return false;
   } else {

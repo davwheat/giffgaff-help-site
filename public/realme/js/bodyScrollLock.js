@@ -50,7 +50,10 @@
     v = void 0;
   (e.disableBodyScroll = function (e, n) {
     if (d) {
-      if (!e) return void console.error('disableBodyScroll unsuccessful - targetElement must be provided when calling disableBodyScroll on IOS devices.');
+      if (!e)
+        return void console.error(
+          'disableBodyScroll unsuccessful - targetElement must be provided when calling disableBodyScroll on IOS devices.'
+        );
       if (
         e &&
         !c.some(function (t) {
@@ -67,7 +70,10 @@
             1 === t.targetTouches.length &&
               ((n = e),
               (d = (o = t).targetTouches[0].clientY - u),
-              i(o.target) || ((n && 0 === n.scrollTop && 0 < d) || ((l = n) && l.scrollHeight - l.scrollTop <= l.clientHeight && d < 0) ? r(o) : o.stopPropagation()));
+              i(o.target) ||
+                ((n && 0 === n.scrollTop && 0 < d) || ((l = n) && l.scrollHeight - l.scrollTop <= l.clientHeight && d < 0)
+                  ? r(o)
+                  : o.stopPropagation()));
           }),
           a || (document.addEventListener('touchmove', r, o ? { passive: !1 } : void 0), (a = !0));
       }
@@ -98,7 +104,10 @@
     }),
     (e.enableBodyScroll = function (e) {
       if (d) {
-        if (!e) return void console.error('enableBodyScroll unsuccessful - targetElement must be provided when calling enableBodyScroll on IOS devices.');
+        if (!e)
+          return void console.error(
+            'enableBodyScroll unsuccessful - targetElement must be provided when calling enableBodyScroll on IOS devices.'
+          );
         (e.ontouchstart = null),
           (e.ontouchmove = null),
           (c = c.filter(function (t) {

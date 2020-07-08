@@ -9,7 +9,8 @@ var $buoop = {
   reminder: 0,
   reminderClosed: 48,
   l: 'en',
-  text: "Oops, your browser ({brow_name}) is a tad outdated. This page is designed for modern browser. <a class='gg-u-link gg-u-link--arrow'{up_but}>Update my browser</a>",
+  text:
+    "Oops, your browser ({brow_name}) is a tad outdated. This page is designed for modern browser. <a class='gg-u-link gg-u-link--arrow'{up_but}>Update my browser</a>",
   noclose: true,
   no_permanent_hide: true,
 };

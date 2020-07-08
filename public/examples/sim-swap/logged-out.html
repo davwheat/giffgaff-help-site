@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/giffgaff-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://static.giffgaff.com/fonts/1.0.0/font.css" as="style" />
 
@@ -41,7 +53,10 @@
       </nav>
       <header class="gg-c-website-header">
         <div class="gg-c-website-header__bar">
-          <a class="gg-c-website-header__logo" onclick="window.alert('This would link to the giffgaff home page, but that kinda breaks the example page.')">
+          <a
+            class="gg-c-website-header__logo"
+            onclick="window.alert('This would link to the giffgaff home page, but that kinda breaks the example page.')"
+          >
             <svg height="56px" xmlns="http://www.w3.org/2000/svg" viewBox="-329.5 610.9 889.1 282.2">
               <g fill="#FFF">
                 <path
@@ -95,7 +110,9 @@
               </p>
               <p class="gg-u-text-speak">
                 Trying to replace your current giffgaff SIM?
-                <a onclick="window.alert('this would link to the new sim swap page i\'ve designed')" class="gg-u-link gg-u-link--arrow">Perform a SIM swap</a>
+                <a onclick="window.alert('this would link to the new sim swap page i\'ve designed')" class="gg-u-link gg-u-link--arrow"
+                  >Perform a SIM swap</a
+                >
               </p>
             </section>
           </div>
@@ -114,7 +131,15 @@
                   </section>
                   <label for="activationCodeInput" class="gg-c-form__label">SIM activation code</label>
                   <div class="gg-c-form__element">
-                    <input type="text" id="activationCodeInput" class="gg-c-form__input" aria-describedby="textinput-message" placeholder="XXXXXX" autocomplete="off" maxlength="19" />
+                    <input
+                      type="text"
+                      id="activationCodeInput"
+                      class="gg-c-form__input"
+                      aria-describedby="textinput-message"
+                      placeholder="XXXXXX"
+                      autocomplete="off"
+                      maxlength="19"
+                    />
                     <p id="activationCodeInputError" class="gg-c-form__element-message gg-c-form__element-message--invalid"></p>
                   </div>
                   <button id="step1nextbtn" class="gg-c-btn gg-c-btn--primary gg-c-btn--center">
@@ -136,8 +161,8 @@
                       </div>
                       <div class="gg-c-modal__content">
                         <p>
-                          You can find your activation code on the small plactic card that came with your SIM. If you haven't got that, you can also use the 13, 16 or 19 digit SIM serial number on the
-                          back of your SIM.
+                          You can find your activation code on the small plactic card that came with your SIM. If you haven't got that, you can
+                          also use the 13, 16 or 19 digit SIM serial number on the back of your SIM.
                         </p>
                         <img
                           src="/examples/sim-swap/img/sim-code.png"
@@ -181,7 +206,14 @@
                       <form class="gg-c-form">
                         <label for="newEmail" class="gg-c-form__label">Email</label>
                         <div class="gg-c-form__element">
-                          <input type="email" autocomplete="email" id="newEmail" class="gg-c-form__input" maxlength="320" placeholder="hello@example.com" />
+                          <input
+                            type="email"
+                            autocomplete="email"
+                            id="newEmail"
+                            class="gg-c-form__input"
+                            maxlength="320"
+                            placeholder="hello@example.com"
+                          />
                           <p class="gg-c-form__element-message gg-c-form__element-message--invalid">
                             Uh-oh, that's not a valid email address
                           </p>
@@ -189,7 +221,12 @@
 
                         <label for="newPwd" class="gg-c-form__label">Password</label>
                         <div class="gg-c-form__element gg-c-input-with-button">
-                          <input type="password" autocomplete="new-password" id="newPwd" class="gg-c-form__input gg-c-input-with-button__input" />
+                          <input
+                            type="password"
+                            autocomplete="new-password"
+                            id="newPwd"
+                            class="gg-c-form__input gg-c-input-with-button__input"
+                          />
                           <button class="gg-c-input-with-button__btn" type="submit" id="toggle-pwd-visibility-1">
                             <span class="hidden" id="show-pwd1">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -199,7 +236,9 @@
                                 <path
                                   d="M13.8 8c-2-.7-5 .4-5.8 2.5a3.9 3.9 0 001.4 4.8c2 .9 5.4.8 6.4-1.7a4.2 4.2 0 00.3-3A4.9 4.9 0 0013.8 8zm.9 4.4a2.6 2.6 0 01-1.7 2 4 4 0 01-2.9-.3 2.2 2.2 0 01-1-2.5 3.1 3.1 0 013.3-2.4 2.5 2.5 0 012.3 3.2z"
                                 />
-                                <path d="M12.9 10.6a2 2 0 00-1.4-.2 1.5 1.5 0 00-1 .7 1.4 1.4 0 00.7 2.2 1.7 1.7 0 002-.2 1.6 1.6 0 00-.3-2.5z" />
+                                <path
+                                  d="M12.9 10.6a2 2 0 00-1.4-.2 1.5 1.5 0 00-1 .7 1.4 1.4 0 00.7 2.2 1.7 1.7 0 002-.2 1.6 1.6 0 00-.3-2.5z"
+                                />
                               </svg>
                             </span>
                             <span id="hide-pwd1">
@@ -228,7 +267,8 @@
 
                         <fieldset class="gg-c-chunky-buttons" id="communications-container">
                           <legend class="gg-c-chunky-buttons__legend">
-                            Happy to hear from us? We'll help you save money with phone deals sent only to members and goodybag advice based on your usage. Opt-out anytime.
+                            Happy to hear from us? We'll help you save money with phone deals sent only to members and goodybag advice based on
+                            your usage. Opt-out anytime.
                           </legend>
                           <ol class="gg-c-chunky-buttons__list">
                             <li class="gg-c-chunky-buttons__option">
@@ -292,44 +332,54 @@
                               This would show the T's & C's but it's way too much effort to get them to show up here.
                             </p>
                             <p>
-                              Bob's your uncle. Woohoo. Payback. Nice one. goodybags. We do things differently. We do things differently. Bonnie to our Clyde. Embrace life with no contracts. Come join
-                              us. Save yourself a few bob. Super Recruiter. We're chuffed to be uSwitch Network of the Year.
+                              Bob's your uncle. Woohoo. Payback. Nice one. goodybags. We do things differently. We do things differently. Bonnie
+                              to our Clyde. Embrace life with no contracts. Come join us. Save yourself a few bob. Super Recruiter. We're chuffed
+                              to be uSwitch Network of the Year.
                             </p>
                             <p>
-                              Chuffed. We do things differently. Easy as pie. Our super helpful members are available to offer support around the clock. We do things differently. Hi there. Save
-                              yourself a few bob. You're all that and a bag of chips. Change month to month or cancel anytime.
+                              Chuffed. We do things differently. Easy as pie. Our super helpful members are available to offer support around the
+                              clock. We do things differently. Hi there. Save yourself a few bob. You're all that and a bag of chips. Change
+                              month to month or cancel anytime.
                             </p>
                             <p>
-                              Nice one. Nice one. Join an award-winning network. We believe that together, with our members, anything is possible. Enjoy life with no contracts. Join an award-winning
-                              network. Choose giffgaff. Thanks a bunch. You’re always in control. Super Recruiter.
+                              Nice one. Nice one. Join an award-winning network. We believe that together, with our members, anything is
+                              possible. Enjoy life with no contracts. Join an award-winning network. Choose giffgaff. Thanks a bunch. You’re
+                              always in control. Super Recruiter.
                             </p>
                             <p>
-                              Come join us. Bonnie to our Clyde. Super Recruiter. Save yourself a few bob. Bonnie to our Clyde. Join an award-winning network. You're all that and a bag of chips. Hi
-                              there. Bonnie to our Clyde. Save yourself a few bob. Great value flexible plans where you're in control.
+                              Come join us. Bonnie to our Clyde. Super Recruiter. Save yourself a few bob. Bonnie to our Clyde. Join an
+                              award-winning network. You're all that and a bag of chips. Hi there. Bonnie to our Clyde. Save yourself a few bob.
+                              Great value flexible plans where you're in control.
                             </p>
                             <p>
-                              Pleased as punch. You're all that and a bag of chips. We believe that together, with our members, anything is possible. Easy as pie. Super Recruiter. Bonnie to our Clyde.
-                              Run by you. We believe that together, with our members, anything is possible.
+                              Pleased as punch. You're all that and a bag of chips. We believe that together, with our members, anything is
+                              possible. Easy as pie. Super Recruiter. Bonnie to our Clyde. Run by you. We believe that together, with our
+                              members, anything is possible.
                             </p>
                             <p>
-                              Order your Free SIM. Award winning. Community. Save yourself a few bob. Payback. Great value flexible plans where you're in control. Nice one. Community. Nice one. Super
-                              Recruiter. No contracts. Save yourself a few bob. Order your Free SIM. Choose giffgaff.
+                              Order your Free SIM. Award winning. Community. Save yourself a few bob. Payback. Great value flexible plans where
+                              you're in control. Nice one. Community. Nice one. Super Recruiter. No contracts. Save yourself a few bob. Order
+                              your Free SIM. Choose giffgaff.
                             </p>
                             <p>
-                              Super Recruiter. No contracts. Bob's your uncle. Pleased as punch. Choose giffgaff. Hi there. ooops... seems like we've got gremlins. ooops... seems like we've got
-                              gremlins. Save yourself a few bob. You're all that and a bag of chips.
+                              Super Recruiter. No contracts. Bob's your uncle. Pleased as punch. Choose giffgaff. Hi there. ooops... seems like
+                              we've got gremlins. ooops... seems like we've got gremlins. Save yourself a few bob. You're all that and a bag of
+                              chips.
                             </p>
                             <p>
-                              Our super helpful members are available to offer support around the clock. We do things differently. Great value flexible plans where you're in control. No contracts.
-                              Order your Free SIM. We do things differently. We do things differently. ooops... seems like we've got gremlins.
+                              Our super helpful members are available to offer support around the clock. We do things differently. Great value
+                              flexible plans where you're in control. No contracts. Order your Free SIM. We do things differently. We do things
+                              differently. ooops... seems like we've got gremlins.
                             </p>
                             <p>
-                              No contracts. Woohoo. Payback. Easy peasy. Change month to month or cancel anytime. Woohoo. Enjoy life with no contracts. We're chuffed to be uSwitch Network of the Year.
-                              We have members, not customers. Order your Free SIM. Bonnie to our Clyde. Bonnie to our Clyde.
+                              No contracts. Woohoo. Payback. Easy peasy. Change month to month or cancel anytime. Woohoo. Enjoy life with no
+                              contracts. We're chuffed to be uSwitch Network of the Year. We have members, not customers. Order your Free SIM.
+                              Bonnie to our Clyde. Bonnie to our Clyde.
                             </p>
                             <p>
-                              Woohoo. Easy as pie. Order your Free SIM. We have members, not customers. Community. Save yourself a few bob. Bob's your uncle. No contracts. Community. Order your Free
-                              SIM. Great value flexible plans where you're in control. Come join us. Thanks a bunch.
+                              Woohoo. Easy as pie. Order your Free SIM. We have members, not customers. Community. Save yourself a few bob. Bob's
+                              your uncle. No contracts. Community. Order your Free SIM. Great value flexible plans where you're in control. Come
+                              join us. Thanks a bunch.
                             </p>
                           </div>
                         </dialog>
@@ -351,44 +401,54 @@
                               This would show the privacy policy but it's way too much effort to get them to show up here.
                             </p>
                             <p>
-                              Bob's your uncle. Woohoo. Payback. Nice one. goodybags. We do things differently. We do things differently. Bonnie to our Clyde. Embrace life with no contracts. Come join
-                              us. Save yourself a few bob. Super Recruiter. We're chuffed to be uSwitch Network of the Year.
+                              Bob's your uncle. Woohoo. Payback. Nice one. goodybags. We do things differently. We do things differently. Bonnie
+                              to our Clyde. Embrace life with no contracts. Come join us. Save yourself a few bob. Super Recruiter. We're chuffed
+                              to be uSwitch Network of the Year.
                             </p>
                             <p>
-                              Chuffed. We do things differently. Easy as pie. Our super helpful members are available to offer support around the clock. We do things differently. Hi there. Save
-                              yourself a few bob. You're all that and a bag of chips. Change month to month or cancel anytime.
+                              Chuffed. We do things differently. Easy as pie. Our super helpful members are available to offer support around the
+                              clock. We do things differently. Hi there. Save yourself a few bob. You're all that and a bag of chips. Change
+                              month to month or cancel anytime.
                             </p>
                             <p>
-                              Nice one. Nice one. Join an award-winning network. We believe that together, with our members, anything is possible. Enjoy life with no contracts. Join an award-winning
-                              network. Choose giffgaff. Thanks a bunch. You’re always in control. Super Recruiter.
+                              Nice one. Nice one. Join an award-winning network. We believe that together, with our members, anything is
+                              possible. Enjoy life with no contracts. Join an award-winning network. Choose giffgaff. Thanks a bunch. You’re
+                              always in control. Super Recruiter.
                             </p>
                             <p>
-                              Come join us. Bonnie to our Clyde. Super Recruiter. Save yourself a few bob. Bonnie to our Clyde. Join an award-winning network. You're all that and a bag of chips. Hi
-                              there. Bonnie to our Clyde. Save yourself a few bob. Great value flexible plans where you're in control.
+                              Come join us. Bonnie to our Clyde. Super Recruiter. Save yourself a few bob. Bonnie to our Clyde. Join an
+                              award-winning network. You're all that and a bag of chips. Hi there. Bonnie to our Clyde. Save yourself a few bob.
+                              Great value flexible plans where you're in control.
                             </p>
                             <p>
-                              Pleased as punch. You're all that and a bag of chips. We believe that together, with our members, anything is possible. Easy as pie. Super Recruiter. Bonnie to our Clyde.
-                              Run by you. We believe that together, with our members, anything is possible.
+                              Pleased as punch. You're all that and a bag of chips. We believe that together, with our members, anything is
+                              possible. Easy as pie. Super Recruiter. Bonnie to our Clyde. Run by you. We believe that together, with our
+                              members, anything is possible.
                             </p>
                             <p>
-                              Order your Free SIM. Award winning. Community. Save yourself a few bob. Payback. Great value flexible plans where you're in control. Nice one. Community. Nice one. Super
-                              Recruiter. No contracts. Save yourself a few bob. Order your Free SIM. Choose giffgaff.
+                              Order your Free SIM. Award winning. Community. Save yourself a few bob. Payback. Great value flexible plans where
+                              you're in control. Nice one. Community. Nice one. Super Recruiter. No contracts. Save yourself a few bob. Order
+                              your Free SIM. Choose giffgaff.
                             </p>
                             <p>
-                              Super Recruiter. No contracts. Bob's your uncle. Pleased as punch. Choose giffgaff. Hi there. ooops... seems like we've got gremlins. ooops... seems like we've got
-                              gremlins. Save yourself a few bob. You're all that and a bag of chips.
+                              Super Recruiter. No contracts. Bob's your uncle. Pleased as punch. Choose giffgaff. Hi there. ooops... seems like
+                              we've got gremlins. ooops... seems like we've got gremlins. Save yourself a few bob. You're all that and a bag of
+                              chips.
                             </p>
                             <p>
-                              Our super helpful members are available to offer support around the clock. We do things differently. Great value flexible plans where you're in control. No contracts.
-                              Order your Free SIM. We do things differently. We do things differently. ooops... seems like we've got gremlins.
+                              Our super helpful members are available to offer support around the clock. We do things differently. Great value
+                              flexible plans where you're in control. No contracts. Order your Free SIM. We do things differently. We do things
+                              differently. ooops... seems like we've got gremlins.
                             </p>
                             <p>
-                              No contracts. Woohoo. Payback. Easy peasy. Change month to month or cancel anytime. Woohoo. Enjoy life with no contracts. We're chuffed to be uSwitch Network of the Year.
-                              We have members, not customers. Order your Free SIM. Bonnie to our Clyde. Bonnie to our Clyde.
+                              No contracts. Woohoo. Payback. Easy peasy. Change month to month or cancel anytime. Woohoo. Enjoy life with no
+                              contracts. We're chuffed to be uSwitch Network of the Year. We have members, not customers. Order your Free SIM.
+                              Bonnie to our Clyde. Bonnie to our Clyde.
                             </p>
                             <p>
-                              Woohoo. Easy as pie. Order your Free SIM. We have members, not customers. Community. Save yourself a few bob. Bob's your uncle. No contracts. Community. Order your Free
-                              SIM. Great value flexible plans where you're in control. Come join us. Thanks a bunch.
+                              Woohoo. Easy as pie. Order your Free SIM. We have members, not customers. Community. Save yourself a few bob. Bob's
+                              your uncle. No contracts. Community. Order your Free SIM. Great value flexible plans where you're in control. Come
+                              join us. Thanks a bunch.
                             </p>
                           </div>
                         </dialog>
@@ -410,7 +470,13 @@
 
                         <label for="currentPwd" class="gg-c-form__label">Password</label>
                         <div class="gg-c-form__element gg-c-input-with-button">
-                          <input type="password" autocomplete="current-password" id="currentPwd" class="gg-c-form__input gg-c-input-with-button__input" aria-describedby="email-message" />
+                          <input
+                            type="password"
+                            autocomplete="current-password"
+                            id="currentPwd"
+                            class="gg-c-form__input gg-c-input-with-button__input"
+                            aria-describedby="email-message"
+                          />
                           <button class="gg-c-input-with-button__btn" type="submit" id="toggle-pwd-visibility-2">
                             <span class="hidden" id="show-pwd2">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -420,7 +486,9 @@
                                 <path
                                   d="M13.8 8c-2-.7-5 .4-5.8 2.5a3.9 3.9 0 001.4 4.8c2 .9 5.4.8 6.4-1.7a4.2 4.2 0 00.3-3A4.9 4.9 0 0013.8 8zm.9 4.4a2.6 2.6 0 01-1.7 2 4 4 0 01-2.9-.3 2.2 2.2 0 01-1-2.5 3.1 3.1 0 013.3-2.4 2.5 2.5 0 012.3 3.2z"
                                 />
-                                <path d="M12.9 10.6a2 2 0 00-1.4-.2 1.5 1.5 0 00-1 .7 1.4 1.4 0 00.7 2.2 1.7 1.7 0 002-.2 1.6 1.6 0 00-.3-2.5z" />
+                                <path
+                                  d="M12.9 10.6a2 2 0 00-1.4-.2 1.5 1.5 0 00-1 .7 1.4 1.4 0 00.7 2.2 1.7 1.7 0 002-.2 1.6 1.6 0 00-.3-2.5z"
+                                />
                               </svg>
                             </span>
                             <span id="hide-pwd2">
@@ -709,8 +777,9 @@
                         </ol>
                       </fieldset>
                       <p class="gg-u-text-whisper goodybag--disclaimer">
-                        *Speed restrictions apply to our Always On data. After 80 GB of data used you'll experience a reduced data speed of 384kbps from 8am to Midnight. You may notice that activities
-                        which require high amounts of data, like HD video streaming, will be slower.
+                        *Speed restrictions apply to our Always On data. After 80 GB of data used you'll experience a reduced data speed of
+                        384kbps from 8am to Midnight. You may notice that activities which require high amounts of data, like HD video streaming,
+                        will be slower.
                         <a href="https://www.giffgaff.com/help/articles/traffic-flow-policy" target="_blank" class="gg-u-link">Traffic Flow</a>
                         and
                         <a href="https://giffgaff.com/fair-usage-while-roaming" target="_blank" class="gg-u-link">Fair Usage while roaming</a>
@@ -767,7 +836,8 @@
                     Can I bring my number?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Switching networks is easier than ever. Just text PAC to 65075 and have your PAC code ready to use after you’ve activated your giffgaff SIM.
+                    Switching networks is easier than ever. Just text PAC to 65075 and have your PAC code ready to use after you’ve activated
+                    your giffgaff SIM.
                   </div>
                 </details>
               </li>
@@ -779,8 +849,11 @@
                   </summary>
                   <div class="gg-c-faqs__a">
                     You want to perform a
-                    <a class="gg-u-link gg-u-link--arrow" onclick="alert('this would link to the new sim swap not logged in article ive prototyped')">SIM swap instead</a>. That's where you keep your
-                    current giffgaff number, account, credit and goodybag but replace your SIM with a new one.
+                    <a
+                      class="gg-u-link gg-u-link--arrow"
+                      onclick="alert('this would link to the new sim swap not logged in article ive prototyped')"
+                      >SIM swap instead</a
+                    >. That's where you keep your current giffgaff number, account, credit and goodybag but replace your SIM with a new one.
                   </div>
                 </details>
               </li>
@@ -791,7 +864,8 @@
                     What's a goodybag?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Simply, a goodybag is your monthly allowance of data, minutes and texts. Each month you choose which one is best for you, or you can have the same one recurring every month.
+                    Simply, a goodybag is your monthly allowance of data, minutes and texts. Each month you choose which one is best for you, or
+                    you can have the same one recurring every month.
                   </div>
                 </details>
               </li>
@@ -802,10 +876,11 @@
                     Extra GB on us
                   </summary>
                   <div class="gg-c-faqs__a">
-                    It’s never fun running out of data, especially when you really need some, which is why we’re giving members a little extra. really need some, which is why we’re giving members a
-                    little extra.<br />
+                    It’s never fun running out of data, especially when you really need some, which is why we’re giving members a little extra.
+                    really need some, which is why we’re giving members a little extra.<br />
                     <br />
-                    Once you’ve bought your third goodybag, we’ll boost your data by 1 GB whenever you purchase a £10, £12, £15 or £20 goodybag. goodybag.
+                    Once you’ve bought your third goodybag, we’ll boost your data by 1 GB whenever you purchase a £10, £12, £15 or £20 goodybag.
+                    goodybag.
                   </div>
                 </details>
               </li>
@@ -829,7 +904,8 @@
                     What if I need help?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    You'll always have one of our members to support you through any issues 24 hours a day, 7 days a week. After all, we’re the mobile network run by you.
+                    You'll always have one of our members to support you through any issues 24 hours a day, 7 days a week. After all, we’re the
+                    mobile network run by you.
                     <br />
                     Pst. We might have a treat for you if you’re able to help out later on too.
                   </div>
@@ -843,8 +919,8 @@
                     Can I get extra rewards?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    Earn Payback points by helping someone figure things out on the community or by bringing new members on-board, and many other things. It's our way of saying thank you for being one
-                    of our awesome members.
+                    Earn Payback points by helping someone figure things out on the community or by bringing new members on-board, and many other
+                    things. It's our way of saying thank you for being one of our awesome members.
                   </div>
                 </details>
               </li>
@@ -855,8 +931,8 @@
                     Can't find your activation code?
                   </summary>
                   <div class="gg-c-faqs__a">
-                    You can find your activation code on the small plactic card that came with your SIM. If you haven't got that, you can also use the 16 or 19 digit serial number on the back of your
-                    SIM. It should come just before "4Ggg6".
+                    You can find your activation code on the small plactic card that came with your SIM. If you haven't got that, you can also
+                    use the 16 or 19 digit serial number on the back of your SIM. It should come just before "4Ggg6".
                   </div>
                 </details>
               </li>

@@ -22,7 +22,10 @@
         for (o = a(n.fn, 'function') ? n.fn() : n.fn, t = 0; t < e.length; t++)
           (f = e[t]),
             (r = f.split('.')),
-            1 === r.length ? (Modernizr[r[0]] = o) : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), (Modernizr[r[0]][r[1]] = o)),
+            1 === r.length
+              ? (Modernizr[r[0]] = o)
+              : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])),
+                (Modernizr[r[0]][r[1]] = o)),
             i.push((o ? '' : 'no-') + r.join('-'));
       }
   }
