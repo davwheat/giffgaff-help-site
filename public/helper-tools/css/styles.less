@@ -40,4 +40,16 @@ h6 {
       height: 100%;
     }
   }
+
+  &__item {
+    @media (min-width: 500px) {
+      flex-basis: 50%;
+    }
+    @media (max-width: 499px) {
+      .gg-c-cards__card {
+        max-width: 400px;
+        margin: auto;
+      }
+    }
+  }
 }
