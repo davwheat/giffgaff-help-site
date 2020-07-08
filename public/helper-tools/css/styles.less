@@ -6,11 +6,11 @@ h5,
 h6 {
   + p,
   + .heading-m {
-    margin-top: @gg-spacer-small;
+    margin-top: 16px;
   }
 
   &:not(:first-child) {
-    margin-top: @gg-spacer-medium;
+    margin-top: 24px;
   }
 
   + h1,
@@ -19,12 +19,25 @@ h6 {
   + h4,
   + h5,
   + h6 {
-    margin-top: @gg-spacer-medium;
+    margin-top: 24px;
   }
 }
 
 .single__article {
   p:not(:last-child) {
-    margin-bottom: @gg-spacer-tiny;
+    margin-bottom: 8px;
+  }
+}
+
+.gg-c-cards {
+  button.gg-c-cards__card {
+    appearance: none;
+    text-align: left;
+  }
+
+  &__card {
+    article {
+      height: 100%;
+    }
   }
 }
