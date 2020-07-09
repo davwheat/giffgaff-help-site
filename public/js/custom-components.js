@@ -674,25 +674,25 @@ ggHeader.prototype.connectedCallback = function () {
     menuItems
       .map(function (items) {
         return (
-          '<li class="gg-c-website-header__lrg-screen-item"> <a href="' +
+          '<li class="gg-c-website-header__lrg-screen-item"><a href="' +
           items.link +
-          '" class="gg-c-website-header__lrg-screen-link"> <span>' +
+          '" class="gg-c-website-header__lrg-screen-link"><span>' +
           items.title +
-          '</span> </a> <div class="gg-c-website-header__lrg-screen-menu"> <div class="gg-c-website-header__lrg-screen-menu-content"> <ul class="website-header-large-screen__major-menu">' +
+          '</span></a><div class="gg-c-website-header__lrg-screen-menu"><div class="gg-c-website-header__lrg-screen-menu-content"><ul class="website-header-large-screen__major-menu">' +
           items.items
             .map(function (item) {
-              '<li> <a href="' + item.link + '" class="website-header-large-screen__link" >' + item.title + '</a > </li>';
+              return '<li><a href="' + item.link + '" class="website-header-large-screen__link">' + item.title + '</a></li>';
             })
             .join('') +
-          ' </ul> </div> </div> </li>'
+          '</ul></div></div></li>'
         );
       })
       .join('') +
-    ' </ul> </nav> </div> <nav class="gg-c-website-header__sm-screen-nav"> <ul>       ' +
+    ' </ul></nav></div><nav class="gg-c-website-header__sm-screen-nav"><ul>' +
     menuItems
       .map(function (items) {
         return (
-          '| <li class="gg-c-website-header__sm-screen-item"> <details class="gg-c-website-header__sm-screen-accordion"> <summary class="gg-c-website-header__sm-screen-category"> <span class="gg-c-website-header__sm-screen-category-icon"></span> ' +
+          '| <li class="gg-c-website-header__sm-screen-item"><details class="gg-c-website-header__sm-screen-accordion"><summary class="gg-c-website-header__sm-screen-category"><span class="gg-c-website-header__sm-screen-category-icon"></span> ' +
           items.title +
           '</summary><ul class="gg-c-website-header__sm-screen-sub-menu"> ' +
           items.items
@@ -710,7 +710,7 @@ ggHeader.prototype.connectedCallback = function () {
         );
       })
       .join('') +
-    '</ul> </nav> </header> <section id="unofficial"> <div class="gg-o-page-section"> <strong>Please note:</strong> this website is run by a member of the giffgaff community and is not to be confused with <a class="gg-u-link" href="https://giffgaff.com/" target="_blank" rel="noreferer noopener">giffgaff.com</a> </div> </section>';
+    '</ul></nav></header><section id="unofficial"><div class="gg-o-page-section"><strong>Please note:</strong> this website is run by a member of the giffgaff community and is not to be confused with <a class="gg-u-link" href="https://giffgaff.com/" target="_blank" rel="noreferrer noopener">giffgaff.com</a></div></section>';
 };
 
 ggFooter.prototype.connectedCallback = function () {
@@ -728,7 +728,7 @@ This page is run by a member of the giffgaff community and does not
 represent the views or opinions of giffgaff Limited, nor its staff.
 giffgaff is the registered trademark of giffgaff&nbsp;Limited.
 </p>
-<a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
+<a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferrer">
 <picture class="gg-b128-n256-r512">
 <source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png">
 <source media="(min-width: 550px and max-width: 727px)" srcset="/img/gg-img/aff-med.png">
