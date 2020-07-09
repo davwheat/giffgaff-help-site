@@ -24,6 +24,27 @@ textarea.gg-c-form__input {
 
 // -------------
 
+// FIX CB SHINE EFFECT
+
+.gg-c-checkbox__pseudo-checkbox {
+  &::before,
+  &::after {
+    z-index: 2;
+  }
+}
+
+.gg-c-checkbox__shine {
+  z-index: 1;
+}
+
+.gg-c-checkbox__checkbox:focus + .gg-c-checkbox__pseudo-checkbox:before {
+  outline: #35adce;
+  outline-offset: -2px;
+  outline-style: solid;
+}
+
+// -------------
+
 .gg-c-form__element--valid .gg-c-form__input {
   padding-right: 40px;
 }
