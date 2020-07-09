@@ -41,7 +41,7 @@ function randomiseDownloadLink(linkArray) {
 }
 
 // ColorOS China A.15
-document.querySelectorAll('.ozip-download--coloros__cn').forEach((link) => {
+document.querySelectorAll('.ozip-download--coloros__cn').forEach(function (link) {
   link.setAttribute(
     'href',
     randomiseDownloadLink([
@@ -52,7 +52,7 @@ document.querySelectorAll('.ozip-download--coloros__cn').forEach((link) => {
 });
 
 // ColorOS Global A.10
-document.querySelectorAll('.ozip-download--coloros__global').forEach((link) => {
+document.querySelectorAll('.ozip-download--coloros__global').forEach(function (link) {
   link.setAttribute(
     'href',
     randomiseDownloadLink([
@@ -63,7 +63,7 @@ document.querySelectorAll('.ozip-download--coloros__global').forEach((link) => {
 });
 
 // realmeme UI China C.25
-document.querySelectorAll('.ozip-download--realmemeui__cn').forEach((link) => {
+document.querySelectorAll('.ozip-download--realmemeui__cn').forEach(function (link) {
   link.setAttribute(
     'href',
     randomiseDownloadLink([
@@ -74,7 +74,7 @@ document.querySelectorAll('.ozip-download--realmemeui__cn').forEach((link) => {
 });
 
 // realmeme UI Global C.27
-document.querySelectorAll('.ozip-download--realmemeui__global').forEach((link) => {
+document.querySelectorAll('.ozip-download--realmemeui__global').forEach(function (link) {
   link.setAttribute(
     'href',
     randomiseDownloadLink([
@@ -103,4 +103,6 @@ function ToggleNav() {
 
 document.getElementById('toggle-contents').addEventListener('click', ToggleNav);
 
-document.querySelectorAll('#contents li a').forEach((heading) => heading.addEventListener('click', ToggleNav));
+document.querySelectorAll('#contents li a').forEach(function (heading) {
+  heading.addEventListener('click', ToggleNav);
+});
