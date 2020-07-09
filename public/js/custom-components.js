@@ -641,6 +641,10 @@ const menuItems = [
     link: '/helper-tools',
     items: [
       {
+        link: '/helper-tools/community-images',
+        title: 'Community images',
+      },
+      {
         link: '/helper-tools/information/number-checker',
         title: 'Number pricing calculator',
       },
