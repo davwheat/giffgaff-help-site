@@ -47,8 +47,9 @@
 
     <link rel="stylesheet" href="/css/styles.min.css" />
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch%2CPromise%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CObject.values%2CReflect%2CReflect.construct"></script>
+    <script src="/js/modernizr-custom.min.js"></script>
     <script src="/js/custom-components.min.js" async></script>
-    <script src="/js/modernizr-custom.min.js" async defer></script>
 
     <link rel="stylesheet" href="/helper-tools/css/styles.css" />
   </head>
@@ -646,7 +647,7 @@
         let a = localStorage.getItem('use-comm-img-urls');
         try {
           return a ? JSON.parse(a) : a;
-        } catch {
+        } catch (err) {
           return null;
         }
       };
