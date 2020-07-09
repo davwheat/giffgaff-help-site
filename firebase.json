@@ -40,6 +40,15 @@
             "value": "public, max-age=1800, proxy-revalidate"
           }
         ]
+      },
+      {
+        "source": "**/*.@(png,jpeg,gif,webp,jpg,tiff,bmp,svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, proxy-revalidate"
+          }
+        ]
       }
     ]
   }
