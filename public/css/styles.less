@@ -224,3 +224,43 @@ main#main-content {
   // fixes masthead image overflow
   grid-template-columns: 1fr minmax(0, 504px);
 }
+
+.gg-c-masthead-minor.hasBreadcrumbs {
+  position: relative;
+
+  nav[aria-label='breadcrumb'] {
+    @media (max-width: 767px) {
+      padding-top: 16px;
+    }
+  }
+}
+
+.gg-c-masthead.hasBreadcrumbs {
+  @media (max-width: 991px) {
+    margin-bottom: 64px;
+  }
+
+  nav[aria-label='breadcrumb'] {
+    @media (min-width: 992px) {
+      margin-top: 32px;
+      margin-bottom: -16px;
+    }
+
+    @media (max-width: 991px) {
+      position: absolute;
+
+      background: black;
+      left: 0;
+      right: 0;
+      top: 100%;
+
+      padding: 16px 8px;
+      padding-top: 6px;
+
+      @media (min-width: 360px) {
+        padding: 16px 16px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
