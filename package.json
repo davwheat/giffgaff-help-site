@@ -3,19 +3,23 @@
   "private": true,
   "version": "0.1.0",
   "description": "",
-  "dependencies": {
-    "static-sitemap-cli": "^1.3.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "html-minifier": "^4.0.0",
-    "prettier": "^2.0.5"
+    "gifsicle": "^5.1.0",
+    "node-compress-images-cli": "https://github.com/davwheat/node-compress-image-cli.git",
+    "pngquant-bin": "^6.0.0",
+    "prettier": "^2.0.5",
+    "static-sitemap-cli": "https://github.com/davwheat/static-sitemap-cli.git",
+    "svgo": "^1.3.2"
   },
   "scripts": {
     "lint": "npm run prettier",
-    "prettier": "prettier --write \"**/*.{html,js,less}\"",
-    "build-sitemap": "cd public && sscli https://giffgaff.davwheat.dev > sitemap.xml",
-    "predeploy": "npm run lint && npm run build-sitemap",
-    "deploy": "firebase deploy"
+    "prettier": "prettier --write \"**/*.{html,js,less,json}\"",
+    "build-sitemap": "cd public && sscli https://giffgaff.davwheat.dev --follow-noindex > sitemap.xml",
+    "predeploy": "npm run lint && npm run optimise && npm run build-sitemap",
+    "deploy": "firebase deploy",
+    "optimise": "npm run resetImg && compress -i \"assets/**/\" -o \"public/\"  --svgopts \"-p 3 --multipass\" --jpgopts \"-quality 95\" --pngopts \"--quality 40-60 --speed 3 --strip\"",
+    "resetImg": "del /s public\\*.png && del /s public\\*.svg && del /s public\\*.gif && del /s public\\*.jpg && del /s \"public\\*.jpeg\""
   },
   "repository": {
     "type": "git",
