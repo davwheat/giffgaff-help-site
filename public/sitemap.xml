@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://giffgaff.davwheat.dev/</loc>
-        <lastmod>2020-07-09T04:49:02.672Z</lastmod>
+        <lastmod>2020-07-09T05:19:37.946Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/bits-and-bobs</loc>
@@ -14,27 +14,27 @@
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples</loc>
-        <lastmod>2020-07-09T04:14:32.659Z</lastmod>
+        <lastmod>2020-07-09T05:19:34.730Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools</loc>
-        <lastmod>2020-07-09T04:38:59.373Z</lastmod>
+        <lastmod>2020-07-09T05:19:37.356Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb</loc>
-        <lastmod>2020-07-09T05:10:12.769Z</lastmod>
+        <lastmod>2020-07-09T05:19:38.142Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb/roaming-in-eu</loc>
-        <lastmod>2020-07-09T05:10:17.680Z</lastmod>
+        <lastmod>2020-07-09T05:19:38.332Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/realme/x2-pro</loc>
-        <lastmod>2020-07-09T05:08:20.232Z</lastmod>
+        <lastmod>2020-07-09T05:19:39.559Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/community-nonsense/kb-diff</loc>
-        <lastmod>2020-07-09T04:14:32.659Z</lastmod>
+        <lastmod>2020-07-09T05:19:33.843Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/html-emails</loc>
@@ -42,7 +42,11 @@
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/our-offer</loc>
-        <lastmod>2020-07-09T04:14:32.659Z</lastmod>
+        <lastmod>2020-07-09T05:19:35.328Z</lastmod>
+    </url>
+    <url>
+        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
+        <lastmod>2020-07-09T05:19:37.086Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap</loc>
@@ -53,15 +57,11 @@
         <lastmod>2020-07-09T02:22:26.796Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
-        <lastmod>2020-07-09T04:44:49.035Z</lastmod>
-    </url>
-    <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>
-        <lastmod>2020-07-09T04:57:44.477Z</lastmod>
+        <lastmod>2020-07-09T05:19:37.513Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/responses/buttons</loc>
-        <lastmod>2020-07-09T05:03:29.683Z</lastmod>
+        <lastmod>2020-07-09T05:19:37.815Z</lastmod>
     </url>
 </urlset>
