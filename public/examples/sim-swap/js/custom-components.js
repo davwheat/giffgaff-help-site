@@ -154,7 +154,7 @@ ${items.items
 </header>
 <section id="unofficial">
 <div class="gg-o-page-section">
-<strong>Please note:</strong> this website is run by a member of the giffgaff community and is not to be confused with <a class="gg-u-link" href="https://giffgaff.com/" target="_blank" rel="noreferer noopener">giffgaff.com</a>
+<strong>Please note:</strong> this website is run by a member of the giffgaff community and is not to be confused with <a class="gg-u-link" href="https://giffgaff.com/" target="_blank" rel="noreferrer noopener">giffgaff.com</a>
 </div>
 </section>
 `;
@@ -170,7 +170,7 @@ class ggFooter extends HTMLElement {
 This page is run by a member of the giffgaff community and does not
 represent the views or opinions of giffgaff Limited, or its staff
 </p>
-<a href="https://www.giffgaff.com/orders/affiliate/mrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferer">
+<a href="https://www.giffgaff.com/orders/affiliate/mrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferrer">
 <picture class="gg-b128-n256-r512">
 <source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png">
 <source media="(min-width: 550px)" srcset="/img/gg-img/aff-med.png">
