@@ -153,7 +153,7 @@
         );
       }
 
-      cardItems.information.forEach((item) => {
+      cardItems.information.forEach(function (item) {
         const text = item.text,
           link = item.link,
           img = item.image,
@@ -163,7 +163,7 @@
         info.insertAdjacentHTML('beforeend', createCard(text, link, img, description, label));
       });
 
-      cardItems.responses.forEach((item) => {
+      cardItems.responses.forEach(function (item) {
         const text = item.text,
           link = item.link,
           img = item.image,

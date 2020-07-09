@@ -148,7 +148,7 @@
       const headers = document.querySelectorAll('[id][data-anchor]');
       const navBar = document.querySelector('nav > ul.gg-c-side-nav.sidebar');
 
-      headers.forEach((node) => {
+      headers.forEach(function (node) {
         navBar.insertAdjacentHTML(
           'beforeend',
           `
@@ -159,7 +159,9 @@
         );
       });
 
-      let currentHighlight = () => document.querySelector('.gg-c-sidenav__item--current-page');
+      let currentHighlight = function () {
+        return document.querySelector('.gg-c-sidenav__item--current-page');
+      };
 
       document.addEventListener(
         'scroll',
@@ -167,7 +169,7 @@
           let current = currentHighlight();
           let newHighlight = current;
 
-          headers.forEach((node) => {
+          headers.forEach(function (node) {
             if (newHighlight === current) {
               if (isScrolledIntoView(node)) {
                 newHighlight = document.querySelector(`[data-heading="${node.id}"]`);

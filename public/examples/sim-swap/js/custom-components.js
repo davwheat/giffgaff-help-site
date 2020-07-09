@@ -75,7 +75,7 @@ unofficial
 <ul class="gg-c-website-header__lrg-screen-list">
 ${menuItems
   .map(
-    (items) =>
+    items =>
       `
 <li class="gg-c-website-header__lrg-screen-item">
 <a href="${items.link}" class="gg-c-website-header__lrg-screen-link">
@@ -89,7 +89,7 @@ ${
   <ul class="website-header-large-screen__major-menu">
   ${items.items
     .map(
-      (item) =>
+      item =>
         `<li>
       <a
         href="${item.link}"
@@ -117,7 +117,7 @@ ${
 <ul>      
 ${menuItems
   .map(
-    (items) => `
+    items => `
 <li class="gg-c-website-header__sm-screen-item">
 <details class="gg-c-website-header__sm-screen-accordion">
 <summary class="gg-c-website-header__sm-screen-category">
@@ -130,7 +130,7 @@ ${
 <ul class="gg-c-website-header__sm-screen-sub-menu">      
 ${items.items
   .map(
-    (item) =>
+    item =>
       `
 <li class="gg-c-website-header__sm-screen-sub-menu-item">
 <a

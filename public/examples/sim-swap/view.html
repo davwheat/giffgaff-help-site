@@ -205,7 +205,7 @@
         }
       }
 
-      document.querySelectorAll('input[name=mobile-size]').forEach((n, _) => {
+      document.querySelectorAll('input[name=mobile-size]').forEach(function (n, _) {
         n.addEventListener('change', mobileSizeChanged);
       });
 
@@ -227,7 +227,7 @@
         }
       }
 
-      document.querySelectorAll('input[name=mobile-zoom]').forEach((n, _) => {
+      document.querySelectorAll('input[name=mobile-zoom]').forEach(function (n, _) {
         n.addEventListener('change', scalingChanged);
       });
     </script>

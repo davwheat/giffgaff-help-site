@@ -118,7 +118,11 @@ const ggPrices = {
 
 let InternationalPricing;
 
-fetch('/helper-tools/information/number-checker/intl-prices.json').then((result) => result.json().then((j) => (InternationalPricing = j)));
+fetch('/helper-tools/information/number-checker/intl-prices.json').then(function (result) {
+  result.json().then(function (j) {
+    InternationalPricing = j;
+  });
+});
 
 document.querySelector('main input').focus();
 

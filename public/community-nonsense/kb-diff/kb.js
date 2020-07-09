@@ -3,7 +3,7 @@ let canHideMsg = false;
 
 function hideLoadingMsg() {
   while (!canHideMsg) {
-    setTimeout(() => {
+    setTimeout(function () {
       hideLoadingMsg();
     }, 100);
     return;
@@ -33,7 +33,7 @@ $.get(`${dataUrl}/categories.json`, function (data) {
 
   $catList = $('#category fieldset ol');
 
-  allCategories.forEach((category) => {
+  allCategories.forEach(category => {
     $catList.append(
       `   
     <li class="gg-c-chunky-buttons__option">
@@ -59,7 +59,7 @@ $.get(`${dataUrl}/categories.json`, function (data) {
   hideLoadingMsg();
 });
 
-$('#category button').click((e) => {
+$('#category button').click(function (e) {
   e.preventDefault();
 
   if ($('#category input:checked').length < 1) {
@@ -69,7 +69,7 @@ $('#category button').click((e) => {
   showLoadingMsg();
 
   // hide last category AFTER loading msg has appeared
-  setTimeout(() => {
+  setTimeout(function () {
     $('#category').addClass('hidden');
     $('#article').removeClass('hidden');
 
@@ -77,9 +77,9 @@ $('#category button').click((e) => {
   }, 400);
 
   const selectedCategoryId = parseInt($('#category input:checked').attr('value'));
-  selectedCategory = allCategories.find((c) => c.id === selectedCategoryId);
+  selectedCategory = allCategories.find(c => c.id === selectedCategoryId);
 
-  $.get(`${dataUrl}/articles/${selectedCategory.catUrl}.json`, (data) => {
+  $.get(`${dataUrl}/articles/${selectedCategory.catUrl}.json`, data => {
     categoryArticles = data.articleList.sort((a, b) => {
       if (a.title.toLowerCase() < b.title.toLowerCase()) {
         return -1;
@@ -118,7 +118,7 @@ $('#category button').click((e) => {
   });
 });
 
-$('#article button').click((e) => {
+$('#article button').click(function (e) {
   e.preventDefault();
 
   if ($('#article input:checked').length < 1) {
@@ -128,7 +128,7 @@ $('#article button').click((e) => {
   showLoadingMsg();
 
   // hide last category AFTER loading msg has appeared
-  setTimeout(() => {
+  setTimeout(function () {
     $('#article').addClass('hidden');
     $('#articleData').removeClass('hidden');
     canHideMsg = true;
@@ -155,7 +155,7 @@ $('#article button').click((e) => {
   // );
 });
 
-$('#articleData button').click((e) => {
+$('#articleData button').click(function (e) {
   e.preventDefault();
 
   showLoadingMsg();

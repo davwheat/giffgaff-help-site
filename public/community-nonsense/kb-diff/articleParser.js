@@ -92,7 +92,7 @@ function ParseBlock(block, lastBlock) {
     // Stuff to be added *after* the letter.
     let append = '';
 
-    inlineStyleRanges.forEach((style) => {
+    inlineStyleRanges.forEach(style => {
       if (i === style.offset) {
         // Inline style starts!
         switch (style.style) {
@@ -116,7 +116,7 @@ function ParseBlock(block, lastBlock) {
       }
     });
 
-    entityRanges.forEach((entity) => {
+    entityRanges.forEach(entity => {
       const realEntity = article.content.entityMap[entity.key];
 
       if (i === entity.offset) {

@@ -253,7 +253,7 @@
       });
 
       function idToText(title) {
-        obj = templates.filter((obj) => obj.title.toLowerCase() === title.toLowerCase())[0];
+        obj = templates.filter(obj => obj.title.toLowerCase() === title.toLowerCase())[0];
 
         return `\n\n` + (obj.addFooter ? (obj.content || '') + (obj.content ? `\n\n` : ``) + footer : obj.content || '');
       }

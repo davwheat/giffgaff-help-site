@@ -1,24 +1,24 @@
 let code = '';
 let pwdShown = false;
 
-document.getElementById('activationCodeInput').addEventListener('input', (e) => {
+document.getElementById('activationCodeInput').addEventListener('input', function (e) {
   e.target.value = e.target.value.toUpperCase();
 });
 
 document.getElementById('step1nextbtn').addEventListener('click', function (e) {
   e.preventDefault();
 
-  const error = (msg) => {
+  const error = function (msg) {
     const error = document.getElementById('activationCodeInputError');
 
     error.innerText = msg;
     error.parentElement.classList.add('gg-c-form__element--invalid');
   };
 
-  const unerror = () => {
+  function unerror() {
     const error = document.getElementById('activationCodeInputError');
     error.parentElement.classList.remove('gg-c-form__element--invalid');
-  };
+  }
 
   const activationCodeInput = document.getElementById('activationCodeInput');
 
@@ -63,7 +63,7 @@ document.getElementById('step1nextbtn').addEventListener('click', function (e) {
 
   code = activationCodeInput.value;
 
-  setTimeout(() => {
+  setTimeout(function () {
     showStep1Success();
   }, 2000);
 });
@@ -75,7 +75,7 @@ function scroll() {
 function showStep1Success() {
   document.querySelector('#step1 .woohoo-message').classList.remove('hidden');
 
-  setTimeout(() => {
+  setTimeout(function () {
     startStep2();
   }, 1500);
 }
@@ -89,7 +89,7 @@ function startStep2() {
   document.getElementById('activationCodeInput2').innerText = code;
 }
 
-document.getElementById('toggle-pwd-visibility-1').addEventListener('click', (e) => {
+document.getElementById('toggle-pwd-visibility-1').addEventListener('click', function (e) {
   e.preventDefault();
 
   let a = document.getElementById('newPwd');
@@ -105,7 +105,7 @@ document.getElementById('toggle-pwd-visibility-1').addEventListener('click', (e)
   }
 });
 
-document.getElementById('toggle-pwd-visibility-2').addEventListener('click', (e) => {
+document.getElementById('toggle-pwd-visibility-2').addEventListener('click', function (e) {
   e.preventDefault();
 
   let a = document.getElementById('currentPwd');
@@ -124,7 +124,7 @@ document.getElementById('toggle-pwd-visibility-2').addEventListener('click', (e)
 const emailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).{8,}$/;
 
-document.getElementById('newEmail').addEventListener('blur', (e) => {
+document.getElementById('newEmail').addEventListener('blur', function (e) {
   if (!e.target.value.match(emailRegex)) {
     e.target.parentElement.classList.add('gg-c-form__element--invalid');
   } else {
@@ -132,7 +132,7 @@ document.getElementById('newEmail').addEventListener('blur', (e) => {
   }
 });
 
-document.getElementById('newEmail').addEventListener('input', (e) => {
+document.getElementById('newEmail').addEventListener('input', function (e) {
   document.getElementById('email-confirm').innerText = e.target.value;
 
   if (e.target.value.match(emailRegex)) {
@@ -186,7 +186,7 @@ document.getElementById('step2activatebtn').addEventListener('click', function (
 
   this.classList.add('gg-c-btn--loading');
 
-  setTimeout(() => {
+  setTimeout(function () {
     startStep3();
   }, 2750);
 });
@@ -224,7 +224,7 @@ document.getElementById('step2loginbtn').addEventListener('click', function (e) 
 
   document.getElementById('step2activatebtn').setAttribute('disabled', 'disabled');
 
-  setTimeout(() => {
+  setTimeout(function () {
     showStep2Success();
   }, 2750);
 });
@@ -232,7 +232,7 @@ document.getElementById('step2loginbtn').addEventListener('click', function (e) 
 function showStep2Success() {
   document.querySelector('#step2 .woohoo-message').classList.remove('hidden');
 
-  setTimeout(() => {
+  setTimeout(function () {
     startStep3();
   }, 1500);
 }

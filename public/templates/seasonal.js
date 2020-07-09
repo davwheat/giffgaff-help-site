@@ -124,7 +124,7 @@ When you get a response, you will receive a text and email alert telling you. Yo
   },
 ];
 
-seasonalTemplates.forEach((template, i) => {
+seasonalTemplates.forEach(function (template, i) {
   templates.push({
     title: template.button,
     addFooter: true,
