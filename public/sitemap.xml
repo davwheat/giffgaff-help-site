@@ -1,42 +1,40 @@
-No index!
-No index!
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://giffgaff.davwheat.dev/</loc>
-        <lastmod>2020-07-08T00:21:32.455Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.853Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/bits-and-bobs</loc>
-        <lastmod>2020-07-08T00:21:28.074Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.759Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/bits-and-bobs/number-checker</loc>
-        <lastmod>2020-07-08T00:21:28.113Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.761Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples</loc>
-        <lastmod>2020-07-08T00:21:29.279Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.779Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools</loc>
-        <lastmod>2020-07-08T00:21:31.899Z</lastmod>
-    </url>
-    <url>
-        <loc>https://giffgaff.davwheat.dev/realme/x2-pro</loc>
-        <lastmod>2020-07-03T20:18:22.228Z</lastmod>
+        <lastmod>2020-07-09T02:24:04.022Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb</loc>
-        <lastmod>2020-07-08T00:21:32.662Z</lastmod>
+        <lastmod>2020-07-09T02:27:40.472Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb/roaming-in-eu</loc>
-        <lastmod>2020-07-08T00:21:32.831Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.858Z</lastmod>
+    </url>
+    <url>
+        <loc>https://giffgaff.davwheat.dev/realme/x2-pro</loc>
+        <lastmod>2020-07-09T02:32:11.360Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/community-nonsense/kb-diff</loc>
-        <lastmod>2020-07-08T00:21:28.420Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.776Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/html-emails</loc>
@@ -44,26 +42,26 @@ No index!
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/our-offer</loc>
-        <lastmod>2020-07-08T00:21:29.927Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.780Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap</loc>
-        <lastmod>2020-07-08T00:21:30.105Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.780Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap/logged-out</loc>
-        <lastmod>2020-07-08T00:21:31.356Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.796Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
-        <lastmod>2020-07-08T21:50:39.777Z</lastmod>
+        <lastmod>2020-07-09T02:23:17.153Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>
-        <lastmod>2020-07-08T00:21:32.006Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.837Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/responses/buttons</loc>
-        <lastmod>2020-07-08T00:21:32.329Z</lastmod>
+        <lastmod>2020-07-09T02:22:26.855Z</lastmod>
     </url>
 </urlset>
