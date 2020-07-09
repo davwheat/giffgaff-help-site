@@ -1,3 +1,5 @@
+No index!
+No index!
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -21,20 +23,16 @@
         <lastmod>2020-07-08T00:21:31.899Z</lastmod>
     </url>
     <url>
+        <loc>https://giffgaff.davwheat.dev/realme/x2-pro</loc>
+        <lastmod>2020-07-03T20:18:22.228Z</lastmod>
+    </url>
+    <url>
         <loc>https://giffgaff.davwheat.dev/kb</loc>
         <lastmod>2020-07-08T00:21:32.662Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb/roaming-in-eu</loc>
         <lastmod>2020-07-08T00:21:32.831Z</lastmod>
-    </url>
-    <url>
-        <loc>https://giffgaff.davwheat.dev/realme/x2-pro</loc>
-        <lastmod>2020-07-03T20:18:22.228Z</lastmod>
-    </url>
-    <url>
-        <loc>https://giffgaff.davwheat.dev/templates</loc>
-        <lastmod>2020-07-08T00:21:33.658Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/community-nonsense/kb-diff</loc>
@@ -57,12 +55,8 @@
         <lastmod>2020-07-08T00:21:31.356Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/examples/sim-swap/view</loc>
-        <lastmod>2020-07-08T00:21:31.564Z</lastmod>
-    </url>
-    <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
-        <lastmod>2020-07-08T02:19:28.567Z</lastmod>
+        <lastmod>2020-07-08T21:50:39.777Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>
