@@ -793,6 +793,8 @@
       const attribution =
         'Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).';
 
+      let openImage = null;
+
       function DisplayCodeModal(e) {
         e.stopPropagation();
 
@@ -808,16 +810,81 @@
         img.setAttribute('src', card.getAttribute('data-lg-preview-src'));
 
         showModalById('code-modal');
+
+        openImage = { src: src, name: card.getAttribute('data-name'), version: card.getAttribute('data-version') };
+
+        analytics.logEvent('comm-img--open_copy_image_modal', {
+          src: src,
+          urlType: window.__commImgUrls ? 'giffgaff-community' : 'direct',
+          version: card.getAttribute('data-version'),
+          name: card.getAttribute('data-name'),
+        });
       }
 
-      document.getElementById('copyMd').addEventListener('click', function () {
+      document.getElementById('copyMd').addEventListener('click', function (e) {
         mdText.select();
+
+        window.__copiedViaBtn = true;
         document.execCommand('copy');
+
+        analytics.logEvent('comm-img--copy_image_code', {
+          type: 'markdown',
+          via: 'button',
+          urlType: window.__commImgUrls ? 'giffgaff-community' : 'direct',
+          src: openImage.src,
+          version: openImage.version,
+          name: openImage.name,
+        });
+      });
+
+      mdText.addEventListener('copy', function (e) {
+        if (window.__copiedViaBtn) {
+          window.__copiedViaBtn = false;
+        } else {
+          analytics.logEvent('comm-img--copy_image_code', {
+            type: 'markdown',
+            via: 'manual',
+            urlType: window.__commImgUrls ? 'giffgaff-community' : 'direct',
+            src: openImage.src,
+            version: openImage.version,
+            name: openImage.name,
+          });
+        }
       });
 
       document.getElementById('copySrc').addEventListener('click', function () {
         srcText.select();
+
+        window.__copiedViaBtn = true;
         document.execCommand('copy');
+
+        analytics.logEvent('comm-img--copy_image_code', {
+          type: 'directUrl',
+          via: 'button',
+          urlType: window.__commImgUrls ? 'giffgaff-community' : 'direct',
+          src: openImage.src,
+          version: openImage.version,
+          name: openImage.name,
+        });
+      });
+
+      srcText.addEventListener('copy', function () {
+        if (window.__copiedViaBtn) {
+          window.__copiedViaBtn = false;
+        } else {
+          analytics.logEvent('comm-img--copy_image_code', {
+            type: 'directUrl',
+            via: 'manual',
+            urlType: window.__commImgUrls ? 'giffgaff-community' : 'direct',
+            src: openImage.src,
+            version: openImage.version,
+            name: openImage.name,
+          });
+        }
+      });
+
+      document.getElementById('full-license').addEventListener('toggle', function (e) {
+        e.target.open && analytics.logEvent('comm-img--view_full_license');
       });
     </script>
 
