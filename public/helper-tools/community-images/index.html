@@ -731,7 +731,44 @@
         return unsafe.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
       }
 
-      function CreateCard(name, description, previewSrc, lgPreviewSrc, src, communitySrc) {
+      function CreateCard(name, description, previewSrc, lgPreviewSrc, src, communitySrc, version, lastModifiedNative) {
+        const date = new Date(lastModifiedNative);
+
+        function formatDate(date) {
+          let str = '';
+
+          const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+          // gets start of today
+          const today = new Date(Math.floor(new Date() / (1000 * 60 * 60 * 24)) * 1000 * 60 * 60 * 24);
+
+          if (today - date < 0) {
+            return 'in the future?';
+          } else if (today - date < 1000 * 60 * 60 * 24) {
+            return 'today';
+          } else if (today - date < 1000 * 60 * 60 * 24 * 2) {
+            return 'yesterday';
+          } else  {
+            let end = 'th';
+
+            switch (date.getDate() % 10) {
+              case 1:
+                end = 'st';
+                break;
+              case 2:
+                end = 'nd';
+                break;
+              case 3:
+                end = 'rd';
+                break;
+            }
+
+            return date.getDate() + end + " " + monthNames[date.getMonth()];
+          }
+        }
+
+        const lastModified = lastModifiedNative ? formatDate(date) : '';
+
         const html =
           '<li class="gg-c-cards__item"><button data-src="' +
           src +
@@ -751,7 +788,9 @@
           name +
           '</h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 16" class="gg-c-cards__separator"><path d="M47.9 10.6c.2-2.2-1.5-4.2-3.8-4.5a7 7 0 0 0-3.8 0c-1.8.3-3.9 1.9-6 1.7-3.2-.6-2.2-6.4-6.4-5.5-2.3.4-2.7 3.6-3.9 4.9L19.7 1c-.5-.8-2.3-1.3-2.8 0-.6 1.5-4.6 12.4-6.2 11.6-.6-.2-.5-3-.8-3.5-.2-1-1-2.2-1.9-2.7-.6-.5-1.9-.1-2.1.6-.9 2.2-2.7 4.1-5 4.9-1.9 1-.4 3.7 1.5 2.7 2.1-.9 3.6-2.2 4.7-3.9.2 1.1.3 2.5.8 3.5.7 1.4 2.1 2 3.5 1.7 2-.3 2.8-2.2 3.7-3.7 1.2-2.5 2.2-5.1 3.4-7.6l3.6 5.5c.4.6.9 1 1.6.8 2.2-.6 2.3-2.5 3.6-4.1.1-.2.4-.9.6-1 1-.3.9 1 1.3 1.6.3 1 1 1.9 1.7 2.6 1.9 1.2 4.4 1.3 6.6.5 1.2-.4 7.8-2.9 7.3.3-.3 1.9 2.9 1.9 3.1-.2z"></path></svg><p>' +
           description +
-          '</p></div><p class="gg-c-cards__label" aria-label="Category">Click to copy</p></article></button></li>';
+          '</p></div><p class="gg-c-cards__label" aria-label="Category">' +
+          (version ? 'v' + version + (lastModified ? ' - Updated ' + lastModified + '' : '') : 'Click to copy') +
+          '</p></article></button></li>';
 
         cont.insertAdjacentHTML('beforeend', html);
       }
@@ -778,7 +817,9 @@
             srcPrefix + image.filename + '.preview' + image.ext + '?v=' + image.version,
             srcPrefix + image.filename + '.lg-preview' + image.ext + '?v=' + image.version,
             siteUrl + srcPrefix + image.filename + image.ext + '?v=' + image.version,
-            image.communityUrl
+            image.communityUrl,
+            image.version,
+            image.lastModified
           );
         });
 
