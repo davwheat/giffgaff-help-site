@@ -137,3 +137,40 @@ sup {
     }
   }
 }
+
+body[data-selected-panel='images'] {
+  #video-container,
+  #video-header {
+    display: none;
+  }
+
+  .selected-pane-text {
+    &:after {
+      display: inline-block;
+      content: 'images';
+    }
+  }
+}
+
+body[data-selected-panel='videos'] {
+  #image-container,
+  #image-header {
+    display: none;
+  }
+
+  .selected-pane-text {
+    &:after {
+      display: inline-block;
+      content: 'videos';
+    }
+  }
+}
+
+.selected-pane-text {
+  display: inline-block;
+}
+
+#video-header,
+#image-header {
+  margin-top: 0;
+}
