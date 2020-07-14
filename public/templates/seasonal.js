@@ -12,7 +12,23 @@ Uninstall the app and switch networks. **You have been permanently barred from u
 
 **The agents can only get your your PAC. They cannot remove the permanent bar.**
 
+### I want to make a format complaint
+
+^(Click the box below to read this section)
+
+[spoiler]
+You can file a complaint here: https://www.giffgaff.com/support/complaints
+
+The giffgaff complaints procedure is your second-to-last option before the Ombudsman.
+
+Ensure you explain any circumstances which you believe may help your case.
+
+It's very likely giffgaff will reaffirm their position on your "perma-bar". You should ask for a deadlock letter at this point. At this point, you can drop the issue, or escalate your issue to the [Ombudsman Services](https://www.ombudsman-services.org/).
+[/spoiler]
+
 ### Why is this against the T's and C's? How does it work?
+
+^(Click the box below to read this section)
 
 [spoiler]
 It texts numbers belonging to networks other than the one you're using. When a message is sent to a different network to yours', your network is charged what is called a "termination charge". This can be seen as a small charge in return for them directing your message to the right place, like the price of a stamp in the post.
