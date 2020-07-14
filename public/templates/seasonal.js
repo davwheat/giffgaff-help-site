@@ -34,12 +34,7 @@ If the above is right, Mofono end up with large amounts of numbers across all ma
 - We'll all end up with price rises if it was allowed
 
 Myself and @i_am_sy worked this out last night.
-[/spoiler]
-
-If you still need help, let us know by clicking the **Reply** button under my message.
-
-Stay safe,
-David`,
+[/spoiler]`,
   },
   {
     button: `No payback!`,
