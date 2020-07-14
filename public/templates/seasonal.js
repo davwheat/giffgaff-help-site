@@ -19,6 +19,8 @@ It texts numbers allocated to networks other than the one you're using, causing 
 
 As the message is basically garbage data, the termination fee is for nothing, the SMS gets thrown away by the other network or the receiver's device/server.
 
+These numbers used by Mofono also have a higher termination fee. Instead of charging you, the member, giffgaff swallow up this cost and provide the texts as part of your bundle.
+
 It's a question of how Mofono make money... The receiving networks are the ones who are getting the money, so how does that transfer over to Mofono? At about 2 Euro cents per SMS (in July 2018), Mofono give you 0.45p/SMS. All the rest is shared between the receiving network and Mofono it seems.
 
 @i_am_sy's thought is that Mofono may have bought a defunct MVNO or two. That means they'd take over the contract with the MNO and convince them to agree to a deal where they get part of the termination charge revenue. The MNO can't back out, else they'd be breaking the contract, meaning they are stuck Mofono abusing their services.
@@ -28,7 +30,7 @@ If the above is right, Mofono end up with 100k numbers (07xxx 000000 - 07xxx 999
 #### In a nutshell...
 - **You will be barred if you use it**
 - It spams texts every 5 mins to other networks
-- giffgaff get charged about 2 euro cents for each of these messages (which is a lot on the already thin margins)
+- giffgaff get charged at least 2 euro cents for each of these messages (which is a lot on the already thin margins)
 - Mofono end up with a bunch of profit
 - You end up with barely anything in comparison
 - We'll all end up with price rises if it was allowed
