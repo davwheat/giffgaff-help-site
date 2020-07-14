@@ -10,7 +10,7 @@ The app (Mofono) has been [noted by giffgaff](https://community.giffgaff.com/d/3
 
 The app counts as automated usage as it isn't you actually sending the texts, it's an app spamming messages. If you use it, you will almost certainly be barred from giffgaff's services.
 
-Uninstall the app and [contact the agents](https://support2.giffgaff.com/app/ask/Calls-texts-and-data/Calls-texts-arent-working/form), and they should remove the bar. They should respond within 24 hours, but due to many people being affected by this, it might take up to 48 hours, plus an extra 24 hours for the bar to actually be removed.
+Uninstall the app and [contact the agents](https://support2.giffgaff.com/app/ask/Calls-texts-and-data/My-services-arent-working/form), and they should remove the bar. They should respond within 24 hours, but due to many people being affected by this, it might take up to 48 hours, plus an extra 24 hours for the bar to actually be removed.
 
 ### Why is this against the T's and C's? How does it work?
 
