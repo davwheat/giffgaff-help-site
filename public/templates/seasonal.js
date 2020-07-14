@@ -1,42 +1,45 @@
 const seasonalTemplates = [
   {
     button: `Mofono`,
-    text: `#### Have you been using an app called Mofono?
-    
-The app (Mofono) has been [noted by giffgaff](https://community.giffgaff.com/d/33146679-suspensions-for-text-message-abuse-what-you-need-to-know) and the use of it is against [section 3 of the T's & C's](https://www.giffgaff.com/terms) which you confirmed you'd read when you joined.
+    text: `If you've been using the Mofono app, you have been breaching [section 3 of giffgaff's T's & C's](https://www.giffgaff.com/terms) which you confirmed you'd read when you joined, and you would regularly check for updates.
 
 > ... you will not use or permit anyone else to use your SIM Card:
 > a) For any form of **automated usage of mobile services**;
 
 The app counts as automated usage as it isn't you actually sending the texts, it's an app spamming messages. If you use it, you will almost certainly be barred from giffgaff's services.
 
-Uninstall the app and [contact the agents](https://support2.giffgaff.com/app/ask/Calls-texts-and-data/My-services-arent-working/form), and they should remove the bar. They should respond within 24 hours, but due to many people being affected by this, it might take up to 48 hours, plus an extra 24 hours for the bar to actually be removed.
+Uninstall the app and switch networks. **You have been permanently barred from using giffgaff.** To get your PAC code, you will need to [contact the agents](https://support2.giffgaff.com/app/ask/Number-transfers/Getting-a-PAC/form).
+
+**The agents can only get your your PAC. They cannot remove the permanent bar.**
 
 ### Why is this against the T's and C's? How does it work?
 
 [spoiler]
-It texts numbers allocated to networks other than the one you're using, causing O2/giffgaff to be charged an SMS termination fee.
+It texts numbers belonging to networks other than the one you're using. When a message is sent to a different network to yours', your network is charged what is called a "termination charge". This can be seen as a small charge in return for them directing your message to the right place, like the price of a stamp in the post.
 
-As the message is basically garbage data, the termination fee is for nothing, the SMS gets thrown away by the other network or the receiver's device/server.
+Initially, the app asks its "home server" for a list of all the mobile numbers it has, excluding those on your network. Every 5 minutes, it picks a random number and fires off a text message filled with useless, unimportant data.
 
-These numbers used by Mofono also have a higher termination fee. Instead of charging you, the member, giffgaff swallow up this cost and provide the texts as part of your bundle.
+As the message is basically garbage data (a unique user ID, the (incorrectly generated) date, and 100 random characters), the termination fee is for nothing, the SMS gets thrown away by the other network or the receiver's device/server.
 
-It's a question of how Mofono make money... The receiving networks are the ones who are getting the money, so how does that transfer over to Mofono? At about 2 Euro cents per SMS (in July 2018), Mofono give you 0.45p/SMS. All the rest is shared between the receiving network and Mofono it seems.
+**You might ask how Mofono make money from this?** They likely bought number ranges from mobile networks, on the agreement that they will charge a certain termination fee for the message. The network keeps the normal amount of that, and Mofono take the rest. This is how they make their money and pass (very very minute) amounts on to you (about 0.45p/text).
 
-@i_am_sy's thought is that Mofono may have bought a defunct MVNO or two. That means they'd take over the contract with the MNO and convince them to agree to a deal where they get part of the termination charge revenue. The MNO can't back out, else they'd be breaking the contract, meaning they are stuck Mofono abusing their services. If this is right, Mofono end up with 100k numbers (07xxx 000000 - 07xxx 999999), a share of the SMS termination fees, and access to the main network's systems. Remember it's all assumptions and guesswork at the moment.
-
-They could also be faking their numbers as being abroad. That way, the charge gets routed abroad and giffgaff are charged by the foreign networks termination fees, which are likely higher than the UK networks', turning that foreign network a humongous profit for "delivering" texts.
+If the above is right, Mofono end up with large amounts of numbers across all major networks, a share of the SMS termination fees, access to the main network's systems, and a way to get your services barred.
 
 #### In a nutshell...
 - **You will be barred if you use it**
-- It spams texts every 5 mins to other networks
-- giffgaff get charged at least 2 euro cents for each of these messages (which is a lot on the already thin margins)
+- It sends texts every 5 minutes to other networks
+- giffgaff get charged exorbitant amounts for each of these messages (which is a lot on the already thin margins)
 - Mofono end up with a bunch of profit
 - You end up with barely anything in comparison
 - We'll all end up with price rises if it was allowed
 
-Myself and @i_am_sy worked this out at about 1 am last night. :P
-[/spoiler]`,
+Myself and @i_am_sy worked this out last night.
+[/spoiler]
+
+If you still need help, let us know by clicking the **Reply** button under my message.
+
+Stay safe,
+David`,
   },
   {
     button: `No payback!`,
