@@ -704,10 +704,6 @@ If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are l
 
 ${videos.sim_swap}
 
-### SIM swap poster
-
-${images.sim_swap_poster}
-
 [/spoiler]`,
   },
   {
