@@ -1,7 +1,9 @@
 const seasonalTemplates = [
   {
     button: `Mofono`,
-    text: `The app (Mofono) has been [noted by giffgaff](https://community.giffgaff.com/d/33146679-suspensions-for-text-message-abuse-what-you-need-to-know) and the use of it is against [section 3 of the T's & C's](https://www.giffgaff.com/terms) which you confirmed you'd read when you joined.
+    text: `#### Have you been using an app called Mofono?
+    
+The app (Mofono) has been [noted by giffgaff](https://community.giffgaff.com/d/33146679-suspensions-for-text-message-abuse-what-you-need-to-know) and the use of it is against [section 3 of the T's & C's](https://www.giffgaff.com/terms) which you confirmed you'd read when you joined.
 
 > ... you will not use or permit anyone else to use your SIM Card:
 > a) For any form of **automated usage of mobile services**;
