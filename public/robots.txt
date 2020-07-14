@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: 
+Disallow: /templates/
+Disallow: /realme/files/
+
+Sitemap: https://giffgaff.davwheat.dev/sitemap.xml
