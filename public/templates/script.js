@@ -3,11 +3,18 @@ const footer = `If you still need help, let us know by clicking the **Reply** bu
 Stay safe,
 David`;
 
-const imageLicense = `Image licensed under CC-BY-NC-ND 4.0. Attribution to be made to David Wheatley (mrjeeves), with a link to my profile on giffgaff. License terms: https://bit.ly/gglicense`;
+const images = {
+  replacement_sim: `![Image of the envelope which contains a replacement SIM after a member reports their phone or SIM as lost or stolen.](https://community.giffgaff.com/assets/files/2020-07-08/1594223104-541542-lost-sim-envelope.png)
+  ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
+  start_goodybag_early: `![Screenshot showing the "Start my next goodybag now" button on a members' dashboard their data allowance drops below 100 MB.](https://community.giffgaff.com/assets/files/2020-07-08/1594223121-623470-start-goodybag-early.png)
+  ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
+  sim_swap_poster: `![Image showing the 4 steps of performing a SIM swap: ordering a new SIM, activating the replacement, confirming the swap, and waiting 24 hours.](https://community.giffgaff.com/assets/files/2020-07-10/1594403407-382737-how-to-sim-swap.png)
+  ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
+};
 
-const imageUrls = {
-  replacement_sim: `https://community.giffgaff.com/assets/files/2020-07-07/1594161074-399376-lost-sim-envelope.png`,
-  start_goodybag_early: `https://community.giffgaff.com/assets/files/2020-07-07/1594161002-713949-start-a-new-goodybag-early.png`,
+const videos = {
+  sim_swap: `[center]https://youtube.com/watch?v=EpZgXUMgcmw
+  ^(^(Video from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))[/center]`,
 };
 
 let templates = [
@@ -136,7 +143,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-![${imageLicense}](${imageUrls.replacement_sim})
+${images.replacement_sim}
 
 If you find your phone again, you'll need to contact a giffgaff agent to get the device bar removed here (it can take a few days): https://support2.giffgaff.com/app/ask/My-account/Place-or-remove-an-IMEI-bar/form
 
@@ -157,7 +164,7 @@ giffgaff will send you a new SIM via 1st Class Post to use in a phone of your ch
 
 **The new SIM will arrive in packaging shown below.**
 
-![${imageLicense}](${imageUrls.replacement_sim})
+${images.replacement_sim}
 
 After barring your SIM, you'll have a replacement SIM sent to your address. Until you receive this, it will look like you haven't activated a SIM on your dashboard. Follow the instructions inside the replacement SIM packaging to reactivate your giffgaff account.`,
   },
@@ -183,7 +190,15 @@ The SIM swap process itself can take up to 24 hours to complete but usually only
 
 If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
 
-See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken`,
+See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-broken
+
+### SIM swap video tutorial
+
+${videos.sim_swap}
+
+### SIM swap poster
+
+${images.sim_swap_poster}`,
   },
   {
     title: 'Return Phone',
@@ -415,7 +430,7 @@ If you want to start your goodybag early, click on the 'Start my next goodybag n
 
 By starting your goodybag early, you will lose all remaining allowances.
 
-![${imageLicense}](${imageUrls.start_goodybag_early})`,
+${images.start_goodybag_early}`,
   },
   {
     title: 'lol u bad no helpline',
@@ -684,6 +699,14 @@ The SIM swap process itself can take up to 24 hours to complete but usually only
 #### You do not need to make a payment to perform a SIM swap.
 
 If you get to a top-up step, [color=red]**STOP**[/color] and make sure you are logged into the giffgaff account which is linked to your phone number.
+
+### SIM swap video tutorial
+
+${videos.sim_swap}
+
+### SIM swap poster
+
+${images.sim_swap_poster}
 
 [/spoiler]`,
   },
