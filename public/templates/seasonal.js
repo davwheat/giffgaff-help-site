@@ -1,5 +1,34 @@
 const seasonalTemplates = [
   {
+    button: `Mofono`,
+    text: `The app (Mofono) has been [noted by giffgaff](https://community.giffgaff.com/d/33146679-suspensions-for-text-message-abuse-what-you-need-to-know) and the use of it is against [section 3 of the T's & C's](https://www.giffgaff.com/terms) which you confirmed you'd read when you joined.
+
+> ... you will not use or permit anyone else to use your SIM Card:
+> a) For any form of **automated usage of mobile services**;
+
+The app counts as automated usage as it isn't you using it, it's an app spamming messages. If you use it, you will almost certainly be barred from giffgaff's services.
+
+Uninstall the app and [contact the agents](https://support2.giffgaff.com/app/ask/Calls-texts-and-data/Calls-texts-arent-working/form), and they should remove the bar. They should respond within 24 hours, but due to many people being affected by this, it might take up to 48 hours, plus an extra 24 hours for the bar to actually be removed.
+
+### Why is this against the T's and C's? How does it work?
+
+[spoiler]
+It texts numbers allocated to networks other than the one you're using, causing giffgaff to be charged an SMS termination fee.
+
+As the message is basically garbage data, the termination fee is for nothing, the SMS gets thrown away by the other network or the receiver's device/server.
+
+It's a question of how Mofono make money... The receiving networks are the ones who are getting the money, so how does that transfer over to Mofono? At about 2 Euro cents per SMS (in July 2018), Mofono give you 0.45p/SMS. All the rest is shared between the receiving network and Mofono it seems.
+
+In a nutshell...
+- **You will be barred if you use it**
+- It spams texts every 5 mins to other networks
+- giffgaff get charged about 2 euro cents for each of these messages (which is a lot on the already thin margins)
+- We'll all end up with price rises if it was allowed
+
+Myself and @i_am_sy worked this out at about 1 am last night. :P
+[/spoiler]`,
+  },
+  {
     button: `No payback!`,
     text: `Some people's payback is still being paid out.
 
