@@ -8,11 +8,13 @@ const seasonalTemplates = [
 
 The app counts as automated usage as it isn't you actually sending the texts, it's an app spamming messages. If you use it, you will almost certainly be barred from giffgaff's services.
 
-Uninstall the app and switch networks. **You have been permanently barred from using giffgaff.** To get your PAC code, you will need to [contact the agents](https://support2.giffgaff.com/app/ask/Number-transfers/Getting-a-PAC/form).
+Uninstall the app immediately. The bar will be permanent which means you won't be able to use giffgaff's services anymore, unfortunately. Sorry about that.
 
-**The agents can only get your your PAC. They cannot remove the permanent bar.**
+To keep your number when switching networks, you'll need to [contact the agents](https://support2.giffgaff.com/app/ask/Number-transfers/Getting-a-PAC/form) for your PAC code.
 
-### I want to make a format complaint
+You can fight the bar if you wish by [contacting the agents](https://support2.giffgaff.com/app/ask/Calls-texts-and-data/My-services-arent-working/form). You may be able to explain any extenuating circumstances.
+
+### I want to make a formal complaint
 
 ^(Click the box below to read this section)
 
