@@ -114,11 +114,9 @@ ${
 </div>
 
 <nav class="gg-c-website-header__sm-screen-nav">
-<ul>      
-${menuItems
+<ul>${menuItems
   .map(
-    items => `
-<li class="gg-c-website-header__sm-screen-item">
+    items => `<li class="gg-c-website-header__sm-screen-item">
 <details class="gg-c-website-header__sm-screen-accordion">
 <summary class="gg-c-website-header__sm-screen-category">
 <span class="gg-c-website-header__sm-screen-category-icon"></span>
@@ -147,9 +145,7 @@ ${items.items
 </details>
 </li>`
   )
-  .join('')}
-
-</ul>
+  .join('')}</ul>
 </nav>
 </header>
 <section id="unofficial">
