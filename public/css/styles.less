@@ -26,6 +26,22 @@ body {
   padding: 0;
 }
 
+ul.gg-c-cards {
+  grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
+}
+
 #unofficial {
   background: #00528a;
   color: #fff;
