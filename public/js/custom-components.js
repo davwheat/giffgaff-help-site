@@ -696,7 +696,7 @@ ggHeader.prototype.connectedCallback = function () {
     menuItems
       .map(function (items) {
         return (
-          '| <li class="gg-c-website-header__sm-screen-item"><details class="gg-c-website-header__sm-screen-accordion"><summary class="gg-c-website-header__sm-screen-category"><span class="gg-c-website-header__sm-screen-category-icon"></span> ' +
+          '<li class="gg-c-website-header__sm-screen-item"><details class="gg-c-website-header__sm-screen-accordion"><summary class="gg-c-website-header__sm-screen-category"><span class="gg-c-website-header__sm-screen-category-icon"></span> ' +
           items.title +
           '</summary><ul class="gg-c-website-header__sm-screen-sub-menu"> ' +
           items.items
