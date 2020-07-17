@@ -10,6 +10,28 @@
   font-weight: 700;
 }
 
+// Breadcrumbs hide arrow on last item
+
+@media (max-width: 992px) {
+  .gg-c-breadcrumbs__crumb:after {
+    display: none;
+  }
+
+  .gg-c-breadcrumbs__crumb {
+    &:first-child {
+      &:after {
+        display: inline-block;
+      }
+    }
+  }
+
+  .gg-c-breadcrumbs__crumb:nth-child(1):nth-last-child(2) {
+    &:after {
+      display: none;
+    }
+  }
+}
+
 // -------------
 
 // GIFFGAFF SCROLLBARS
