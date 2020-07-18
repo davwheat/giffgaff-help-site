@@ -821,6 +821,13 @@ function showModal(modal) {
   makeModal(modal);
   document.body.style.overflow = 'hidden';
   modal.showModal();
+
+  // stop video playback if one exists by removing video embed content
+  modal.addEventListener('close', function () {
+    const v = modal.querySelector('#video-embed-container');
+
+    if (v) v.innerHTML = '';
+  });
 }
 
 function showModalById(id) {
