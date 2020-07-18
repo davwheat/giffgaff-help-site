@@ -697,11 +697,7 @@
       </div>
       <div class="gg-c-modal__content">
         <p class="gg-u-text-speak-up gg-u-mb-tiny">Video</p>
-        <div
-          class="gg-u-mb-small"
-          style="position: relative; width: 100%; overflow: hidden; padding-bottom: 56.25%; height: 0;"
-          id="video-embed-container"
-        ></div>
+        <div class="gg-u-mb-small gg-c-video" id="video-embed-container"></div>
         <label for="vidMarkdown" class="gg-c-form__label" id="vidMarkdown-message">Markdown (for use on forum)</label>
         <div class="gg-c-form__element gg-c-input-with-button">
           <textarea
@@ -1152,7 +1148,9 @@
         const youtubeId = card.getAttribute('data-youtube-id');
 
         const iframe =
-          '<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/' +
+
+        let iframe =
+          '<iframe class="gg-c-video__iframe" src="https://www.youtube-nocookie.com/embed/' +
           youtubeId +
           '?autoplay=0&origin=https://giffgaff.davwheat.dev&disablekb=1&controls=1&modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>';
 
