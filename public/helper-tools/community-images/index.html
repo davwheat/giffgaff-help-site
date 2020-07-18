@@ -1055,8 +1055,6 @@
 
           const previewThumb = '/thumbnail.preview.png';
 
-          console.log(video);
-
           CreateVideoCard(
             escapeHtml(video.name),
             escapeHtml(video.description),
@@ -1071,7 +1069,6 @@
 
         document.querySelectorAll('.community-video-card').forEach(function (cardNode) {
           cardNode.addEventListener('click', DisplayVideoCodeModal);
-          console.log('CLICK');
         });
       }
 
