@@ -1120,14 +1120,34 @@
         const card = e.currentTarget;
 
         const mp4src = card.getAttribute('data-src');
+        const thumb = card.getAttribute('data-preview-src');
+        const mp4previewsrc = card.getAttribute('data-lg-preview-src');
         const youtubeId = card.getAttribute('data-youtube-id');
 
-        const iframe =
+        document.querySelector('#video-embed-container').classList.remove('gg-c-video--hide-splash');
 
         let iframe =
           '<iframe class="gg-c-video__iframe" src="https://www.youtube-nocookie.com/embed/' +
           youtubeId +
           '?autoplay=0&origin=https://giffgaff.davwheat.dev&disablekb=1&controls=1&modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>';
+
+        if (!window.__ytUrls) {
+          iframe =
+            '<video class="gg-c-video__iframe" controls poster="' +
+            thumb +
+            '"><source src="https://giffgaff.davwheat.dev' +
+            mp4previewsrc +
+            '" type="video/mp4"></video>' +
+            '<button onclick="this.parentNode.querySelector(\'video\').play(); this.parentNode.classList.add(\'gg-c-video--hide-splash\')" class="gg-c-video__splash">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="gg-c-video__play-icon" fill-opacity=".9">' +
+            '<g fill-rule="nonzero" class="gg-c-video__play-icon-shine">' +
+            '<rect width="6.86" height="1.81" x="41.14" y="22.64" rx=".91"/>' +
+            '<path d="M13.67 1.66l2.6 4.75c.23.43.09.97-.33 1.22a.83.83 0 0 1-1.16-.31l-2.6-4.75a.91.91 0 0 1 .33-1.22.83.83 0 0 1 1.16.31zM36.84 3.48l-2.6 4.74a.83.83 0 0 1-1.16.32.91.91 0 0 1-.32-1.22l2.6-4.75a.83.83 0 0 1 1.15-.31c.42.25.56.79.33 1.22zM13.9 46.75L16.5 42a.91.91 0 0 0-.33-1.22.83.83 0 0 0-1.16.31l-2.6 4.75a.91.91 0 0 0 .33 1.22.83.83 0 0 0 1.16-.31zM37.07 44.94l-2.6-4.75a.83.83 0 0 0-1.16-.3.91.91 0 0 0-.32 1.2l2.6 4.76a.83.83 0 0 0 1.15.3.91.91 0 0 0 .33-1.21z"/>' +
+            '<rect width="6.86" height="1.81" y="22.64" rx=".91"/>' +
+            '</g>' +
+            '<path d="M0 .38V48l48-23.81z"/>' +
+            '</svg><span class="gg-u-screen-reader-only">Play video</span></button>';
+        }
 
         let url = 'https://giffgaff.davwheat.dev' + mp4src;
 
