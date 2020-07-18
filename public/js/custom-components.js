@@ -1,3 +1,4 @@
+// Custom components polyfill
 (function () {
   if (window['force-no-ce-shim']) {
     return;
@@ -659,18 +660,10 @@ const menuItems = [
 function ggHeader() {
   return Reflect.construct(HTMLElement, [], this.constructor);
 }
-function ggFooter() {
-  return Reflect.construct(HTMLElement, [], this.constructor);
-}
 
 ggHeader.prototype = Object.create(HTMLElement.prototype);
-ggFooter.prototype = Object.create(HTMLElement.prototype);
-
 ggHeader.prototype.constructor = ggHeader;
-ggFooter.prototype.constructor = ggFooter;
-
 Object.setPrototypeOf(ggHeader, HTMLElement);
-Object.setPrototypeOf(ggFooter, HTMLElement);
 
 ggHeader.prototype.connectedCallback = function () {
   this.innerHTML =
@@ -717,34 +710,26 @@ ggHeader.prototype.connectedCallback = function () {
     '</ul></nav></header><section id="unofficial"><div class="gg-o-page-section"><strong>Please note:</strong> this website is run by a member of the giffgaff community and is not to be confused with <a class="gg-u-link" href="https://giffgaff.com/" target="_blank" rel="noreferrer noopener">giffgaff.com</a></div></section>';
 };
 
-ggFooter.prototype.connectedCallback = function () {
-  this.innerHTML = `
-<footer class="gg-t-black">
-<div class="gg-o-page-section">
-<p class="gg-u-text-speak-up" style="padding-bottom: 0px">
-giffgaff runs on the O2 network
-</p>
-<p class="gg-u-text-whisper">
-&copy; 2020 David Wheatley
-</p>
-<p class="gg-u-text-whisper">
-This page is run by a member of the giffgaff community and does not
-represent the views or opinions of giffgaff Limited, nor its staff.
-giffgaff is the registered trademark of giffgaff&nbsp;Limited.
-</p>
-<a href="https://bit.ly/giffgaffmrjeeves" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferrer">
-<picture class="gg-b128-n256-r512">
-<source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png">
-<source media="(min-width: 550px and max-width: 727px)" srcset="/img/gg-img/aff-med.png">
-<source media="(max-width: 549px)" srcset="/img/gg-img/aff-small.png">
-<img src="/img/gg-img/aff-large.png" alt="Get 80 gigabytes data for just £20 per month.">
-</picture>
-</a>
-</div>
-</footer>
-`;
+function ggFooter() {
+  return Reflect.construct(HTMLElement, [], this.constructor);
+}
 
-  (function () {
+ggFooter.prototype = Object.create(HTMLElement.prototype);
+ggFooter.prototype.constructor = ggFooter;
+Object.setPrototypeOf(ggFooter, HTMLElement);
+
+// async support detection
+document.createElement('div').innerHTML =
+  "<img src=\"data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E%0A\" onload=\"async ()=>{};window.__isAsyncAvailable=true;console.log('loaded')\">";
+
+if (window.__isAsyncAvailable) {
+  ggFooter.prototype.connectedCallback = function () {
+    this.innerHTML =
+      '<footer class="gg-t-black"><div class="gg-o-page-section"><p class="gg-u-text-speak-up" style="padding-bottom: 0px">&copy; 2020 David Wheatley</p>' +
+      '<p class="gg-u-text-whisper">The community website run by <a class="gg-u-link" href="https://community.giffgaff.com/u/mrjeeves?utm_source=mrjeeves" target="_blank" rel="noopener noreferrer">mrjeeves</a></p>' +
+      '<p class="gg-u-text-whisper">This page is run by a member of the giffgaff community and does not represent the views or opinions of giffgaff Limited, nor its staff. giffgaff is the registered trademark of giffgaff&nbsp;Limited.</p>' +
+      '<a href="https://bit.ly/giffgaffmrjeeves" class="footer-img" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferrer"><picture class="gg-b128-n256-r512"><source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png"><source media="(min-width: 550px and max-width: 727px)" srcset="/img/gg-img/aff-med.png"><source media="(max-width: 549px)" srcset="/img/gg-img/aff-small.png"><img src="/img/gg-img/aff-large.png" alt="Get 80 gigabytes data for just £20 per month."></picture></a></div></footer>';
+
     const websiteHeader = document.querySelector('.gg-c-website-header');
     const smNavTrigger = websiteHeader.querySelector('.gg-c-website-header__sm-nav-trigger');
     const smNav = websiteHeader.querySelector('.gg-c-website-header__sm-screen-nav');
@@ -753,8 +738,42 @@ giffgaff is the registered trademark of giffgaff&nbsp;Limited.
       smNavTrigger.classList.toggle('gg-c-website-header__sm-nav-trigger--active');
       smNav.classList.toggle('gg-c-website-header__sm-screen-nav--open');
     };
-  })();
-};
+  };
+} else {
+  ggFooter.prototype.connectedCallback = async function () {
+    const versionInfo = await (await fetch('/version-info.json')).json();
+
+    const code = versionInfo.version;
+
+    const date = new Date(versionInfo.date);
+    var dd = String(date.getDate());
+    var mm = String(date.getMonth() + 1);
+    var yy = String(date.getFullYear()).substr(2); // last 2 year digits
+
+    const dateString = dd + '/' + mm + '/' + yy;
+
+    console.log(dateString);
+
+    this.innerHTML =
+      '<footer class="gg-t-black"><div class="gg-o-page-section"><p class="gg-u-text-speak-up" style="padding-bottom: 0px">&copy; 2020 David Wheatley</p>' +
+      '<p class="gg-u-text-whisper">Version ' +
+      code +
+      ' - Last updated ' +
+      dateString +
+      '</p>' +
+      '<p class="gg-u-text-whisper">This page is run by a member of the giffgaff community and does not represent the views or opinions of giffgaff Limited, nor its staff. giffgaff is the registered trademark of giffgaff&nbsp;Limited.</p>' +
+      '<a href="https://bit.ly/giffgaffmrjeeves" class="footer-img" title="Get a giffgaff SIM with £5 free credit" target="_blank" rel="noopener noreferrer"><picture class="gg-b128-n256-r512"><source media="(min-width: 728px)" srcset="/img/gg-img/aff-large.png"><source media="(min-width: 550px and max-width: 727px)" srcset="/img/gg-img/aff-med.png"><source media="(max-width: 549px)" srcset="/img/gg-img/aff-small.png"><img src="/img/gg-img/aff-large.png" alt="Get 80 gigabytes data for just £20 per month."></picture></a></div></footer>';
+
+    const websiteHeader = document.querySelector('.gg-c-website-header');
+    const smNavTrigger = websiteHeader.querySelector('.gg-c-website-header__sm-nav-trigger');
+    const smNav = websiteHeader.querySelector('.gg-c-website-header__sm-screen-nav');
+
+    smNavTrigger.onclick = function () {
+      smNavTrigger.classList.toggle('gg-c-website-header__sm-nav-trigger--active');
+      smNav.classList.toggle('gg-c-website-header__sm-screen-nav--open');
+    };
+  };
+}
 
 window.customElements.define('gg-header', ggHeader);
 window.customElements.define('gg-footer', ggFooter);
