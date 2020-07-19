@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://giffgaff.davwheat.dev/</loc>
-        <lastmod>2020-07-14T11:43:30.766Z</lastmod>
+        <lastmod>2020-07-18T21:06:08.241Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/bits-and-bobs</loc>
@@ -22,7 +22,7 @@
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb</loc>
-        <lastmod>2020-07-18T12:15:25.018Z</lastmod>
+        <lastmod>2020-07-19T17:55:37.194Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb/roaming-in-eu</loc>
@@ -45,16 +45,16 @@
         <lastmod>2020-07-16T11:39:35.629Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
-        <lastmod>2020-07-18T18:57:24.371Z</lastmod>
-    </url>
-    <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap</loc>
         <lastmod>2020-07-09T02:22:26.780Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap/logged-out</loc>
         <lastmod>2020-07-09T02:22:26.796Z</lastmod>
+    </url>
+    <url>
+        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
+        <lastmod>2020-07-18T18:57:24.371Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>

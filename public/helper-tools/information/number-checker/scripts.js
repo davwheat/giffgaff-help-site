@@ -147,15 +147,10 @@ function errorForm() {
 }
 
 function infoForm() {
-  console.log('info');
-
   document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element gg-c-form__element--info';
 }
 
 function validForm() {
-  console.log('valid');
-  console.trace();
-
   document.querySelector('input#phoneNumber').parentElement.classList.value = 'gg-c-form__element gg-c-form__element--valid';
 }
 

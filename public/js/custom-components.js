@@ -720,7 +720,7 @@ Object.setPrototypeOf(ggFooter, HTMLElement);
 
 // async support detection
 document.createElement('div').innerHTML =
-  "<img src=\"data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E%0A\" onload=\"async ()=>{};window.__isAsyncAvailable=true;console.log('loaded')\">";
+  '<img src="data:image/svg+xml,%3C%3Fxml version=\'1.0\'%3F%3E%3Csvg xmlns=\'http://www.w3.org/2000/svg\'/%3E%0A" onload="async ()=>{};window.__isAsyncAvailable=true">';
 
 if (window.__isAsyncAvailable) {
   ggFooter.prototype.connectedCallback = function () {
@@ -751,8 +751,6 @@ if (window.__isAsyncAvailable) {
     var yy = String(date.getFullYear()).substr(2); // last 2 year digits
 
     const dateString = dd + '/' + mm + '/' + yy;
-
-    console.log(dateString);
 
     this.innerHTML =
       '<footer class="gg-t-black"><div class="gg-o-page-section"><p class="gg-u-text-speak-up" style="padding-bottom: 0px">&copy; 2020 David Wheatley</p>' +
