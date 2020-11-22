@@ -891,4 +891,17 @@ Agents always aim to respond within 24 hours (in some busy periods it can take u
 
 When you get a response, you will receive a text and email alert telling you. You can view the response either from the bottom of your giffgaff dashboard, or by clicking this link: https://www.giffgaff.com/support/questions`,
   },
+  {
+    title: `5G pause`,
+    addFooter: true,
+    content: `
+
+5G on giffgaff *did* launch, but it was then "unlaunched" as it wasn't providing the experience members deserved.
+
+Some people managed to order and receive 5G SIMs (including me) but giffgaff have since disabled 5G on their network. These SIMs can be used as normal on 4G and below.
+
+There's no ETA on when 5G will be relaunched. Please see [this post](https://community.giffgaff.com/d/22269542-changes-and-new-features-helpers-updates-thread/83) for more details.
+
+When 5G launched, only golden goodybags were usable on 5G. Members on other goodybags were only able to use 4G and lower. It's most likely this restriction will still be in place when 5G is re-launched, but we don't know for sure.`,
+  },
 ];
