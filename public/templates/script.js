@@ -6,7 +6,7 @@ David`;
 const images = {
   replacement_sim: `![Image of the envelope which contains a replacement SIM after a member reports their phone or SIM as lost or stolen.](https://community.giffgaff.com/assets/files/2020-07-08/1594223104-541542-lost-sim-envelope.png)
   ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
-  start_goodybag_early: `![Screenshot showing the "Start my next goodybag now" button on a members' dashboard their data allowance drops below 100 MB.](https://community.giffgaff.com/assets/files/2020-07-08/1594223121-623470-start-goodybag-early.png)
+  start_goodybag_early: `![Screenshot showing the "Start my next goodybag now" button on a members' dashboard their data allowance drops below 100 MB.](https://community.giffgaff.com/assets/files/2021-01-20/1611128531-796448-start-goodybag-early.png)
   ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
   sim_swap_poster: `![Image showing the 4 steps of performing a SIM swap: ordering a new SIM, activating the replacement, confirming the swap, and waiting 24 hours.](https://community.giffgaff.com/assets/files/2020-07-10/1594403407-382737-how-to-sim-swap.png)
   ^(^(Image from the [giffgaff unofficial community help website](https://giffgaff.davwheat.dev/helper-tools/community-images).))`,
