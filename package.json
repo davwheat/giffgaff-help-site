@@ -5,8 +5,8 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
-    "prettier": "^2.0.5",
-    "static-sitemap-cli": "https://github.com/davwheat/static-sitemap-cli.git"
+    "prettier": "^2.2.1",
+    "static-sitemap-cli": "^1.4.1"
   },
   "scripts": {
     "lint": "npm run prettier",
