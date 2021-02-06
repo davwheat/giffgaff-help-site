@@ -1,15 +1,15 @@
 const specialNumbers = {
-  '999': 'the Emergency Services',
-  '112': 'the Emergency Services',
-  '911': 'the Emergency Services',
+  999: 'the Emergency Services',
+  112: 'the Emergency Services',
+  911: 'the Emergency Services',
   '01189998819991197253': 'an Easter Egg',
-  '101': 'the Police non-emergency',
-  '111': 'the NHS non-emergency',
-  '105': 'the Powercut emergency',
-  '43430': 'a giffgaff member services',
-  '43431': 'a giffgaff member services',
-  '123': 'the talking clock',
-  '118118': 'a Directory Enquiries',
+  101: 'the Police non-emergency',
+  111: 'the NHS non-emergency',
+  105: 'the Powercut emergency',
+  43430: 'a giffgaff member services',
+  43431: 'a giffgaff member services',
+  123: 'the talking clock',
+  118118: 'a Directory Enquiries',
 };
 
 const normMinsPrice = '25p per minute';
