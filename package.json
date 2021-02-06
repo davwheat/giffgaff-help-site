@@ -11,7 +11,7 @@
   "scripts": {
     "lint": "npm run prettier",
     "prettier": "prettier --write \"**/*.{html,js,less,json}\"",
-    "build-sitemap": "cd public && sscli https://giffgaff.davwheat.dev --follow-noindex > sitemap.xml",
+    "build-sitemap": "cd public && static-sitemap-cli https://giffgaff.davwheat.dev --follow-noindex > sitemap.xml",
     "predeploy": "npm run lint && npm run build-sitemap"
   },
   "repository": {
