@@ -5,6 +5,7 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1",
     "static-sitemap-cli": "^1.4.1"
   },
@@ -12,7 +13,8 @@
     "lint": "npm run prettier",
     "prettier": "prettier --write \"**/*.{html,js,less,json}\"",
     "build-sitemap": "cd public && static-sitemap-cli https://giffgaff.davwheat.dev --follow-noindex > sitemap.xml",
-    "predeploy": "npm run lint && npm run build-sitemap"
+    "predeploy": "npm run lint && npm run build-sitemap",
+    "deploy": "gh-pages -b prod -d public -m \"Deploy website\""
   },
   "repository": {
     "type": "git",
