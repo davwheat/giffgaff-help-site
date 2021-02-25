@@ -75,7 +75,7 @@ const ggPrices = {
     goodybag: `${freeSvg} Free`,
   },
   'a pager': {
-    payg: `${phoneCallSvg}40p per minute`,
+    payg: `${phoneCallSvg} 20p per minute`,
     goodybag: `<span class="warn-text">${warnSvg} Not included</span>`,
   },
   'a corporate': {
