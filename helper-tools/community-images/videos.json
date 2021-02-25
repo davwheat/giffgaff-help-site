@@ -1,0 +1,12 @@
+{
+  "videos": [
+    {
+      "name": "How to perform a SIM swap",
+      "description": "Up-to-date video tutorial of how to perform a SIM swap in 2020. Includes: ordering a SIM, logging in, starting the swap, entering 2FA code, completing swap.",
+      "folder": "sim-swap",
+      "youtube": "EpZgXUMgcmw",
+      "version": 1,
+      "lastModified": "2020-07-11"
+    }
+  ]
+}
