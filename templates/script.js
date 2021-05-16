@@ -900,4 +900,58 @@ When you get a response, you will receive a text and email alert telling you. Yo
 
 To learn more about 5G on giffgaff, including how to order a shiny new 5G SIM card, see this page: https://giffgaff.com/5g-on-giffgaff`,
   },
+  {
+    title: `How community payback works`,
+    addFooter: true,
+    content: `
+
+The maximum you can earn purely from the community is £100 per month.
+
+### Basic payback
+
+Basic payback accounts for £15 of this limit, which is based off of data such as:
+- number of read posts
+- comments on blogs
+- comments on Labs
+- new Labs ideas
+- posts submitted
+- reactions from genuine members
+- best answers received
+
+These each score points which decide which one of 4 bands you'll be in:
+- Band 1 - £15
+- Band 2 - £10
+- Band 3 - £5
+- Band 4 - £1
+
+----
+
+### Enhanced payback
+
+Enhanced payback then totals the remaining £85, of which there are three ways to earn this:
+- Helping in Help and Support
+- Submitting, supporting or helping develop ideas
+- Starting or contributing towards great discussions on the community
+
+giffgaff look at the top contributors to H&S and apply a special formula.
+
+For people who have fewer than 50 posts and 10 BAs in H&S, you'll get a fixed amount of payback for every BA.
+
+For people who have greater than or equal to 50 posts or greater than or equal to 10 BAs:
+- Enhanced payback will be decided based on a ratio of discussions participated in and BAs received.
+  - Please note that it was changed from posts to discussions participated in since the Payback 2.0 thread was written.
+- If your ratio is **far** below a threshold, you will not receive enhanced payback and your basic payback may be reduced.
+- If your ratio is on par to other members, you'll get £5 or £10.
+- If your ratio is far above other members, you'll get £15 plus a small amount for each post and a bigger amount for each BA up to a max of £100 across the community.
+
+The base ratio in May 2015 was 6% BA rate for each post in H&S, but this has likely changed as the system was altered to be per discussion contributed to. On a good month, I usually aim for \~20% BA to discussions contributed ratio which tends to result in a high amount of enhanced payback.
+
+----
+
+### Other payback sources
+
+There are other ways to earn payback, such as referring members and other ad hoc or 'manual' payback which giffgaff and staff can choose to allocate as they'd like for things such as bug hunting/fixing, to helping with the Knowledgebase, and building cool tools around giffgaff.
+
+You can learn more about the calculations here: https://community.giffgaff.com/d/16650918-community-payback-2-0`,
+  },
 ];
