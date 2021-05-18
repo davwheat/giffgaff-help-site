@@ -13,12 +13,12 @@
         <lastmod>2021-02-06T16:54:27.438Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/examples</loc>
-        <lastmod>2021-02-06T16:54:28.844Z</lastmod>
-    </url>
-    <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools</loc>
         <lastmod>2021-02-06T16:54:31.360Z</lastmod>
+    </url>
+    <url>
+        <loc>https://giffgaff.davwheat.dev/examples</loc>
+        <lastmod>2021-02-06T16:54:28.844Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/kb</loc>
@@ -37,12 +37,16 @@
         <lastmod>2021-02-06T16:54:28.011Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/examples/html-emails</loc>
-        <lastmod>2021-02-06T16:54:28.755Z</lastmod>
+        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
+        <lastmod>2021-02-06T16:54:31.151Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/our-offer</loc>
         <lastmod>2021-02-06T16:54:29.390Z</lastmod>
+    </url>
+    <url>
+        <loc>https://giffgaff.davwheat.dev/examples/html-emails</loc>
+        <lastmod>2021-02-06T16:54:28.755Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/examples/sim-swap</loc>
@@ -53,15 +57,11 @@
         <lastmod>2021-02-06T16:54:30.547Z</lastmod>
     </url>
     <url>
-        <loc>https://giffgaff.davwheat.dev/helper-tools/community-images</loc>
-        <lastmod>2021-02-06T16:54:31.151Z</lastmod>
+        <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>
+        <lastmod>2021-05-16T16:47:24.555Z</lastmod>
     </url>
     <url>
         <loc>https://giffgaff.davwheat.dev/helper-tools/responses/buttons</loc>
         <lastmod>2021-02-06T16:54:31.751Z</lastmod>
-    </url>
-    <url>
-        <loc>https://giffgaff.davwheat.dev/helper-tools/information/number-checker</loc>
-        <lastmod>2021-05-16T16:47:24.555Z</lastmod>
     </url>
 </urlset>
