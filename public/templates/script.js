@@ -178,11 +178,11 @@ You can only complete a SIM swap can only between 4:30 AM and 9:30 PM.
 **Perform a SIM swap here:** https://www.giffgaff.com/profile/details#simswap
 
 You need any unactivated giffgaff SIM. You can get one from:
-- 1. a member's affiliate link (click my name at the top of this post)
-- 2. this link: https://www.giffgaff.com/orders/mgm
-- 3. your local shop (Tesco, Asda, Co-op, etc.) for under £1
+1. a member's affiliate link (click my name at the top of this post)
+2. this link: https://www.giffgaff.com/orders/mgm
+3. your local shop (Tesco, Asda, Co-op, etc.) for under £1
 
-Options 1 and 2 involve having a SIM sent to your house via 1st Class Post. It should arrive within 1-3 working days.
+Options 1 and 2 involve having a SIM sent to your house via 1st class post. It should arrive within 1-3 business days.
 
 The SIM swap process itself can take up to 24 hours to complete but usually only takes around 30 minutes.
 
@@ -194,11 +194,7 @@ See this guide for more info: https://www.giffgaff.com/help/articles/my-sim-is-b
 
 ### SIM swap video tutorial
 
-${videos.sim_swap}
-
-### SIM swap poster
-
-${images.sim_swap_poster}`,
+${videos.sim_swap}`,
   },
   {
     title: 'Return Phone',
